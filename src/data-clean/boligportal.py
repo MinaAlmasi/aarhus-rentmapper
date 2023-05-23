@@ -1,27 +1,34 @@
+'''
+Script to clean scraped boligportal data using pandas.
+
+by Anton Drasbæk Schiønning (@drasbaek) and Mina Almasi (@MinaAlmasi)
+Spatial Analytics, Cultural Data Science (F2023)
+'''
+
 # utils 
 import pathlib 
-import re 
 
 # data wrangling
 import pandas as pd
 
-def main():
-    # path to file 
-    path = pathlib.Path(__file__)
+def clean_boligportal(data_path:pathlib.Path, zip_codes:pd.DataFrame, save_path=None):
+    '''
+    Function to clean scraped boligportal data using pandas.
 
-    # define paths
-    rawdata_path = path.parents[2] / "data" / "raw_data"
-    processed_path = path.parents[2] / "data" / "processed_data"
-    zip_codes_path = path.parents[2] / "utils"
+    Args: 
+        data_path: Path to raw data.
+        zip_codes: Dataframe with zip codes.
+        save_path: Path to save cleaned data. Defaults to None. 
 
-    # make sure that the processed_data folder exists
-    processed_path.mkdir(parents=True, exist_ok=True)
+    Returns:
+        df: Cleaned dataframe.
+    
+    Output:
+        clean_boligportal_aarhus.csv: Cleaned data. If save_path is not None.
+    '''
 
     # read in data
-    df = pd.read_csv(rawdata_path / "boligportal_aarhus.csv")
-
-    # read in zip codes dataframe from utils folder
-    zip_codes = pd.read_csv(zip_codes_path / "zipcode_lookup.csv")
+    df = pd.read_csv(data_path / "boligportal_aarhus.csv")
 
     # add website column
     df["website"] = "boligportal.dk"
@@ -73,7 +80,26 @@ def main():
     df = df[["website", "year", "rental_type", "rent_without_expenses", "square_meters", "zip_code", "street", "area", "rooms"]]
 
     #save to csv
-    df.to_csv(processed_path / "clean_boligportal_aarhus.csv", index=False)    
+    if save_path is not None:
+        save_path.mkdir(parents=True, exist_ok=True)
+        df.to_csv(save_path / "clean_boligportal_aarhus.csv", index=False)    
+    
+    return df
+
+def main():
+    # path to file 
+    path = pathlib.Path(__file__)
+
+    # define paths
+    rawdata_path = path.parents[2] / "data" / "raw_data"
+    processed_path = path.parents[2] / "data" / "processed_data"
+    zip_codes_path = path.parents[2] / "utils"
+
+    # read in zip codes dataframe from utils folder
+    zip_codes = pd.read_csv(zip_codes_path / "zipcode_lookup.csv")
+
+    # clean boligportal data
+    df = clean_boligportal(rawdata_path, zip_codes, processed_path)
 
 if __name__ == "__main__":
     main()
