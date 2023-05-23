@@ -40,17 +40,15 @@ def main():
     # rename price to rent_without_expenses
     df = df.rename(columns={"price": "rent_without_expenses"})
     
-    # 
-    df[""]
+    # area column
+    df["area"] = df["address"].str.split(",").str[0]
 
-    # print cols 
-    print(df.columns)
+    # street column
+    df["street"] = df["address"].str.split(",").str[1]
 
     # select cols
-    df = df[["website", "year", "rental_type", "rent_without_expenses", "square_meters", "zip_code", "street", "address"]]
+    #df = df[["website", "year", "rental_type", "rent_without_expenses", "square_meters", "zip_code", "street", "area", "rooms"]]
     
-
-    print(df)
 
 if __name__ == "__main__":
     main()
