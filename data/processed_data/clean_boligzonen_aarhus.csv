@@ -1,0 +1,1530 @@
+website,year,rental_type,rooms,square_meters,rent_without_expenses,area,street,zip_code
+boligzonen.dk,2023,apartment,3,60,7995,Aarhus N,Brendstrupgårdsvej,8200
+boligzonen.dk,2023,apartment,1,48,5342,Aarhus C,Strandparken,8000
+boligzonen.dk,2023,apartment,2,48,5600,Aarhus N,Skovvangsvej,8200
+boligzonen.dk,2023,apartment,2,56,7944,Aarhus C,Fåborggade,8000
+boligzonen.dk,2023,apartment,1,35,4700,Aarhus C,Assensgade,8000
+boligzonen.dk,2023,apartment,1,50,3937,Aarhus C,Hjarnøgade,8000
+boligzonen.dk,2023,apartment,2,51,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,6700,Aarhus C,Eckersbergsgade,8000
+boligzonen.dk,2023,apartment,3,82,8900,Aarhus C,Valdemarsgade,8000
+boligzonen.dk,2023,apartment,3,76,10195,Aarhus C,Grønnegade,8000
+boligzonen.dk,2023,apartment,4,107,11900,Aarhus C,Thit Jensens Gade,8000
+boligzonen.dk,2023,apartment,2,49,6800,Aarhus C,Dannebrogsgade,8000
+boligzonen.dk,2023,apartment,3,98,12300,Aarhus C,Banegårdspladsen,8000
+boligzonen.dk,2023,apartment,1,36,6500,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,room,1,91,4500,Aarhus C,Rudolph Wulffs Gade,8000
+boligzonen.dk,2023,room,1,8,4955,Aarhus C,Thorvaldsensgade,8000
+boligzonen.dk,2023,apartment,3,72,9900,Aarhus C,Vesterport,8000
+boligzonen.dk,2023,apartment,3,74,9750,Aarhus C,Mejlgade,8000
+boligzonen.dk,2023,apartment,3,81,9400,Aarhus C,Studsgade,8000
+boligzonen.dk,2023,apartment,4,97,10775,Aarhus C,Skt. Pauls Kirkeplads,8000
+boligzonen.dk,2023,room,1,10,3000,Aarhus C,Langelandsgade,8000
+boligzonen.dk,2023,apartment,2,62,7995,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,2,52,5800,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,3,80,8900,Aarhus C,Vestre Ringgade,8000
+boligzonen.dk,2023,apartment,1,20,2400,Aarhus N,Funch Thomsens Gade,8200
+boligzonen.dk,2023,apartment,2,74,5700,Aarhus C,Marselis Boulevard,8000
+boligzonen.dk,2023,apartment,2,46,5995,Aarhus C,Vesterbrogade,8000
+boligzonen.dk,2023,room,4,97,4500,Aarhus C,Janus La Cours Gade,8000
+boligzonen.dk,2023,apartment,1,50,3937,Aarhus C,Hjarnøgade,8000
+boligzonen.dk,2023,apartment,2,88,10700,Aarhus N,Niels Juels Gade,8200
+boligzonen.dk,2023,apartment,1,36,4900,Aarhus N,Gøteborg Allé,8200
+boligzonen.dk,2023,apartment,2,64,9200,Aarhus C,Peter Sabroes Gade,8000
+boligzonen.dk,2023,room,1,40,3500,Højbjerg,Christian X's Vej,8270
+boligzonen.dk,2023,apartment,1,42,4490,Viby J,Grøfthøjparken,8260
+boligzonen.dk,2023,room,1,15,3500,Aarhus N,Bodøvej,8200
+boligzonen.dk,2023,apartment,3,64,7785,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,room,1,24,2634,Aarhus C,Molsgade,8000
+boligzonen.dk,2023,apartment,2,63,8000,Aarhus C,Eckersbergsgade,8000
+boligzonen.dk,2023,apartment,1,36,5350,Aarhus N,Gøteborg Allé,8200
+boligzonen.dk,2023,apartment,3,89,9455,Aarhus C,P. P. Ørums Gade,8000
+boligzonen.dk,2023,apartment,1,27,4000,Åbyhøj,Dr. Holsts Vej,8230
+boligzonen.dk,2023,apartment,2,50,7100,Aarhus C,Vester Allé,8000
+boligzonen.dk,2023,apartment,4,96,8000,Aarhus C,Hans Broges Gade,8000
+boligzonen.dk,2023,apartment,3,62,7750,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,5,107,13600,Aarhus C,Nørre Allé,8000
+boligzonen.dk,2023,apartment,2,50,8000,Aarhus C,Åboulevarden,8000
+boligzonen.dk,2023,apartment,4,101,11395,Viby J,Viby Torv,8260
+boligzonen.dk,2023,apartment,5,130,16100,Aarhus C,Nyborggade,8000
+boligzonen.dk,2023,apartment,2,60,7500,Aarhus C,Mejlgade,8000
+boligzonen.dk,2023,apartment,3,89,12095,Aarhus C,Ålborggade,8000
+boligzonen.dk,2023,apartment,2,52,6695,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,2,70,8500,Aarhus C,Vesterport,8000
+boligzonen.dk,2023,apartment,1,39,6400,Aarhus C,Thomas Koppels Gade,8000
+boligzonen.dk,2023,room,1,33,4805,Aarhus C,Fredensgade,8000
+boligzonen.dk,2023,apartment,3,103,9900,Aarhus C,Daugbjergvej,8000
+boligzonen.dk,2023,apartment,3,72,9900,Aarhus C,Vesterport,8000
+boligzonen.dk,2023,apartment,3,70,8876,Aarhus N,Lyøgade,8200
+boligzonen.dk,2023,apartment,2,48,6500,Aarhus N,Skejbyparken,8200
+boligzonen.dk,2023,apartment,3,86,11576,Aarhus N,Katrinebjergvej,8200
+boligzonen.dk,2023,apartment,3,82,8900,Aarhus C,Valdemarsgade,8000
+boligzonen.dk,2023,apartment,8,142,15600,Aarhus C,Guldsmedgade,8000
+boligzonen.dk,2023,apartment,1,40,6265,Aarhus C,Tøndergade,8000
+boligzonen.dk,2023,apartment,2,44,6500,Risskov,Børglumvej,8240
+boligzonen.dk,2023,apartment,2,94,9400,Aarhus C,Nørre Alle,8000
+boligzonen.dk,2023,apartment,3,95,10600,Aarhus C,Thit Jensens Gade,8000
+boligzonen.dk,2023,apartment,2,80,9300,Aarhus C,Studsgade,8000
+boligzonen.dk,2023,apartment,5,104,10920,Aarhus C,Fuglekærvej,8000
+boligzonen.dk,2023,apartment,2,63,7095,Aarhus N,Kalmargade,8200
+boligzonen.dk,2023,apartment,4,109,9995,Aarhus V,Paludan Müllers Vej,8210
+boligzonen.dk,2023,apartment,3,72,9904,Aarhus C,Dirch Passers Gade,8000
+boligzonen.dk,2023,apartment,2,35,5845,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,2,62,7000,Aarhus N,Ivar Huitfeldts Gade,8200
+boligzonen.dk,2023,apartment,2,73,8058,Aarhus C,Frederiks Allé,8000
+boligzonen.dk,2023,apartment,3,72,9785,Aarhus C,Sønder Allé,8000
+boligzonen.dk,2023,apartment,3,58,8650,Aarhus C,Åhusene,8000
+boligzonen.dk,2023,apartment,3,73,7600,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,2,67,6354,Viby J,Grøfthøjparken,8260
+boligzonen.dk,2023,apartment,4,74,10995,Aarhus N,Edouard Suensons Gade,8200
+boligzonen.dk,2023,apartment,3,58,8650,Aarhus C,Åhusene,8000
+boligzonen.dk,2023,apartment,5,113,13200,Aarhus C,Banegårdsgade,8000
+boligzonen.dk,2023,room,1,26,3500,Aarhus V,Hammershusvej,8210
+boligzonen.dk,2023,apartment,4,145,13200,Aarhus C,Frederiksgade,8000
+boligzonen.dk,2023,apartment,2,59,9795,Aarhus C,Amaliegade,8000
+boligzonen.dk,2023,apartment,2,50,6307,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,2,57,7995,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,4,96,12800,Aarhus C,Thit Jensens Gade,8000
+boligzonen.dk,2023,room,1,14,4000,Aarhus C,Vesterbro Torv,8000
+boligzonen.dk,2023,apartment,2,52,6900,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,1,31,5300,Aarhus N,Gøteborg Allé,8200
+boligzonen.dk,2023,apartment,3,90,9900,Aarhus C,Carl Bertelsens Gade,8000
+boligzonen.dk,2023,apartment,2,60,8500,Aarhus C,Vestergade,8000
+boligzonen.dk,2023,apartment,3,100,10950,Aarhus C,Fåborggade,8000
+boligzonen.dk,2023,apartment,2,66,8300,Aarhus C,Vester Allé,8000
+boligzonen.dk,2023,apartment,2,63,7595,Aarhus C,Vesterbrogade,8000
+boligzonen.dk,2023,apartment,3,76,8840,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,65,8995,Aarhus C,Thorvaldsensgade,8000
+boligzonen.dk,2023,apartment,2,49,7500,Viby J,Damagervej,8260
+boligzonen.dk,2023,apartment,4,109,13500,Aarhus C,Ålborggade,8000
+boligzonen.dk,2023,apartment,3,82,7495,Åbyhøj,Silkeborgvej,8230
+boligzonen.dk,2023,apartment,3,87,9308,Højbjerg,Lerdalen,8270
+boligzonen.dk,2023,apartment,2,68,7850,Aarhus C,Regenburgsgade,8000
+boligzonen.dk,2023,apartment,2,61,8200,Aarhus C,Finderupvej,8000
+boligzonen.dk,2023,apartment,3,89,14075,Aarhus C,H.N.,8000
+boligzonen.dk,2023,apartment,2,84,9500,Aarhus C,Lundingsgade,8000
+boligzonen.dk,2023,apartment,9,92,10500,Risskov,Nordre Strandvej,8240
+boligzonen.dk,2023,room,1,15,3200,Aarhus C,Nyborggade,8000
+boligzonen.dk,2023,apartment,4,130,13995,Aarhus C,Sønder Allé,8000
+boligzonen.dk,2023,apartment,3,92,10845,Aarhus C,Jyllands Allé,8000
+boligzonen.dk,2023,apartment,2,62,8995,Aarhus C,Skovvejen,8000
+boligzonen.dk,2023,apartment,4,95,10336,Aarhus C,Skanderborgvej,8000
+boligzonen.dk,2023,apartment,2,67,8495,Aarhus C,Jægergårdsgade,8000
+boligzonen.dk,2023,apartment,2,60,8482,Aarhus C,Guldsmedgade,8000
+boligzonen.dk,2023,apartment,2,49,6995,Aarhus C,Vester Allé,8000
+boligzonen.dk,2023,apartment,1,38,6000,Aarhus C,H.,8000
+boligzonen.dk,2023,apartment,1,87,8800,Aarhus C,Frederiksbjerg,8000
+boligzonen.dk,2023,apartment,1,39,5670,Risskov,Brassøvej,8240
+boligzonen.dk,2023,room,1,15,2900,Aarhus C,Nyborggade,8000
+boligzonen.dk,2023,apartment,2,72,9300,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,3,58,8000,Risskov,Børglumvej,8240
+boligzonen.dk,2023,apartment,3,107,9995,Aarhus C,Telefontorvet,8000
+boligzonen.dk,2023,apartment,4,111,11659,Aarhus C,Kildegården,8000
+boligzonen.dk,2023,apartment,2,63,8200,Aarhus C,østboulevarden,8000
+boligzonen.dk,2023,apartment,3,72,8900,Aarhus N,Gøteborg Allé,8200
+boligzonen.dk,2023,apartment,4,99,14825,Aarhus C,Søren Frichs Vej,8000
+boligzonen.dk,2023,apartment,4,94,11554,Aarhus C,Museumsgade,8000
+boligzonen.dk,2023,apartment,1,10,1448,Aarhus C,Klostergade,8000
+boligzonen.dk,2023,apartment,1,30,5000,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,room,1,20,3500,Aarhus N,Jens Baggesens Vej,8200
+boligzonen.dk,2023,apartment,2,60,7000,Aarhus C,Skanderborgvej,8000
+boligzonen.dk,2023,apartment,4,131,15700,Åbyhøj,Bestlasgade,8230
+boligzonen.dk,2023,apartment,2,62,7500,Aarhus N,Jens Baggesens Vej,8200
+boligzonen.dk,2023,apartment,2,62,8400,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,5,115,13000,Aarhus C,Thit Jensens Gade,8000
+boligzonen.dk,2023,apartment,3,101,11500,Aarhus C,Søndre Ringgade,8000
+boligzonen.dk,2023,apartment,1,54,5996,Aarhus C,Vesterbrogade,8000
+boligzonen.dk,2023,apartment,3,65,9000,Aarhus N,Malmøgade,8200
+boligzonen.dk,2023,apartment,1,38,4875,Højbjerg,Emiliedalsvej,8270
+boligzonen.dk,2023,apartment,3,83,10895,Aarhus C,Daugbjergvej,8000
+boligzonen.dk,2023,room,1,23,4000,Aarhus N,Bergensgade Kl,8200
+boligzonen.dk,2023,apartment,4,110,11091,Højbjerg,Sandbakken,8270
+boligzonen.dk,2023,apartment,4,108,7633,Viby J,Grøfthøjparken,8260
+boligzonen.dk,2023,apartment,3,84,10600,Højbjerg,Emiliedalsvej,8270
+boligzonen.dk,2023,apartment,2,69,7800,Aarhus C,Marselis Boulevard,8000
+boligzonen.dk,2023,apartment,1,98,11900,Aarhus C,Chr. Værums Gade,8000
+boligzonen.dk,2023,apartment,3,59,8500,Aarhus N,Møllevangs Allé,8200
+boligzonen.dk,2023,apartment,2,65,7995,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,2,48,5495,Aarhus V,Kappelvænget,8210
+boligzonen.dk,2023,apartment,3,85,11150,Åbyhøj,Åbyvej,8230
+boligzonen.dk,2023,apartment,3,73,8500,Aarhus V,Helge Rodes Vej,8210
+boligzonen.dk,2023,apartment,3,100,11800,Højbjerg,Emiliedalsvej,8270
+boligzonen.dk,2023,apartment,3,70,9611,Aarhus C,Otto Brandenburgs Gade,8000
+boligzonen.dk,2023,apartment,3,65,8695,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,3,75,9708,Aarhus C,Sjællandsgade,8000
+boligzonen.dk,2023,apartment,3,72,9900,Aarhus C,Vesterport,8000
+boligzonen.dk,2023,apartment,2,42,6250,Aarhus V,Bronzealdervænget,8210
+boligzonen.dk,2023,apartment,3,82,9200,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,2,67,8695,Aarhus C,Skovvejen,8000
+boligzonen.dk,2023,apartment,2,52,7695,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,4,218,22995,Aarhus C,Mariane Thomsens Gade,8000
+boligzonen.dk,2023,apartment,2,35,5845,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,3,52,7250,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,2,69,8608,Risskov,Kværnloftet,8240
+boligzonen.dk,2023,apartment,3,72,9900,Aarhus C,Vesterport,8000
+boligzonen.dk,2023,apartment,3,58,7595,Viby J,Skanderborgvej,8260
+boligzonen.dk,2023,apartment,3,67,8155,Viby J,Drosbjerg,8260
+boligzonen.dk,2023,apartment,2,67,6995,Viby J,Damagervej,8260
+boligzonen.dk,2023,apartment,2,62,7750,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,3,69,11500,Aarhus C,Åboulevarden,8000
+boligzonen.dk,2023,apartment,3,77,10200,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,70,8500,Aarhus C,Vesterport,8000
+boligzonen.dk,2023,apartment,3,105,11960,Aarhus C,Mejlgade,8000
+boligzonen.dk,2023,apartment,2,67,7160,Aarhus C,Nordborggade,8000
+boligzonen.dk,2023,apartment,1,42,7500,Aarhus C,Dirch Passers Gade,8000
+boligzonen.dk,2023,apartment,3,86,8595,Aarhus N,Vistihøjen,8200
+boligzonen.dk,2023,apartment,2,48,7300,Aarhus N,Jens Baggesens Vej,8200
+boligzonen.dk,2023,apartment,3,62,8145,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,3,62,7795,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,5,108,12168,Aarhus C,Skanderborgvej,8000
+boligzonen.dk,2023,apartment,5,140,15650,Aarhus C,Thit Jensens Gade,8000
+boligzonen.dk,2023,room,1,15,4265,Aarhus C,Molsgade,8000
+boligzonen.dk,2023,apartment,2,50,6695,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,2,51,7700,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,3,83,10595,Aarhus C,Daugbjergvej,8000
+boligzonen.dk,2023,apartment,2,59,6820,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,3,70,8995,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,2,63,9000,Aarhus C,Nørre Allé,8000
+boligzonen.dk,2023,apartment,1,45,4995,Viby J,Engtoften,8260
+boligzonen.dk,2023,room,1,11,4000,Aarhus V,Viborgvej,8210
+boligzonen.dk,2023,apartment,3,73,7600,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,2,58,7895,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,4,88,11100,Åbyhøj,Sifsgade,8230
+boligzonen.dk,2023,apartment,2,62,7750,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,2,75,11430,Aarhus C,Stenpassagen,8000
+boligzonen.dk,2023,apartment,3,81,9500,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,58,9250,Aarhus C,Stenpassagen,8000
+boligzonen.dk,2023,apartment,2,80,7154,Aarhus N,LisbjergBakke,8200
+boligzonen.dk,2023,apartment,1,36,4995,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,3,64,7887,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,3,64,11000,Aarhus C,Åboulevarden,8000
+boligzonen.dk,2023,apartment,2,52,6750,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,4,85,9495,Aarhus N,Finsensgade,8200
+boligzonen.dk,2023,apartment,3,82,10995,Aarhus N,Otte Ruds Gade,8200
+boligzonen.dk,2023,apartment,1,47,7500,Aarhus C,Rosenkrantzgade,8000
+boligzonen.dk,2023,apartment,2,72,9300,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,1,41,4995,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,3,114,10816,Aarhus N,Solsikkevænget,8200
+boligzonen.dk,2023,apartment,3,62,7830,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,2,54,7550,Viby J,Damagervej,8260
+boligzonen.dk,2023,apartment,2,63,9148,Aarhus C,Dirch Passers Gade,8000
+boligzonen.dk,2023,apartment,1,35,5555,Aarhus N,Hvidkløvervej,8200
+boligzonen.dk,2023,apartment,2,65,7700,Aarhus N,Ringen,8200
+boligzonen.dk,2023,apartment,4,107,11418,Aarhus C,Strandparken,8000
+boligzonen.dk,2023,apartment,1,31,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,85,11750,Åbyhøj,Åbyvej,8230
+boligzonen.dk,2023,apartment,4,103,11250,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,2,53,5495,Aarhus V,Kappelvænget,8210
+boligzonen.dk,2023,apartment,3,59,8250,Aarhus N,Møllevangs Allé,8200
+boligzonen.dk,2023,room,1,9,5000,Aarhus C,Helga Pedersens gade,8000
+boligzonen.dk,2023,apartment,1,33,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,50,6695,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,3,101,13300,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,69,9050,Aarhus C,Dannebrogsgade,8000
+boligzonen.dk,2023,apartment,3,82,10900,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,3,84,9800,Aarhus C,Søndre Ringgade,8000
+boligzonen.dk,2023,apartment,3,85,9615,Aarhus C,Orla Lehmanns Allé,8000
+boligzonen.dk,2023,apartment,1,33,5295,Viby J,Vestergårdsvej,8260
+boligzonen.dk,2023,apartment,3,94,11400,Aarhus C,Assensgade,8000
+boligzonen.dk,2023,apartment,1,43,4995,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,72,8550,Aarhus C,Sdr. Ringgade,8000
+boligzonen.dk,2023,apartment,2,52,6695,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,4,103,12195,Aarhus N,Otte Ruds Gade,8200
+boligzonen.dk,2023,apartment,2,35,5845,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,3,76,11700,Aarhus C,Kristine Nielsens Gade,8000
+boligzonen.dk,2023,apartment,2,45,7895,Aarhus N,Edouard Suensons Gade,8200
+boligzonen.dk,2023,apartment,2,75,7450,Aarhus C,Vestre Ringgade,8000
+boligzonen.dk,2023,apartment,3,81,9995,Aarhus C,Sdr. Ringgade,8000
+boligzonen.dk,2023,apartment,2,80,9600,Aarhus C,Park Allé,8000
+boligzonen.dk,2023,apartment,2,54,8300,Aarhus N,Katrinebjergvej,8200
+boligzonen.dk,2023,apartment,3,88,10295,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,6,163,14000,Aarhus N,Ringen,8200
+boligzonen.dk,2023,apartment,3,71,9900,Aarhus C,morten børups gade,8000
+boligzonen.dk,2023,apartment,2,65,9495,Aarhus N,Niels Juels Gade,8200
+boligzonen.dk,2023,apartment,2,54,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,60,8871,Aarhus C,Klostergade,8000
+boligzonen.dk,2023,apartment,2,54,7250,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,3,109,14100,Aarhus C,Banegårdspladsen,8000
+boligzonen.dk,2023,apartment,1,31,5600,Aarhus N,Gøteborg Allé,8200
+boligzonen.dk,2023,apartment,1,18,2810,Højbjerg,Emiliehøj,8270
+boligzonen.dk,2023,apartment,5,120,14400,Aarhus C,Dalgas Avenue,8000
+boligzonen.dk,2023,apartment,2,65,9300,Aarhus C,Kirkegårdsvej,8000
+boligzonen.dk,2023,apartment,2,62,8600,Aarhus C,Otto Brandenburgs Gade,8000
+boligzonen.dk,2023,apartment,3,97,8900,Aarhus V,Hammershusvej,8210
+boligzonen.dk,2023,apartment,2,54,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,44,6600,Aarhus C,Kirkegårdsvej,8000
+boligzonen.dk,2023,apartment,1,40,4995,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,3,53,7300,Viby J,Engkrogen,8260
+boligzonen.dk,2023,apartment,1,63,7800,Åbyhøj,Bestlasgade,8230
+boligzonen.dk,2023,apartment,4,116,15000,Aarhus C,Borggade,8000
+boligzonen.dk,2023,apartment,1,34,5200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,73,10088,Aarhus C,Dirch Passers Gade,8000
+boligzonen.dk,2023,apartment,2,60,7995,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,2,55,7095,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,4,101,12995,Aarhus C,Rudolph Wulffs Gade,8000
+boligzonen.dk,2023,apartment,3,64,7887,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,3,84,9903,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,2,59,6820,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,2,49,7500,Viby J,Damagervej,8260
+boligzonen.dk,2023,apartment,3,100,10800,Højbjerg,Emiliedalsvej,8270
+boligzonen.dk,2023,apartment,2,80,7154,Aarhus N,LisbjergBakke,8200
+boligzonen.dk,2023,apartment,2,61,8700,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,3,79,9500,Aarhus N,Gøteborg Allé,8200
+boligzonen.dk,2023,apartment,4,98,10695,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,2,45,6500,Viby J,Markvangen,8260
+boligzonen.dk,2023,apartment,1,35,6900,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,1,45,5194,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,3,65,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,4,99,10795,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,3,68,9710,Åbyhøj,Sifsgade,8230
+boligzonen.dk,2023,apartment,4,101,12792,Åbyhøj,Bestlasgade,8230
+boligzonen.dk,2023,apartment,3,61,7643,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,2,48,7250,Viby J,Engkrogen,8260
+boligzonen.dk,2023,apartment,3,71,9395,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,3,76,7955,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,3,57,8750,Viby J,Engelundsvej,8260
+boligzonen.dk,2023,apartment,4,111,11500,Aarhus C,Marselis Boulevard,8000
+boligzonen.dk,2023,apartment,3,129,15600,Aarhus C,Guldsmedgade,8000
+boligzonen.dk,2023,apartment,1,38,4995,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,4,93,9795,Risskov,Tove Ditlevsens Gade,8240
+boligzonen.dk,2023,apartment,2,62,6820,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,2,76,8450,Aarhus C,Jyllands Allé,8000
+boligzonen.dk,2023,apartment,3,52,7250,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,3,70,8995,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,2,69,8595,Aarhus N,Brendstrupgårdsvej,8200
+boligzonen.dk,2023,apartment,2,62,6820,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,3,108,10530,Viby J,Grøfthøjparken,8260
+boligzonen.dk,2023,apartment,2,51,8225,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,3,82,9800,Risskov,Kværnloftet,8240
+boligzonen.dk,2023,apartment,2,52,7375,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,1,36,7000,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,4,107,12019,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,56,9395,Aarhus C,Østergade,8000
+boligzonen.dk,2023,apartment,2,64,7995,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,3,66,10250,Aarhus C,Grete Løchtes Gade,8000
+boligzonen.dk,2023,apartment,3,74,10300,Aarhus C,Vester Allé,8000
+boligzonen.dk,2023,apartment,2,55,6995,Viby J,Damagervej,8260
+boligzonen.dk,2023,apartment,3,79,9692,Aarhus C,Sønder Allé,8000
+boligzonen.dk,2023,apartment,3,83,10380,Aarhus C,Rosenkrantzgade,8000
+boligzonen.dk,2023,apartment,1,40,5700,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,3,81,9900,Aarhus N,Finsensgade,8200
+boligzonen.dk,2023,apartment,3,56,7495,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,4,107,10750,Viby J,Skanderborgvej,8260
+boligzonen.dk,2023,apartment,1,53,7600,Aarhus C,Vesterport,8000
+boligzonen.dk,2023,apartment,3,69,9095,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,2,49,7500,Viby J,Damagervej,8260
+boligzonen.dk,2023,apartment,1,35,6900,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,50,7195,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,3,63,8145,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,3,89,10899,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,4,86,13500,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,3,68,8155,Viby J,Drosbjerg,8260
+boligzonen.dk,2023,apartment,2,61,7595,Aarhus N,Kalmargade,8200
+boligzonen.dk,2023,apartment,1,32,4995,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,3,76,9500,Aarhus N,Gøteborg Allé,8200
+boligzonen.dk,2023,apartment,2,51,7400,Aarhus N,Gøteborg Allé,8200
+boligzonen.dk,2023,apartment,1,37,6200,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,4,119,13395,Aarhus C,Ole Rømers Gade,8000
+boligzonen.dk,2023,apartment,2,70,8800,Aarhus N,Randersvej,8200
+boligzonen.dk,2023,apartment,4,106,14900,Aarhus C,Østergade,8000
+boligzonen.dk,2023,apartment,4,118,12900,Aarhus V,Ryhavevej,8210
+boligzonen.dk,2023,apartment,3,67,8185,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,2,70,9300,Aarhus C,Fiskergade,8000
+boligzonen.dk,2023,apartment,1,41,5995,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,2,58,8295,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,3,92,10490,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,2,82,9500,Aarhus C,Vesterport,8000
+boligzonen.dk,2023,apartment,1,30,5100,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,1,36,6500,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,1,35,7100,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,100,11800,Aarhus C,Thit Jensens Gade,8000
+boligzonen.dk,2023,apartment,4,87,11250,Aarhus N,Langelandsgade,8200
+boligzonen.dk,2023,apartment,3,86,11950,Aarhus C,Fiskergade,8000
+boligzonen.dk,2023,apartment,2,54,7250,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,4,105,11450,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,56,8990,Aarhus C,Vestergade,8000
+boligzonen.dk,2023,apartment,1,44,5194,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,5,110,16900,Aarhus C,Peter Sabroes Gade,8000
+boligzonen.dk,2023,apartment,3,76,8950,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,3,73,8500,Aarhus V,Helge Rodes Vej,8210
+boligzonen.dk,2023,apartment,2,66,7900,Aarhus C,Vester Allé,8000
+boligzonen.dk,2023,apartment,3,85,10995,Aarhus C,Sønderport,8000
+boligzonen.dk,2023,apartment,2,93,8774,Aarhus C,Hjarnøgade,8000
+boligzonen.dk,2023,apartment,3,68,8995,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,2,57,8495,Aarhus C,Søren Frichs Vej,8000
+boligzonen.dk,2023,apartment,1,41,5995,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,3,94,9195,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,3,62,7785,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,3,64,8125,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,3,114,10539,Aarhus N,Jess Ingerslevs Gade,8200
+boligzonen.dk,2023,apartment,3,87,9995,Viby J,Holme Møllevej,8260
+boligzonen.dk,2023,apartment,2,35,5845,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,2,49,6995,Aarhus C,Vester Allé,8000
+boligzonen.dk,2023,apartment,1,30,5100,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,4,102,13150,Aarhus C,Fiskergade,8000
+boligzonen.dk,2023,apartment,5,145,12419,Aarhus C,Kildegården,8000
+boligzonen.dk,2023,apartment,2,48,7400,Aarhus N,Jens Baggesens Vej,8200
+boligzonen.dk,2023,apartment,3,78,8600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,70,9495,Aarhus N,Niels Juels Gade,8200
+boligzonen.dk,2023,apartment,1,40,4800,Højbjerg,Jelshøjvej,8270
+boligzonen.dk,2023,apartment,1,57,6500,Aarhus N,Ringen,8200
+boligzonen.dk,2023,apartment,2,73,8800,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,2,47,7000,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,54,8500,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,1,59,7500,Aarhus C,Christiansgade,8000
+boligzonen.dk,2023,apartment,2,52,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,81,8795,Aarhus V,Paludan Müllers Vej,8210
+boligzonen.dk,2023,apartment,2,57,7920,Aarhus N,Jens Baggesens Vej,8200
+boligzonen.dk,2023,apartment,4,85,9995,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,1,34,5200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,48,7195,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,4,106,14495,Aarhus C,Jægergårdsgade,8000
+boligzonen.dk,2023,apartment,3,68,9900,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,5,123,14950,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,4,103,12750,Risskov,Forteledet,8240
+boligzonen.dk,2023,apartment,3,57,8795,Viby J,Engelundsvej,8260
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,4,114,12600,Risskov,Kværnloftet,8240
+boligzonen.dk,2023,apartment,3,92,8434,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,37,5600,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,3,48,7195,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,2,71,9900,Aarhus C,Lundingsgade,8000
+boligzonen.dk,2023,apartment,2,65,8850,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,61,7777,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,3,94,10641,Aarhus C,Jyllands Allé,8000
+boligzonen.dk,2023,apartment,3,60,8495,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,2,82,9000,Risskov,Kværnloftet,8240
+boligzonen.dk,2023,apartment,3,69,9550,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,2,91,14500,Aarhus C,Falstersgade,8000
+boligzonen.dk,2023,apartment,2,48,6800,Viby J,Engkrogen,8260
+boligzonen.dk,2023,apartment,2,60,7995,Aarhus N,Skejbytoften,8200
+boligzonen.dk,2023,apartment,1,44,6200,Aarhus C,Vestergade,8000
+boligzonen.dk,2023,apartment,2,73,8650,Højbjerg,Emiliedalen,8270
+boligzonen.dk,2023,apartment,1,42,4995,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,3,73,7600,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,2,50,7170,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,4,122,12495,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,3,76,7600,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,3,93,10800,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,2,54,7375,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,1,30,4900,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,5,128,13119,Højbjerg,Sandbakken,8270
+boligzonen.dk,2023,apartment,4,90,11500,Aarhus N,Gøteborg Allé,8200
+boligzonen.dk,2023,apartment,2,60,7895,Aarhus N,Skejbytoften,8200
+boligzonen.dk,2023,apartment,2,57,7912,Risskov,Vikærsvej,8240
+boligzonen.dk,2023,apartment,2,71,9360,Åbyhøj,Bifrostgade,8230
+boligzonen.dk,2023,apartment,2,54,7300,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,2,58,8300,Aarhus C,Skanderborgvej,8000
+boligzonen.dk,2023,apartment,3,108,10575,Aarhus C,Volden,8000
+boligzonen.dk,2023,apartment,3,88,11304,Risskov,Ellen Jensens Gade,8240
+boligzonen.dk,2023,apartment,3,72,8995,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,1,30,4900,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,2,60,8850,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,4,110,14295,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,3,84,10500,Aarhus C,Skanderborgvej,8000
+boligzonen.dk,2023,apartment,1,41,5800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,61,8500,Aarhus C,Finderupvej,8000
+boligzonen.dk,2023,apartment,3,76,7955,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,3,85,9775,Viby J,Holme Møllevej,8260
+boligzonen.dk,2023,apartment,1,54,6500,Aarhus N,Ringen,8200
+boligzonen.dk,2023,apartment,2,79,10695,Aarhus C,Dirch Passers Gade,8000
+boligzonen.dk,2023,apartment,2,81,8895,Aarhus V,Paludan Müllers Vej,8210
+boligzonen.dk,2023,apartment,3,97,8900,Aarhus V,Hammershusvej,8210
+boligzonen.dk,2023,apartment,3,86,8595,Aarhus N,Vistihøjen,8200
+boligzonen.dk,2023,apartment,2,58,7995,Aarhus N,Skejbytoften,8200
+boligzonen.dk,2023,apartment,1,30,4995,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,3,121,13300,Risskov,Vindrosen,8240
+boligzonen.dk,2023,apartment,4,151,17900,Aarhus C,Søndergade,8000
+boligzonen.dk,2023,apartment,2,74,7795,Risskov,Engsøvej,8240
+boligzonen.dk,2023,apartment,2,71,9464,Åbyhøj,Bifrostgade,8230
+boligzonen.dk,2023,apartment,4,112,13231,Åbyhøj,Sifsgade,8230
+boligzonen.dk,2023,apartment,3,62,7785,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,4,101,12792,Åbyhøj,Bestlasgade,8230
+boligzonen.dk,2023,apartment,3,69,9850,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,3,63,8145,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,3,61,7777,Risskov,Doris Kæraas Gade,8240
+boligzonen.dk,2023,apartment,3,82,9700,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,1,73,9250,Åbyhøj,Bifrostgade,8230
+boligzonen.dk,2023,apartment,2,54,7395,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,59,8300,Aarhus C,Langenæs Allé,8000
+boligzonen.dk,2023,apartment,3,91,10280,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,3,104,11900,Aarhus C,Søndre Ringgade,8000
+boligzonen.dk,2023,apartment,2,50,7195,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,3,68,8995,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,3,101,13160,Risskov,Ellen Jensens Gade,8240
+boligzonen.dk,2023,apartment,3,60,8400,Risskov,Børglumvej,8240
+boligzonen.dk,2023,apartment,5,146,15418,Aarhus C,Skt. Pauls Kirkeplads,8000
+boligzonen.dk,2023,apartment,4,111,9904,Højbjerg,Emiliehøj,8270
+boligzonen.dk,2023,apartment,2,58,7495,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,4,133,19950,Aarhus C,Thit Jensens Gade,8000
+boligzonen.dk,2023,apartment,3,73,9450,Aarhus N,Møllevangs Alle,8200
+boligzonen.dk,2023,apartment,2,68,9000,Aarhus N,Stockholmsgade,8200
+boligzonen.dk,2023,apartment,4,91,10701,Viby J,Søndervangs Allé,8260
+boligzonen.dk,2023,apartment,2,59,6820,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,4,96,10995,Viby J,Holme Møllevej,8260
+boligzonen.dk,2023,apartment,3,60,8495,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,1,37,6200,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,1,38,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,52,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,93,10370,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,2,65,7995,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,4,90,10199,Risskov,brassøvej,8240
+boligzonen.dk,2023,apartment,4,114,12750,Aarhus N,Gustav Holms Vej,8200
+boligzonen.dk,2023,apartment,4,82,10800,Aarhus C,Tage-Hansens Gade,8000
+boligzonen.dk,2023,apartment,4,85,9968,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,4,123,14625,Aarhus C,Lone Kellermanns Gade,8000
+boligzonen.dk,2023,apartment,3,94,10350,Aarhus C,Hans Schourups Gade,8000
+boligzonen.dk,2023,apartment,2,89,8900,Aarhus C,Daugbjergvej,8000
+boligzonen.dk,2023,apartment,1,36,7000,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,96,8950,Viby J,Højgårdsvej,8260
+boligzonen.dk,2023,apartment,1,50,6900,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,68,8995,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,1,36,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,64,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,55,7150,Viby J,Damagervej,8260
+boligzonen.dk,2023,apartment,3,91,10995,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,3,92,9900,Aarhus C,Nordborggade,8000
+boligzonen.dk,2023,apartment,6,181,14000,Aarhus N,Ringen,8200
+boligzonen.dk,2023,apartment,2,86,9995,Aarhus C,Grønnegade,8000
+boligzonen.dk,2023,apartment,1,35,7000,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,2,64,6820,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,6,162,16214,Aarhus C,Orla Lehmanns Allé,8000
+boligzonen.dk,2023,apartment,3,98,10950,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,4,130,14595,Aarhus C,Dalgas Avenue,8000
+boligzonen.dk,2023,apartment,3,66,9400,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,4,157,15325,Aarhus C,Orla Lehmanns Allé,8000
+boligzonen.dk,2023,room,1,8,3500,Aarhus V,Viborgvej,8210
+boligzonen.dk,2023,apartment,3,90,11750,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,2,55,7695,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,3,69,8595,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,3,112,13500,Aarhus C,Sønder Allé,8000
+boligzonen.dk,2023,apartment,2,54,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,35,7100,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,1,36,6700,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,1,36,6500,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,64,7785,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,3,90,9900,Aarhus C,Carl Bertelsens Gade,8000
+boligzonen.dk,2023,apartment,3,57,8750,Viby J,Engelundsvej,8260
+boligzonen.dk,2023,apartment,3,69,9550,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,3,48,7195,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,3,79,8975,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,43,6700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,104,9900,Aarhus V,Hammershusvej,8210
+boligzonen.dk,2023,apartment,1,29,5700,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,2,53,7650,Aarhus N,Møllevangs Alle,8200
+boligzonen.dk,2023,apartment,4,82,10800,Aarhus C,Tage-Hansens Gade,8000
+boligzonen.dk,2023,apartment,3,92,10950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,4,112,11995,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,73,9295,Aarhus C,Kongsvang Allé,8000
+boligzonen.dk,2023,apartment,3,59,8300,Aarhus N,Møllevangs Allé,8200
+boligzonen.dk,2023,apartment,4,93,10600,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,3,81,9990,Aarhus N,Jens Baggesens Vej,8200
+boligzonen.dk,2023,apartment,1,60,8200,Åbyhøj,Bifrostgade,8230
+boligzonen.dk,2023,apartment,2,72,7580,Aarhus C,Skanderborgvej,8000
+boligzonen.dk,2023,apartment,2,54,7100,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,5,111,15500,Aarhus C,Thit Jensens Gade,8000
+boligzonen.dk,2023,apartment,4,92,9445,Aarhus N,Vistihøjen,8200
+boligzonen.dk,2023,apartment,2,42,7600,Aarhus N,Gøteborg Allé,8200
+boligzonen.dk,2023,apartment,5,140,15750,Aarhus C,Thit Jensens Gade,8000
+boligzonen.dk,2023,apartment,2,51,7195,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,112,18000,Aarhus C,Helga Pedersens Gade,8000
+boligzonen.dk,2023,apartment,3,69,7950,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,4,111,11995,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,2,118,19500,Aarhus C,Langelinieparken,8000
+boligzonen.dk,2023,apartment,3,110,14700,Aarhus C,Dagmar Petersens Gade,8000
+boligzonen.dk,2023,apartment,1,41,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,88,10500,Risskov,Bytoften,8240
+boligzonen.dk,2023,apartment,4,85,10995,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,41,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,33,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,88,9800,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,2,52,6695,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,2,70,9495,Aarhus N,Niels,8200
+boligzonen.dk,2023,apartment,1,71,9250,Åbyhøj,Bifrostgade,8230
+boligzonen.dk,2023,apartment,2,68,8095,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,1,50,6700,Aarhus C,Vester Allé,8000
+boligzonen.dk,2023,apartment,1,40,5800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,34,5200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,56,8495,Aarhus C,Tage-Hansens Gade,8000
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,1,36,7000,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,2,73,9900,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,3,76,9400,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,47,6750,Risskov,Nordlandsvej,8240
+boligzonen.dk,2023,apartment,2,62,8695,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,3,57,8750,Viby J,Engelundsvej,8260
+boligzonen.dk,2023,apartment,3,83,10895,Aarhus C,Daugbjergvej,8000
+boligzonen.dk,2023,apartment,3,69,9850,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,4,114,15180,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,2,45,5895,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,97,8900,Aarhus V,Hammershusvej,8210
+boligzonen.dk,2023,apartment,3,107,13675,Risskov,Erling Jacobsens Gade,8240
+boligzonen.dk,2023,apartment,1,38,6700,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,1,98,14700,Aarhus C,daugbjergvej,8000
+boligzonen.dk,2023,apartment,1,37,5650,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,45,5895,Højbjerg,Oddervej,8270
+boligzonen.dk,2023,apartment,1,34,5400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,80,11325,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,1,29,5100,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,3,73,7600,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,3,68,8995,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,1,41,5950,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,76,8800,Risskov,Skejbyvej,8240
+boligzonen.dk,2023,apartment,2,46,8300,Aarhus C,Trælastgade,8000
+boligzonen.dk,2023,apartment,2,55,7999,Aarhus C,Gebauersgade,8000
+boligzonen.dk,2023,apartment,4,145,27000,Aarhus C,Irma Pedersens Gade,8000
+boligzonen.dk,2023,apartment,2,61,9495,Aarhus C,Dirch Passers Gade,8000
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,68,7495,Viby J,Skanderborgvej,8260
+boligzonen.dk,2023,apartment,3,68,8995,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,1,33,6675,Aarhus N,Gøteborg Allé,8200
+boligzonen.dk,2023,apartment,2,89,9112,Risskov,Engholms Alle,8240
+boligzonen.dk,2023,apartment,3,80,10064,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,3,92,9545,Aarhus N,Vistihøjen,8200
+boligzonen.dk,2023,apartment,2,74,9560,Aarhus C,Sønder Allé,8000
+boligzonen.dk,2023,apartment,1,34,5500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,42,6400,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,37,5800,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,4,113,13375,Risskov,Tove Ditlevsens Gade,8240
+boligzonen.dk,2023,apartment,3,64,9800,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,66,9400,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,2,64,8112,Aarhus N,Solsikkevænget,8200
+boligzonen.dk,2023,apartment,4,108,10087,Aarhus N,LisbjergBakke,8200
+boligzonen.dk,2023,apartment,3,86,11950,Aarhus C,Fiskergade,8000
+boligzonen.dk,2023,apartment,2,71,7495,Risskov,Skejbyvej,8240
+boligzonen.dk,2023,apartment,3,69,9850,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,2,61,9600,Aarhus C,Borggade,8000
+boligzonen.dk,2023,apartment,3,78,9077,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,53,6775,Risskov,Nordlandsvej,8240
+boligzonen.dk,2023,apartment,1,36,6500,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,97,9795,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,1,38,5800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,62,8500,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,3,75,9400,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,91,10250,Viby J,Viby Torv,8260
+boligzonen.dk,2023,apartment,3,61,7750,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,2,53,6770,Risskov,Nordlandsvej,8240
+boligzonen.dk,2023,apartment,3,54,7800,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,4,133,16450,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,1,60,14000,Aarhus C,Helga Pedersens Gade,8000
+boligzonen.dk,2023,apartment,2,54,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,33,4995,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,3,92,9915,Aarhus C,Orla Lehmanns Allé,8000
+boligzonen.dk,2023,apartment,4,114,12200,Viby J,Christian X´s Vej,8260
+boligzonen.dk,2023,apartment,3,92,9395,Aarhus N,Vistihøjen,8200
+boligzonen.dk,2023,apartment,2,84,9800,Aarhus C,Joh. Baunes Plads,8000
+boligzonen.dk,2023,apartment,1,31,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,65,9150,Aarhus C,Finderupvej,8000
+boligzonen.dk,2023,apartment,2,52,7600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,38,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,4,85,9662,Risskov,Doris Kæraas Gade,8240
+boligzonen.dk,2023,apartment,2,77,7995,Højbjerg,Oddervej,8270
+boligzonen.dk,2023,apartment,2,69,7745,Aarhus N,Vistihøjen,8200
+boligzonen.dk,2023,apartment,2,51,8300,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,4,128,12500,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,1,35,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,90,9900,Viby J,Christian X´s Vej,8260
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,7195,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,2,64,7777,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,2,60,9500,Aarhus N,Gøteborg Allé,8200
+boligzonen.dk,2023,apartment,1,37,5600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,73,7600,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,3,82,10400,Aarhus C,Lundbyesgade,8000
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,1,29,4900,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,3,73,9100,Risskov,Vikærsvej,8240
+boligzonen.dk,2023,apartment,2,67,9800,Aarhus C,Mejlgade,8000
+boligzonen.dk,2023,apartment,2,84,10495,Aarhus C,Guldsmedgade,8000
+boligzonen.dk,2023,apartment,2,68,9395,Aarhus C,Søren Frichs Vej,8000
+boligzonen.dk,2023,apartment,2,50,7595,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,5,110,16900,Aarhus C,Peter Sabroes Gade,8000
+boligzonen.dk,2023,apartment,4,90,9895,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,3,92,9545,Aarhus N,Vistihøjen,8200
+boligzonen.dk,2023,apartment,3,69,9850,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,2,58,8300,Aarhus C,Skanderborgvej,8000
+boligzonen.dk,2023,apartment,3,55,7495,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,2,54,7300,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,3,106,16095,Aarhus C,Østergade,8000
+boligzonen.dk,2023,apartment,2,51,7280,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,1,27,5700,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,3,68,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,56,7049,Risskov,Engholms Alle,8240
+boligzonen.dk,2023,apartment,1,29,4900,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,52,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,4,87,14700,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,3,97,10295,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,3,84,9995,Aarhus C,Skanderborgvej,8000
+boligzonen.dk,2023,apartment,1,40,6500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,37,6200,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,3,91,11250,Risskov,Harald Selmers Vej,8240
+boligzonen.dk,2023,apartment,2,59,8749,Åbyhøj,Sifsgade,8230
+boligzonen.dk,2023,apartment,3,73,9295,Aarhus N,Møllevangs Allé,8200
+boligzonen.dk,2023,apartment,2,64,9195,Aarhus C,Guldsmedgade,8000
+boligzonen.dk,2023,apartment,1,36,6700,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,94,11400,Aarhus C,Assensgade,8000
+boligzonen.dk,2023,apartment,1,39,5700,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,37,5650,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,40,5650,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,52,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,4,128,14550,Aarhus N,Gustav Holms Vej,8200
+boligzonen.dk,2023,apartment,4,97,10695,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,3,69,7950,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,93,13995,Aarhus C,Kristine Nielsens Gade,8000
+boligzonen.dk,2023,apartment,2,68,9800,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,60,7995,Viby J,Skanderborgvej,8260
+boligzonen.dk,2023,apartment,1,41,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,56,7950,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,3,76,7600,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,1,39,5995,Risskov,Skejbygårdsvej,8240
+boligzonen.dk,2023,apartment,2,51,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,50,7195,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,2,47,6800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,4,115,15500,Aarhus C,Ceres Allé,8000
+boligzonen.dk,2023,apartment,3,79,8250,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,64,9200,Aarhus C,Peter Sabroes Gade,8000
+boligzonen.dk,2023,apartment,3,72,8995,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,3,63,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,3,114,12700,Aarhus C,Ryesgade,8000
+boligzonen.dk,2023,apartment,3,89,13450,Aarhus C,Søren Frichs Vej,8000
+boligzonen.dk,2023,apartment,3,108,10670,Aarhus N,Solsikkevænget,8200
+boligzonen.dk,2023,apartment,3,92,11945,Risskov,Ellen Jensens Gade,8240
+boligzonen.dk,2023,apartment,2,50,6995,Aarhus V,Vintervej,8210
+boligzonen.dk,2023,apartment,3,63,7895,Risskov,brassøvej,8240
+boligzonen.dk,2023,room,2,91,13900,Aarhus C,Kirkegårdsvej,8000
+boligzonen.dk,2023,apartment,2,89,10458,Risskov,Engholms Alle,8240
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,51,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Tretommervej,8240
+boligzonen.dk,2023,apartment,3,71,9395,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,2,65,8395,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,3,75,8800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,67,9400,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,4,98,11200,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,3,111,10261,Aarhus N,Jess Ingerslevs Gade,8200
+boligzonen.dk,2023,apartment,4,105,15017,Risskov,Solbakken,8240
+boligzonen.dk,2023,apartment,3,95,11700,Åbyhøj,Bestlasgade,8230
+boligzonen.dk,2023,apartment,2,61,6820,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,2,65,7745,Aarhus N,Vistihøjen,8200
+boligzonen.dk,2023,apartment,3,91,11900,Risskov,Harald Selmers Vej,8240
+boligzonen.dk,2023,apartment,3,64,7887,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,4,136,16500,Risskov,Erling Jacobsens Gade,8240
+boligzonen.dk,2023,apartment,2,49,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,4,85,12995,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,2,51,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,64,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,76,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,73,7955,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,2,43,6200,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,3,64,9800,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,2,72,7495,Risskov,Skejbyvej,8240
+boligzonen.dk,2023,apartment,1,35,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,6700,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,74,9193,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,4,100,10695,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,2,61,7995,Risskov,Skejbygårdsvej,8240
+boligzonen.dk,2023,apartment,3,90,11950,Risskov,Harald Selmers Vej,8240
+boligzonen.dk,2023,apartment,1,37,5600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,39,5700,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,79,10695,Aarhus C,Dirch Passers Gade,8000
+boligzonen.dk,2023,apartment,2,43,6200,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,51,7700,Risskov,Bytoften,8240
+boligzonen.dk,2023,apartment,3,76,7600,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,2,62,7700,Risskov,Tretommervej,8240
+boligzonen.dk,2023,apartment,3,68,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,6500,Risskov,Nordlandsvej,8240
+boligzonen.dk,2023,apartment,3,88,10295,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,79,9400,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,78,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,8800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,85,9800,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,52,6900,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,2,59,9200,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,4,87,13550,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,2,56,7695,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,4,73,12400,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,4,98,10995,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,1,38,5850,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,4,99,11200,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,2,76,9300,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,67,8095,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,2,54,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,34,5300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,4,85,12695,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,3,88,9995,Viby J,Enghavevej,8260
+boligzonen.dk,2023,apartment,3,68,8800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,68,9700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,34,5600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,56,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,105,11900,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,1,35,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,36,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,54,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,52,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,44,6700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,78,8800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,82,10895,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,2,73,9300,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,3,75,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,7200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,68,9200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,54,8500,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,4,137,16650,Risskov,Ellen Jensens Gade,8240
+boligzonen.dk,2023,apartment,3,73,10456,Aarhus C,Langelandsgade,8000
+boligzonen.dk,2023,apartment,1,34,5800,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,76,7955,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,5,111,15500,Aarhus C,Thit Jensens Gade,8000
+boligzonen.dk,2023,apartment,1,48,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,80,8800,Risskov,Vikærsvej,8240
+boligzonen.dk,2023,apartment,1,34,5700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,4,136,16300,Risskov,Ellen Jensens Gade,8240
+boligzonen.dk,2023,apartment,2,45,7997,Aarhus C,Tage-Hansens Gade,8000
+boligzonen.dk,2023,apartment,2,52,7345,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,4,113,12779,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,3,104,10710,Risskov,Kværnloftet,8240
+boligzonen.dk,2023,apartment,3,65,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,68,8800,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,3,86,12050,Aarhus C,Fiskergade,8000
+boligzonen.dk,2023,apartment,3,79,8895,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,2,78,9880,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,2,59,7995,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,1,30,5100,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,2,78,9508,Risskov,Kværnloftet,8240
+boligzonen.dk,2023,apartment,3,86,12900,Aarhus C,Vester Allé,8000
+boligzonen.dk,2023,apartment,4,114,15950,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,4,86,9395,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,3,101,13148,Aarhus C,Vesterbro Torv,8000
+boligzonen.dk,2023,apartment,1,34,5900,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,46,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,4,133,14975,Aarhus C,Ryesgade,8000
+boligzonen.dk,2023,apartment,3,87,13350,Aarhus C,Søren Frichs Vej,8000
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,78,8600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,42,7900,Aarhus N,Gøteborg Allé,8200
+boligzonen.dk,2023,apartment,1,34,5400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,37,5700,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,66,8200,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,90,11150,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,3,86,11598,Aarhus N,Katrinebjergvej,8200
+boligzonen.dk,2023,apartment,1,40,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,34,5800,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,65,9900,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,60,8600,Risskov,Børglumvej,8240
+boligzonen.dk,2023,apartment,3,105,12600,Aarhus C,Dalgas Avenue,8000
+boligzonen.dk,2023,room,4,178,18500,Viby J,Fredensborgparken,8260
+boligzonen.dk,2023,apartment,1,37,6200,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,3,90,11650,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,1,40,5800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,48,7200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,75,10200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,92,9395,Aarhus N,Vistihøjen,8200
+boligzonen.dk,2023,apartment,2,100,11200,Risskov,Tranekærvej,8240
+boligzonen.dk,2023,apartment,3,75,8800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,42,6700,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,93,9495,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,1,37,5750,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,88,9195,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,4,105,11900,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,4,98,10195,Risskov,Engsøvej,8240
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,1,76,9900,Risskov,Bytoften,8240
+boligzonen.dk,2023,apartment,2,56,8000,Aarhus N,Møllevangs Allé,8200
+boligzonen.dk,2023,apartment,4,105,12500,Højbjerg,Stenvej,8270
+boligzonen.dk,2023,apartment,2,82,9500,Aarhus C,Vesterport,8000
+boligzonen.dk,2023,apartment,2,67,9700,Aarhus C,Kirkegårdsvej,8000
+boligzonen.dk,2023,apartment,2,50,7600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,35,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,100,11100,Risskov,Vikærsvej,8240
+boligzonen.dk,2023,apartment,1,37,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,40,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,5750,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,90,10195,Viby J,Viby Torv,8260
+boligzonen.dk,2023,apartment,3,113,13150,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,2,53,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,room,1,77,10000,Aarhus V,Haslegårdsvej,8210
+boligzonen.dk,2023,apartment,3,63,8495,Risskov,brassøvej,8240
+boligzonen.dk,2023,apartment,2,56,8495,Aarhus C,Tage-Hansens Gade,8000
+boligzonen.dk,2023,apartment,2,53,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,7700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,68,9600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,4,86,13300,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,1,35,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,50,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,4,112,12114,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,1,37,5900,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,1,43,5700,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,30,5100,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,1,38,6700,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,75,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,67,9400,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,4,97,11500,Viby J,Kaj Munks Vej,8260
+boligzonen.dk,2023,apartment,3,88,9395,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,2,52,7375,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,2,65,8450,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,1,39,5700,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,38,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,5650,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,66,10990,Aarhus C,Vestergade,8000
+boligzonen.dk,2023,apartment,4,102,11795,Risskov,Skejbyvej,8240
+boligzonen.dk,2023,apartment,2,54,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,35,6900,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,84,9995,Aarhus C,Skanderborgvej,8000
+boligzonen.dk,2023,apartment,2,54,7200,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,34,5300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,75,10400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,64,8600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,48,7195,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,4,104,11500,Risskov,Vikærsvej,8240
+boligzonen.dk,2023,apartment,1,38,5700,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,4,111,13342,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,46,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,85,10800,Risskov,Vindrosen,8240
+boligzonen.dk,2023,apartment,3,97,10590,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,2,69,8695,Højbjerg,Oddervej,8270
+boligzonen.dk,2023,apartment,2,52,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,4,85,10685,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,1,37,5900,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,40,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,53,7600,Aarhus C,Vesterport,8000
+boligzonen.dk,2023,apartment,2,51,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,76,8600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,78,8800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,49,6173,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,2,60,7723,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,4,85,12595,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,4,114,13995,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,2,50,6360,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,4,86,13800,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,3,80,11350,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,3,75,10500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,78,11964,Aarhus N,Katrinebjergvej,8200
+boligzonen.dk,2023,apartment,4,98,10995,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,3,93,9295,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,4,98,10795,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,1,34,5500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,48,7200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,51,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,54,7375,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,2,54,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,41,5950,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,39,5700,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,37,5600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,73,8900,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,62,8150,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,1,41,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,40,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,36,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,33,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,51,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,46,7100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,64,8500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,34,5500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,53,7600,Aarhus C,Vesterport,8000
+boligzonen.dk,2023,apartment,2,49,7200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,70,8900,Aarhus N,INDFLYTNINGSKLAR - Randersvej,8200
+boligzonen.dk,2023,apartment,3,86,11404,Aarhus N,Katrinebjergvej,8200
+boligzonen.dk,2023,apartment,3,89,10000,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,3,64,7887,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,1,30,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,97,10095,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,3,100,13204,Aarhus C,Fynsgade,8000
+boligzonen.dk,2023,apartment,3,78,9400,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,37,5750,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,1,35,6900,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,68,9300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,51,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,34,5700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,34,5300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,80,8800,Risskov,Vikærsvej,8240
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,52,8500,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,3,71,7900,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,35,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,53,8800,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,1,36,7100,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,4,98,10595,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,2,49,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,29,5100,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,2,60,7643,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,1,40,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,42,6500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,89,12340,Aarhus N,Tordenskjoldsgade,8200
+boligzonen.dk,2023,apartment,2,53,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,73,7955,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,3,64,9000,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,37,5900,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,34,5600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,4,85,10101,Risskov,Doris Kæraas Gade,8240
+boligzonen.dk,2023,apartment,4,86,9995,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,2,42,6300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,39,5700,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,37,5700,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,58,7695,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,1,36,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,87,9837,Risskov,Skejbyvej,8240
+boligzonen.dk,2023,apartment,3,68,8900,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,66,10800,Aarhus C,Thorvaldsensgade,8000
+boligzonen.dk,2023,apartment,3,73,7955,Viby J,Onsholtvej,8260
+boligzonen.dk,2023,apartment,4,114,15250,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,2,59,9550,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,3,86,11438,Aarhus N,Katrinebjergvej,8200
+boligzonen.dk,2023,apartment,2,78,8800,Risskov,Kværnloftet,8240
+boligzonen.dk,2023,apartment,3,66,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,54,7600,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,3,58,8100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,37,5650,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,40,5850,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,34,5200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,92,9395,Aarhus N,Vistihøjen,8200
+boligzonen.dk,2023,apartment,2,53,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,66,8800,Aarhus C,Finderupvej,8000
+boligzonen.dk,2023,apartment,2,69,8900,Aarhus C,Finderupvej,8000
+boligzonen.dk,2023,apartment,2,56,7750,Aarhus N,Møllevangs Allé,8200
+boligzonen.dk,2023,apartment,2,67,8095,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,3,89,12493,Risskov,Solbakken,8240
+boligzonen.dk,2023,apartment,2,69,8095,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,4,104,11500,Risskov,Vikærsvej,8240
+boligzonen.dk,2023,apartment,2,53,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,56,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7500,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,2,54,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,52,7800,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,48,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,86,12900,Aarhus C,Vester Allé,8000
+boligzonen.dk,2023,apartment,2,64,7683,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,1,41,5750,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,63,8400,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,64,10300,Aarhus C,Peter Sabroes Gade,8000
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,85,9368,Viby J,Vestergårdsringen,8260
+boligzonen.dk,2023,apartment,2,46,7200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,48,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,70,9700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,48,7100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,4,85,11195,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,1,38,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,36,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,36,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,4,114,12400,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,54,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,10300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,52,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,65,7990,Risskov,Vikærsvej,8240
+boligzonen.dk,2023,apartment,1,40,6700,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,8600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,64,7895,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,2,83,8895,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,4,111,13342,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,77,10500,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,3,61,7777,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,2,48,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,36,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,71,7900,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,64,8300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,87,10900,Aarhus C,Finderupvej,8000
+boligzonen.dk,2023,apartment,1,36,7100,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,2,86,11038,Aarhus N,Katrinebjergvej,8200
+boligzonen.dk,2023,apartment,4,110,10975,Risskov,Kamma Klitgårds Gade,8240
+boligzonen.dk,2023,apartment,3,72,8600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,37,5650,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,59,9400,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,1,34,5400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,56,8650,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,1,29,5300,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,1,40,6700,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,46,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,52,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,52,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,36,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,54,7095,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,64,9900,Aarhus C,Vestergade,8000
+boligzonen.dk,2023,apartment,2,45,8350,Aarhus N,Hvidkløvervej,8200
+boligzonen.dk,2023,apartment,2,53,8500,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,81,10500,Risskov,Harald Selmers Vej,8240
+boligzonen.dk,2023,apartment,3,105,12150,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,3,125,15495,Aarhus C,Vester Allé,8000
+boligzonen.dk,2023,apartment,3,64,8300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,51,8300,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,53,8500,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,3,107,10850,Viby J,Højgårdsvej,8260
+boligzonen.dk,2023,apartment,3,60,9100,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,67,9500,Aarhus C,Kirkegårdsvej,8000
+boligzonen.dk,2023,apartment,3,65,9900,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,110,15000,Aarhus C,Dagmar Petersens Gade,8000
+boligzonen.dk,2023,apartment,2,81,9250,Risskov,Harald Selmers Vej,8240
+boligzonen.dk,2023,apartment,2,68,9800,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,37,5650,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,72,8800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,85,9900,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,71,8900,Aarhus C,Finderupvej,8000
+boligzonen.dk,2023,apartment,1,33,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,105,12975,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,2,70,9900,Aarhus C,Kirkegårdsvej,8000
+boligzonen.dk,2023,apartment,3,68,11990,Aarhus C,Vestergade,8000
+boligzonen.dk,2023,apartment,2,67,9550,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,3,98,13295,Aarhus C,Sdr. Ringgade,8000
+boligzonen.dk,2023,apartment,3,94,11000,Aarhus N,INDFLYTNINGSKLAR - Randersvej,8200
+boligzonen.dk,2023,apartment,2,66,7850,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,2,59,9500,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,2,94,10900,Risskov,Vindrosen,8240
+boligzonen.dk,2023,apartment,3,68,8900,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,7100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,42,6700,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,86,11404,Aarhus N,Katrinebjergvej,8200
+boligzonen.dk,2023,apartment,2,62,8495,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,1,39,5750,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,7100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,64,9200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,41,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,4,98,11600,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,4,90,10299,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,1,35,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,60,7563,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,3,105,12325,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,3,61,8600,Risskov,Vikærsvej,8240
+boligzonen.dk,2023,apartment,3,73,9100,Risskov,Vikærsvej,8240
+boligzonen.dk,2023,apartment,3,69,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,49,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,91,9895,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,1,38,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,36,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,36,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,40,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,51,6900,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,36,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,50,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,36,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,30,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,40,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,128,14900,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,50,7400,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,38,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,51,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,4,97,10995,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,3,75,10300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,51,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,68,9000,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,68,9400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,100,11200,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,1,38,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,5650,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,37,5650,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,64,8500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,43,6700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,52,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,65,7995,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,3,88,9395,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,4,98,10895,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,3,108,11299,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,2,51,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,64,8700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,56,8250,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,3,65,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,2,65,8395,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,3,48,7195,Aarhus N,Tulipanhaven,8200
+boligzonen.dk,2023,apartment,1,37,5700,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,39,5800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,39,5650,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,71,7795,Risskov,Engsøvej,8240
+boligzonen.dk,2023,apartment,2,58,6995,Risskov,Engsøvej,8240
+boligzonen.dk,2023,apartment,2,56,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,49,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,77,11964,Aarhus N,Katrinebjergvej,8200
+boligzonen.dk,2023,apartment,3,116,12500,Risskov,Kværnloftet,8240
+boligzonen.dk,2023,apartment,1,35,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,68,9100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,34,5600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,4,86,13800,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,3,61,8600,Risskov,Vikærsvej,8240
+boligzonen.dk,2023,apartment,3,66,8500,Risskov,Vikærsvej,8240
+boligzonen.dk,2023,apartment,1,29,5300,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,3,65,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,65,9495,Aarhus N,Niels,8200
+boligzonen.dk,2023,apartment,2,71,9000,Aarhus C,Finderupvej,8000
+boligzonen.dk,2023,apartment,3,75,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,79,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,52,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,68,9600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,75,10200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,92,9445,Aarhus N,Vistihøjen,8200
+boligzonen.dk,2023,apartment,2,67,9700,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,3,65,7990,Risskov,Vikærsvej,8240
+boligzonen.dk,2023,apartment,2,76,9300,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,3,92,11650,Risskov,Harald Selmers Vej,8240
+boligzonen.dk,2023,apartment,3,72,8900,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,29,5700,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,3,88,9395,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,3,69,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,65,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,67,9500,Aarhus C,Kirkegårdsvej,8000
+boligzonen.dk,2023,apartment,2,53,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,69,7950,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,49,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,4,85,9995,Risskov,Engsøvej,8240
+boligzonen.dk,2023,apartment,3,64,8700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,64,9000,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,52,7200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,52,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,68,9000,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,46,6900,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,65,8195,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,3,83,9900,Viby J,Engtoften,8260
+boligzonen.dk,2023,apartment,3,72,8995,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,1,33,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,51,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,98,18300,Aarhus C,Kristine Nielsens Gade,8000
+boligzonen.dk,2023,apartment,2,50,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,51,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,78,8600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,34,5800,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,60,8350,Aarhus N,Møllevangs Alle,8200
+boligzonen.dk,2023,apartment,1,37,5650,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7500,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,1,37,5750,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,65,7884,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,2,64,7995,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,3,77,9595,Risskov,Forteledet,8240
+boligzonen.dk,2023,apartment,2,69,9200,Aarhus C,Fiskergade,8000
+boligzonen.dk,2023,apartment,2,52,7285,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,2,98,10600,Aarhus V,Klokkerbakken,8210
+boligzonen.dk,2023,apartment,3,63,7895,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,4,106,15350,Aarhus C,Sonnesgade,8000
+boligzonen.dk,2023,apartment,1,41,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,47,7195,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,2,81,9250,Risskov,Harald Selmers Vej,8240
+boligzonen.dk,2023,apartment,2,56,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,66,9400,Aarhus N,Trøjborgvej,8200
+boligzonen.dk,2023,apartment,3,64,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,64,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,52,7700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,56,8200,Aarhus N,Møllevangs Allé,8200
+boligzonen.dk,2023,apartment,1,27,5700,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,1,27,5100,Viby J,Christian X's Vej,8260
+boligzonen.dk,2023,apartment,2,50,7400,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,79,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,78,9400,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,78,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,76,9400,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,31,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,36,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,6700,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,66,9025,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,2,50,7200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,52,7095,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,54,7495,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,58,7495,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,3,78,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,76,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,37,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,40,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,4950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,50,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,62,8595,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,78,8600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,78,8800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,8600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,76,8600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,8800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,66,7850,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,3,68,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,64,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,64,8017,Risskov,Eya Jensens Gade,8240
+boligzonen.dk,2023,apartment,1,38,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,36,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,60,8695,Aarhus N,Olof Palmes Allé,8200
+boligzonen.dk,2023,apartment,4,98,11700,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,3,75,10500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,64,8800,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,75,10100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,92,9495,Aarhus N,Vistihøjen,8200
+boligzonen.dk,2023,apartment,4,85,9995,Risskov,Engsøvej,8240
+boligzonen.dk,2023,apartment,2,54,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,4,86,9395,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,2,51,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,52,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,34,5500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,68,9100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,52,7200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,48,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7800,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,68,9900,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,64,8800,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,52,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,41,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,78,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,79,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,76,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,52,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,91,11950,Risskov,Harald Selmers Vej,8240
+boligzonen.dk,2023,apartment,3,73,9000,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,40,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,51,6900,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,128,14900,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,54,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,8800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,8600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,76,8800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,68,9900,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,70,9700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,64,8600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,51,7600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,68,9200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,48,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,68,9600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,68,9700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,51,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,34,5950,Åbyhøj,Søren Frichs Vej,8230
+boligzonen.dk,2023,apartment,3,65,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,68,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,69,7950,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,65,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,68,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,49,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,78,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,52,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,9400,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,8600,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,8800,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,79,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,54,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,62,8145,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,1,41,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,3,89,12900,Aarhus C,Kristine Nielsens Gade,8000
+boligzonen.dk,2023,apartment,2,52,7700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,68,8095,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,2,56,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,75,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,78,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,52,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,54,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,49,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,56,7300,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,2,53,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,54,8325,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,1,41,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,53,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,65,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,68,8295,Risskov,Møllehatten,8240
+boligzonen.dk,2023,apartment,2,50,7600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7400,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7800,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,64,9100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,68,9600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,52,7600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,48,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,46,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7200,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,52,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,46,7100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,51,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,48,7100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,38,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,50,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,51,6700,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Tretommervej,8240
+boligzonen.dk,2023,apartment,2,51,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,7600,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,75,10100,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,53,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,68,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,54,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7200,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,52,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,38,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,40,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,4,98,10895,Risskov,Broloftet,8240
+boligzonen.dk,2023,apartment,3,65,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,92,12200,Risskov,Harald Selmers Vej,8240
+boligzonen.dk,2023,apartment,2,85,11600,Risskov,Harald Selmers Vej,8240
+boligzonen.dk,2023,apartment,1,48,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,50,6900,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,68,9500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7500,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,50,7700,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,2,49,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,66,8300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7200,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,54,7500,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,53,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,50,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,52,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,6975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,79,9975,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,51,7300,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,3,79,9400,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,49,7300,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,3,65,8950,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,1,36,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,40,6350,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,39,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,6150,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,35,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,41,5750,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,37,6650,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,1,38,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,49,7100,Risskov,Arresøvej,8240
+boligzonen.dk,2023,apartment,2,64,8900,Risskov,Kongevellen,8240
+boligzonen.dk,2023,apartment,1,37,5950,Risskov,Vestre Strandallé,8240
+boligzonen.dk,2023,apartment,2,58,6995,Risskov,Engsøvej,8240
+boligzonen.dk,2023,apartment,3,80,10500,Aarhus N,Stockholmsgade,8200
+boligzonen.dk,2023,apartment,3,66,10600,Aarhus C,Thorvaldsensgade,8000
+boligzonen.dk,2023,apartment,2,107,13800,Aarhus C,Amaliegade,8000
+boligzonen.dk,2023,apartment,3,72,9200,Aarhus V,Klokkerbakken,8210
+boligzonen.dk,2023,apartment,3,94,12950,Aarhus C,Fiskergade,8000
+boligzonen.dk,2023,apartment,2,56,9395,Aarhus C,Østergade,8000
+boligzonen.dk,2023,apartment,3,66,10800,Aarhus C,Thorvaldsensgade,8000
+boligzonen.dk,2023,apartment,3,66,10700,Aarhus C,Thorvaldsensgade,8000
+boligzonen.dk,2023,apartment,4,98,10695,Risskov,Brassøvej,8240
+boligzonen.dk,2023,apartment,3,64,7887,Aarhus N,Tulipanlunden,8200
+boligzonen.dk,2023,apartment,3,56,9214,Aarhus C,Østergade,8000
+boligzonen.dk,2023,apartment,2,61,8600,Åbyhøj,Lokesvej,8230
+boligzonen.dk,2023,apartment,2,58,7495,Risskov,Borresøvej,8240
+boligzonen.dk,2023,apartment,2,67,9500,Aarhus C,Thorvaldsensgade,8000
+boligzonen.dk,2023,apartment,3,75,8495,Risskov,Brassøvej,8240
