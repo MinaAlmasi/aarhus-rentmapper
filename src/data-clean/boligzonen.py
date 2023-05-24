@@ -60,7 +60,7 @@ def clean_boligzonen(data_path:pathlib.Path, zip_codes:pd.DataFrame, save_path=N
     df["zip_code"] = df["zip_code"].astype(int)
 
     # select cols
-    df = df[["website", "year", "rental_type", "rooms", "square_meters", "rent_without_expenses", "area", "street", "zip_code"]]
+    df = df[["website", "year", "rental_type", "rent_without_expenses", "square_meters", "zip_code", "street", "area", "rooms"]]
 
     # save to csv
     if save_path is not None:
