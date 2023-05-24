@@ -290,15 +290,15 @@ def main():
     path = pathlib.Path(__file__)
 
     # define paths
-    rawdata_path = path.parents[1] / "data" / "raw_data"
-    processed_path = path.parents[1] / "data"
+    data_path = path.parents[1] / "data" / "raw_data"
+    save_path = path.parents[1] / "data"
     zip_codes_path = path.parents[1] / "utils"
 
     # read in zip codes dataframe from utils folder
     zip_codes = pd.read_csv(zip_codes_path / "zipcode_lookup.csv")
 
     # clean data
-    all_df = clean_all_data(rawdata_path, zip_codes, processed_path)
+    all_df = clean_all_data(data_path, zip_codes, save_path)
 
 if __name__ == "__main__":
     main()
