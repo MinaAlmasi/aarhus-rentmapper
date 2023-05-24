@@ -12,6 +12,7 @@ import pathlib
 
 # data wrangling
 import pandas as pd
+from unidecode import unidecode
 
 ## functions ##
 def clean_boligportal(data_path:pathlib.Path, zip_codes:pd.DataFrame):
@@ -55,10 +56,9 @@ def clean_boligportal(data_path:pathlib.Path, zip_codes:pd.DataFrame):
     # fix price 
     df["price"] = df["price"].str.replace("kr.", "", regex=False) # remove kr.
     df["price"] = df["price"].str.replace(".", "", regex=False) # remove . in number
-    df["price"] = df["price"].astype(int) # convert to int
 
-    # rename price to rent_without_expenses
-    df = df.rename(columns={"price": "rent_without_expenses"})
+    # remove whitespace from price, rename price to rent_without_expenses
+    df["rent_without_expenses"] = df["price"].str.strip()
     
     # area column
     df["area"] = df["address"].str.split(",").str[0]
@@ -176,14 +176,14 @@ def clean_edc(data_path:pathlib.Path):
     # rm extract addresses from address column, create street column
     df["street"] = df["address"].str.split(" ").str[0]
 
-    # convert zip code to int
-    df['area'] = df['zip_code'].str.extract(r'\d{4}(.*)')
+    # get area
+    df["area"] = df['zip_code'].str.extract(r'\d{4}(.*)')
 
     # extract zip code from address column
-    df['zip_code'] = df['zip_code'].str.extract(r'(\d{4})')
+    df["zip_code"] = df['zip_code'].str.extract(r'(\d{4})')
 
     # rooms, square meters 
-    df[['rooms', 'square_meters']] = df["rooms_kvm"].str.extract(r'(\d+) rum, (\d+) m²')
+    df[["rooms", "square_meters"]] = df["rooms_kvm"].str.extract(r'(\d+) rum, (\d+) m²')
 
     # fix price
     df["rent_without_expenses"] = df["prices"].str.replace(" kr./md.", "", regex=False) # remove kr.
@@ -277,6 +277,12 @@ def clean_all_data(data_path, zip_codes, save_path=None):
     # concat dataframes 
     all_df = pd.concat([bz_df, bp_df, edc_df, ml_df])
 
+    # remove accents
+    all_df["street"] = all_df["street"].str.replace('é', 'e')
+
+    # remove duplicates, consider everything but website and year
+    all_df = all_df.drop_duplicates(subset=["rental_type", "rent_without_expenses", "square_meters", "zip_code", "street", "area", "rooms"])
+
     # save data
     if save_path is not None:
         all_df.to_csv(save_path / "cleaned_data.csv", index=False)
@@ -299,6 +305,8 @@ def main():
 
     # clean data
     all_df = clean_all_data(data_path, zip_codes, save_path)
+
+    print(all_df)
 
 if __name__ == "__main__":
     main()
