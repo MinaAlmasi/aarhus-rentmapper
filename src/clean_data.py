@@ -1,5 +1,5 @@
 '''
-Functions to clean scraped data. Includes seperate functiosn to clean data from boligportal.dk, boligzonen.dk, edc.dk, minlejebolig.dk. 
+Functions to clean scraped data. Includes seperate functions to clean data from boligportal.dk, boligzonen.dk, edc.dk, minlejebolig.dk. 
 
 As the datasets differ in structure, seperate cleaning functions are defined.
 
@@ -172,8 +172,8 @@ def clean_edc(data_path:pathlib.Path):
     # create rental type (all rows from EDC are apartments)
     df["rental_type"] = "apartment"
 
-    # rm extract addresses from address column, create street column
-    df["street"] = df["address"].str.split(" ").str[0]
+    # extract addresses, rename to street
+    df["street"] = df["address"].str.replace(r'\d.*', '')
 
     # get area
     df["area"] = df['zip_code'].str.extract(r'\d{4}(.*)')
@@ -190,6 +190,9 @@ def clean_edc(data_path:pathlib.Path):
 
     # select cols
     df = df[["website", "year", "rental_type", "rent_without_expenses", "square_meters", "zip_code", "street", "area", "rooms"]]
+
+    # remove whitespace all cols
+    df = df.apply(lambda x: x.str.strip() if x.dtype == "object" else x)
 
     return df
 
