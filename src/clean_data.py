@@ -173,7 +173,7 @@ def clean_edc(data_path:pathlib.Path):
     df["rental_type"] = "apartment"
 
     # extract addresses, rename to street
-    df["street"] = df["address"].str.replace(r'\d.*', '')
+    df["street"] = df["address"].str.replace(r'\d.*', '', regex=True)
 
     # get area
     df["area"] = df['zip_code'].str.extract(r'\d{4}(.*)')
@@ -276,14 +276,20 @@ def clean_all_data(data_path, zip_codes, save_path=None):
     # minlejebolig
     ml_df = clean_minlejebolig(data_path, zip_codes)
 
+    # read manually scraped historical data 
+    historical_1 = pd.read_csv(data_path / "historical-data-anton.csv")
+
+    # read manually scraped historical data
+    historical_2 = pd.read_csv(data_path / "historical-data-mina.csv")
+
     # concat dataframes 
-    all_df = pd.concat([bz_df, bp_df, edc_df, ml_df])
+    all_df = pd.concat([bz_df, bp_df, edc_df, ml_df, historical_1, historical_2])
 
     # remove accents
     all_df["street"] = all_df["street"].str.replace('é', 'e')
 
     # remove duplicates, consider everything but website and year
-    all_df = all_df.drop_duplicates(subset=["rental_type", "rent_without_expenses", "square_meters", "zip_code", "street", "area", "rooms"])
+    all_df = all_df.drop_duplicates(subset=["year", "rental_type", "rent_without_expenses", "square_meters", "zip_code", "street", "area", "rooms"])
 
     # save data
     if save_path is not None:
