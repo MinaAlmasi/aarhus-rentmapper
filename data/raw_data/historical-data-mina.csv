@@ -1,614 +1,614 @@
-﻿website,year,rental_type,rent_without_expenses,square_meters,zip_code,street,area,rooms
-boligportal.dk,2014,apartment,6030,53,8000,Ny Munkegade,,2
-boligportal.dk,2014,apartment,8245,89,8220,Hoffmannsvej,,4
-boligportal.dk,2014,apartment,8950,88,8000,Nørre Allé,,3
-boligportal.dk,2014,apartment,11500,106,8000,Stadion Allé,,4
-boligportal.dk,2014,apartment,7320,69,8000,Søndre Ringgade,,2
-boligportal.dk,2014,room,2500,13,8000,Vestergade,,
-boligportal.dk,2014,apartment,5500,64,8000,Vestervang,,2
-boligportal.dk,2014,room,3900,15,8000,Thorvaldsensgade,,
-boligportal.dk,2014,apartment,9448,86,8000,Fynsgade,,3
-boligportal.dk,2014,room,3200,25,8200,Dronning Margrethes Vej,,
-boligportal.dk,2014,apartment,7220,77,8230,Tousvej,,3
-boligportal.dk,2014,apartment,7100,81,8220,Helenelyst,,3
-boligportal.dk,2014,apartment,7316,93,8270,Holmevej,,4
-boligportal.dk,2014,room,3200,15,8200,Lyøgade,,
-boligportal.dk,2014,room,3000,12,8000,Nørregade,,
-boligportal.dk,2014,room,3800,16,8000,Vestre Ringgade,,
-boligportal.dk,2014,room,4300,10,8210,Haslehøjvej,,
-boligportal.dk,2014,apartment,6000,85,8220,Sigridsvej,,4
-boligportal.dk,2014,apartment,9296,86,8000,Skolegade,,2
-boligportal.dk,2014,apartment,4900,45,8200,Skejbybakkevej,,2
-boligportal.dk,2014,room,4400,21,8000,Rudolph Wulffs Gade,,
-boligportal.dk,2014,apartment,8750,64,8000,Carl Blochs Gade,,2
-boligportal.dk,2014,room,3900,12,8000,Åhusene,,
-boligportal.dk,2014,apartment,8200,62,8200,Brendstrupgårdsvej,,2
-boligportal.dk,2014,apartment,6600,66,8000,Kongsvang Alle,,2
-boligportal.dk,2014,apartment,5720,62,8000,Rudolph Wulffs Gade,,2
-boligportal.dk,2014,apartment,6900,60,8000,Thorvaldsensgade,,2
-boligportal.dk,2014,apartment,7500,65,8000,Assensgade,,2
-boligportal.dk,2014,apartment,8000,79,8000,Jægergårdsgade,,3
-boligportal.dk,2014,room,3900,20,8000,Havnegade,,
-boligportal.dk,2014,room,3300,17,8260,Vårkjærvej,,
-boligportal.dk,2014,apartment,5900,51,8200,Skejbyparken,,2
-boligportal.dk,2014,room,4000,24,8240,Nordre Strandvej,,
-boligportal.dk,2014,apartment,4300,28,8000,Skanderborgvej,,1
-boligportal.dk,2014,apartment,7950,71,8000,Gebauersgade,,2
-boligportal.dk,2014,room,3836,12,8200,Brendstrupgårdsvej,,
-boligportal.dk,2014,apartment,7500,93,8250,Brobjerg Parkvej,,3
-boligportal.dk,2014,apartment,6595,62,8000,Åparken,,2
-boligportal.dk,2014,room,3200,11,8210,Fjældevænget,,
-boligportal.dk,2014,apartment,7450,55,8000,Søren Frichs Vej,,2
-boligportal.dk,2014,apartment,9900,107,8000,Sønder Allé,,4
-boligportal.dk,2014,apartment,8620,79,8000,Lundingsgade,,3
-boligportal.dk,2014,apartment,6800,47,8000,Lundingsgade,,2
-boligportal.dk,2014,apartment,8000,82,8000,Jægergårdsgade,,3
-boligportal.dk,2014,room,3287,30,8000,Nørre Allé,,
-boligportal.dk,2014,room,2800,12,8220,Helenelyst,,
-boligportal.dk,2014,apartment,8000,114,8200,Ivar Huirtfeldts Gade,,3
-boligportal.dk,2014,apartment,6160,53,8000,Hans Hartvig Seedorffs Stræde,,2
-boligportal.dk,2014,apartment,12500,106,8000,Frederiksgade,,3
-boligportal.dk,2014,apartment,8333,85,8000,Studsgade,,3
-boligportal.dk,2014,room,3900,12,8000,Åhusene,,
-boligportal.dk,2014,room,3100,17,8220,Emmasvej,,
-boligportal.dk,2014,apartment,7785,64,8200,Skejbygårdsvej,,2
-boligportal.dk,2014,apartment,3683,25,8240,Kantorparken,,1
-boligportal.dk,2014,apartment,6500,59,8210,Bronzealdertoften,,2
-boligportal.dk,2014,apartment,8000,84,8000,Frederiksgade,,2
-boligportal.dk,2014,room,4000,25,8230,Vølundsvej,,
-boligportal.dk,2014,apartment,10500,94,8000,Finderupvej,,3
-boligportal.dk,2014,apartment,9000,78,8200,Dronning Margrethes Vej,,4
-boligportal.dk,2014,apartment,7200,56,8200,Skejbytoften,,2
-boligportal.dk,2014,room,4200,18,8000,Fåborggade,,
-boligportal.dk,2014,apartment,6500,65,8000,Rådmand Liisbergs Gade,,2
-boligportal.dk,2014,room,3424,12,8200,Ladefogedvej,,
-boligportal.dk,2014,room,4550,20,8000,Hjelmendsgade,,
-boligportal.dk,2014,apartment,7850,65,8000,Grønnegade,,2
-boligportal.dk,2014,apartment,6471,47,8000,Vestervang,,2
-boligportal.dk,2014,room,3350,13,8000,Daugbjervej,,
-boligportal.dk,2014,room,4500,10,8000,Langenæs Allé,,
-boligportal.dk,2014,room,2000,9,8220,Sigridsvej,,
-boligportal.dk,2014,room,3200,19,8000,Borggade,,
-boligportal.dk,2014,apartment,8995,109,8210,Paludan-Müllers Vej,,4
-boligportal.dk,2014,room,3351,17,8200,Skovvangsvej,,
-boligportal.dk,2014,room,2100,12,8000,Vestre Ringgade,,
-boligportal.dk,2014,room,3600,15,8000,De Mezas Vej,,
-boligportal.dk,2014,apartment,8230,89,8220,Hoffmannsvej,,3
-boligportal.dk,2014,apartment,6675,69,8220,Hoffmannsvej,,2
-boligportal.dk,2014,apartment,8600,82,8270,Holmevej,,4
-boligportal.dk,2014,room,3000,12,8000,Hjortensgade,,
-boligportal.dk,2014,apartment,5640,50,8000,Bülowsgade,,2
-boligportal.dk,2014,apartment,5748,47,8240,Nordlandsvej,,2
-boligportal.dk,2014,room,4300,20,8000,Thorvaldsensgade,,3
-boligportal.dk,2014,room,3700,17,8000,Strandvejen,,
-boligportal.dk,2014,room,3900,20,8000,Nørre Allé,,
-boligportal.dk,2014,apartment,6895,57,8000,Daugbjervej,,2
-boligportal.dk,2014,apartment,6890,64,8200,Ivar Huirtfeldts Gade,,2
-boligportal.dk,2014,apartment,6700,40,8210,Bronzealdervænget,,2
-boligportal.dk,2014,apartment,5967,50,8260,Engtoften,,2
-boligportal.dk,2014,apartment,8200,102,8000,Grønnegade,,3
-boligportal.dk,2014,room,2702,14,8200,Jens Baggesens Vej,,
-boligportal.dk,2014,room,3150,14,8000,Fredensgade,,
-boligportal.dk,2014,room,3000,9,8200,Åbogade,,
-boligportal.dk,2014,room,4140,15,8000,Frederiks Allé,,
-boligportal.dk,2014,apartment,11500,92,8000,Kirkegårdsvej,,3
-boligportal.dk,2014,room,3450,16,8000,Skovvejen,,
-boligportal.dk,2014,apartment,6850,51,8000,Kirkegårdsvej,,1
-boligportal.dk,2014,apartment,5370,40,8000,Knudridsgade,,1
-boligportal.dk,2014,apartment,6500,55,8200,Ivar Huirtfeldts Gade,,2
-boligportal.dk,2014,apartment,9950,96,8000,Helgenæsgade,,3
-boligportal.dk,2014,room,1998,25,8000,Guldmedsgade,,
-boligportal.dk,2014,apartment,6000,61,8000,Silkeborgvej,,
-boligportal.dk,2014,room,3250,22,8000,Daugbjervej,,
-boligportal.dk,2014,room,3500,13,8200,Otto Ruds Gade,,
-boligportal.dk,2014,room,2600,16,8240,Tranekærvej,,
-boligportal.dk,2014,room,4000,19,8000,Store Torv,,
-boligportal.dk,2014,apartment,4660,35,8200,Brendstrupvej,,1
-boligportal.dk,2014,apartment,5950,46,8000,Gebauersgade,,1
-boligportal.dk,2014,room,3442,16,8000,Vesterbrogade,,
-boligportal.dk,2014,apartment,7959,75,8000,Carl Blochs Gade,,2
-boligportal.dk,2014,apartment,4200,38,8230,Henrik Rantzaus Vej,,1
-boligportal.dk,2014,room,3800,12,8000,Frederiksgade,,
-boligportal.dk,2014,apartment,6500,65,8000,Marselis Boulevard,,
-boligportal.dk,2014,room,4000,20,8000,Odensegade,,
-boligportal.dk,2014,room,3200,30,8230,Frejasvej,,
-boligportal.dk,2014,room,3200,20,8000,Rudolph Wulffs Gade,,
-boligportal.dk,2014,apartment,5010,44,8000,Søndre Ringgade,,1
-boligportal.dk,2014,apartment,6300,56,8000,Mejlgade,,2
-boligportal.dk,2014,apartment,8584,117,8240,Kantorparken,,4
-boligportal.dk,2014,room,3000,30,8000,Carl Bertelsens Gade,,
-boligportal.dk,2014,room,2750,26,8260,Vinkelhøj,,
-boligportal.dk,2014,room,4500,28,8000,Hans Schourups Gade,,
-boligportal.dk,2015,apartment,18000,230,8000,Kystvejen,,4
-boligportal.dk,2015,apartment,7400,55,8200,Jens Baggesens Vej,,2
-boligportal.dk,2015,apartment,13500,132,8000,Havnegade,,3
-boligportal.dk,2015,apartment,8240,61,8000,Max Müllers Gade,,2
-boligportal.dk,2015,apartment,8329,69,8200,Brendstrupgårdsvej,,2
-boligportal.dk,2015,apartment,4000,18,8000,Åboulevarden,,1
-boligportal.dk,2015,apartment,8300,65,8000,Stadion Allé,,2
-boligportal.dk,2015,apartment,15750,95,8000,Helga Pedersens Gade,,3
-boligportal.dk,2015,apartment,4767,35,8000,Søndre Ringgade,,1
-boligportal.dk,2015,apartment,8995,83,8000,Ålborggade,,3
-boligportal.dk,2015,room,3500,18,8260,Søndervangs Alle,,
-boligportal.dk,2015,room,4000,16,8000,Klostergade,,
-boligportal.dk,2015,apartment,12000,89,8200,Trøjborgvej,,3
-boligportal.dk,2015,room,4300,16,8000,Harald Jensens Plads,,
-boligportal.dk,2015,apartment,18000,230,8000,Kystvejen,,4
-boligportal.dk,2015,apartment,7400,55,8200,Jens Baggesens Vej,,2
-boligportal.dk,2015,apartment,13500,132,8000,Havnegade,,3
-boligportal.dk,2015,apartment,8240,61,8000,Max Müllers Gade,,2
-boligportal.dk,2015,room,4000,18,8000,Åboulevarden,,
-boligportal.dk,2015,apartment,8300,65,8000,Stadion Allé,,2
-boligportal.dk,2015,apartment,15750,95,8000,Helga Pedersens Gade,,3
-boligportal.dk,2015,apartment,4767,35,8000,Søndre Ringgade,,1
-boligportal.dk,2015,apartment,8995,83,8000,Ålborggade,,3
-boligportal.dk,2015,room,3500,18,8260,Søndervangs Allé,,
-boligportal.dk,2015,room,4000,16,8000,Klostergade,,
-boligportal.dk,2015,room,3419,23,8220,Langdalsvej,,
-boligportal.dk,2015,apartment,14100,113,8000,Godthabsgade,,4
-boligportal.dk,2015,apartment,8300,58,8000,Ryesgade,,2
-boligportal.dk,2015,apartment,5900,67,8000,Bülowsgade,,2
-boligportal.dk,2015,room,2000,6,8000,Skt. Marcus Kirkeplads,,
-boligportal.dk,2015,apartment,5680,57,8220,Hoffmannsvej,,2
-boligportal.dk,2015,apartment,3990,32,8220,Hoffmannsvej,,1
-boligportal.dk,2015,apartment,7000,96,8000,Høegh-Guldbergs Gade,,3
-boligportal.dk,2015,apartment,10470,93,8000,Vesterbrogade,,3
-boligportal.dk,2015,room,3800,20,8270,Elverdalsvej,,
-boligportal.dk,2015,room,2700,13,8210,Snogebæksvej,,
-boligportal.dk,2015,apartment,10500,100,8000,Fredensgade,,3
-boligportal.dk,2015,apartment,7051,58,8210,Ladefogedvej,,2
-boligportal.dk,2015,apartment,8650,80,8000,Tøndergade,,3
-boligportal.dk,2015,room,4337,17,8000,Åboulevarden,,
-boligportal.dk,2015,apartment,7500,79,8000,Åparken,,3
-boligportal.dk,2015,apartment,14900,120,8000,Ny Banegårdsgade,,3
-boligportal.dk,2015,room,3400,14,8200,Præstager,,
-boligportal.dk,2015,room,3500,8,8000,Skt. Olufs Gade,,
-boligportal.dk,2015,apartment,7000,59,8000,Falstersgade,,2
-boligportal.dk,2015,apartment,5650,48,8520,Kastanjehaven,,2
-boligportal.dk,2015,apartment,9500,99,8000,Guldmedsgade,,3
-boligportal.dk,2015,apartment,7901,58,8260,Engelundsvej,,3
-boligportal.dk,2015,apartment,5200,46,8200,Niels Juels Gade ,,2
-boligportal.dk,2015,apartment,6200,77,8200,Hvidkløvervej,,3
-boligportal.dk,2015,apartment,8270,109,8210,Paludan-Müllers Vej,,4
-boligportal.dk,2015,room,3500,16,8000,Thunøgade,,
-boligportal.dk,2015,room,4008,12,8000,Lundingsgade,,
-boligportal.dk,2015,room,3500,12,8000,Skt.Nicolaus Gade,,
-boligportal.dk,2015,room,2500,14,8230,Anker Jensens Vej,,
-boligportal.dk,2015,apartment,12000,123,8200,Dronning Margrethes Vej,,4
-boligportal.dk,2015,apartment,8400,60,8200,Oluf Palmes Allé,,3
-boligportal.dk,2015,apartment,9978,100,8000,Nørregade,,3
-boligportal.dk,2015,apartment,9293,80,8000,Peder Skrams Gade,,3
-boligportal.dk,2015,apartment,9236,80,8000,Marstrandsgade,,3
-boligportal.dk,2015,apartment,6970,60,8260,Fredensvej,,2
-boligportal.dk,2015,room,4300,16,8000,Harald Jensens Plads,,2
-boligportal.dk,2015,apartment,8400,65,8200,Niels Juels Gade ,,
-boligportal.dk,2015,apartment,8800,89,8220,Hoffmannsvej,,3
-boligportal.dk,2015,apartment,10920,106,8000,Stadion Allé,,4
-boligportal.dk,2015,apartment,9450,86,8000,Stadion Allé,,3
-boligportal.dk,2015,apartment,9480,84,8000,Langenæs Allé,,3
-boligportal.dk,2015,apartment,7985,66,8000,Langenæs Allé,,2
-boligportal.dk,2015,apartment,7880,67,8000,Stadion Allé,,2
-boligportal.dk,2015,apartment,4200,32,8000,P.P Ørums Gade,,1
-boligportal.dk,2015,room,4000,20,8200,Brendstrupvej,,
-boligportal.dk,2015,apartment,9450,69,8000,Åhusene,,3
-boligportal.dk,2015,apartment,11950,99,8000,Langelinieparken,,3
-boligportal.dk,2015,apartment,7395,61,8000,Silkeborgvej,,2
-boligportal.dk,2015,apartment,7800,90,8230,Erik Bøghs Vej,,2
-boligportal.dk,2015,apartment,4300,40,8230,Haslevej,,1
-boligportal.dk,2015,room,2100,15,8210,Snogebæksvej,,
-boligportal.dk,2015,apartment,7100,62,8200,Ivar Huirtfeldts Gade,,2
-boligportal.dk,2015,apartment,10500,94,8000,J.M Mørks Gade,,3
-boligportal.dk,2015,apartment,6100,48,8260,Engtoften,,2
-boligportal.dk,2015,apartment,4165,30,8200,Finsensgade,,2
-boligportal.dk,2015,apartment,6150,65,8000,Chr. Wærums Gade,,2
-boligportal.dk,2015,apartment,8034,65,8000,Finderupvej,,2
-boligportal.dk,2015,apartment,7000,70,8000,Samsøgade,,3
-boligportal.dk,2015,apartment,9225,72,8000,Kirkegårdsvej,,3
-boligportal.dk,2016,room,4000,13,8260,Hømosevej,,
-boligportal.dk,2016,apartment,6400,44,8000,Odensegade,,3
-boligportal.dk,2016,apartment,8989,83,8230,Tousvej,,3
-boligportal.dk,2016,room,3800,15,8000,Stadion Allé,,
-boligportal.dk,2016,room,2100,8,8000,Klostergade,,
-boligportal.dk,2016,room,4000,15,8200,Jens Baggesens Vej,,
-boligportal.dk,2016,apartment,8664,87,8000,Nørre Allé,,3
-boligportal.dk,2016,apartment,9960,96,8270,Rundhøj Alle,,4
-boligportal.dk,2016,apartment,13500,97,8000,Dagmar Petersens Gade,,4
-boligportal.dk,2016,apartment,13500,145,8000,Hendrik Pontoppidans Gade,,4
-boligportal.dk,2016,room,3600,20,8000,Nørregade,,
-boligportal.dk,2016,room,4500,17,8000,Volden,,
-boligportal.dk,2016,room,3300,15,8240,Vestre Skovvej,,
-boligportal.dk,2016,apartment,5200,45,8200,Eduoard Suensons Gade,,1
-boligportal.dk,2016,room,5000,18,8000,Banegårdsgade,,
-boligportal.dk,2016,room,3500,20,8200,Kalmargade,,
-boligportal.dk,2016,apartment,7875,94,8220,Hovedgaden,,3
-boligportal.dk,2016,apartment,4500,49,8210,Torpevænget,,2
-boligportal.dk,2016,apartment,9950,89,8000,P.P Ørums Gade,,3
-boligportal.dk,2016,room,2900,12,8200,Elmehøjen,,
-boligportal.dk,2016,apartment,8210,54,8200,Brendstrupvej,,2
-boligportal.dk,2016,apartment,9100,80,8000,Nordborggade,,3
-boligportal.dk,2016,apartment,11900,96,8000,Heibergsgade,,3
-boligportal.dk,2016,room,4400,24,8000,Abasalonsgade,,
-boligportal.dk,2016,apartment,9900,68,8200,Niels Juels Gade ,,2
-boligportal.dk,2016,apartment,7900,56,8200,Trøjborgvej,,1
-boligportal.dk,2016,apartment,13500,118,8200,Niels Juels Gade ,,4
-boligportal.dk,2016,apartment,9800,84,8000,Strandvejen,,3
-boligportal.dk,2016,apartment,9800,84,8230,Haslevej,,3
-boligportal.dk,2016,apartment,12000,118,8000,Ryesgade,,3
-boligportal.dk,2016,room,4190,18,8000,Nørre Allé,,
-boligportal.dk,2016,apartment,6125,70,8000,Falstersgade,,3
-boligportal.dk,2016,room,2600,13,8230,Carit Etlars Vej,,
-boligportal.dk,2016,apartment,11236,82,8000,Frederiksgade,,3
-boligportal.dk,2016,apartment,9583,97,8000,Fredenstorv,,3
-boligportal.dk,2016,apartment,4500,55,8381,Gedingsvej,,2
-boligportal.dk,2016,room,3500,25,8320,Ydunsvej,,
-boligportal.dk,2016,apartment,8000,118,8270,Rosenvangs Alle,,
-boligportal.dk,2016,apartment,12500,114,8000,Passagen,,3
-boligportal.dk,2016,apartment,18800,118,8000,Mariane Thomsens Gade,,3
-boligportal.dk,2016,room,4000,13,8260,Hømosevej,,
-boligportal.dk,2016,apartment,6400,44,8000,Odensegade,,2
-boligportal.dk,2016,room,2895,15,8200,Ivar Huirtfeldts Gade,,
-boligportal.dk,2016,room,4000,16,8000,Silkeborgvej,,
-boligportal.dk,2016,room,4200,21,8000,Helgenæsgade,,
-boligportal.dk,2016,room,3500,14,8200,Niels Juels Gade ,,
-boligportal.dk,2016,room,4287,20,8200,Randersvej,,
-boligportal.dk,2016,apartment,7745,76,8260,Onholtvej,,3
-boligportal.dk,2016,apartment,7025,84,8220,Emmasvej,,3
-boligportal.dk,2016,apartment,15800,112,8000,Langelinieparken,,3
-boligportal.dk,2016,room,3500,14,8000,Thunøgade,,
-boligportal.dk,2016,apartment,8897,73,8381,Blomsterlunden,,3
-boligportal.dk,2016,apartment,11000,64,8000,Guldmedsgade,,3
-boligportal.dk,2016,room,2850,12,8000,Grønnegade,,
-boligportal.dk,2016,room,2500,14,8000,Poul Martin Møllers Vej,,
-boligportal.dk,2016,apartment,7800,60,8000,Schleppegrellsgade,,3
-boligportal.dk,2016,room,2400,16,8230,Silkeborgvej,,
-boligportal.dk,2016,room,3800,10,8000,Vestervang,,
-boligportal.dk,2016,apartment,5633,52,8000,Kaløgade,,2
-boligportal.dk,2016,apartment,6963,58,8200,Ladefogedvej,,2
-boligportal.dk,2016,apartment,9033,90,8000,Klosterport,,3
-boligportal.dk,2016,apartment,7525,70,8000,Carl Bertelsens Gade,,2
-boligportal.dk,2016,apartment,8448,74,8000,Haderslevgade,,2
-boligportal.dk,2016,room,5200,20,8000,Musuemsgade,,
-boligportal.dk,2016,room,3700,17,8000,Bogensegade,,
-boligportal.dk,2016,apartment,14135,154,8000,Nørregade,,6
-boligportal.dk,2016,apartment,30000,252,8000,Vestergade,,5
-boligportal.dk,2016,room,3700,13,8200,Jens Baggesens Vej,,
-boligportal.dk,2016,apartment,7550,74,8220,Hougårdsvej,,3
-boligportal.dk,2016,apartment,11183,89,8000,Grønnegade,,3
-boligportal.dk,2016,apartment,5250,79,8000,Lundbyesgade,,2
-boligportal.dk,2016,apartment,13613,121,8000,Sjællandsgade,,4
-boligportal.dk,2016,apartment,7350,55,8000,Gebauersgade,,2
-boligportal.dk,2016,apartment,6000,41,8210,Bronzealdervænget,,2
-boligportal.dk,2016,apartment,11580,114,8000,Chr. Wærums Gade,,4
-boligportal.dk,2016,apartment,12383,139,8000,Fredensgade,,2
-boligportal.dk,2016,room,4900,16,8000,Lundbyesgade,,
-boligportal.dk,2016,apartment,6945,54,8000,Vestergade,,2
-boligportal.dk,2016,apartment,5950,48,8520,Kastanjehaven,,2
-boligportal.dk,2016,apartment,5550,46,8000,Åboulevarden,,1
-boligportal.dk,2016,room,4500,14,8000,Kaserneboulevarden,,
-boligportal.dk,2016,apartment,3700,42,8280,Oddervej,,2
-boligportal.dk,2016,room,1800,12,8260,Reventslowsvej,,
-boligportal.dk,2016,room,2000,18,8230,Tousvej,,
-boligportal.dk,2016,room,4000,17,8200,Nordre Ringgade,,
-boligportal.dk,2016,room,4000,25,8230,Erik Bøghs Vej,,
-boligportal.dk,2016,apartment,6500,86,8270,Rundhøj Alle,,
-boligportal.dk,2016,apartment,8500,91,8000,Vestergade,,3
-boligportal.dk,2016,apartment,7500,74,8000,J.M Mørks Gade,,2
-boligportal.dk,2016,apartment,6785,59,8260,Onholtvej,,2
-boligportal.dk,2016,apartment,11000,112,8230,Silkeborgvej,,3
-boligportal.dk,2016,apartment,8800,70,8200,Skovvangsvej,,2
-boligportal.dk,2016,apartment,7500,52,8000,Rozenkrantzgade,,2
-boligportal.dk,2016,apartment,4192,50,8270,Højmarkvej,,2
-boligportal.dk,2016,room,4038,14,8000,Helgenæsgade,,
-boligportal.dk,2016,room,3900,23,8000,Vesterbrogade,,
-boligportal.dk,2016,apartment,7000,82,8200,Steen Billes Torv,,3
-boligportal.dk,2016,apartment,6550,104,8250,Stavneagervej,,2
-boligportal.dk,2016,apartment,9926,101,8260,Viby Torv,,3
-boligportal.dk,2016,apartment,8420,92,8260,Holme Møllevej,,3
-boligportal.dk,2016,apartment,7000,51,8000,Kirkegårdsvej,,1
-boligportal.dk,2016,room,4513,16,8000,De Mezas Vej,,
-boligportal.dk,2016,apartment,11920,100,8000,Lundingsgade,,4
-boligportal.dk,2016,room,4200,20,8000,Vestergade,,
-boligportal.dk,2016,room,4000,10,8000,Ny Banegårdsgade,,
-boligportal.dk,2016,room,3000,13,8000,Tøndergade,,
-boligportal.dk,2016,room,2750,11,8200,Vorregårds Alle,,
-boligportal.dk,2016,room,3695,33,8000,Vestergade,,
-boligportal.dk,2016,apartment,12383,139,8000,Fredensgade,,2
-boligportal.dk,2016,room,4900,16,8000,Lundbyesgade,,
-boligportal.dk,2016,apartment,6945,54,8000,Vestergade,,2
-boligportal.dk,2016,apartment,5500,46,8000,Åboulevarden,,1
-boligportal.dk,2016,room,4500,14,8000,Kaserneboulevarden,,
-boligportal.dk,2016,apartment,10000,80,8000,Nordborggade,,3
-boligportal.dk,2016,apartment,7950,67,8000,Kirkegårdsvej,,3
-boligportal.dk,2016,apartment,7463,59,8000,Ankersgade,,2
-boligportal.dk,2016,apartment,7880,62,8200,Peder Skrams Gade,,1
-boligportal.dk,2016,room,4000,14,8000,Nørre Allé,,
-boligportal.dk,2016,room,4200,17,8200,Aldersrovej,,
-boligportal.dk,2016,apartment,5995,50,8250,Kastanjehaven,,2
-boligportal.dk,2016,apartment,8154,58,8260,Engelundsvejs,,2
-boligportal.dk,2016,apartment,9480,67,8000,Kirkegårdsvej,,3
-boligportal.dk,2016,room,3900,12,8000,Marselis Boulevard,,
-boligportal.dk,2016,apartment,6000,43,8200,Abildgade,,1
-boligportal.dk,2016,apartment,7400,54,8000,Vesterport,,1
-boligportal.dk,2016,room,2105,22,8000,Borggade,,
-boligportal.dk,2016,apartment,5000,24,8000,Skovvejen,,1
-boligportal.dk,2016,apartment,10500,123,8000,Grønnegade,,3
-boligportal.dk,2016,apartment,7450,72,8000,P.P Ørums Gade,,2
-boligportal.dk,2016,room,5200,16,8000,Nørre Allé,,
-boligportal.dk,2016,apartment,9895,109,8000,Frederiks Allé,,4
-boligportal.dk,2016,apartment,6900,38,8000,Sjællandsgade,,2
-boligportal.dk,2016,apartment,7245,63,8000,Ingerslevs Boulevard,,1
-boligportal.dk,2016,apartment,12600,172,8240,Grenåvej,,4
-boligportal.dk,2016,room,2100,13,8240,Vestre Srandallé,,
-boligportal.dk,2016,room,4000,16,8000,Østbanetorvet,,
-boligportal.dk,2016,room,4500,24,8000,Carl Bertelsens Gade,,
-boligportal.dk,2016,room,3900,16,8000,Nordborggade,,
-boligportal.dk,2016,room,4000,16,8000,Åhusene,,
-boligportal.dk,2016,room,4100,22,8200,Ivar Huirtfeldts Gade,,
-boligportal.dk,2016,apartment,7200,48,8270,Elverdalsvej,,2
-boligportal.dk,2016,room,4300,20,8000,De Mezas Vej,,
-boligportal.dk,2016,apartment,6400,56,8000,Klostergade,,3
-boligportal.dk,2016,room,3500,15,8000,Schleppegrellsgade,,
-boligportal.dk,2016,room,3495,16,8000,Telefonsmøgen,,
-boligportal.dk,2016,apartment,10600,86,8000,Fiskergade,,3
-boligportal.dk,2016,room,3650,20,8200,Otto Sverdrups Vej,,
-boligportal.dk,2016,room,3500,12,8000,Klosterport,,
-boligportal.dk,2016,apartment,5200,45,8200,Eduoard Suensons Gade,,1
-boligportal.dk,2016,apartment,8000,63,8000,Marstrandsgade,,2
-boligportal.dk,2016,apartment,11500,102,8000,Hans Schourups Gade,,3
-boligportal.dk,2016,apartment,5200,52,8230,Chr. Winthers Vej,,2
-boligportal.dk,2016,apartment,6000,47,8200,Jordbrovej,,1
-boligportal.dk,2016,apartment,6500,86,8270,Rundhøj Alle,,3
-boligportal.dk,2016,room,2466,9,8000,Skovvejen,,
-boligportal.dk,2016,apartment,15888,123,8000,Vestergade,,4
-boligportal.dk,2016,apartment,13613,121,8000,Sjællandsgade,,4
-boligportal.dk,2016,apartment,7374,40,8210,Bronzealdervænget,,2
-boligportal.dk,2016,apartment,12100,93,8000,Vestergade,,3
-boligportal.dk,2016,apartment,4500,40,8381,Tomballevej,,2
-boligportal.dk,2016,room,4200,15,8000,Kongsvang Alle ,,
-boligportal.dk,2016,room,4600,30,8200,Otto Sverdrups Vej,,
-boligportal.dk,2016,apartment,10013,89,8240,Engholms Allé,,3
-boligportal.dk,2016,apartment,9450,85,8210,Vintervej,,3
-boligportal.dk,2016,apartment,8972,70,8210,Vintervej,,2
-boligportal.dk,2016,room,3950,12,8000,Åboulevarden,,
-boligportal.dk,2016,room,2000,15,8230,Erik Bøghs Vej,,
-boligportal.dk,2016,room,2700,12,8210,Snogebæksvej,,
-boligportal.dk,2016,apartment,5700,60,8250,Øster Kringelvej,,2
-boligportal.dk,2016,room,3600,16,8000,Jægergårdsgade,,
-boligportal.dk,2016,room,4470,13,8000,Åboulevarden,,
-boligportal.dk,2016,apartment,11050,118,8230,Silkeborgvej,,3
-boligportal.dk,2016,room,2993,11,8000,Chr. Wærums Gade,,
-boligportal.dk,2016,room,3500,12,8200,Marius Simonsens Vej,,
-boligportal.dk,2016,room,4692,30,8210,Ryvvej,,
-boligportal.dk,2016,apartment,7000,64,8000,Høegh-Guldbergs Gade,,2
-boligportal.dk,2016,room,3900,12,8000,Marselis Boulevard,,
-boligportal.dk,2016,apartment,8200,87,8240,Tirstrupvej,,3
-boligportal.dk,2016,room,4500,15,8000,Vestergade,,
-boligportal.dk,2016,apartment,8800,80,8000,Tøndergade,,3
-boligportal.dk,2016,apartment,9985,100,8000,Skanderborgvej ,,3
-boligportal.dk,2016,apartment,99950,89,8000,P.P Ørums Gade,,3
-boligportal.dk,2016,room,3500,14,8000,Klosterport,,
-boligportal.dk,2016,apartment,9500,47,8000,Ole Rømers Gade,,2
-boligportal.dk,2016,room,3900,15,8000,Strandvejen,,
-boligportal.dk,2016,apartment,3300,26,8220,Hovedgaden,,1
-boligportal.dk,2016,apartment,14391,107,8000,Skolegade,,3
-boligportal.dk,2016,room,3000,15,8240,Grenåvej,,
-boligportal.dk,2016,apartment,9150,87,8230,Silkeborgvej,,3
-boligportal.dk,2016,apartment,9407,84,8381,Stavnsvej,,3
-boligportal.dk,2016,apartment,12500,90,8000,Ceres Allé,,3
-boligportal.dk,2016,apartment,11995,103,8000,Grete Løchtes Gade ,,3
-boligportal.dk,2016,apartment,9160,68,8200,Dronning Margrethes Vej,,2
-boligportal.dk,2016,apartment,10013,89,8240,Engholms Alle,,3
-boligportal.dk,2016,room,4200,20,8000,Vestre Ringgade,,
-boligportal.dk,2016,apartment,10600,109,8000,Hans Broges Gade,,3
-boligportal.dk,2016,apartment,9561,86,8210,Vintervej,,3
-boligportal.dk,2016,room,2541,26,8260,Risdalsvej,,
-boligportal.dk,2016,apartment,10500,62,8000,Mariane Thomsens Gade,,2
-boligportal.dk,2016,apartment,6950,68,8000,Mejlgade,,2
-boligportal.dk,2016,apartment,15300,141,8000,Nørregade,,4
-boligportal.dk,2016,room,2300,12,8210,Bispehavevej,,
-boligportal.dk,2016,apartment,11895,138,8270,Stenvej,,4
-boligportal.dk,2016,apartment,10800,88,8000,Langelandsgsade,,3
-boligportal.dk,2016,apartment,11670,100,8000,Kirkedammen,,4
-boligportal.dk,2016,apartment,9530,89,8000,Chr. Wærums Gade,,3
-akutbolig.dk,2014,apartment,11111,112,8200,Oluf Palmes Allé,,4
-akutbolig.dk,2014,apartment,9711,90,8200,Oluf Palmes Allé,,3
-akutbolig.dk,2014,apartment,15739,151,8200,Funch Thomsens Gade,,5
-akutbolig.dk,2014,apartment,13712,124,8000,Skolegade,,4
-akutbolig.dk,2014,apartment,13125,50,8000,Tietgens Plads,,5
-akutbolig.dk,2014,room,3500,16,8000,Frederiks Alle,,
-akutbolig.dk,2014,room,3850,16,8000,Carl Blochs Gade,,
-akutbolig.dk,2014,apartment,8230,89,8000,Lundingsgade,,3
-akutbolig.dk,2014,apartment,7906,72,8000,Skanderborgvej ,,2
-akutbolig.dk,2014,apartment,7467,57,8000,Vesterbrogade,,2
-akutbolig.dk,2014,apartment,6000,55,8000,Falstersgade,,2
-akutbolig.dk,2014,apartment,9900,103,8000,Harald Skovbys Gade,,3
-akutbolig.dk,2014,apartment,9900,92,8000,Åboulevarden,,3
-akutbolig.dk,2014,apartment,7700,76,8000,Lundingsgade,,2
-akutbolig.dk,2014,apartment,6800,63,8000,Lundingsgade,,2
-akutbolig.dk,2014,apartment,7250,85,8000,Gammel Munkegade,,3
-akutbolig.dk,2014,room,3600,10,8000,Finderupvej,,
-akutbolig.dk,2014,apartment,8000,76,8200,Skovvangsvej,,3
-akutbolig.dk,2014,apartment,3250,30,8200,Skovvangsvej,,1
-akutbolig.dk,2014,apartment,16900,145,8000,Mariane Thomsens Gade,,5
-akutbolig.dk,2014,room,2721,6,8200,Finsensgade,,
-akutbolig.dk,2014,apartment,7327,85,8210,Jernaldervej,,4
-akutbolig.dk,2014,apartment,8600,65,8000,Hans Broges Gade,,2
-akutbolig.dk,2014,apartment,7400,64,8200,Kalmargade,,2
-akutbolig.dk,2014,apartment,10013,129,8000,Åboulevarden,,3
-akutbolig.dk,2014,room,3500,15,8200,Niels Juels Gade ,,
-akutbolig.dk,2014,apartment,14400,108,8200,Trøjborgvej,,4
-akutbolig.dk,2014,room,3000,14,8000,Ny Munkegade,,
-akutbolig.dk,2014,apartment,10286,117,8000,Østergade,,2
-akutbolig.dk,2014,apartment,9169,78,8000,Mariane Thomsens Gade,,2
-akutbolig.dk,2014,apartment,4000,50,8000,Otto Ruds Gade,,1
-akutbolig.dk,2014,apartment,10925,114,8000,Trepkasgade,,4
-akutbolig.dk,2014,apartment,4400,41,8000,Strandparken,,1
-akutbolig.dk,2014,apartment,8500,85,8000,Kildegården,,3
-akutbolig.dk,2014,apartment,7500,75,8000,Kildegården,,2
-akutbolig.dk,2014,apartment,8400,81,8000,De Mezas Vej,,3
-akutbolig.dk,2014,apartment,6400,62,8000,Lundingsgade,,3
-akutbolig.dk,2014,apartment,8900,94,8000,Jægergårdsgade,,3
-akutbolig.dk,2014,apartment,8900,91,8000,Anholtsgade,,3
-akutbolig.dk,2014,apartment,8324,75,8000,Finderupvej,,2
-akutbolig.dk,2014,apartment,8500,285,8200,Elstedvej,,5
-akutbolig.dk,2014,room,3453,10,8000,Marselisborg Allé,,
-akutbolig.dk,2014,apartment,4500,50,8000,Mejlgade,,1
-akutbolig.dk,2014,room,4450,18,8000,Skt. Olufs Gade,,
-akutbolig.dk,2014,apartment,8240,97,8000,Hjarnøgade,,3
-akutbolig.dk,2014,apartment,6000,65,8000,Gammel Munkegade,,1
-akutbolig.dk,2014,apartment,16854,122,8000,Langelinieparken,,
-akutbolig.dk,2014,apartment,19500,277,8210,Haslehøjvej,,5
-akutbolig.dk,2014,apartment,13250,102,8200,Trøjborgvej,,4
-akutbolig.dk,2014,apartment,9900,72,8200,Niels Juels Gade ,,3
-akutbolig.dk,2014,apartment,10500,169,8200,Bækhusvej,,3
-akutbolig.dk,2014,apartment,10500,99,8000,Finderupvej,,3
-akutbolig.dk,2014,room,4000,22,8000,Nordborggade,,
-akutbolig.dk,2014,room,2200,15,8210,Jens Baggesens Vej,,
-akutbolig.dk,2014,apartment,12600,108,8000,Jægergårdsgade,,3
-akutbolig.dk,2014,apartment,10500,97,8000,Kroghsgade,,3
-akutbolig.dk,2014,apartment,12875,113,8000,M.P Brunns Gade,,4
-akutbolig.dk,2014,apartment,8601,90,8000,Hjarnøgade,,2
-akutbolig.dk,2014,apartment,19900,186,8000,Helga Pedersens Gade,,3
-akutbolig.dk,2014,apartment,14950,116,8000,Åhusene,,2
-akutbolig.dk,2014,apartment,6903,64,8200,Kalmargade,,2
-akutbolig.dk,2014,apartment,9680,90,8200,Oluf Palmes Allé,,3
-akutbolig.dk,2014,apartment,14298,127,8200,Tordenskjoldsgade,,4
-akutbolig.dk,2014,apartment,15792,151,8200,Funch Thomsens Gade,,5
-akutbolig.dk,2014,room,3900,13,8000,Høegh-Guldbergs Gade,,
-akutbolig.dk,2014,room,4000,26,8210,Jordbrovej,,
-akutbolig.dk,2014,apartment,7325,52,8000,Åhusene,,2
-akutbolig.dk,2014,room,4600,12,8000,Falstersgade,,
-akutbolig.dk,2014,apartment,9395,105,8000,M.P Brunns Gade,,4
-akutbolig.dk,2014,apartment,10208,70,8000,Østergade,,2
-akutbolig.dk,2014,room,4600,25,8000,Gebauersgade,,
-akutbolig.dk,2014,apartment,15950,116,8000,Åhusene,,3
-akutbolig.dk,2014,apartment,6500,70,8000,Nørrebrogade,,3
-akutbolig.dk,2014,apartment,14950,108,8000,Åhusene,,3
-akutbolig.dk,2014,apartment,7900,70,8000,Jægergårdsgade,,2
-akutbolig.dk,2014,apartment,10200,97,8000,Harald Jensens Plads,,2
-akutbolig.dk,2014,apartment,5100,48,8000,Dannebrogsgade,,2
-akutbolig.dk,2014,room,4500,16,8000,Borggade,,
-akutbolig.dk,2014,apartment,10558,142,8000,Mejlgade,,4
-akutbolig.dk,2014,room,4325,15,8000,Frederiksgade,,
-akutbolig.dk,2014,room,3300,20,8200,Trøjborgvej,,
-akutbolig.dk,2014,room,4500,10,8000,Grønnegade,,
-akutbolig.dk,2014,room,4000,16,8000,Vestergade,,
-akutbolig.dk,2014,apartment,14575,106,8000,Østergade,,2
-akutbolig.dk,2014,apartment,7013,51,8000,Østergade,,1
-akutbolig.dk,2014,apartment,8900,97,8210,Hammerhusvej,,3
-akutbolig.dk,2014,apartment,14900,81,8000,Skt. Clemens Stræde,,1
-akutbolig.dk,2014,apartment,12900,116,8000,Tietgens Plads,,4
-akutbolig.dk,2014,room,3700,16,8000,Vesterport,,
-akutbolig.dk,2014,room,3000,20,8210,Bispehavevej,,
-akutbolig.dk,2014,apartment,15000,156,8000,Molsgade,,2
-akutbolig.dk,2014,apartment,8202,91,8200,Langelandsgsade,,3
-akutbolig.dk,2014,apartment,10600,99,8000,Finderupvej,,3
-akutbolig.dk,2014,apartment,8925,87,8000,Valdemarsgade,,3
-akutbolig.dk,2015,apartment,11009,112,8200,Oluf Palmes Allé,,4
-akutbolig.dk,2015,apartment,7373,67,8200,Kalmargade,,2
-akutbolig.dk,2015,apartment,8668,82,8000,Langenæs Allé,,2
-akutbolig.dk,2015,apartment,9091,92,8000,Vejlegade,,3
-akutbolig.dk,2015,room,3500,8,8000,Vestergade,,
-akutbolig.dk,2015,room,3900,12,8000,Finderupvej,,
-akutbolig.dk,2015,apartment,10800,98,8000,Assensgade,,3
-akutbolig.dk,2015,apartment,10000,100,8000,Marselisborg Allé,,4
-akutbolig.dk,2015,apartment,7200,60,8200,Skejbytoften,,2
-akutbolig.dk,2015,apartment,7900,81,8000,Ny Munkegade,,2
-akutbolig.dk,2015,apartment,10275,110,8000,Chr. Wærums Gade,,3
-akutbolig.dk,2015,room,2725,14,8200,Jens Baggesens Vej,,
-akutbolig.dk,2015,apartment,9565,85,8000,Fredensgade,,2
-akutbolig.dk,2015,apartment,10495,89,8000,Banegårdsgade,,4
-akutbolig.dk,2015,apartment,8950,63,8000,Frederiksgade,,2
-akutbolig.dk,2015,apartment,3700,28,8210,Ryvvej,,1
-akutbolig.dk,2015,apartment,16900,116,8000,Ryesgade,,4
-akutbolig.dk,2015,room,2777,20,8210,Vintervej,,
-akutbolig.dk,2015,apartment,13800,129,8000,Heibergsgade,,4
-akutbolig.dk,2015,room,3400,16,8200,Herluf Trolles Gade,,
-akutbolig.dk,2015,apartment,14950,116,8000,Åhusene,,3
-akutbolig.dk,2015,apartment,7995,70,8000,Fiskergade,,2
-akutbolig.dk,2015,room,3500,18,8000,Bødker Balles Gård,,
-akutbolig.dk,2015,apartment,7600,77,8200,Oslogade,,3
-akutbolig.dk,2015,apartment,7370,61,8200,Ivar Huirtfeldts Gade,,2
-akutbolig.dk,2015,apartment,8960,82,8000,Finderupvej,,2
-akutbolig.dk,2015,apartment,11000,104,8000,Skolegade,,2
-akutbolig.dk,2015,room,3500,12,8200,Jordbrovej,,
-akutbolig.dk,2015,apartment,7200,86,8000,Montanagade,,2
-akutbolig.dk,2015,apartment,7100,67,8200,Brendstrupvej,,2
-akutbolig.dk,2015,apartment,8650,95,8000,Høegh-Guldbergs Gade,,2
-akutbolig.dk,2015,apartment,10650,72,8200,Niels Juels Gade ,,3
-akutbolig.dk,2015,apartment,11700,117,8000,Stadion Allé,,4
-akutbolig.dk,2015,apartment,12800,135,8000,Guldsmedsgade,,5
-akutbolig.dk,2015,apartment,8000,87,8200,Oslogade,,3
-akutbolig.dk,2015,apartment,9167,88,8000,Østergade,,2
-akutbolig.dk,2015,apartment,8084,87,8200,Langelandsgsade,,2
-akutbolig.dk,2015,apartment,11903,110,8000,Møllestien,,3
-akutbolig.dk,2015,apartment,13500,87,8000,Helga Pedersens Gade,,3
-akutbolig.dk,2015,apartment,12980,106,8000,Jægergårdsgade,,4
-akutbolig.dk,2015,room,3200,11,8200,Åbogade,,
-akutbolig.dk,2015,apartment,8700,68,8000,Østergade,,2
-akutbolig.dk,2015,apartment,11750,120,8000,Eckersbergsgade,,5
-akutbolig.dk,2015,room,3900,14,8000,Ryesgade,,
-akutbolig.dk,2015,apartment,15000,161,8000,Stadion Allé,,5
-akutbolig.dk,2015,apartment,6780,60,8200,Brenstrupgårdsvej,,2
-akutbolig.dk,2015,room,3730,12,8200,Willemoesgade,,
-akutbolig.dk,2015,room,3200,15,8210,Fjældevænget,,
-akutbolig.dk,2015,apartment,10200,97,8000,Harald Jensens Plads,,2
-akutbolig.dk,2015,apartment,14575,106,8000,Østergade,,2
-akutbolig.dk,2015,apartment,7013,51,8000,Østergade,,1
-akutbolig.dk,2015,apartment,14900,81,8000,Skt. Clemens Stræde,,1
-akutbolig.dk,2015,apartment,3600,50,8200,Niels Juels Gade ,,2
-akutbolig.dk,2015,apartment,12999,115,8000,Hans Broges Gade,,4
-akutbolig.dk,2015,apartment,8900,83,8000,Amaliegade,,1
-akutbolig.dk,2015,apartment,6400,69,8000,Bülowsgade,,2
-akutbolig.dk,2015,apartment,4500,55,8210,Østrevej,,1
-akutbolig.dk,2015,apartment,8500,111,8000,Amaliegade,,1
-akutbolig.dk,2015,apartment,11100,74,8200,Niels Juels Gade ,,3
-akutbolig.dk,2015,apartment,9900,99,8210,Ryhavevej,,3
-akutbolig.dk,2015,apartment,4000,55,8000,Åhusene,,2
-akutbolig.dk,2015,apartment,13000,147,8000,Sønder Allé,,3
-akutbolig.dk,2015,room,4000,16,8000,Jerichausgade,,
-akutbolig.dk,2015,apartment,9091,92,8000,Vejlegade,,3
-akutbolig.dk,2016,apartment,12050,117,8200,Tordenskjoldsgade,,4
-akutbolig.dk,2016,apartment,5516,67,8000,Hjarnøgade,,2
-akutbolig.dk,2016,apartment,7233,56,8240,Engholms Allé,,2
-akutbolig.dk,2016,apartment,9063,76,8000,Thit Jensens Gade,,2
-akutbolig.dk,2016,apartment,9284,87,8240,Skejbyvej,,3
-akutbolig.dk,2016,apartment,5327,108,8260,Rosenhøj,,4
-akutbolig.dk,2016,room,3650,13,8000,Marselis Boulevard,,
-akutbolig.dk,2016,apartment,10395,81,8000,Harald Jensens Plads,,2
-akutbolig.dk,2016,apartment,12300,111,8000,Grønnegade,,4
-akutbolig.dk,2016,apartment,7220,63,8000,Ingerslevs Boulevard,,1
-akutbolig.dk,2016,room,2800,9,8200,Vorregårds Allé,,
-akutbolig.dk,2016,apartment,13350,106,8000,Heibergsgade,,3
-akutbolig.dk,2016,apartment,11500,94,8000,Dalgas Avenue,,4
-akutbolig.dk,2016,apartment,15950,116,8000,Åhusene,,3
-akutbolig.dk,2016,apartment,19500,144,8240,Syrenvej,,4
-akutbolig.dk,2016,apartment,10300,89,8260,Søndervangs Allé,,3
-akutbolig.dk,2016,apartment,9600,80,8000,Nordborggade,,3
-akutbolig.dk,2016,apartment,9500,87,8000,Hendrik Pontoppidans Gade,,1
-akutbolig.dk,2016,room,2900,10,8260,Uffesvej,,
-akutbolig.dk,2016,room,3800,16,8200,Dronning Margrethes Vej,,
-akutbolig.dk,2016,room,3768,11,8200,Brendstrupgårdsvej,,
-akutbolig.dk,2016,room,3000,10,8240,Nordlandsvej,,
-akutbolig.dk,2016,room,4925,9,8000,Skolegade,,
-akutbolig.dk,2016,apartment,8400,59,8200,Oluf Palmes Allé,,3
-akutbolig.dk,2016,apartment,10500,94,8000,Tietgens Plads,,3
-akutbolig.dk,2016,room,3700,12,8000,Daugbjervej,,
-akutbolig.dk,2016,room,4074,10,8000,Daugbjervej,,
-akutbolig.dk,2016,apartment,5162,40,8270,Oddervej,,1
-akutbolig.dk,2016,apartment,5392,40,8260,Holme Møllevej,,1
-akutbolig.dk,2016,apartment,5342,43,8260,Engtoften,,1
-akutbolig.dk,2016,apartment,6900,69,8000,Nørre Allé,,3
-akutbolig.dk,2016,apartment,7100,71,8000,Hans Broges Gade,,3
-akutbolig.dk,2016,apartment,8400,84,8000,De Mezas Vej,,3
-akutbolig.dk,2016,apartment,11000,110,8000,Hjortensgade,,4
-akutbolig.dk,2016,apartment,10995,91,8000,Daugbjervej,,3
-akutbolig.dk,2016,apartment,8954,65,8000,Østergade,,2
-akutbolig.dk,2016,apartment,7374,42,8210,Bronzealdervænget,,2
-akutbolig.dk,2016,apartment,5200,39,8260,Holme Møllevej,,1
-akutbolig.dk,2016,room,3500,12,8000,Skanderborgvej ,,
-akutbolig.dk,2016,room,2000,12,8000,Trepkasgade,,
-akutbolig.dk,2016,apartment,12000,82,8000,Molsgade,,2
-akutbolig.dk,2016,apartment,11100,136,8260,Højgårdsvej,,4
-akutbolig.dk,2016,apartment,9250,90,8200,Ivar Huirtfeldts Gade,,3
-akutbolig.dk,2016,apartment,14000,150,8000,Strandvejen,,4
+website,year,rental_type,rent_without_expenses,square_meters,zip_code,street,area,rooms
+boligportal.dk,2014,apartment,6030,53,8000,Ny Munkegade,Aarhus C,2
+boligportal.dk,2014,apartment,8245,89,8220,Hoffmannsvej,Brabrand,4
+boligportal.dk,2014,apartment,8950,88,8000,Nørre Allé,Aarhus C,3
+boligportal.dk,2014,apartment,11500,106,8000,Stadion Allé,Aarhus C,4
+boligportal.dk,2014,apartment,7320,69,8000,Søndre Ringgade,Aarhus C,2
+boligportal.dk,2014,room,2500,13,8000,Vestergade,Aarhus C,1
+boligportal.dk,2014,apartment,5500,64,8000,Vestervang,Aarhus C,2
+boligportal.dk,2014,room,3900,15,8000,Thorvaldsensgade,Aarhus C,1
+boligportal.dk,2014,apartment,9448,86,8000,Fynsgade,Aarhus C,3
+boligportal.dk,2014,room,3200,25,8200,Dronning Margrethes Vej,Aarhus N,1
+boligportal.dk,2014,apartment,7220,77,8230,Tousvej,Åbyhøj,3
+boligportal.dk,2014,apartment,7100,81,8220,Helenelyst,Brabrand,3
+boligportal.dk,2014,apartment,7316,93,8270,Holmevej,Højbjerg,4
+boligportal.dk,2014,room,3200,15,8200,Lyøgade,Aarhus N,1
+boligportal.dk,2014,room,3000,12,8000,Nørregade,Aarhus C,1
+boligportal.dk,2014,room,3800,16,8000,Vestre Ringgade,Aarhus C,1
+boligportal.dk,2014,room,4300,10,8210,Haslehøjvej,Aarhus V,1
+boligportal.dk,2014,apartment,6000,85,8220,Sigridsvej,Brabrand,4
+boligportal.dk,2014,apartment,9296,86,8000,Skolegade,Aarhus C,2
+boligportal.dk,2014,apartment,4900,45,8200,Skejbybakkevej,Aarhus N,2
+boligportal.dk,2014,room,4400,21,8000,Rudolph Wulffs Gade,Aarhus C,1
+boligportal.dk,2014,apartment,8750,64,8000,Carl Blochs Gade,Aarhus C,2
+boligportal.dk,2014,room,3900,12,8000,Åhusene,Aarhus C,1
+boligportal.dk,2014,apartment,8200,62,8200,Brendstrupgårdsvej,Aarhus N,2
+boligportal.dk,2014,apartment,6600,66,8000,Kongsvang Alle,Aarhus C,2
+boligportal.dk,2014,apartment,5720,62,8000,Rudolph Wulffs Gade,Aarhus C,2
+boligportal.dk,2014,apartment,6900,60,8000,Thorvaldsensgade,Aarhus C,2
+boligportal.dk,2014,apartment,7500,65,8000,Assensgade,Aarhus C,2
+boligportal.dk,2014,apartment,8000,79,8000,Jægergårdsgade,Aarhus C,3
+boligportal.dk,2014,room,3900,20,8000,Havnegade,Aarhus C,1
+boligportal.dk,2014,room,3300,17,8260,Vårkjærvej,Viby J,1
+boligportal.dk,2014,apartment,5900,51,8200,Skejbyparken,Aarhus N,2
+boligportal.dk,2014,room,4000,24,8240,Nordre Strandvej,Risskov,1
+boligportal.dk,2014,apartment,4300,28,8000,Skanderborgvej,Aarhus C,1
+boligportal.dk,2014,apartment,7950,71,8000,Gebauersgade,Aarhus C,2
+boligportal.dk,2014,room,3836,12,8200,Brendstrupgårdsvej,Aarhus N,1
+boligportal.dk,2014,apartment,7500,93,8250,Brobjerg Parkvej,Egå,3
+boligportal.dk,2014,apartment,6595,62,8000,Åparken,Aarhus C,2
+boligportal.dk,2014,room,3200,11,8210,Fjældevænget,Aarhus V,1
+boligportal.dk,2014,apartment,7450,55,8000,Søren Frichs Vej,Aarhus C,2
+boligportal.dk,2014,apartment,9900,107,8000,Sønder Allé,Aarhus C,4
+boligportal.dk,2014,apartment,8620,79,8000,Lundingsgade,Aarhus C,3
+boligportal.dk,2014,apartment,6800,47,8000,Lundingsgade,Aarhus C,2
+boligportal.dk,2014,apartment,8000,82,8000,Jægergårdsgade,Aarhus C,3
+boligportal.dk,2014,room,3287,30,8000,Nørre Allé,Aarhus C,1
+boligportal.dk,2014,room,2800,12,8220,Helenelyst,Brabrand,1
+boligportal.dk,2014,apartment,8000,114,8200,Ivar Huirtfeldts Gade,Aarhus N,3
+boligportal.dk,2014,apartment,6160,53,8000,Hans Hartvig Seedorffs Stræde,Aarhus C,2
+boligportal.dk,2014,apartment,12500,106,8000,Frederiksgade,Aarhus C,3
+boligportal.dk,2014,apartment,8333,85,8000,Studsgade,Aarhus C,3
+boligportal.dk,2014,room,3900,12,8000,Åhusene,Aarhus C,1
+boligportal.dk,2014,room,3100,17,8220,Emmasvej,Brabrand,1
+boligportal.dk,2014,apartment,7785,64,8200,Skejbygårdsvej,Aarhus N,2
+boligportal.dk,2014,apartment,3683,25,8240,Kantorparken,Risskov,1
+boligportal.dk,2014,apartment,6500,59,8210,Bronzealdertoften,Aarhus V,2
+boligportal.dk,2014,apartment,8000,84,8000,Frederiksgade,Aarhus C,2
+boligportal.dk,2014,room,4000,25,8230,Vølundsvej,Åbyhøj,1
+boligportal.dk,2014,apartment,10500,94,8000,Finderupvej,Aarhus C,3
+boligportal.dk,2014,apartment,9000,78,8200,Dronning Margrethes Vej,Aarhus N,4
+boligportal.dk,2014,apartment,7200,56,8200,Skejbytoften,Aarhus N,2
+boligportal.dk,2014,room,4200,18,8000,Fåborggade,Aarhus C,1
+boligportal.dk,2014,apartment,6500,65,8000,Rådmand Liisbergs Gade,Aarhus C,2
+boligportal.dk,2014,room,3424,12,8200,Ladefogedvej,Aarhus N,1
+boligportal.dk,2014,room,4550,20,8000,Hjelmendsgade,Aarhus C,1
+boligportal.dk,2014,apartment,7850,65,8000,Grønnegade,Aarhus C,2
+boligportal.dk,2014,apartment,6471,47,8000,Vestervang,Aarhus C,2
+boligportal.dk,2014,room,3350,13,8000,Daugbjervej,Aarhus C,1
+boligportal.dk,2014,room,4500,10,8000,Langenæs Allé,Aarhus C,1
+boligportal.dk,2014,room,2000,9,8220,Sigridsvej,Brabrand,1
+boligportal.dk,2014,room,3200,19,8000,Borggade,Aarhus C,1
+boligportal.dk,2014,apartment,8995,109,8210,Paludan-Müllers Vej,Aarhus V,4
+boligportal.dk,2014,room,3351,17,8200,Skovvangsvej,Aarhus N,1
+boligportal.dk,2014,room,2100,12,8000,Vestre Ringgade,Aarhus C,1
+boligportal.dk,2014,room,3600,15,8000,De Mezas Vej,Aarhus C,1
+boligportal.dk,2014,apartment,8230,89,8220,Hoffmannsvej,Brabrand,3
+boligportal.dk,2014,apartment,6675,69,8220,Hoffmannsvej,Brabrand,2
+boligportal.dk,2014,apartment,8600,82,8270,Holmevej,Højbjerg,4
+boligportal.dk,2014,room,3000,12,8000,Hjortensgade,Aarhus C,1
+boligportal.dk,2014,apartment,5640,50,8000,Bülowsgade,Aarhus C,2
+boligportal.dk,2014,apartment,5748,47,8240,Nordlandsvej,Risskov,2
+boligportal.dk,2014,room,4300,20,8000,Thorvaldsensgade,Aarhus C,3
+boligportal.dk,2014,room,3700,17,8000,Strandvejen,Aarhus C,1
+boligportal.dk,2014,room,3900,20,8000,Nørre Allé,Aarhus C,1
+boligportal.dk,2014,apartment,6895,57,8000,Daugbjervej,Aarhus C,2
+boligportal.dk,2014,apartment,6890,64,8200,Ivar Huirtfeldts Gade,Aarhus N,2
+boligportal.dk,2014,apartment,6700,40,8210,Bronzealdervænget,Aarhus V,2
+boligportal.dk,2014,apartment,5967,50,8260,Engtoften,Viby J,2
+boligportal.dk,2014,apartment,8200,102,8000,Grønnegade,Aarhus C,3
+boligportal.dk,2014,room,2702,14,8200,Jens Baggesens Vej,Aarhus N,1
+boligportal.dk,2014,room,3150,14,8000,Fredensgade,Aarhus C,1
+boligportal.dk,2014,room,3000,9,8200,Åbogade,Aarhus N,1
+boligportal.dk,2014,room,4140,15,8000,Frederiks Allé,Aarhus C,1
+boligportal.dk,2014,apartment,11500,92,8000,Kirkegårdsvej,Aarhus C,3
+boligportal.dk,2014,room,3450,16,8000,Skovvejen,Aarhus C,1
+boligportal.dk,2014,apartment,6850,51,8000,Kirkegårdsvej,Aarhus C,1
+boligportal.dk,2014,apartment,5370,40,8000,Knudridsgade,Aarhus C,1
+boligportal.dk,2014,apartment,6500,55,8200,Ivar Huirtfeldts Gade,Aarhus N,2
+boligportal.dk,2014,apartment,9950,96,8000,Helgenæsgade,Aarhus C,3
+boligportal.dk,2014,room,1998,25,8000,Guldmedsgade,Aarhus C,1
+boligportal.dk,2014,apartment,6000,61,8000,Silkeborgvej,Aarhus C,2
+boligportal.dk,2014,room,3250,22,8000,Daugbjervej,Aarhus C,1
+boligportal.dk,2014,room,3500,13,8200,Otto Ruds Gade,Aarhus N,1
+boligportal.dk,2014,room,2600,16,8240,Tranekærvej,Risskov,1
+boligportal.dk,2014,room,4000,19,8000,Store Torv,Aarhus C,1
+boligportal.dk,2014,apartment,4660,35,8200,Brendstrupvej,Aarhus N,1
+boligportal.dk,2014,apartment,5950,46,8000,Gebauersgade,Aarhus C,1
+boligportal.dk,2014,room,3442,16,8000,Vesterbrogade,Aarhus C,1
+boligportal.dk,2014,apartment,7959,75,8000,Carl Blochs Gade,Aarhus C,2
+boligportal.dk,2014,apartment,4200,38,8230,Henrik Rantzaus Vej,Åbyhøj,1
+boligportal.dk,2014,room,3800,12,8000,Frederiksgade,Aarhus C,1
+boligportal.dk,2014,apartment,6500,65,8000,Marselis Boulevard,Aarhus C,2
+boligportal.dk,2014,room,4000,20,8000,Odensegade,Aarhus C,1
+boligportal.dk,2014,room,3200,30,8230,Frejasvej,Åbyhøj,1
+boligportal.dk,2014,room,3200,20,8000,Rudolph Wulffs Gade,Aarhus C,1
+boligportal.dk,2014,apartment,5010,44,8000,Søndre Ringgade,Aarhus C,1
+boligportal.dk,2014,apartment,6300,56,8000,Mejlgade,Aarhus C,2
+boligportal.dk,2014,apartment,8584,117,8240,Kantorparken,Risskov,4
+boligportal.dk,2014,room,3000,30,8000,Carl Bertelsens Gade,Aarhus C,1
+boligportal.dk,2014,room,2750,26,8260,Vinkelhøj,Viby J,1
+boligportal.dk,2014,room,4500,28,8000,Hans Schourups Gade,Aarhus C,1
+boligportal.dk,2015,apartment,18000,230,8000,Kystvejen,Aarhus C,4
+boligportal.dk,2015,apartment,7400,55,8200,Jens Baggesens Vej,Aarhus N,2
+boligportal.dk,2015,apartment,13500,132,8000,Havnegade,Aarhus C,3
+boligportal.dk,2015,apartment,8240,61,8000,Max Müllers Gade,Aarhus C,2
+boligportal.dk,2015,apartment,8329,69,8200,Brendstrupgårdsvej,Aarhus N,2
+boligportal.dk,2015,apartment,4000,18,8000,Åboulevarden,Aarhus C,1
+boligportal.dk,2015,apartment,8300,65,8000,Stadion Allé,Aarhus C,2
+boligportal.dk,2015,apartment,15750,95,8000,Helga Pedersens Gade,Aarhus C,3
+boligportal.dk,2015,apartment,4767,35,8000,Søndre Ringgade,Aarhus C,1
+boligportal.dk,2015,apartment,8995,83,8000,Ålborggade,Aarhus C,3
+boligportal.dk,2015,room,3500,18,8260,Søndervangs Alle,Viby J,1
+boligportal.dk,2015,room,4000,16,8000,Klostergade,Aarhus C,1
+boligportal.dk,2015,apartment,12000,89,8200,Trøjborgvej,Aarhus N,3
+boligportal.dk,2015,room,4300,16,8000,Harald Jensens Plads,Aarhus C,1
+boligportal.dk,2015,apartment,18000,230,8000,Kystvejen,Aarhus C,4
+boligportal.dk,2015,apartment,7400,55,8200,Jens Baggesens Vej,Aarhus N,2
+boligportal.dk,2015,apartment,13500,132,8000,Havnegade,Aarhus C,3
+boligportal.dk,2015,apartment,8240,61,8000,Max Müllers Gade,Aarhus C,2
+boligportal.dk,2015,room,4000,18,8000,Åboulevarden,Aarhus C,1
+boligportal.dk,2015,apartment,8300,65,8000,Stadion Allé,Aarhus C,2
+boligportal.dk,2015,apartment,15750,95,8000,Helga Pedersens Gade,Aarhus C,3
+boligportal.dk,2015,apartment,4767,35,8000,Søndre Ringgade,Aarhus C,1
+boligportal.dk,2015,apartment,8995,83,8000,Ålborggade,Aarhus C,3
+boligportal.dk,2015,room,3500,18,8260,Søndervangs Allé,Viby J,1
+boligportal.dk,2015,room,4000,16,8000,Klostergade,Aarhus C,1
+boligportal.dk,2015,room,3419,23,8220,Langdalsvej,Brabrand,1
+boligportal.dk,2015,apartment,14100,113,8000,Godthabsgade,Aarhus C,4
+boligportal.dk,2015,apartment,8300,58,8000,Ryesgade,Aarhus C,2
+boligportal.dk,2015,apartment,5900,67,8000,Bülowsgade,Aarhus C,2
+boligportal.dk,2015,room,2000,6,8000,Skt. Marcus Kirkeplads,Aarhus C,1
+boligportal.dk,2015,apartment,5680,57,8220,Hoffmannsvej,Brabrand,2
+boligportal.dk,2015,apartment,3990,32,8220,Hoffmannsvej,Brabrand,1
+boligportal.dk,2015,apartment,7000,96,8000,Høegh-Guldbergs Gade,Aarhus C,3
+boligportal.dk,2015,apartment,10470,93,8000,Vesterbrogade,Aarhus C,3
+boligportal.dk,2015,room,3800,20,8270,Elverdalsvej,Højbjerg,1
+boligportal.dk,2015,room,2700,13,8210,Snogebæksvej,Aarhus V,1
+boligportal.dk,2015,apartment,10500,100,8000,Fredensgade,Aarhus C,3
+boligportal.dk,2015,apartment,7051,58,8210,Ladefogedvej,Aarhus V,2
+boligportal.dk,2015,apartment,8650,80,8000,Tøndergade,Aarhus C,3
+boligportal.dk,2015,room,4337,17,8000,Åboulevarden,Aarhus C,1
+boligportal.dk,2015,apartment,7500,79,8000,Åparken,Aarhus C,3
+boligportal.dk,2015,apartment,14900,120,8000,Ny Banegårdsgade,Aarhus C,3
+boligportal.dk,2015,room,3400,14,8200,Præstager,Aarhus N,1
+boligportal.dk,2015,room,3500,8,8000,Skt. Olufs Gade,Aarhus C,1
+boligportal.dk,2015,apartment,7000,59,8000,Falstersgade,Aarhus C,2
+boligportal.dk,2015,apartment,5650,48,8520,Kastanjehaven,Lystrup,2
+boligportal.dk,2015,apartment,9500,99,8000,Guldmedsgade,Aarhus C,3
+boligportal.dk,2015,apartment,7901,58,8260,Engelundsvej,Viby J,3
+boligportal.dk,2015,apartment,5200,46,8200,Niels Juels Gade ,Aarhus N,2
+boligportal.dk,2015,apartment,6200,77,8200,Hvidkløvervej,Aarhus N,3
+boligportal.dk,2015,apartment,8270,109,8210,Paludan-Müllers Vej,Aarhus V,4
+boligportal.dk,2015,room,3500,16,8000,Thunøgade,Aarhus C,1
+boligportal.dk,2015,room,4008,12,8000,Lundingsgade,Aarhus C,1
+boligportal.dk,2015,room,3500,12,8000,Skt.Nicolaus Gade,Aarhus C,1
+boligportal.dk,2015,room,2500,14,8230,Anker Jensens Vej,Åbyhøj,1
+boligportal.dk,2015,apartment,12000,123,8200,Dronning Margrethes Vej,Aarhus N,4
+boligportal.dk,2015,apartment,8400,60,8200,Oluf Palmes Allé,Aarhus N,3
+boligportal.dk,2015,apartment,9978,100,8000,Nørregade,Aarhus C,3
+boligportal.dk,2015,apartment,9293,80,8000,Peder Skrams Gade,Aarhus C,3
+boligportal.dk,2015,apartment,9236,80,8000,Marstrandsgade,Aarhus C,3
+boligportal.dk,2015,apartment,6970,60,8260,Fredensvej,Viby J,2
+boligportal.dk,2015,room,4300,16,8000,Harald Jensens Plads,Aarhus C,2
+boligportal.dk,2015,apartment,8400,65,8200,Niels Juels Gade ,Aarhus N,2
+boligportal.dk,2015,apartment,8800,89,8220,Hoffmannsvej,Brabrand,3
+boligportal.dk,2015,apartment,10920,106,8000,Stadion Allé,Aarhus C,4
+boligportal.dk,2015,apartment,9450,86,8000,Stadion Allé,Aarhus C,3
+boligportal.dk,2015,apartment,9480,84,8000,Langenæs Allé,Aarhus C,3
+boligportal.dk,2015,apartment,7985,66,8000,Langenæs Allé,Aarhus C,2
+boligportal.dk,2015,apartment,7880,67,8000,Stadion Allé,Aarhus C,2
+boligportal.dk,2015,apartment,4200,32,8000,P.P Ørums Gade,Aarhus C,1
+boligportal.dk,2015,room,4000,20,8200,Brendstrupvej,Aarhus N,1
+boligportal.dk,2015,apartment,9450,69,8000,Åhusene,Aarhus C,3
+boligportal.dk,2015,apartment,11950,99,8000,Langelinieparken,Aarhus C,3
+boligportal.dk,2015,apartment,7395,61,8000,Silkeborgvej,Aarhus C,2
+boligportal.dk,2015,apartment,7800,90,8230,Erik Bøghs Vej,Åbyhøj,2
+boligportal.dk,2015,apartment,4300,40,8230,Haslevej,Åbyhøj,1
+boligportal.dk,2015,room,2100,15,8210,Snogebæksvej,Aarhus V,1
+boligportal.dk,2015,apartment,7100,62,8200,Ivar Huirtfeldts Gade,Aarhus N,2
+boligportal.dk,2015,apartment,10500,94,8000,J.M Mørks Gade,Aarhus C,3
+boligportal.dk,2015,apartment,6100,48,8260,Engtoften,Viby J,2
+boligportal.dk,2015,apartment,4165,30,8200,Finsensgade,Aarhus N,2
+boligportal.dk,2015,apartment,6150,65,8000,Chr. Wærums Gade,Aarhus C,2
+boligportal.dk,2015,apartment,8034,65,8000,Finderupvej,Aarhus C,2
+boligportal.dk,2015,apartment,7000,70,8000,Samsøgade,Aarhus C,3
+boligportal.dk,2015,apartment,9225,72,8000,Kirkegårdsvej,Aarhus C,3
+boligportal.dk,2016,room,4000,13,8260,Hømosevej,Viby J,1
+boligportal.dk,2016,apartment,6400,44,8000,Odensegade,Aarhus C,3
+boligportal.dk,2016,apartment,8989,83,8230,Tousvej,Åbyhøj,3
+boligportal.dk,2016,room,3800,15,8000,Stadion Allé,Aarhus C,1
+boligportal.dk,2016,room,2100,8,8000,Klostergade,Aarhus C,1
+boligportal.dk,2016,room,4000,15,8200,Jens Baggesens Vej,Aarhus N,1
+boligportal.dk,2016,apartment,8664,87,8000,Nørre Allé,Aarhus C,3
+boligportal.dk,2016,apartment,9960,96,8270,Rundhøj Alle,Højbjerg,4
+boligportal.dk,2016,apartment,13500,97,8000,Dagmar Petersens Gade,Aarhus C,4
+boligportal.dk,2016,apartment,13500,145,8000,Hendrik Pontoppidans Gade,Aarhus C,4
+boligportal.dk,2016,room,3600,20,8000,Nørregade,Aarhus C,1
+boligportal.dk,2016,room,4500,17,8000,Volden,Aarhus C,1
+boligportal.dk,2016,room,3300,15,8240,Vestre Skovvej,Risskov,1
+boligportal.dk,2016,apartment,5200,45,8200,Eduoard Suensons Gade,Aarhus N,1
+boligportal.dk,2016,room,5000,18,8000,Banegårdsgade,Aarhus C,1
+boligportal.dk,2016,room,3500,20,8200,Kalmargade,Aarhus N,1
+boligportal.dk,2016,apartment,7875,94,8220,Hovedgaden,Brabrand,3
+boligportal.dk,2016,apartment,4500,49,8210,Torpevænget,Aarhus V,2
+boligportal.dk,2016,apartment,9950,89,8000,P.P Ørums Gade,Aarhus C,3
+boligportal.dk,2016,room,2900,12,8200,Elmehøjen,Aarhus N,1
+boligportal.dk,2016,apartment,8210,54,8200,Brendstrupvej,Aarhus N,2
+boligportal.dk,2016,apartment,9100,80,8000,Nordborggade,Aarhus C,3
+boligportal.dk,2016,apartment,11900,96,8000,Heibergsgade,Aarhus C,3
+boligportal.dk,2016,room,4400,24,8000,Abasalonsgade,Aarhus C,1
+boligportal.dk,2016,apartment,9900,68,8200,Niels Juels Gade ,Aarhus N,2
+boligportal.dk,2016,apartment,7900,56,8200,Trøjborgvej,Aarhus N,1
+boligportal.dk,2016,apartment,13500,118,8200,Niels Juels Gade ,Aarhus N,4
+boligportal.dk,2016,apartment,9800,84,8000,Strandvejen,Aarhus C,3
+boligportal.dk,2016,apartment,9800,84,8230,Haslevej,Åbyhøj,3
+boligportal.dk,2016,apartment,12000,118,8000,Ryesgade,Aarhus C,3
+boligportal.dk,2016,room,4190,18,8000,Nørre Allé,Aarhus C,1
+boligportal.dk,2016,apartment,6125,70,8000,Falstersgade,Aarhus C,3
+boligportal.dk,2016,room,2600,13,8230,Carit Etlars Vej,Åbyhøj,1
+boligportal.dk,2016,apartment,11236,82,8000,Frederiksgade,Aarhus C,3
+boligportal.dk,2016,apartment,9583,97,8000,Fredenstorv,Aarhus C,3
+boligportal.dk,2016,apartment,4500,55,8381,Gedingsvej,Tilst,2
+boligportal.dk,2016,room,3500,25,8320,Ydunsvej,Mårslet,1
+boligportal.dk,2016,apartment,8000,118,8270,Rosenvangs Alle,Højbjerg,3
+boligportal.dk,2016,apartment,12500,114,8000,Passagen,Aarhus C,3
+boligportal.dk,2016,apartment,18800,118,8000,Mariane Thomsens Gade,Aarhus C,3
+boligportal.dk,2016,room,4000,13,8260,Hømosevej,Viby J,1
+boligportal.dk,2016,apartment,6400,44,8000,Odensegade,Aarhus C,2
+boligportal.dk,2016,room,2895,15,8200,Ivar Huirtfeldts Gade,Aarhus N,1
+boligportal.dk,2016,room,4000,16,8000,Silkeborgvej,Aarhus C,1
+boligportal.dk,2016,room,4200,21,8000,Helgenæsgade,Aarhus C,1
+boligportal.dk,2016,room,3500,14,8200,Niels Juels Gade ,Aarhus N,1
+boligportal.dk,2016,room,4287,20,8200,Randersvej,Aarhus N,1
+boligportal.dk,2016,apartment,7745,76,8260,Onholtvej,Viby J,3
+boligportal.dk,2016,apartment,7025,84,8220,Emmasvej,Brabrand,3
+boligportal.dk,2016,apartment,15800,112,8000,Langelinieparken,Aarhus C,3
+boligportal.dk,2016,room,3500,14,8000,Thunøgade,Aarhus C,1
+boligportal.dk,2016,apartment,8897,73,8381,Blomsterlunden,Tilst,3
+boligportal.dk,2016,apartment,11000,64,8000,Guldmedsgade,Aarhus C,3
+boligportal.dk,2016,room,2850,12,8000,Grønnegade,Aarhus C,1
+boligportal.dk,2016,room,2500,14,8000,Poul Martin Møllers Vej,Aarhus C,1
+boligportal.dk,2016,apartment,7800,60,8000,Schleppegrellsgade,Aarhus C,3
+boligportal.dk,2016,room,2400,16,8230,Silkeborgvej,Åbyhøj,1
+boligportal.dk,2016,room,3800,10,8000,Vestervang,Aarhus C,1
+boligportal.dk,2016,apartment,5633,52,8000,Kaløgade,Aarhus C,2
+boligportal.dk,2016,apartment,6963,58,8200,Ladefogedvej,Aarhus N,2
+boligportal.dk,2016,apartment,9033,90,8000,Klosterport,Aarhus C,3
+boligportal.dk,2016,apartment,7525,70,8000,Carl Bertelsens Gade,Aarhus C,2
+boligportal.dk,2016,apartment,8448,74,8000,Haderslevgade,Aarhus C,2
+boligportal.dk,2016,room,5200,20,8000,Musuemsgade,Aarhus C,1
+boligportal.dk,2016,room,3700,17,8000,Bogensegade,Aarhus C,1
+boligportal.dk,2016,apartment,14135,154,8000,Nørregade,Aarhus C,6
+boligportal.dk,2016,apartment,30000,252,8000,Vestergade,Aarhus C,5
+boligportal.dk,2016,room,3700,13,8200,Jens Baggesens Vej,Aarhus N,1
+boligportal.dk,2016,apartment,7550,74,8220,Hougårdsvej,Brabrand,3
+boligportal.dk,2016,apartment,11183,89,8000,Grønnegade,Aarhus C,3
+boligportal.dk,2016,apartment,5250,79,8000,Lundbyesgade,Aarhus C,2
+boligportal.dk,2016,apartment,13613,121,8000,Sjællandsgade,Aarhus C,4
+boligportal.dk,2016,apartment,7350,55,8000,Gebauersgade,Aarhus C,2
+boligportal.dk,2016,apartment,6000,41,8210,Bronzealdervænget,Aarhus V,2
+boligportal.dk,2016,apartment,11580,114,8000,Chr. Wærums Gade,Aarhus C,4
+boligportal.dk,2016,apartment,12383,139,8000,Fredensgade,Aarhus C,2
+boligportal.dk,2016,room,4900,16,8000,Lundbyesgade,Aarhus C,1
+boligportal.dk,2016,apartment,6945,54,8000,Vestergade,Aarhus C,2
+boligportal.dk,2016,apartment,5950,48,8520,Kastanjehaven,Lystrup,2
+boligportal.dk,2016,apartment,5550,46,8000,Åboulevarden,Aarhus C,1
+boligportal.dk,2016,room,4500,14,8000,Kaserneboulevarden,Aarhus C,1
+boligportal.dk,2016,apartment,3700,42,8270,Oddervej,Højbjerg,2
+boligportal.dk,2016,room,1800,12,8260,Reventslowsvej,Viby J,1
+boligportal.dk,2016,room,2000,18,8230,Tousvej,Åbyhøj,1
+boligportal.dk,2016,room,4000,17,8200,Nordre Ringgade,Aarhus N,1
+boligportal.dk,2016,room,4000,25,8230,Erik Bøghs Vej,Åbyhøj,1
+boligportal.dk,2016,apartment,6500,86,8270,Rundhøj Alle,Højbjerg,3
+boligportal.dk,2016,apartment,8500,91,8000,Vestergade,Aarhus C,3
+boligportal.dk,2016,apartment,7500,74,8000,J.M Mørks Gade,Aarhus C,2
+boligportal.dk,2016,apartment,6785,59,8260,Onholtvej,Viby J,2
+boligportal.dk,2016,apartment,11000,112,8230,Silkeborgvej,Åbyhøj,3
+boligportal.dk,2016,apartment,8800,70,8200,Skovvangsvej,Aarhus N,2
+boligportal.dk,2016,apartment,7500,52,8000,Rozenkrantzgade,Aarhus C,2
+boligportal.dk,2016,apartment,4192,50,8270,Højmarkvej,Højbjerg,2
+boligportal.dk,2016,room,4038,14,8000,Helgenæsgade,Aarhus C,1
+boligportal.dk,2016,room,3900,23,8000,Vesterbrogade,Aarhus C,1
+boligportal.dk,2016,apartment,7000,82,8200,Steen Billes Torv,Aarhus N,3
+boligportal.dk,2016,apartment,6550,104,8250,Stavneagervej,Egå,2
+boligportal.dk,2016,apartment,9926,101,8260,Viby Torv,Viby J,3
+boligportal.dk,2016,apartment,8420,92,8260,Holme Møllevej,Viby J,3
+boligportal.dk,2016,apartment,7000,51,8000,Kirkegårdsvej,Aarhus C,1
+boligportal.dk,2016,room,4513,16,8000,De Mezas Vej,Aarhus C,1
+boligportal.dk,2016,apartment,11920,100,8000,Lundingsgade,Aarhus C,4
+boligportal.dk,2016,room,4200,20,8000,Vestergade,Aarhus C,1
+boligportal.dk,2016,room,4000,10,8000,Ny Banegårdsgade,Aarhus C,1
+boligportal.dk,2016,room,3000,13,8000,Tøndergade,Aarhus C,1
+boligportal.dk,2016,room,2750,11,8200,Vorregårds Alle,Aarhus N,1
+boligportal.dk,2016,room,3695,33,8000,Vestergade,Aarhus C,1
+boligportal.dk,2016,apartment,12383,139,8000,Fredensgade,Aarhus C,2
+boligportal.dk,2016,room,4900,16,8000,Lundbyesgade,Aarhus C,1
+boligportal.dk,2016,apartment,6945,54,8000,Vestergade,Aarhus C,2
+boligportal.dk,2016,apartment,5500,46,8000,Åboulevarden,Aarhus C,1
+boligportal.dk,2016,room,4500,14,8000,Kaserneboulevarden,Aarhus C,1
+boligportal.dk,2016,apartment,10000,80,8000,Nordborggade,Aarhus C,3
+boligportal.dk,2016,apartment,7950,67,8000,Kirkegårdsvej,Aarhus C,3
+boligportal.dk,2016,apartment,7463,59,8000,Ankersgade,Aarhus C,2
+boligportal.dk,2016,apartment,7880,62,8200,Peder Skrams Gade,Aarhus N,1
+boligportal.dk,2016,room,4000,14,8000,Nørre Allé,Aarhus C,1
+boligportal.dk,2016,room,4200,17,8200,Aldersrovej,Aarhus N,1
+boligportal.dk,2016,apartment,5995,50,8250,Kastanjehaven,Egå,2
+boligportal.dk,2016,apartment,8154,58,8260,Engelundsvejs,Viby J,2
+boligportal.dk,2016,apartment,9480,67,8000,Kirkegårdsvej,Aarhus C,3
+boligportal.dk,2016,room,3900,12,8000,Marselis Boulevard,Aarhus C,1
+boligportal.dk,2016,apartment,6000,43,8200,Abildgade,Aarhus N,1
+boligportal.dk,2016,apartment,7400,54,8000,Vesterport,Aarhus C,1
+boligportal.dk,2016,room,2105,22,8000,Borggade,Aarhus C,1
+boligportal.dk,2016,apartment,5000,24,8000,Skovvejen,Aarhus C,1
+boligportal.dk,2016,apartment,10500,123,8000,Grønnegade,Aarhus C,3
+boligportal.dk,2016,apartment,7450,72,8000,P.P Ørums Gade,Aarhus C,2
+boligportal.dk,2016,room,5200,16,8000,Nørre Allé,Aarhus C,1
+boligportal.dk,2016,apartment,9895,109,8000,Frederiks Allé,Aarhus C,4
+boligportal.dk,2016,apartment,6900,38,8000,Sjællandsgade,Aarhus C,2
+boligportal.dk,2016,apartment,7245,63,8000,Ingerslevs Boulevard,Aarhus C,1
+boligportal.dk,2016,apartment,12600,172,8240,Grenåvej,Risskov,4
+boligportal.dk,2016,room,2100,13,8240,Vestre Srandallé,Risskov,1
+boligportal.dk,2016,room,4000,16,8000,Østbanetorvet,Aarhus C,1
+boligportal.dk,2016,room,4500,24,8000,Carl Bertelsens Gade,Aarhus C,1
+boligportal.dk,2016,room,3900,16,8000,Nordborggade,Aarhus C,1
+boligportal.dk,2016,room,4000,16,8000,Åhusene,Aarhus C,1
+boligportal.dk,2016,room,4100,22,8200,Ivar Huirtfeldts Gade,Aarhus N,1
+boligportal.dk,2016,apartment,7200,48,8270,Elverdalsvej,Højbjerg,2
+boligportal.dk,2016,room,4300,20,8000,De Mezas Vej,Aarhus C,1
+boligportal.dk,2016,apartment,6400,56,8000,Klostergade,Aarhus C,3
+boligportal.dk,2016,room,3500,15,8000,Schleppegrellsgade,Aarhus C,1
+boligportal.dk,2016,room,3495,16,8000,Telefonsmøgen,Aarhus C,1
+boligportal.dk,2016,apartment,10600,86,8000,Fiskergade,Aarhus C,3
+boligportal.dk,2016,room,3650,20,8200,Otto Sverdrups Vej,Aarhus N,1
+boligportal.dk,2016,room,3500,12,8000,Klosterport,Aarhus C,1
+boligportal.dk,2016,apartment,5200,45,8200,Eduoard Suensons Gade,Aarhus N,1
+boligportal.dk,2016,apartment,8000,63,8000,Marstrandsgade,Aarhus C,2
+boligportal.dk,2016,apartment,11500,102,8000,Hans Schourups Gade,Aarhus C,3
+boligportal.dk,2016,apartment,5200,52,8230,Chr. Winthers Vej,Åbyhøj,2
+boligportal.dk,2016,apartment,6000,47,8200,Jordbrovej,Aarhus N,1
+boligportal.dk,2016,apartment,6500,86,8270,Rundhøj Alle,Højbjerg,3
+boligportal.dk,2016,room,2466,9,8000,Skovvejen,Aarhus C,1
+boligportal.dk,2016,apartment,15888,123,8000,Vestergade,Aarhus C,4
+boligportal.dk,2016,apartment,13613,121,8000,Sjællandsgade,Aarhus C,4
+boligportal.dk,2016,apartment,7374,40,8210,Bronzealdervænget,Aarhus V,2
+boligportal.dk,2016,apartment,12100,93,8000,Vestergade,Aarhus C,3
+boligportal.dk,2016,apartment,4500,40,8381,Tomballevej,Tilst,2
+boligportal.dk,2016,room,4200,15,8000,Kongsvang Alle ,Aarhus C,1
+boligportal.dk,2016,room,4600,30,8200,Otto Sverdrups Vej,Aarhus N,1
+boligportal.dk,2016,apartment,10013,89,8240,Engholms Allé,Risskov,3
+boligportal.dk,2016,apartment,9450,85,8210,Vintervej,Aarhus V,3
+boligportal.dk,2016,apartment,8972,70,8210,Vintervej,Aarhus V,2
+boligportal.dk,2016,room,3950,12,8000,Åboulevarden,Aarhus C,1
+boligportal.dk,2016,room,2000,15,8230,Erik Bøghs Vej,Åbyhøj,1
+boligportal.dk,2016,room,2700,12,8210,Snogebæksvej,Aarhus V,1
+boligportal.dk,2016,apartment,5700,60,8250,Øster Kringelvej,Egå,2
+boligportal.dk,2016,room,3600,16,8000,Jægergårdsgade,Aarhus C,1
+boligportal.dk,2016,room,4470,13,8000,Åboulevarden,Aarhus C,1
+boligportal.dk,2016,apartment,11050,118,8230,Silkeborgvej,Åbyhøj,3
+boligportal.dk,2016,room,2993,11,8000,Chr. Wærums Gade,Aarhus C,1
+boligportal.dk,2016,room,3500,12,8200,Marius Simonsens Vej,Aarhus N,1
+boligportal.dk,2016,room,4692,30,8210,Ryvvej,Aarhus V,1
+boligportal.dk,2016,apartment,7000,64,8000,Høegh-Guldbergs Gade,Aarhus C,2
+boligportal.dk,2016,room,3900,12,8000,Marselis Boulevard,Aarhus C,1
+boligportal.dk,2016,apartment,8200,87,8240,Tirstrupvej,Risskov,3
+boligportal.dk,2016,room,4500,15,8000,Vestergade,Aarhus C,1
+boligportal.dk,2016,apartment,8800,80,8000,Tøndergade,Aarhus C,3
+boligportal.dk,2016,apartment,9985,100,8000,Skanderborgvej ,Aarhus C,3
+boligportal.dk,2016,apartment,99950,89,8000,P.P Ørums Gade,Aarhus C,3
+boligportal.dk,2016,room,3500,14,8000,Klosterport,Aarhus C,1
+boligportal.dk,2016,apartment,9500,47,8000,Ole Rømers Gade,Aarhus C,2
+boligportal.dk,2016,room,3900,15,8000,Strandvejen,Aarhus C,1
+boligportal.dk,2016,apartment,3300,26,8220,Hovedgaden,Brabrand,1
+boligportal.dk,2016,apartment,14391,107,8000,Skolegade,Aarhus C,3
+boligportal.dk,2016,room,3000,15,8240,Grenåvej,Risskov,1
+boligportal.dk,2016,apartment,9150,87,8230,Silkeborgvej,Åbyhøj,3
+boligportal.dk,2016,apartment,9407,84,8381,Stavnsvej,Tilst,3
+boligportal.dk,2016,apartment,12500,90,8000,Ceres Allé,Aarhus C,3
+boligportal.dk,2016,apartment,11995,103,8000,Grete Løchtes Gade ,Aarhus C,3
+boligportal.dk,2016,apartment,9160,68,8200,Dronning Margrethes Vej,Aarhus N,2
+boligportal.dk,2016,apartment,10013,89,8240,Engholms Alle,Risskov,3
+boligportal.dk,2016,room,4200,20,8000,Vestre Ringgade,Aarhus C,1
+boligportal.dk,2016,apartment,10600,109,8000,Hans Broges Gade,Aarhus C,3
+boligportal.dk,2016,apartment,9561,86,8210,Vintervej,Aarhus V,3
+boligportal.dk,2016,room,2541,26,8260,Risdalsvej,Viby J,1
+boligportal.dk,2016,apartment,10500,62,8000,Mariane Thomsens Gade,Aarhus C,2
+boligportal.dk,2016,apartment,6950,68,8000,Mejlgade,Aarhus C,2
+boligportal.dk,2016,apartment,15300,141,8000,Nørregade,Aarhus C,4
+boligportal.dk,2016,room,2300,12,8210,Bispehavevej,Aarhus V,1
+boligportal.dk,2016,apartment,11895,138,8270,Stenvej,Højbjerg,4
+boligportal.dk,2016,apartment,10800,88,8000,Langelandsgsade,Aarhus C,3
+boligportal.dk,2016,apartment,11670,100,8000,Kirkedammen,Aarhus C,4
+boligportal.dk,2016,apartment,9530,89,8000,Chr. Wærums Gade,Aarhus C,3
+akutbolig.dk,2014,apartment,11111,112,8200,Oluf Palmes Allé,Aarhus N,4
+akutbolig.dk,2014,apartment,9711,90,8200,Oluf Palmes Allé,Aarhus N,3
+akutbolig.dk,2014,apartment,15739,151,8200,Funch Thomsens Gade,Aarhus N,5
+akutbolig.dk,2014,apartment,13712,124,8000,Skolegade,Aarhus C,4
+akutbolig.dk,2014,apartment,13125,50,8000,Tietgens Plads,Aarhus C,5
+akutbolig.dk,2014,room,3500,16,8000,Frederiks Alle,Aarhus C,1
+akutbolig.dk,2014,room,3850,16,8000,Carl Blochs Gade,Aarhus C,1
+akutbolig.dk,2014,apartment,8230,89,8000,Lundingsgade,Aarhus C,3
+akutbolig.dk,2014,apartment,7906,72,8000,Skanderborgvej ,Aarhus C,2
+akutbolig.dk,2014,apartment,7467,57,8000,Vesterbrogade,Aarhus C,2
+akutbolig.dk,2014,apartment,6000,55,8000,Falstersgade,Aarhus C,2
+akutbolig.dk,2014,apartment,9900,103,8000,Harald Skovbys Gade,Aarhus C,3
+akutbolig.dk,2014,apartment,9900,92,8000,Åboulevarden,Aarhus C,3
+akutbolig.dk,2014,apartment,7700,76,8000,Lundingsgade,Aarhus C,2
+akutbolig.dk,2014,apartment,6800,63,8000,Lundingsgade,Aarhus C,2
+akutbolig.dk,2014,apartment,7250,85,8000,Gammel Munkegade,Aarhus C,3
+akutbolig.dk,2014,room,3600,10,8000,Finderupvej,Aarhus C,1
+akutbolig.dk,2014,apartment,8000,76,8200,Skovvangsvej,Aarhus N,3
+akutbolig.dk,2014,apartment,3250,30,8200,Skovvangsvej,Aarhus N,1
+akutbolig.dk,2014,apartment,16900,145,8000,Mariane Thomsens Gade,Aarhus C,5
+akutbolig.dk,2014,room,2721,6,8200,Finsensgade,Aarhus N,1
+akutbolig.dk,2014,apartment,7327,85,8210,Jernaldervej,Aarhus V,4
+akutbolig.dk,2014,apartment,8600,65,8000,Hans Broges Gade,Aarhus C,2
+akutbolig.dk,2014,apartment,7400,64,8200,Kalmargade,Aarhus N,2
+akutbolig.dk,2014,apartment,10013,129,8000,Åboulevarden,Aarhus C,3
+akutbolig.dk,2014,room,3500,15,8200,Niels Juels Gade ,Aarhus N,1
+akutbolig.dk,2014,apartment,14400,108,8200,Trøjborgvej,Aarhus N,4
+akutbolig.dk,2014,room,3000,14,8000,Ny Munkegade,Aarhus C,1
+akutbolig.dk,2014,apartment,10286,117,8000,Østergade,Aarhus C,2
+akutbolig.dk,2014,apartment,9169,78,8000,Mariane Thomsens Gade,Aarhus C,2
+akutbolig.dk,2014,apartment,4000,50,8000,Otto Ruds Gade,Aarhus C,1
+akutbolig.dk,2014,apartment,10925,114,8000,Trepkasgade,Aarhus C,4
+akutbolig.dk,2014,apartment,4400,41,8000,Strandparken,Aarhus C,1
+akutbolig.dk,2014,apartment,8500,85,8000,Kildegården,Aarhus C,3
+akutbolig.dk,2014,apartment,7500,75,8000,Kildegården,Aarhus C,2
+akutbolig.dk,2014,apartment,8400,81,8000,De Mezas Vej,Aarhus C,3
+akutbolig.dk,2014,apartment,6400,62,8000,Lundingsgade,Aarhus C,3
+akutbolig.dk,2014,apartment,8900,94,8000,Jægergårdsgade,Aarhus C,3
+akutbolig.dk,2014,apartment,8900,91,8000,Anholtsgade,Aarhus C,3
+akutbolig.dk,2014,apartment,8324,75,8000,Finderupvej,Aarhus C,2
+akutbolig.dk,2014,apartment,8500,285,8200,Elstedvej,Aarhus N,5
+akutbolig.dk,2014,room,3453,10,8000,Marselisborg Allé,Aarhus C,1
+akutbolig.dk,2014,apartment,4500,50,8000,Mejlgade,Aarhus C,1
+akutbolig.dk,2014,room,4450,18,8000,Skt. Olufs Gade,Aarhus C,1
+akutbolig.dk,2014,apartment,8240,97,8000,Hjarnøgade,Aarhus C,3
+akutbolig.dk,2014,apartment,6000,65,8000,Gammel Munkegade,Aarhus C,1
+akutbolig.dk,2014,apartment,16854,122,8000,Langelinieparken,Aarhus C,4
+akutbolig.dk,2014,apartment,19500,277,8210,Haslehøjvej,Aarhus V,5
+akutbolig.dk,2014,apartment,13250,102,8200,Trøjborgvej,Aarhus N,4
+akutbolig.dk,2014,apartment,9900,72,8200,Niels Juels Gade ,Aarhus N,3
+akutbolig.dk,2014,apartment,10500,169,8200,Bækhusvej,Aarhus N,3
+akutbolig.dk,2014,apartment,10500,99,8000,Finderupvej,Aarhus C,3
+akutbolig.dk,2014,room,4000,22,8000,Nordborggade,Aarhus C,1
+akutbolig.dk,2014,room,2200,15,8210,Jens Baggesens Vej,Aarhus V,1
+akutbolig.dk,2014,apartment,12600,108,8000,Jægergårdsgade,Aarhus C,3
+akutbolig.dk,2014,apartment,10500,97,8000,Kroghsgade,Aarhus C,3
+akutbolig.dk,2014,apartment,12875,113,8000,M.P Brunns Gade,Aarhus C,4
+akutbolig.dk,2014,apartment,8601,90,8000,Hjarnøgade,Aarhus C,2
+akutbolig.dk,2014,apartment,19900,186,8000,Helga Pedersens Gade,Aarhus C,3
+akutbolig.dk,2014,apartment,14950,116,8000,Åhusene,Aarhus C,2
+akutbolig.dk,2014,apartment,6903,64,8200,Kalmargade,Aarhus N,2
+akutbolig.dk,2014,apartment,9680,90,8200,Oluf Palmes Allé,Aarhus N,3
+akutbolig.dk,2014,apartment,14298,127,8200,Tordenskjoldsgade,Aarhus N,4
+akutbolig.dk,2014,apartment,15792,151,8200,Funch Thomsens Gade,Aarhus N,5
+akutbolig.dk,2014,room,3900,13,8000,Høegh-Guldbergs Gade,Aarhus C,1
+akutbolig.dk,2014,room,4000,26,8210,Jordbrovej,Aarhus V,1
+akutbolig.dk,2014,apartment,7325,52,8000,Åhusene,Aarhus C,2
+akutbolig.dk,2014,room,4600,12,8000,Falstersgade,Aarhus C,1
+akutbolig.dk,2014,apartment,9395,105,8000,M.P Brunns Gade,Aarhus C,4
+akutbolig.dk,2014,apartment,10208,70,8000,Østergade,Aarhus C,2
+akutbolig.dk,2014,room,4600,25,8000,Gebauersgade,Aarhus C,1
+akutbolig.dk,2014,apartment,15950,116,8000,Åhusene,Aarhus C,3
+akutbolig.dk,2014,apartment,6500,70,8000,Nørrebrogade,Aarhus C,3
+akutbolig.dk,2014,apartment,14950,108,8000,Åhusene,Aarhus C,3
+akutbolig.dk,2014,apartment,7900,70,8000,Jægergårdsgade,Aarhus C,2
+akutbolig.dk,2014,apartment,10200,97,8000,Harald Jensens Plads,Aarhus C,2
+akutbolig.dk,2014,apartment,5100,48,8000,Dannebrogsgade,Aarhus C,2
+akutbolig.dk,2014,room,4500,16,8000,Borggade,Aarhus C,1
+akutbolig.dk,2014,apartment,10558,142,8000,Mejlgade,Aarhus C,4
+akutbolig.dk,2014,room,4325,15,8000,Frederiksgade,Aarhus C,1
+akutbolig.dk,2014,room,3300,20,8200,Trøjborgvej,Aarhus N,1
+akutbolig.dk,2014,room,4500,10,8000,Grønnegade,Aarhus C,1
+akutbolig.dk,2014,room,4000,16,8000,Vestergade,Aarhus C,1
+akutbolig.dk,2014,apartment,14575,106,8000,Østergade,Aarhus C,2
+akutbolig.dk,2014,apartment,7013,51,8000,Østergade,Aarhus C,1
+akutbolig.dk,2014,apartment,8900,97,8210,Hammerhusvej,Aarhus V,3
+akutbolig.dk,2014,apartment,14900,81,8000,Skt. Clemens Stræde,Aarhus C,1
+akutbolig.dk,2014,apartment,12900,116,8000,Tietgens Plads,Aarhus C,4
+akutbolig.dk,2014,room,3700,16,8000,Vesterport,Aarhus C,1
+akutbolig.dk,2014,room,3000,20,8210,Bispehavevej,Aarhus V,1
+akutbolig.dk,2014,apartment,15000,156,8000,Molsgade,Aarhus C,2
+akutbolig.dk,2014,apartment,8202,91,8200,Langelandsgsade,Aarhus N,3
+akutbolig.dk,2014,apartment,10600,99,8000,Finderupvej,Aarhus C,3
+akutbolig.dk,2014,apartment,8925,87,8000,Valdemarsgade,Aarhus C,3
+akutbolig.dk,2015,apartment,11009,112,8200,Oluf Palmes Allé,Aarhus N,4
+akutbolig.dk,2015,apartment,7373,67,8200,Kalmargade,Aarhus N,2
+akutbolig.dk,2015,apartment,8668,82,8000,Langenæs Allé,Aarhus C,2
+akutbolig.dk,2015,apartment,9091,92,8000,Vejlegade,Aarhus C,3
+akutbolig.dk,2015,room,3500,8,8000,Vestergade,Aarhus C,1
+akutbolig.dk,2015,room,3900,12,8000,Finderupvej,Aarhus C,1
+akutbolig.dk,2015,apartment,10800,98,8000,Assensgade,Aarhus C,3
+akutbolig.dk,2015,apartment,10000,100,8000,Marselisborg Allé,Aarhus C,4
+akutbolig.dk,2015,apartment,7200,60,8200,Skejbytoften,Aarhus N,2
+akutbolig.dk,2015,apartment,7900,81,8000,Ny Munkegade,Aarhus C,2
+akutbolig.dk,2015,apartment,10275,110,8000,Chr. Wærums Gade,Aarhus C,3
+akutbolig.dk,2015,room,2725,14,8200,Jens Baggesens Vej,Aarhus N,1
+akutbolig.dk,2015,apartment,9565,85,8000,Fredensgade,Aarhus C,2
+akutbolig.dk,2015,apartment,10495,89,8000,Banegårdsgade,Aarhus C,4
+akutbolig.dk,2015,apartment,8950,63,8000,Frederiksgade,Aarhus C,2
+akutbolig.dk,2015,apartment,3700,28,8210,Ryvvej,Aarhus V,1
+akutbolig.dk,2015,apartment,16900,116,8000,Ryesgade,Aarhus C,4
+akutbolig.dk,2015,room,2777,20,8210,Vintervej,Aarhus V,1
+akutbolig.dk,2015,apartment,13800,129,8000,Heibergsgade,Aarhus C,4
+akutbolig.dk,2015,room,3400,16,8200,Herluf Trolles Gade,Aarhus N,1
+akutbolig.dk,2015,apartment,14950,116,8000,Åhusene,Aarhus C,3
+akutbolig.dk,2015,apartment,7995,70,8000,Fiskergade,Aarhus C,2
+akutbolig.dk,2015,room,3500,18,8000,Bødker Balles Gård,Aarhus C,1
+akutbolig.dk,2015,apartment,7600,77,8200,Oslogade,Aarhus N,3
+akutbolig.dk,2015,apartment,7370,61,8200,Ivar Huirtfeldts Gade,Aarhus N,2
+akutbolig.dk,2015,apartment,8960,82,8000,Finderupvej,Aarhus C,2
+akutbolig.dk,2015,apartment,11000,104,8000,Skolegade,Aarhus C,2
+akutbolig.dk,2015,room,3500,12,8200,Jordbrovej,Aarhus N,1
+akutbolig.dk,2015,apartment,7200,86,8000,Montanagade,Aarhus C,2
+akutbolig.dk,2015,apartment,7100,67,8200,Brendstrupvej,Aarhus N,2
+akutbolig.dk,2015,apartment,8650,95,8000,Høegh-Guldbergs Gade,Aarhus C,2
+akutbolig.dk,2015,apartment,10650,72,8200,Niels Juels Gade ,Aarhus N,3
+akutbolig.dk,2015,apartment,11700,117,8000,Stadion Allé,Aarhus C,4
+akutbolig.dk,2015,apartment,12800,135,8000,Guldsmedsgade,Aarhus C,5
+akutbolig.dk,2015,apartment,8000,87,8200,Oslogade,Aarhus N,3
+akutbolig.dk,2015,apartment,9167,88,8000,Østergade,Aarhus C,2
+akutbolig.dk,2015,apartment,8084,87,8200,Langelandsgsade,Aarhus N,2
+akutbolig.dk,2015,apartment,11903,110,8000,Møllestien,Aarhus C,3
+akutbolig.dk,2015,apartment,13500,87,8000,Helga Pedersens Gade,Aarhus C,3
+akutbolig.dk,2015,apartment,12980,106,8000,Jægergårdsgade,Aarhus C,4
+akutbolig.dk,2015,room,3200,11,8200,Åbogade,Aarhus N,1
+akutbolig.dk,2015,apartment,8700,68,8000,Østergade,Aarhus C,2
+akutbolig.dk,2015,apartment,11750,120,8000,Eckersbergsgade,Aarhus C,5
+akutbolig.dk,2015,room,3900,14,8000,Ryesgade,Aarhus C,1
+akutbolig.dk,2015,apartment,15000,161,8000,Stadion Allé,Aarhus C,5
+akutbolig.dk,2015,apartment,6780,60,8200,Brenstrupgårdsvej,Aarhus N,2
+akutbolig.dk,2015,room,3730,12,8200,Willemoesgade,Aarhus N,1
+akutbolig.dk,2015,room,3200,15,8210,Fjældevænget,Aarhus V,1
+akutbolig.dk,2015,apartment,10200,97,8000,Harald Jensens Plads,Aarhus C,2
+akutbolig.dk,2015,apartment,14575,106,8000,Østergade,Aarhus C,2
+akutbolig.dk,2015,apartment,7013,51,8000,Østergade,Aarhus C,1
+akutbolig.dk,2015,apartment,14900,81,8000,Skt. Clemens Stræde,Aarhus C,1
+akutbolig.dk,2015,apartment,3600,50,8200,Niels Juels Gade ,Aarhus N,2
+akutbolig.dk,2015,apartment,12999,115,8000,Hans Broges Gade,Aarhus C,4
+akutbolig.dk,2015,apartment,8900,83,8000,Amaliegade,Aarhus C,1
+akutbolig.dk,2015,apartment,6400,69,8000,Bülowsgade,Aarhus C,2
+akutbolig.dk,2015,apartment,4500,55,8210,Østrevej,Aarhus V,1
+akutbolig.dk,2015,apartment,8500,111,8000,Amaliegade,Aarhus C,1
+akutbolig.dk,2015,apartment,11100,74,8200,Niels Juels Gade ,Aarhus N,3
+akutbolig.dk,2015,apartment,9900,99,8210,Ryhavevej,Aarhus V,3
+akutbolig.dk,2015,apartment,4000,55,8000,Åhusene,Aarhus C,2
+akutbolig.dk,2015,apartment,13000,147,8000,Sønder Allé,Aarhus C,3
+akutbolig.dk,2015,room,4000,16,8000,Jerichausgade,Aarhus C,1
+akutbolig.dk,2015,apartment,9091,92,8000,Vejlegade,Aarhus C,3
+akutbolig.dk,2016,apartment,12050,117,8200,Tordenskjoldsgade,Aarhus N,4
+akutbolig.dk,2016,apartment,5516,67,8000,Hjarnøgade,Aarhus C,2
+akutbolig.dk,2016,apartment,7233,56,8240,Engholms Allé,Risskov,2
+akutbolig.dk,2016,apartment,9063,76,8000,Thit Jensens Gade,Aarhus C,2
+akutbolig.dk,2016,apartment,9284,87,8240,Skejbyvej,Risskov,3
+akutbolig.dk,2016,apartment,5327,108,8260,Rosenhøj,Viby J,4
+akutbolig.dk,2016,room,3650,13,8000,Marselis Boulevard,Aarhus C,1
+akutbolig.dk,2016,apartment,10395,81,8000,Harald Jensens Plads,Aarhus C,2
+akutbolig.dk,2016,apartment,12300,111,8000,Grønnegade,Aarhus C,4
+akutbolig.dk,2016,apartment,7220,63,8000,Ingerslevs Boulevard,Aarhus C,1
+akutbolig.dk,2016,room,2800,9,8200,Vorregårds Allé,Aarhus N,1
+akutbolig.dk,2016,apartment,13350,106,8000,Heibergsgade,Aarhus C,3
+akutbolig.dk,2016,apartment,11500,94,8000,Dalgas Avenue,Aarhus C,4
+akutbolig.dk,2016,apartment,15950,116,8000,Åhusene,Aarhus C,3
+akutbolig.dk,2016,apartment,19500,144,8240,Syrenvej,Risskov,4
+akutbolig.dk,2016,apartment,10300,89,8260,Søndervangs Allé,Viby J,3
+akutbolig.dk,2016,apartment,9600,80,8000,Nordborggade,Aarhus C,3
+akutbolig.dk,2016,apartment,9500,87,8000,Hendrik Pontoppidans Gade,Aarhus C,1
+akutbolig.dk,2016,room,2900,10,8260,Uffesvej,Viby J,1
+akutbolig.dk,2016,room,3800,16,8200,Dronning Margrethes Vej,Aarhus N,1
+akutbolig.dk,2016,room,3768,11,8200,Brendstrupgårdsvej,Aarhus N,1
+akutbolig.dk,2016,room,3000,10,8240,Nordlandsvej,Risskov,1
+akutbolig.dk,2016,room,4925,9,8000,Skolegade,Aarhus C,1
+akutbolig.dk,2016,apartment,8400,59,8200,Oluf Palmes Allé,Aarhus N,3
+akutbolig.dk,2016,apartment,10500,94,8000,Tietgens Plads,Aarhus C,3
+akutbolig.dk,2016,room,3700,12,8000,Daugbjervej,Aarhus C,1
+akutbolig.dk,2016,room,4074,10,8000,Daugbjervej,Aarhus C,1
+akutbolig.dk,2016,apartment,5162,40,8270,Oddervej,Højbjerg,1
+akutbolig.dk,2016,apartment,5392,40,8260,Holme Møllevej,Viby J,1
+akutbolig.dk,2016,apartment,5342,43,8260,Engtoften,Viby J,1
+akutbolig.dk,2016,apartment,6900,69,8000,Nørre Allé,Aarhus C,3
+akutbolig.dk,2016,apartment,7100,71,8000,Hans Broges Gade,Aarhus C,3
+akutbolig.dk,2016,apartment,8400,84,8000,De Mezas Vej,Aarhus C,3
+akutbolig.dk,2016,apartment,11000,110,8000,Hjortensgade,Aarhus C,4
+akutbolig.dk,2016,apartment,10995,91,8000,Daugbjervej,Aarhus C,3
+akutbolig.dk,2016,apartment,8954,65,8000,Østergade,Aarhus C,2
+akutbolig.dk,2016,apartment,7374,42,8210,Bronzealdervænget,Aarhus V,2
+akutbolig.dk,2016,apartment,5200,39,8260,Holme Møllevej,Viby J,1
+akutbolig.dk,2016,room,3500,12,8000,Skanderborgvej ,Aarhus C,1
+akutbolig.dk,2016,room,2000,12,8000,Trepkasgade,Aarhus C,1
+akutbolig.dk,2016,apartment,12000,82,8000,Molsgade,Aarhus C,2
+akutbolig.dk,2016,apartment,11100,136,8260,Højgårdsvej,Viby J,4
+akutbolig.dk,2016,apartment,9250,90,8200,Ivar Huirtfeldts Gade,Aarhus N,3
+akutbolig.dk,2016,apartment,14000,150,8000,Strandvejen,Aarhus C,4
