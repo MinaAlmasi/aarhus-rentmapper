@@ -34,8 +34,30 @@ def add_street_geometry(apartments, geo_data):
 
     return merged_gdf
 
+def update_disticts(districts):
+    # This function adds streets with districts that are missing from the original file manually
 
-def add_district(path, apartments, districts):
+    # define the missing streets and their districts
+    missing_streets = ["Kongevellen", "Brassøvej", "Møllehatten", "Pollenvænget", "Borresøvej", "Broloftet", "Honningvænget",
+                       "Eya Jensens Gade", "Kværnloftet", "Dirch Passers Gade", "Doris Kæraas Gade", "Tommy Seebachs Gade",
+                       "Ellen Jensens Gade", "Ringen", "Tulipanhaven", "Tove Ditlevsens Gade", "Tulipanlunden", "Sifsgade",
+                       "Baldersgade"]
+
+    matching_districts = ["Stat dist: 04.81", "Stat dist: 04.40", "Stat dist: 04.81", "Stat dist: 06.10", "Stat dist: 04.40", "Stat dist: 04.81", "Stat dist: 06.10",
+                         "Stat dist: 04.81", "Stat dist: 04.81", "Stat dist: 01.60", "Stat dist: 04.81", "Stat dist: 01.60", 
+                         "Stat dist: 04.60", "Stat dist: 05.00", "Stat dist: 06.10", "Stat dist: 04.81", "Stat dist: 06.10", "Stat dist: 03.60",
+                         "Stat dist: 03.60"]
+    
+    # create a DataFrame with the missing streets and their districts
+    missing_districts = pd.DataFrame({'Vejnavn': missing_streets, 'StatistikdistriktNavn': matching_districts})
+
+    # append the missing streets and their districts to the original DataFrame
+    districts = districts.append(missing_districts)
+
+    return districts
+
+
+def add_district(apartments, districts):
     # for each "Vejnavn", find the most common "StatistikdistriktNavn"
     districts = districts.groupby(['Vejnavn', 'StatistikdistriktNavn']).size().reset_index(name='counts')
 
@@ -52,9 +74,6 @@ def add_district(path, apartments, districts):
     # convert the merged DataFrame back to a GeoDataFrame
     merged_gdf = gpd.GeoDataFrame(merged_df, geometry='geometry')
 
-    # save the data as final data
-    merged_gdf.to_csv(path.parents[1] / "data" / "final_aarhus_data.csv", index=False)
-
     return merged_gdf
 
 
@@ -66,13 +85,18 @@ def main():
 
     # add geometry to the data
     apartments = add_street_geometry(apartments, geo_data)
+
+    # update districts
+    districts = update_disticts(districts)
     
     # add district to the data
-    apartments = add_district(path, apartments, districts)
+    apartments = add_district(apartments, districts)
 
-    # print all nans in statistikdistrikt
-    print(apartments[apartments['StatistikdistriktNavn'].isna()])
-
+    # drop all rows with missing values
+    apartments = apartments.dropna()
+    
+    # save the data as final data
+    apartments.to_csv(path.parents[1] / "data" / "final_aarhus_data.csv", index=False)
 
 if __name__ == "__main__":
     main()
