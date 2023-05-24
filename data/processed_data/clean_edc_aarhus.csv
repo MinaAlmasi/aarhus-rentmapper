@@ -1,0 +1,252 @@
+website,year,rental_type,rent_without_expenses,square_meters,zip_code,street,area,rooms
+edc.dk,2023,apartment,9500,67,8000,Thorvaldsensgade, Aarhus C,2
+edc.dk,2023,apartment,15600,142,8000,Guldsmedgade, Aarhus C,8
+edc.dk,2023,apartment,7000,51,8000,Fiskergade, Aarhus C,1
+edc.dk,2023,apartment,9750,74,8000,Mejlgade, Aarhus C,3
+edc.dk,2023,apartment,10900,95,8230,Baldersgade, Åbyhøj,3
+edc.dk,2023,apartment,7500,42,8000,Dirch, Aarhus C,1
+edc.dk,2023,apartment,13150,102,8000,Fiskergade, Aarhus C,4
+edc.dk,2023,apartment,15600,129,8000,Guldsmedgade, Aarhus C,3
+edc.dk,2023,apartment,11960,105,8000,Mejlgade, Aarhus C,3
+edc.dk,2023,apartment,8950,76,8260,Engtoften, Viby J,3
+edc.dk,2023,apartment,8300,54,8200,Katrinebjergvej, Aarhus N,2
+edc.dk,2023,apartment,9000,68,8200,Stockholmsgade, Aarhus N,2
+edc.dk,2023,apartment,9300,69,8000,Fiskergade, Aarhus C,2
+edc.dk,2023,apartment,11648,82,8000,Søren, Aarhus C,3
+edc.dk,2023,apartment,11500,69,8000,Åboulevarden, Aarhus C,3
+edc.dk,2023,apartment,9464,71,8230,Bifrostgade, Åbyhøj,2
+edc.dk,2023,apartment,8000,50,8000,Åboulevarden, Aarhus C,2
+edc.dk,2023,apartment,10088,73,8000,Dirch, Aarhus C,3
+edc.dk,2023,apartment,15700,131,8230,Bestlasgade, Åbyhøj,4
+edc.dk,2023,apartment,7785,62,8200,Tulipanhaven, Aarhus N,3
+edc.dk,2023,apartment,7887,64,8200,Tulipanhaven, Aarhus N,3
+edc.dk,2023,apartment,9360,71,8230,Bifrostgade, Åbyhøj,2
+edc.dk,2023,apartment,9672,71,8230,Bifrostgade, Åbyhøj,3
+edc.dk,2023,apartment,5670,39,8240,Brassøvej, Risskov,1
+edc.dk,2023,apartment,8749,59,8230,Sifsgade, Åbyhøj,2
+edc.dk,2023,apartment,12050,86,8000,Fiskergade, Aarhus C,3
+edc.dk,2023,apartment,11950,86,8000,Fiskergade, Aarhus C,3
+edc.dk,2023,apartment,7887,64,8200,Tulipanlunden, Aarhus N,3
+edc.dk,2023,apartment,18000,153,8000,Sønder, Aarhus C,3
+edc.dk,2023,apartment,8840,76,8260,Engtoften, Viby J,3
+edc.dk,2023,apartment,8895,79,8240,Brassøvej, Risskov,3
+edc.dk,2023,apartment,11000,64,8000,Åboulevarden, Aarhus C,3
+edc.dk,2023,apartment,9000,65,8200,Malmøgade, Aarhus N,3
+edc.dk,2023,apartment,9880,78,8230,Lokesvej, Åbyhøj,2
+edc.dk,2023,apartment,12792,101,8230,Bestlasgade, Åbyhøj,4
+edc.dk,2023,apartment,13231,112,8230,Sifsgade, Åbyhøj,4
+edc.dk,2023,apartment,9710,68,8230,Sifsgade, Åbyhøj,3
+edc.dk,2023,apartment,10795,99,8240,Brassøvej, Risskov,4
+edc.dk,2023,apartment,11100,88,8230,Sifsgade, Åbyhøj,4
+edc.dk,2023,apartment,9400,66,8000,Thorvaldsensgade, Aarhus C,2
+edc.dk,2023,apartment,12792,101,8230,Bestlasgade, Åbyhøj,4
+edc.dk,2023,apartment,9395,56,8000,Østergade, Aarhus C,2
+edc.dk,2023,apartment,7785,62,8200,Tulipanhaven, Aarhus N,3
+edc.dk,2023,apartment,7375,52,8200,Tulipanlunden, Aarhus N,2
+edc.dk,2023,apartment,17900,151,8000,Søndergade, Aarhus C,4
+edc.dk,2023,apartment,11300,88,8230,Sifsgade, Åbyhøj,4
+edc.dk,2023,apartment,8400,62,8230,Lokesvej, Åbyhøj,2
+edc.dk,2023,apartment,8500,62,8230,Lokesvej, Åbyhøj,2
+edc.dk,2023,apartment,13800,107,8000,Amaliegade, Aarhus C,2
+edc.dk,2023,apartment,7887,64,8200,Tulipanlunden, Aarhus N,3
+edc.dk,2023,apartment,9214,56,8000,Østergade, Aarhus C,3
+edc.dk,2023,apartment,10695,98,8240,Brassøvej, Risskov,4
+edc.dk,2023,apartment,10199,90,8240,Brassøvej, Risskov,4
+edc.dk,2023,apartment,8185,67,8240,Brassøvej, Risskov,3
+edc.dk,2023,apartment,7895,63,8240,Brassøvej, Risskov,3
+edc.dk,2023,apartment,7285,52,8240,Brassøvej, Risskov,2
+edc.dk,2023,apartment,10800,66,8000,Thorvaldsensgade, Aarhus C,3
+edc.dk,2023,apartment,10700,66,8000,Thorvaldsensgade, Aarhus C,3
+edc.dk,2023,apartment,10600,98,8210,Klokkerbakken, Aarhus V,2
+edc.dk,2023,apartment,12900,118,8210,Ryhavevej, Aarhus V,4
+edc.dk,2023,apartment,9200,72,8210,Klokkerbakken, Aarhus V,3
+edc.dk,2023,apartment,9200,69,8000,Fiskergade, Aarhus C,2
+edc.dk,2023,apartment,8600,61,8230,Lokesvej, Åbyhøj,2
+edc.dk,2023,apartment,11950,86,8000,Fiskergade, Aarhus C,3
+edc.dk,2023,apartment,9395,56,8000,Østergade, Aarhus C,2
+edc.dk,2023,apartment,14900,106,8000,Østergade, Aarhus C,4
+edc.dk,2023,apartment,12950,94,8000,Fiskergade, Aarhus C,3
+edc.dk,2023,apartment,9300,70,8000,Fiskergade, Aarhus C,2
+edc.dk,2023,apartment,10600,66,8000,Thorvaldsensgade, Aarhus C,3
+edc.dk,2023,apartment,11000,94,8200,Randersvej, Aarhus N,3
+edc.dk,2023,apartment,10500,80,8200,Stockholmsgade, Aarhus N,3
+edc.dk,2023,apartment,10500,87,8200,Randersvej, Aarhus N,3
+edc.dk,2023,apartment,8800,70,8200,Randersvej, Aarhus N,2
+edc.dk,2023,apartment,5158,24,8000,Ny, Aarhus C,1
+edc.dk,2023,apartment,4621,36,8000,Jægergårdsgade, Aarhus C,1
+edc.dk,2023,apartment,5975,38,8240,Kantorvænget, Risskov,1
+edc.dk,2023,apartment,7850,65,8200,Tordenskjoldsgade, Aarhus N,2
+edc.dk,2023,apartment,13200,113,8000,Banegårdsgade, Aarhus C,5
+edc.dk,2023,apartment,15180,114,8000,Sonnesgade, Aarhus C,4
+edc.dk,2023,apartment,5650,54,8270,Oddervej, Højbjerg,2
+edc.dk,2023,apartment,9980,73,8000,Finderupvej, Aarhus C,3
+edc.dk,2023,apartment,9575,98,8240,Sletterhagevej, Risskov,4
+edc.dk,2023,apartment,10500,61,8000,Valdemarsgade, Aarhus C,2
+edc.dk,2023,apartment,9150,105,8355,Hasselvangen, Solbjerg,4
+edc.dk,2023,apartment,9600,78,8260,Søndervangs, Viby J,3
+edc.dk,2023,apartment,12495,87,8000,Telefonsmøgen, Aarhus C,3
+edc.dk,2023,apartment,8750,70,8000,Amaliegade, Aarhus C,2
+edc.dk,2023,apartment,7275,65,8381,Stavnsvej, Tilst,3
+edc.dk,2023,apartment,8482,60,8000,Guldsmedgade, Aarhus C,2
+edc.dk,2023,apartment,8275,81,8260,Christian, Viby J,3
+edc.dk,2023,apartment,7990,82,8270,Holmevej, Højbjerg,4
+edc.dk,2023,apartment,11900,104,8000,Søndre, Aarhus C,3
+edc.dk,2023,apartment,6995,60,8260,Kaj, Viby J,2
+edc.dk,2023,apartment,11760,104,8260,Engtoften, Viby J,4
+edc.dk,2023,apartment,9800,88,8260,Christian, Viby J,3
+edc.dk,2023,apartment,11300,108,8260,Engtoften, Viby J,3
+edc.dk,2023,apartment,9950,96,8320,Nymarks, Mårslet,4
+edc.dk,2023,apartment,4495,29,8200,Ladefogedvej, Aarhus N,1
+edc.dk,2023,apartment,8300,63,8000,Høegh-Guldbergs, Aarhus C,2
+edc.dk,2023,apartment,16500,141,8000,Hans, Aarhus C,5
+edc.dk,2023,apartment,3900,36,8200,Lisbjergbakken, Aarhus N,1
+edc.dk,2023,apartment,8450,76,8000,Jyllands, Aarhus C,2
+edc.dk,2023,apartment,9575,64,8000,Ceresbyen, Aarhus C,3
+edc.dk,2023,apartment,7827,51,8200,Jens, Aarhus N,2
+edc.dk,2023,apartment,6750,48,8260,Markvangen, Viby J,2
+edc.dk,2023,apartment,10450,94,8000,Hans, Aarhus C,3
+edc.dk,2023,apartment,9900,90,8000,Carl, Aarhus C,3
+edc.dk,2023,apartment,10227,104,8200,Jordbrovej, Aarhus N,4
+edc.dk,2023,apartment,6295,59,8260,Grøndalsvej, Viby J,3
+edc.dk,2023,apartment,5000,65,8260,Espegårdsvej, Viby J,2
+edc.dk,2023,apartment,5555,35,8200,Hvidkløvervej, Aarhus N,1
+edc.dk,2023,apartment,10800,97,8260,Kaj, Viby J,4
+edc.dk,2023,apartment,8495,72,8210,Vintervej, Aarhus V,3
+edc.dk,2023,apartment,8800,65,8000,Marselis, Aarhus C,2
+edc.dk,2023,apartment,8595,86,8000,Søndre, Aarhus C,3
+edc.dk,2023,apartment,15900,98,8000,Irma, Aarhus C,3
+edc.dk,2023,apartment,6995,49,8000,Vester, Aarhus C,2
+edc.dk,2023,apartment,9900,92,8000,Nordborggade, Aarhus C,3
+edc.dk,2023,apartment,13800,86,8000,Sonnesgade, Aarhus C,4
+edc.dk,2023,apartment,6200,44,8000,Vestergade, Aarhus C,1
+edc.dk,2023,apartment,6265,40,8000,Tøndergade, Aarhus C,1
+edc.dk,2023,apartment,13636,150,8000,Tøndergade, Aarhus C,4
+edc.dk,2023,apartment,9368,85,8260,Vestergårdsringen, Viby J,3
+edc.dk,2023,apartment,8850,65,8200,Trøjborgvej, Aarhus N,2
+edc.dk,2023,apartment,9600,84,8000,Langenæs, Aarhus C,3
+edc.dk,2023,apartment,8995,105,8220,Gudrunsvej, Brabrand,4
+edc.dk,2023,apartment,7800,64,8210,Ryhavevej, Aarhus V,2
+edc.dk,2023,apartment,8743,74,8000,Finderupvej, Aarhus C,3
+edc.dk,2023,apartment,8900,80,8000,Vestre, Aarhus C,3
+edc.dk,2023,apartment,8190,89,8210,Viborgvej, Aarhus V,3
+edc.dk,2023,apartment,10495,84,8000,Guldsmedgade, Aarhus C,2
+edc.dk,2023,apartment,7227,52,8000,Kaserneboulevarden, Aarhus C,2
+edc.dk,2023,apartment,5300,41,8270,Rundhøj, Højbjerg,2
+edc.dk,2023,apartment,10500,87,8200,Langelandsgade, Aarhus N,3
+edc.dk,2023,apartment,9795,111,8520,Kastanjehaven, Lystrup,4
+edc.dk,2023,apartment,8125,64,8210,Vintervej, Aarhus V,3
+edc.dk,2023,apartment,9300,72,8000,Sonnesgade, Aarhus C,2
+edc.dk,2023,apartment,11812,90,8000,Museumsgade, Aarhus C,4
+edc.dk,2023,apartment,9000,108,8260,Grøfthøjparken, Viby J,4
+edc.dk,2023,apartment,10290,100,8230,Silkeborgvej, Åbyhøj,3
+edc.dk,2023,apartment,11990,114,8000,Skanderborgvej, Aarhus C,4
+edc.dk,2023,apartment,10500,105,8220,Truevej, Brabrand,5
+edc.dk,2023,apartment,12916,122,8000,Marselis, Aarhus C,4
+edc.dk,2023,apartment,8900,64,8000,Møllegade, Aarhus C,2
+edc.dk,2023,apartment,13600,107,8000,Nørre, Aarhus C,5
+edc.dk,2023,apartment,8300,66,8000,Vester, Aarhus C,2
+edc.dk,2023,apartment,7984,57,8200,Jens, Aarhus N,2
+edc.dk,2023,apartment,15250,114,8000,Sonnesgade, Aarhus C,4
+edc.dk,2023,apartment,6995,65,8230,Frodesvej, Åbyhøj,2
+edc.dk,2023,apartment,13000,120,8210,Viborgvej, Aarhus V,3
+edc.dk,2023,apartment,7000,50,8000,Vestre, Aarhus C,2
+edc.dk,2023,apartment,6500,75,8541,Bangsboparken, Skødstrup,2
+edc.dk,2023,apartment,5995,46,8000,Vesterbrogade, Aarhus C,2
+edc.dk,2023,apartment,16900,142,8000,Thit, Aarhus C,4
+edc.dk,2023,apartment,8400,62,8230,Lokesvej, Åbyhøj,2
+edc.dk,2023,apartment,8600,62,8000,Otto, Aarhus C,2
+edc.dk,2023,apartment,8670,85,8520,Abildhaven, Lystrup,3
+edc.dk,2023,apartment,9500,83,8000,Vesterport, Aarhus C,1
+edc.dk,2023,apartment,9795,93,8240,Tove, Risskov,4
+edc.dk,2023,apartment,10380,83,8000,Rosenkrantzgade, Aarhus C,3
+edc.dk,2023,apartment,5995,58,8200,Ladefogedvej, Aarhus N,2
+edc.dk,2023,apartment,8795,57,8260,Engelundsvej, Viby J,3
+edc.dk,2023,apartment,9400,81,8200,Brendstrupvej, Aarhus N,3
+edc.dk,2023,apartment,6750,52,8260,Engtoften, Viby J,2
+edc.dk,2023,apartment,7950,56,8200,Møllevangs, Aarhus N,2
+edc.dk,2023,apartment,9422,104,8000,Fredens, Aarhus C,4
+edc.dk,2023,apartment,10420,84,8200,Islandsgade, Aarhus N,3
+edc.dk,2023,apartment,8500,64,8200,Otte, Aarhus N,2
+edc.dk,2023,apartment,7300,68,8240,Kantorparken, Risskov,2
+edc.dk,2023,apartment,9300,80,8000,Studsgade, Aarhus C,2
+edc.dk,2023,apartment,6200,37,8230,Søren, Åbyhøj,1
+edc.dk,2023,apartment,8800,62,8000,Otto, Aarhus C,2
+edc.dk,2023,apartment,7800,53,8230,Lokesvej, Åbyhøj,2
+edc.dk,2023,apartment,10600,83,8000,åparken, Aarhus C,3
+edc.dk,2023,apartment,10513,71,8000,Sandgravvej, Aarhus C,3
+edc.dk,2023,apartment,9400,66,8000,Guldsmedgade, Aarhus C,2
+edc.dk,2023,apartment,9900,55,8000,Lollandsgade, Aarhus C,2
+edc.dk,2023,apartment,8795,57,8260,Engelundsvej, Viby J,3
+edc.dk,2023,apartment,8200,73,8000,Skanderborgvej, Aarhus C,2
+edc.dk,2023,apartment,12500,105,8270,Stenvej, Højbjerg,4
+edc.dk,2023,apartment,5900,69,8541,Grenåvej, Skødstrup,2
+edc.dk,2023,apartment,11500,101,8260,Carl, Viby J,4
+edc.dk,2023,apartment,10600,68,8000,Åhusene, Aarhus C,3
+edc.dk,2023,apartment,11200,107,8361,Sønderholmvej, Hasselager,4
+edc.dk,2023,apartment,10900,105,8000,De, Aarhus C,3
+edc.dk,2023,apartment,7500,52,8000,Åparken, Aarhus C,2
+edc.dk,2023,apartment,8000,60,8200,Brendstrupvej, Aarhus N,2
+edc.dk,2023,apartment,7984,51,8200,Jens, Aarhus N,2
+edc.dk,2023,apartment,9195,64,8000,Guldsmedgade, Aarhus C,2
+edc.dk,2023,apartment,4995,38,8260,Engtoften, Viby J,1
+edc.dk,2023,apartment,7595,57,8260,Skanderborgvej, Viby J,2
+edc.dk,2023,apartment,8695,57,8520,Ellebrinken, Lystrup,3
+edc.dk,2023,apartment,12500,107,8000,Christiansgade, Aarhus C,3
+edc.dk,2023,apartment,5995,48,8520,Kastanjehaven, Lystrup,2
+edc.dk,2023,apartment,6750,48,8260,Markvangen, Viby J,2
+edc.dk,2023,apartment,7500,62,8000,Åboulevarden, Aarhus C,1
+edc.dk,2023,apartment,9975,83,8000,Ny, Aarhus C,3
+edc.dk,2023,apartment,4500,27,8230,Dr., Åbyhøj,1
+edc.dk,2023,apartment,13250,96,8000,Fiskergade, Aarhus C,3
+edc.dk,2023,apartment,9300,70,8000,Fiskergade, Aarhus C,2
+edc.dk,2023,apartment,11650,85,8230,Åbyvej, Åbyhøj,3
+edc.dk,2023,apartment,9775,94,8520,Solbærhaven, Lystrup,4
+edc.dk,2023,apartment,6583,54,8381,Havkærvej, Tilst,2
+edc.dk,2023,apartment,8500,90,8000,Skt., Aarhus C,3
+edc.dk,2023,apartment,9000,52,8000,Falstersgade, Aarhus C,2
+edc.dk,2023,apartment,8950,54,8000,Æbeløgade, Aarhus C,2
+edc.dk,2023,apartment,9495,65,8200,Niels, Aarhus N,2
+edc.dk,2023,apartment,11500,69,8000,Åboulevarden, Aarhus C,3
+edc.dk,2023,apartment,8750,57,8260,Engelundsvej, Viby J,3
+edc.dk,2023,apartment,5995,39,8381,Pollenvænget, Tilst,2
+edc.dk,2023,apartment,18800,187,8230,Silkeborgvej, Åbyhøj,5
+edc.dk,2023,apartment,8995,70,8200,Trøjborgvej, Aarhus N,3
+edc.dk,2023,apartment,7400,48,8200,Jens, Aarhus N,2
+edc.dk,2023,apartment,8695,72,8381,Pollenvænget, Tilst,3
+edc.dk,2023,apartment,13500,86,8000,Sonnesgade, Aarhus C,4
+edc.dk,2023,apartment,11900,129,8270,Rundhøj, Højbjerg,4
+edc.dk,2023,apartment,6450,52,8381,Pollenvænget, Tilst,2
+edc.dk,2023,apartment,8000,80,8462,Tandrupvej, Harlev J,3
+edc.dk,2023,apartment,4495,29,8200,Ladefogedvej, Aarhus N,1
+edc.dk,2023,apartment,14800,88,8000,Mariane, Aarhus C,3
+edc.dk,2023,apartment,10995,91,8000,Vestergade, Aarhus C,3
+edc.dk,2023,apartment,8500,62,8230,Lokesvej, Åbyhøj,2
+edc.dk,2023,apartment,8950,80,8000,Fåborggade, Aarhus C,2
+edc.dk,2023,apartment,9785,72,8000,Sønder, Aarhus C,3
+edc.dk,2023,apartment,7795,62,8210,Vintervej, Aarhus V,3
+edc.dk,2023,apartment,13800,86,8000,Sonnesgade, Aarhus C,4
+edc.dk,2023,apartment,5995,41,8210,Vintervej, Aarhus V,1
+edc.dk,2023,apartment,9795,59,8000,Amaliegade, Aarhus C,2
+edc.dk,2023,apartment,13500,109,8000,Ålborggade, Aarhus C,4
+edc.dk,2023,apartment,8900,60,8000,Thunøgade, Aarhus C,2
+edc.dk,2023,apartment,11950,86,8000,Fiskergade, Aarhus C,3
+edc.dk,2023,apartment,7250,63,8260,Markvangen, Viby J,2
+edc.dk,2023,apartment,10995,116,8541,Engskovvænget, Skødstrup,4
+edc.dk,2023,apartment,3300,28,8220,Hoffmannsvej, Brabrand,1
+edc.dk,2023,apartment,9900,108,8220,Lily, Brabrand,4
+edc.dk,2023,apartment,9900,164,8361,Ingerslevvej, Hasselager,4
+edc.dk,2023,apartment,4100,29,8240,Kantorparken, Risskov,1
+edc.dk,2023,apartment,7895,64,8240,Møllehatten, Risskov,2
+edc.dk,2023,apartment,8500,70,8000,Søndre, Aarhus C,2
+edc.dk,2023,apartment,14397,120,8000,Museumsgade, Aarhus C,4
+edc.dk,2023,apartment,8840,76,8260,Engtoften, Viby J,3
+edc.dk,2023,apartment,8300,51,8230,Søren, Åbyhøj,2
+edc.dk,2023,apartment,8000,54,8000,Åboulevarden, Aarhus C,1
+edc.dk,2023,apartment,6800,45,8000,Åboulevarden, Aarhus C,1
+edc.dk,2023,apartment,8990,76,8200,Brendstrupvej, Aarhus N,3
+edc.dk,2023,apartment,7100,54,8240,Arresøvej, Risskov,2
+edc.dk,2023,apartment,8950,102,8381,Pollenvænget, Tilst,3
+edc.dk,2023,apartment,15950,114,8000,Sonnesgade, Aarhus C,4
+edc.dk,2023,apartment,10975,99,8000,Thorvaldsensgade, Aarhus C,3
+edc.dk,2023,apartment,7895,60,8520,Ellebrinken, Lystrup,2
+edc.dk,2023,apartment,7895,60,8520,Ellebrinken, Lystrup,2
