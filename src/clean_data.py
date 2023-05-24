@@ -12,7 +12,6 @@ import pathlib
 
 # data wrangling
 import pandas as pd
-from unidecode import unidecode
 
 ## functions ##
 def clean_boligportal(data_path:pathlib.Path, zip_codes:pd.DataFrame):
