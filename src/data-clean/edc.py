@@ -72,7 +72,6 @@ def main():
     # define paths
     rawdata_path = path.parents[2] / "data" / "raw_data"
     processed_path = path.parents[2] / "data" / "processed_data"
-    zip_codes_path = path.parents[2] / "utils"
 
     # clean data
     df = clean_edc(rawdata_path, processed_path)
