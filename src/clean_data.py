@@ -14,20 +14,16 @@ import pathlib
 import pandas as pd
 
 ## functions ##
-def clean_boligportal(data_path:pathlib.Path, zip_codes:pd.DataFrame, save_path=None):
+def clean_boligportal(data_path:pathlib.Path, zip_codes:pd.DataFrame):
     '''
     Function to clean scraped boligportal data using pandas.
 
     Args: 
         data_path: Path to raw data.
         zip_codes: Dataframe with zip codes.
-        save_path: Path to save cleaned data. Defaults to None. 
 
     Returns:
         df: Cleaned dataframe.
-    
-    Output:
-        clean_boligportal_aarhus.csv: Cleaned data. If save_path is not None.
     '''
 
     # read in data
@@ -84,15 +80,21 @@ def clean_boligportal(data_path:pathlib.Path, zip_codes:pd.DataFrame, save_path=
 
     # select cols
     df = df[["website", "year", "rental_type", "rent_without_expenses", "square_meters", "zip_code", "street", "area", "rooms"]]
-
-    #save to csv
-    if save_path is not None:
-        save_path.mkdir(parents=True, exist_ok=True)
-        df.to_csv(save_path / "clean_boligportal_aarhus.csv", index=False)    
     
     return df
 
-def clean_boligzonen(data_path:pathlib.Path, zip_codes:pd.DataFrame, save_path=None):
+def clean_boligzonen(data_path:pathlib.Path, zip_codes:pd.DataFrame):
+    '''
+    Function to clean scraped boligzonen data using pandas.
+
+    Args:
+        data_path: Path to raw data.
+        zip_codes: Dataframe with zip codes.
+
+    Returns:
+        df: Cleaned dataframe.
+    '''
+
     # read in data, set type to string
     df = pd.read_csv(data_path / "boligzonen_aarhus.csv", dtype=str)
 
@@ -143,26 +145,17 @@ def clean_boligzonen(data_path:pathlib.Path, zip_codes:pd.DataFrame, save_path=N
     # select cols
     df = df[["website", "year", "rental_type", "rent_without_expenses", "square_meters", "zip_code", "street", "area", "rooms"]]
 
-    # save to csv
-    if save_path is not None:
-        save_path.mkdir(parents=True, exist_ok=True)
-        df.to_csv(save_path / "clean_boligzonen_aarhus.csv", index=False)
-
     return df
 
-def clean_edc(data_path:pathlib.Path, save_path=None):
+def clean_edc(data_path:pathlib.Path):
     '''
     Function to clean scraped edc data using pandas.
 
     Args: 
         data_path: Path to raw data.
-        save_path: Path to save cleaned data. Defaults to None.
 
     Returns:
         df: Cleaned dataframe.
-    
-    Output:
-        clean_edc_aarhus.csv: Cleaned data. If save_path is not None.
     '''
 
     # read in data
@@ -199,8 +192,58 @@ def clean_edc(data_path:pathlib.Path, save_path=None):
     # select cols
     df = df[["website", "year", "rental_type", "rent_without_expenses", "square_meters", "zip_code", "street", "area", "rooms"]]
 
-    if save_path is not None:
-        df.to_csv(save_path / "clean_edc_aarhus.csv", index=False)
+    return df
+
+def clean_minlejebolig(data_path:pathlib.Path, zip_codes):
+    '''
+    Function to clean scraped minlejebolig data using pandas.
+
+    Args: 
+        data_path: Path to raw data.
+        zip_codes: Dataframe with zip codes.
+
+    Returns:
+        df: Cleaned dataframe.
+    '''
+    # read in data
+    df = pd.read_csv(data_path / "minlejebolig_aarhus.csv")
+
+    # add website column
+    df["website"] = "minlejebolig.dk"
+
+    # add year column
+    df["year"] = 2023
+
+    # create rental type (all rows from minlejebolig are apartments)
+    df["rental_type"] = "apartment"
+
+    # rooms
+    df["rooms"] = df["rooms"].str.split(" ").str[0]
+
+    # number from kvm column
+    df["square_meters"] = df["kvm"].str.extract(r'(\d+) m²')
+
+    # fix price
+    df["rent_without_expenses"] = df["price"].str.replace(",- pr. mdr.", "", regex=False) # remove kr.
+    df["rent_without_expenses"] = df["rent_without_expenses"].str.replace(".", "", regex=False) # remove . in number
+
+    # extract addresses from address column, create street column
+    df["street"] = df["address"].str.split(",").str[0]
+
+    # create area column
+    df["area"] = df["address"].str.split(",").str[1]
+
+    # replace "Århus" with "Aarhus"
+    df["area"] = df["area"].str.replace("Århus", "Aarhus", regex=False)
+
+    # remove whitespace
+    df["area"] = df["area"].str.strip()
+
+    # add zip code column
+    df["zip_code"] = df["area"].map(zip_codes.set_index("area")["zip_code"])
+
+    # select cols
+    df = df[["website", "year", "rental_type", "rent_without_expenses", "square_meters", "zip_code", "street", "area", "rooms"]]
 
     return df
 
@@ -220,15 +263,25 @@ def clean_all_data(data_path, zip_codes, save_path=None):
     '''
 
     # boligzonen
-    bz_df = clean_boligzonen(data_path, zip_codes, save_path)
+    bz_df = clean_boligzonen(data_path, zip_codes)
 
     # boligportal
-    bp_df = clean_boligportal(data_path, zip_codes, save_path)
+    bp_df = clean_boligportal(data_path, zip_codes)
 
     # edc
-    edc_df = clean_edc(data_path, save_path)
+    edc_df = clean_edc(data_path)
 
-    return bz_df, bp_df, edc_df
+    # minlejebolig
+    ml_df = clean_minlejebolig(data_path, zip_codes)
+
+    # concat dataframes 
+    all_df = pd.concat([bz_df, bp_df, edc_df, ml_df])
+
+    # save data
+    if save_path is not None:
+        all_df.to_csv(save_path / "cleaned_data.csv", index=False)
+
+    return all_df
 
 
 ## run script ##
@@ -238,14 +291,14 @@ def main():
 
     # define paths
     rawdata_path = path.parents[1] / "data" / "raw_data"
-    processed_path = path.parents[1] / "data" / "processed_data"
+    processed_path = path.parents[1] / "data"
     zip_codes_path = path.parents[1] / "utils"
 
     # read in zip codes dataframe from utils folder
     zip_codes = pd.read_csv(zip_codes_path / "zipcode_lookup.csv")
 
     # clean data
-    bz_df, bp_df, edc_df = clean_all_data(rawdata_path, zip_codes, processed_path)
+    all_df = clean_all_data(rawdata_path, zip_codes, processed_path)
 
 if __name__ == "__main__":
     main()
