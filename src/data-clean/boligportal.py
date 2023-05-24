@@ -67,6 +67,9 @@ def clean_boligportal(data_path:pathlib.Path, zip_codes:pd.DataFrame, save_path=
     # street column
     df["street"] = df["address"].str.split(",").str[1]
 
+    # rm white space in street column
+    df["street"] = df["street"].str.strip()
+
     # zip_code column
     df["zip_code"] = df["area"].map(zip_codes.set_index("area")["zip_code"])
 
