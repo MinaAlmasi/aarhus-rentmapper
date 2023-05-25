@@ -3,15 +3,16 @@ import pathlib
 import pandas as pd
 
 def load_data():
-     # define paths
+    # define paths
     path = pathlib.Path(__file__)
 
     apartments = pd.read_csv(path.parents[1] / "data" /  "cleaned_data.csv")
     districts = pd.read_csv(path.parents[1] / "utils" / "street_to_district.csv", sep=';')
     geo_streets = gpd.read_file(path.parents[1] / "utils" / "streetnames.geojson")
     geo_districts = gpd.read_file(path.parents[1] / "utils" / "districts.geojson")
+    geo_society = gpd.read_file(path.parents[1] / "utils" / "lokalsamfund.geojson")
 
-    return path, apartments, districts, geo_streets, geo_districts
+    return path, apartments, districts, geo_streets, geo_districts, geo_society
 
 
 def add_street_geometry(apartments, geo_streets):
@@ -37,7 +38,7 @@ def add_street_geometry(apartments, geo_streets):
     return merged_gdf
 
 
-def update_disticts(districts):
+def update_stat_disticts(districts):
     # This function adds streets with districts that are missing from the original file manually
 
     # define the missing streets and their districts
@@ -55,11 +56,12 @@ def update_disticts(districts):
     missing_districts = pd.DataFrame({'Vejnavn': missing_streets, 'StatistikdistriktNavn': matching_districts})
 
     # append the missing streets and their districts to the original DataFrame
-    districts = districts.append(missing_districts)
+    districts = pd.concat([districts, missing_districts])
 
     return districts
 
-def add_district(apartments, districts):
+
+def add_stat_district(apartments, districts):
     # for each "Vejnavn", find the most common "StatistikdistriktNavn"
     districts = districts.groupby(['Vejnavn', 'StatistikdistriktNavn']).size().reset_index(name='counts')
 
@@ -79,8 +81,8 @@ def add_district(apartments, districts):
     return merged_gdf
 
 
-def update_district_names(apartments, geo_districts):
-    ## We use the geodistrict file to go away from keys for district names
+def update_stat_district_names(apartments, geo_districts):
+    ## We use the geodistrict file to go away from keys for district names.
 
     # update district names in apartment to only the key
     apartments['StatistikdistriktNavn'] = apartments['StatistikdistriktNavn'].str.split(':').str[1]
@@ -102,38 +104,154 @@ def update_district_names(apartments, geo_districts):
     # drop the redundant column
     merged_df.drop('noegle', axis=1, inplace=True)
 
-    # change geomtry_x to "geometry_street" and geometry_y to "geometry_district"
-    merged_df.rename(columns={'geometry_x': 'geometry_street', 'geometry_y': 'geometry_district'}, inplace=True)
+    # change geomtry_x to "geometry_street" and geometry_y to "stat_geometry"
+    merged_df.rename(columns={'geometry_x': 'geometry_street', 'geometry_y': 'stat_geometry'}, inplace=True)
 
     # update names of columns
-    merged_df.rename(columns={'prog_distrikt_navn': 'district'}, inplace=True)
+    merged_df.rename(columns={'prog_distrikt_navn': 'stat_district'}, inplace=True)
 
-    return merged_df
+    # remove irrelevant columns
+    merged_df.drop(['StatistikdistriktNavn', 'counts'], axis=1, inplace=True)
+
+    # convert the merged DataFrame back to a GeoDataFrame
+    merged_gdf = gpd.GeoDataFrame(merged_df, geometry="stat_geometry")
+
+    return merged_gdf
+
+
+def add_society_districts(apartments, geo_society):
+    """
+    Add society districts ("Lokal Samfund") to apartments data based on the statistics districts ("Statistikdistrikt")
+
+    Args: 
+        apartments: GeoDataFrame with apartments
+        geo_society: GeoDataFrame with society districts ("Lokal Samfund")
+
+    Returns:
+        apartments: GeoDataFrame with apartments with society districts ("Lokal Samfund")
+    """
+    
+    # subset relevant columns from geo_society
+    geo_society = geo_society[["distrikt", "geometry"]]
+
+    # empty lists for new columns 
+    society_district = []
+    society_geometry = []
+
+    # loop over apartments data 
+    for i in range(len(apartments)):
+        # define the polygon of the statistics district (stat_dist)
+        statistik_polygon = apartments["stat_geometry"][i]
+
+        max_overlap_area = 0
+        max_overlap_index = None
+
+        # loop over the geo_society data 
+        for k in range(len(geo_society)):
+            # define the polygon of the society district 
+            society_polygon = geo_society["geometry"][k]
+
+            # find the intersection of the two polygons (stat_dist and society)
+            intersection = society_polygon.intersection(statistik_polygon)
+            
+            # find the area of the intersection
+            overlap_area = intersection.area
+
+            # if the area of the intersection is larger than the previous largest intersection, update the largest intersection
+            if overlap_area > max_overlap_area:
+                max_overlap_area = overlap_area
+                max_overlap_index = k
+        
+        # append the society district and geometry to the empty lists
+        society_district.append(geo_society["distrikt"].iloc[max_overlap_index])
+        society_geometry.append(geo_society["geometry"].iloc[max_overlap_index])
+    
+    # add the new columns to the apartments data
+    apartments["society_district"] = society_district
+    apartments["society_geometry"] = society_geometry
+
+    return apartments 
+
+
+def merge_districts(apartments):
+    """
+    Merge "Statistikdistriker" (statistics districts) into larger districts based on the "Lokal Samfund" (society districts). 
+    Done for all statistics districts except "Midtbyen" (city center).
+
+    Args:
+        apartments: GeoDataFrame with apartments with both statistics districts and society districts
+
+    Returns:
+        apartments: GeoDataFrame with apartments with both statistics districts and society districts merged into larger districts
+    """
+
+    # define midtbyen districts
+    midtbyen = ["Trøjborg", "Universitetet/Kommunehospitalet", "Nordre Kirkegård", "Vestervang/Klostervang/Ø-gaderne", "Ø-gaderne Øst",
+                "Østbanetorvet/Nørre Stenbro", "Nørregade", "Latinerkvarteret", "Klostertorv/Vesterbro Torv", "Åboulevarden", "Skolegade/Bispetorv/Europaplads",
+                "Mølleparken", "TelefonTorvet", "Fredens Torv", "Ceresbyen/Godsbanen", "Rådhuskvarteret", "De Bynære Havnearealer/Aarhus Ø",
+                "Sydhavnen og Marselisborg lystbådehavn", "Frederiksbjerg Vest", "Frederiksbjerg Øst", "Erhvervshavnen"]
+    
+    # initialize empty column for final districts
+    districts = []
+    geometry = []
+    
+    for i in range(len(apartments)):
+        if apartments["stat_district"][i] in midtbyen:
+            districts.append(apartments["stat_district"][i])
+            geometry.append(apartments["stat_geometry"][i])
+        
+        else:
+            districts.append(apartments["society_district"][i])
+            geometry.append(apartments["society_geometry"][i])
+    
+    # add the new columns to the apartments data
+    apartments["district"] = districts
+    apartments["geometry"] = geometry
+
+    return apartments
 
 
 def main():
     # load data
-    path, apartments, districts, geo_streets, geo_districts = load_data()
+    path, apartments, districts, geo_streets, geo_districts, geo_society = load_data()
 
     # add geometry to the data
     apartments = add_street_geometry(apartments, geo_streets)
 
     # update districts
-    districts = update_disticts(districts)
+    districts = update_stat_disticts(districts)
     
     # add district to the data
-    apartments = add_district(apartments, districts)
+    apartments = add_stat_district(apartments, districts)
 
     # update district names
-    apartments = update_district_names(apartments, geo_districts)
+    apartments = update_stat_district_names(apartments, geo_districts)
 
     # drop all rows with missing values
     apartments = apartments.dropna()
 
-    # print the count of each prog_distrikt_navn with avg. price
-    print(apartments.groupby('year').count())
+    # reset index
+    apartments = apartments.reset_index(drop=True)
 
+    # add society districts
+    apartments = add_society_districts(apartments, geo_society)
+
+    # get overlaps
+    apartments = merge_districts(apartments)
+    
     print(apartments)
+
+    
+    # keey only 2023 rows
+    apartments = apartments[apartments['year'] == 2023]
+    apartments = apartments[apartments['rental_type'] == "room"]
+
+    result = apartments.groupby('district')['rent_per_square_meter'].mean().sort_values(ascending=False).head(50)
+    result = pd.DataFrame(result)
+    result['count'] = apartments.groupby('district')['rent_per_square_meter'].count().loc[result.index]
+
+    print(result)
+    
 
     # save the data as final data
     apartments.to_csv(path.parents[1] / "data" / "final_aarhus_data.csv", index=False)
