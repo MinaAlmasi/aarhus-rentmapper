@@ -1,0 +1,338 @@
+street,rent_per_square_meter,rent_without_expenses,most_similar_1,most_similar_2,most_similar_3,most_similar_4,most_similar_5,most_similar_rent_1,most_similar_rent_2,most_similar_rent_3,most_similar_rent_4,most_similar_rent_5
+Abildhaven,97.4,8325.0,Kildegården,Helenelyst,Kettinggårdsvej,Frodesvej,Stenaldervej,97.8,97.0,98.0,96.66666666666667,98.33333333333333
+Aldersrovej,110.0,12455.0,Høegh-Guldbergs Gade,Bugthusene,Teglværksgade,Enghavevej,Oddervej,110.0,110.0,110.0,110.66666666666667,110.875
+Amaliegade,150.625,11245.3125,Gebauersgade,Esther Aggebos Gade,Åhusene,Klokkeskovvej,Grete Løchtes Gade,150.85714285714286,151.0,152.0,152.0,149.0
+Ankersgade,83.0,7900.0,Edwin Rahrs Vej,Østergårdsvej,Åbovej,Bredgade,Bangsboparken,82.5,81.5,81.0,86.0,86.0
+Arnegårdsvej,141.5,4485.0,Montanagade,Vestervang,Skovvejen,Katrinebjergvej,Maren Smeds Gyde,141.0,140.66666666666666,140.5,140.3684210526316,140.0
+Arresøvej,130.4037558685446,7539.948356807512,Guldsmedgade,Eckersbergsgade,Hjortensgade,Bissensgade,Banegårdsgade,130.1578947368421,130.0,130.0,130.0,131.0
+Asmusgårdsvej,90.0,6500.0,Fredens Torv,Holmkærvej,Emmasvej,Hjarnøgade,Espedalen,90.0,90.5,89.33333333333333,91.0,89.0
+Assensgade,120.0,9625.0,Jelshøjvej,Tåsingegade,Carl Blochs Gade,Knudrisgade,Søvej,120.0,120.0,120.0,120.0,120.0
+Augustenborggade,121.0,8900.0,Egå Møllevej,Havkærvej,Daugbjergvej,Pollenvænget,Emiliedalsvej,121.0,121.0,120.6923076923077,120.68518518518519,120.5
+Baldersgade,125.84210526315789,11066.315789473685,Jægergårdsgade,Nørreport,Lundbyesgade,Lyøgade,Haderslevgade,125.85714285714286,126.0,126.0,126.0,125.5
+Banegårdsgade,131.0,11625.0,Skejbygårdsvej,Arresøvej,Fynsgade,Sifsgade,Vesterbro Torv,131.2,130.4037558685446,131.66666666666666,131.7,131.75
+Banegårdspladsen,127.66666666666667,13500.0,Otte Ruds Gade,Brassøvej,Vesterbrogade,Ivar Huitfeldts Gade,Klostergade,127.6,127.75,127.76923076923077,127.5,128.0
+Bangsboparken,86.0,6500.0,Bredgade,Stenhøjgårdsvej,Hasselvangen,Beder Landevej,Moltkesvej,86.0,87.0,87.0,87.0,87.0
+Beder Landevej,87.0,6450.0,Hasselvangen,Moltkesvej,Stenhøjgårdsvej,Bredgade,Spørring Kirkevej,87.0,87.0,87.0,86.0,88.0
+Bergensgade,180.0,6500.0,Lollandsgade,Søgade,Helga Pedersens Gade,Ny Munkegade,Fredensgade,180.0,181.5,181.8,182.66666666666666,183.5
+Bernhardt Jensens Boulevard,133.33333333333334,12166.666666666666,Skovmærkevej,Skejbytoften,Torsøvej,Lokesvej,Dannebrogsgade,133.5,133.5,133.11111111111111,133.75,132.75
+Bissensgade,130.0,10153.75,Eckersbergsgade,Hjortensgade,Guldsmedgade,Mejlgade,Harald Selmers Vej,130.0,130.0,130.1578947368421,129.68421052631578,129.66666666666666
+Borggade,146.0,11720.0,Trygsvej,Søren Frichs Vej,Kongevellen,Kantorvænget,Sonnesgade,146.0,146.23287671232876,146.28947368421052,146.5,146.5735294117647
+Borresøvej,105.04255319148936,9102.851063829787,Haslevej,Fuglekærvej,Havnegade,Kystvejen,Volden,105.0,105.0,105.0,105.2,104.5
+Brabrand Skovvej,116.0,8400.0,Nørregade,Funch Thomsens Gade,Studsgade,Kalmargade,Strandvejen,116.0,116.0,116.0,116.0,116.0
+Brassøvej,127.75,8486.510416666666,Vesterbrogade,Banegårdspladsen,Otte Ruds Gade,Ivar Huitfeldts Gade,Klostergade,127.76923076923077,127.66666666666667,127.6,127.5,128.0
+Bredgade,86.0,8650.0,Bangsboparken,Stenhøjgårdsvej,Hasselvangen,Beder Landevej,Moltkesvej,86.0,87.0,87.0,87.0,87.0
+Brendstrupgårdsvej,129.5,8420.0,Ny Banegårdsgade,Harald Selmers Vej,Mejlgade,Tordenskjoldsgade,Hjortensgade,129.33333333333334,129.66666666666666,129.68421052631578,129.25,130.0
+Brendstrupvej,118.57142857142857,8525.714285714286,Sønderport,Islandsgade,Emiliehøj,Skanderborgvej,Emiliedalen,118.5,118.66666666666667,118.4,118.18181818181819,119.0
+Brobjerg Parkvej,125.0,10475.0,Møllehatten,Ålborggade,Haderslevgade,Nyborggade,Baldersgade,125.11627906976744,125.4,125.5,124.33333333333333,125.84210526315789
+Broloftet,114.62222222222222,10807.266666666666,Holme Møllevej,Klokkerbakken,Finsensgade,Tronkærgårdsvej,Regenburgsgade,114.3,114.27272727272727,114.25,115.0,115.0
+Bronzealdertoften,113.5,6725.0,Østre Skovvej,Slet Parkvej,Carl Bertelsens Gade,Vestre Ringgade,Carl Jensens Vej,113.5,113.5,113.75,113.88888888888889,113.0
+Bronzealdervej,124.0,3975.0,Museumsgade,Gammel Munkegade,Nyborggade,Forteledet,Eya Jensens Gade,124.0,124.0,124.33333333333333,123.6,123.45454545454545
+Bronzealdervænget,137.0,5491.2,Tulipanlunden,Malmøgade,Hans Schourups Gade,Markvangen,Ellebrinken,137.05,137.33333333333334,137.33333333333334,137.4,136.6
+Bugthusene,110.0,10365.0,Aldersrovej,Høegh-Guldbergs Gade,Teglværksgade,Enghavevej,Oddervej,110.0,110.0,110.0,110.66666666666667,110.875
+Bytoften,135.54545454545453,8463.636363636364,Lundingsgade,Odensegade,Åbyvej,Fiskergade,Tommy Seebachs Gade,135.5,135.66666666666666,134.85714285714286,134.8235294117647,134.6153846153846
+Byvej,78.0,3600.0,Gammel Viborgvej,Stationsstien,Hasselengen,Trige Parkvej,Espegårdsvej,79.0,79.0,79.0,79.0,76.0
+Bøgegade,154.33333333333334,7675.0,Østergade,Kløvermarksvej,Åboulevarden,Engelundsvej,Dagmar Petersens Gade,154.0625,154.0,155.13636363636363,153.5,153.08333333333334
+Børglumvej,138.0,7966.666666666667,Kaserneboulevarden,Dalgas Avenue,Markvangen,Malmøgade,Hans Schourups Gade,138.0,138.25,137.4,137.33333333333334,137.33333333333334
+Carit Etlars Vej,128.0,7200.0,Klostergade,Stockholmsgade,Vesterbrogade,Brassøvej,Banegårdspladsen,128.0,128.14285714285714,127.76923076923077,127.75,127.66666666666667
+Carl Bertelsens Gade,113.75,9050.0,Vestre Ringgade,Østre Skovvej,Skejby Vænge,Harald Jensens Plads,Bronzealdertoften,113.88888888888889,113.5,114.0,114.0,113.5
+Carl Blochs Gade,120.0,9395.0,Jelshøjvej,Knudrisgade,Søvej,Tåsingegade,Assensgade,120.0,120.0,120.0,120.0,120.0
+Carl Jensens Vej,113.0,11500.0,Tousvej,Erik Bøghs Vej,Marselis Boulevard,Viby Torv,Østre Skovvej,113.0,113.0,112.83333333333333,112.66666666666667,113.5
+Christian X's Vej,156.66666666666666,7073.952380952381,Møllevejen,Åboulevarden,Åparken,Bøgegade,Østergade,156.0,155.13636363636363,158.2,154.33333333333334,154.0625
+Christiansgade,111.25,11121.75,Gudrunsvej,Skejbyvej,Skovfaldet,Kildeagervej,Ryesgade,111.21052631578948,111.11111111111111,111.5,111.0,111.5
+Dagmar Petersens Gade,153.08333333333334,13791.666666666666,Engelundsvej,Kløvermarksvej,Østergade,Åhusene,Klokkeskovvej,153.5,154.0,154.0625,152.0,152.0
+Dalbovej,62.0,10000.0,Jettesvej,Olaf Rudes Vej,Ingerslevvej,Sortevej,Janesvej,62.0,61.0,60.0,67.0,68.66666666666667
+Dalgas Avenue,138.25,12092.5,Kaserneboulevarden,Børglumvej,Skovvangsvej,Markvangen,Hvidkløvervej,138.0,138.0,139.0,137.4,139.14285714285714
+Dalvej,94.0,5200.0,Engskovvænget,Pilevangen,Molsgade,Eghøjvej,Sønderskovvej,94.0,94.0,94.0,95.0,93.0
+Damagervej,144.31578947368422,6446.1578947368425,Janus La Cours Gade,Sandgravvej,Jens Baggesens Vej,Valdemarsgade,Kirkegårdsvej,144.5,144.66666666666666,144.74074074074073,144.8,144.8181818181818
+Dampmøllevej,108.0,11940.0,Lucernevej,Klosterport,Onsholtvej,Kastanjehaven,Herredsvej,108.0,108.0,107.52380952380952,108.75,107.0
+Dannebrogsgade,132.75,8487.5,Langelandsgade,Mindegade,Rosenkrantzgade,Tretommervej,Torsøvej,132.75,132.66666666666666,132.55555555555554,132.5,133.11111111111111
+Daugbjergvej,120.6923076923077,9490.0,Pollenvænget,Nordre Ringgade,Emiliedalsvej,Engtoften,Havkærvej,120.68518518518519,120.5,120.5,120.43478260869566,121.0
+Dirch Passers Gade,147.62962962962962,9876.296296296296,Thorvaldsensgade,Peter Sabroes Gade,Sonnesgade,Kantorvænget,Kongevellen,148.1875,148.54545454545453,146.5735294117647,146.5,146.28947368421052
+Doris Kæraas Gade,126.57692307692308,8368.307692307691,Heibergsgade,Møllegade,Niels Juels Gade,Skovgaardsgade,Horsensgade,126.5,126.8,126.83333333333333,127.0,127.0
+Dortesvej,70.33333333333333,5652.666666666667,Kappelvænget,Janesvej,Værkmestergade,Kastrup Skovvej,Høgevej,70.4,68.66666666666667,72.0,72.0,73.0
+Eckersbergsgade,130.0,7350.0,Hjortensgade,Bissensgade,Guldsmedgade,Mejlgade,Harald Selmers Vej,130.0,130.0,130.1578947368421,129.68421052631578,129.66666666666666
+Edouard Suensons Gade,166.33333333333334,10128.333333333334,Teglgårdsvej,Trøjborgvej,Langelinieparken,Paradisgade,Vestergårdsvej,166.0,165.9433962264151,165.0,171.42857142857142,160.0
+Edwin Rahrs Vej,82.5,10089.5,Ankersgade,Østergårdsvej,Åbovej,Bangsboparken,Gammel Viborgvej,83.0,81.5,81.0,86.0,79.0
+Egegade,187.0,6000.0,Østboulevarden,Fredensgade,Vibevej,Ny Munkegade,Helga Pedersens Gade,190.0,183.5,191.0,182.66666666666666,181.8
+Eghøjvej,95.0,6500.0,Terp Skovvej,Rønnevangen,Skådehøjen,Grøfthøjparken,Grenåvej,95.0,95.0,95.0,95.41666666666667,95.6
+Egå Møllevej,121.0,4750.0,Havkærvej,Augustenborggade,Daugbjergvej,Pollenvænget,Emiliedalsvej,121.0,121.0,120.6923076923077,120.68518518518519,120.5
+Ellebrinken,136.6,8055.0,Ladefogedvej,Falstersgade,Bronzealdervænget,Tulipanlunden,Malmøgade,136.6,136.5,137.0,137.05,137.33333333333334
+Ellen Jensens Gade,122.56,11975.56,Søndergade,Tøndergade,Fåborggade,Randersvej,Ewaldsgade,122.625,122.8,122.83333333333333,122.8695652173913,123.0
+Elverdalsvej,112.0,9890.0,Nagelsvej,Skolegade,Ole Rømers Gade,Gustav Holms Vej,Kværnloftet,112.0,112.0,112.0,112.2,112.22222222222223
+Emiliedalen,119.0,10722.5,Stenvej,Skolebakken,Kantorparken,Islandsgade,Brendstrupvej,119.0,119.0,119.33333333333333,118.66666666666667,118.57142857142857
+Emiliedalsvej,120.5,9780.625,Nordre Ringgade,Engtoften,Pollenvænget,Daugbjergvej,Rudolph Wulffs Gade,120.5,120.43478260869566,120.68518518518519,120.6923076923077,120.25
+Emiliehøj,118.4,7365.6,Sønderport,Brendstrupvej,Skanderborgvej,Islandsgade,Hans Broges Gade,118.5,118.57142857142857,118.18181818181819,118.66666666666667,117.83333333333333
+Emmasvej,89.33333333333333,6626.666666666667,Espedalen,Fredens Torv,Asmusgårdsvej,Virupvej,Holmkærvej,89.0,90.0,90.0,88.25,90.5
+Engdalsvej,106.0,6713.333333333333,Kongsgårdsvej,Grøndalsvej,Kystvejen,Borresøvej,Fuglekærvej,106.0,105.75,105.2,105.04255319148936,105.0
+Engelundsvej,153.5,8772.5,Dagmar Petersens Gade,Kløvermarksvej,Østergade,Bøgegade,Åhusene,153.08333333333334,154.0,154.0625,154.33333333333334,152.0
+Enghavevej,110.66666666666667,10750.666666666666,Oddervej,Hørhavevej,Kildeagervej,Kræsten Iversens Vej,Skejbyvej,110.875,111.0,111.0,111.0,111.11111111111111
+Engskovvænget,94.0,10995.0,Molsgade,Pilevangen,Dalvej,Rønnevangen,Eghøjvej,94.0,94.0,94.0,95.0,95.0
+Engtoften,120.43478260869566,8616.260869565218,Emiliedalsvej,Nordre Ringgade,Rudolph Wulffs Gade,Pollenvænget,Daugbjergvej,120.5,120.5,120.25,120.68518518518519,120.6923076923077
+Erik Bøghs Vej,113.0,6895.0,Carl Jensens Vej,Tousvej,Marselis Boulevard,Viby Torv,Østre Skovvej,113.0,113.0,112.83333333333333,112.66666666666667,113.5
+Espedalen,89.0,5000.0,Emmasvej,Virupvej,Fredens Torv,Otto Sverdrups Vej,Asmusgårdsvej,89.33333333333333,88.25,90.0,88.0,90.0
+Espegårdsvej,76.0,5000.0,Hørretvej,Byvej,Hasselengen,Gammel Viborgvej,Trige Parkvej,74.0,78.0,79.0,79.0,79.0
+Esther Aggebos Gade,151.0,12700.0,Gebauersgade,Amaliegade,Klokkeskovvej,Åhusene,Grete Løchtes Gade,150.85714285714286,150.625,152.0,152.0,149.0
+Ewaldsgade,123.0,11000.0,Randersvej,Fåborggade,Tøndergade,Søndergade,Thit Jensens Gade,122.8695652173913,122.83333333333333,122.8,122.625,123.43243243243244
+Eya Jensens Gade,123.45454545454545,8187.333333333333,Thit Jensens Gade,Forteledet,Ewaldsgade,Museumsgade,Bronzealdervej,123.43243243243244,123.6,123.0,124.0,124.0
+Falstersgade,136.5,10883.333333333334,Ladefogedvej,Ellebrinken,Bronzealdervænget,Tulipanlunden,Malmøgade,136.6,136.6,137.0,137.05,137.33333333333334
+Finderupvej,132.13333333333333,9636.533333333333,Telefonsmøgen,Ryvej,Tulipanhaven,Tretommervej,Vesterbro Torv,132.0,132.0,131.77272727272728,132.5,131.75
+Finsensgade,114.25,9448.75,Klokkerbakken,Holme Møllevej,Skejby Vænge,Harald Jensens Plads,Vestre Kongevej,114.27272727272727,114.3,114.0,114.0,114.0
+Fiskergade,134.8235294117647,10838.235294117647,Åbyvej,Tommy Seebachs Gade,Lundingsgade,Bytoften,Willemoesgade,134.85714285714286,134.6153846153846,135.5,135.54545454545453,134.0
+Forteledet,123.6,10857.0,Eya Jensens Gade,Thit Jensens Gade,Gammel Munkegade,Bronzealdervej,Museumsgade,123.45454545454545,123.43243243243244,124.0,124.0,124.0
+Fredens Torv,90.0,9422.0,Asmusgårdsvej,Holmkærvej,Emmasvej,Hjarnøgade,Espedalen,90.0,90.5,89.33333333333333,91.0,89.0
+Fredensgade,183.5,7540.5,Ny Munkegade,Helga Pedersens Gade,Søgade,Egegade,Lollandsgade,182.66666666666666,181.8,181.5,187.0,180.0
+Fredensvej,127.0,7387.5,Skovgaardsgade,Horsensgade,Niels Juels Gade,Møllegade,Mariane Thomsens Gade,127.0,127.0,126.83333333333333,126.8,127.33333333333333
+Frederiksgade,115.33333333333333,11382.0,Helge Rodes Vej,Regenburgsgade,Tronkærgårdsvej,Kaj Munks Vej,Kalmargade,115.5,115.0,115.0,115.8,116.0
+Frodesvej,96.66666666666667,6328.333333333333,Helenelyst,Abildhaven,Viborgvej,Højgårdsvej,Grenåvej,97.0,97.4,95.83333333333333,95.66666666666667,95.6
+Fuglekærvej,105.0,10920.0,Haslevej,Havnegade,Borresøvej,Kystvejen,Volden,105.0,105.0,105.04255319148936,105.2,104.5
+Funch Thomsens Gade,116.0,6950.0,Studsgade,Strandvejen,Kalmargade,Nørregade,Brabrand Skovvej,116.0,116.0,116.0,116.0,116.0
+Fynsgade,131.66666666666666,13170.666666666666,Sifsgade,Vesterbro Torv,Tulipanhaven,Telefonsmøgen,Ryvej,131.7,131.75,131.77272727272728,132.0,132.0
+Fåborggade,122.83333333333333,9756.333333333334,Tøndergade,Randersvej,Ewaldsgade,Søndergade,Ellen Jensens Gade,122.8,122.8695652173913,123.0,122.625,122.56
+Gammel Munkegade,124.0,7700.0,Museumsgade,Bronzealdervej,Nyborggade,Forteledet,Eya Jensens Gade,124.0,124.0,124.33333333333333,123.6,123.45454545454545
+Gammel Stillingvej,93.0,7500.0,Solbjerg Hedevej,Sønderskovvej,Telefontorvet,Tilst Bypark,Hovedgaden,93.0,93.0,93.0,92.5,92.33333333333333
+Gammel Viborgvej,79.0,7900.0,Stationsstien,Hasselengen,Trige Parkvej,Byvej,Åbovej,79.0,79.0,79.0,78.0,81.0
+Gebauersgade,150.85714285714286,7726.857142857143,Esther Aggebos Gade,Amaliegade,Klokkeskovvej,Åhusene,Grete Løchtes Gade,151.0,150.625,152.0,152.0,149.0
+Grenåvej,95.6,6958.0,Højgårdsvej,Grøfthøjparken,Viborgvej,Eghøjvej,Rønnevangen,95.66666666666667,95.41666666666667,95.83333333333333,95.0,95.0
+Grete Løchtes Gade,149.0,9996.42857142857,Peter Sabroes Gade,Thorvaldsensgade,Dirch Passers Gade,Amaliegade,Gebauersgade,148.54545454545453,148.1875,147.62962962962962,150.625,150.85714285714286
+Grøfthøjparken,95.41666666666667,6998.666666666667,Grenåvej,Højgårdsvej,Viborgvej,Eghøjvej,Rønnevangen,95.6,95.66666666666667,95.83333333333333,95.0,95.0
+Grøndalsvej,105.75,6447.5,Kongsgårdsvej,Engdalsvej,Kystvejen,Borresøvej,Fuglekærvej,106.0,106.0,105.2,105.04255319148936,105.0
+Grønnegade,119.6,9097.0,Kirkedammen,Kantorparken,Honningvænget,Jelshøjvej,Søvej,119.5,119.33333333333333,119.88888888888889,120.0,120.0
+Grønvej,104.0,5720.0,Sønderholmvej,Ringen,Nordre Strandvej,Høiriisgårdsvej,Volden,104.0,103.83333333333333,103.66666666666667,104.44444444444444,104.5
+Gudrunsvej,111.21052631578948,7113.789473684211,Christiansgade,Skejbyvej,Kildeagervej,Hørhavevej,Kræsten Iversens Vej,111.25,111.11111111111111,111.0,111.0,111.0
+Guldsmedgade,130.1578947368421,11948.631578947368,Hjortensgade,Bissensgade,Eckersbergsgade,Arresøvej,Mejlgade,130.0,130.0,130.0,130.4037558685446,129.68421052631578
+Gustav Holms Vej,112.2,13830.0,Kværnloftet,Stavnsvej,Nagelsvej,Skolegade,Ole Rømers Gade,112.22222222222223,112.33333333333333,112.0,112.0,112.0
+Haderslevgade,125.5,10150.0,Ålborggade,Baldersgade,Jægergårdsgade,Møllehatten,Nørreport,125.4,125.84210526315789,125.85714285714286,125.11627906976744,126.0
+Hammershusvej,98.66666666666667,9438.888888888889,Holmevej,Møllegangen,Stenaldervej,Kettinggårdsvej,Lisbjergbakken,98.5,99.0,98.33333333333333,98.0,99.5
+Hans Broges Gade,117.83333333333333,12203.333333333334,Lystrupvej,Skanderborgvej,Emiliehøj,Sønderport,Brendstrupvej,117.5,118.18181818181819,118.4,118.5,118.57142857142857
+Hans Schourups Gade,137.33333333333334,7613.333333333333,Malmøgade,Markvangen,Tulipanlunden,Bronzealdervænget,Kaserneboulevarden,137.33333333333334,137.4,137.05,137.0,138.0
+Harald Jensens Plads,114.0,11900.0,Skejby Vænge,Vestre Kongevej,Vestre Ringgade,Finsensgade,Carl Bertelsens Gade,114.0,114.0,113.88888888888889,114.25,113.75
+Harald Selmers Vej,129.66666666666666,11427.777777777777,Mejlgade,Brendstrupgårdsvej,Ny Banegårdsgade,Eckersbergsgade,Bissensgade,129.68421052631578,129.5,129.33333333333334,130.0,130.0
+Haslevej,105.0,4200.0,Havnegade,Fuglekærvej,Borresøvej,Kystvejen,Volden,105.0,105.0,105.04255319148936,105.2,104.5
+Hasselengen,79.0,2624.0,Trige Parkvej,Stationsstien,Gammel Viborgvej,Byvej,Åbovej,79.0,79.0,79.0,78.0,81.0
+Hasselvangen,87.0,9150.0,Beder Landevej,Stenhøjgårdsvej,Moltkesvej,Spørring Kirkevej,Bangsboparken,87.0,87.0,87.0,88.0,86.0
+Havkærvej,121.0,6583.0,Augustenborggade,Egå Møllevej,Daugbjergvej,Pollenvænget,Nordre Ringgade,121.0,121.0,120.6923076923077,120.68518518518519,120.5
+Havnegade,105.0,11272.0,Haslevej,Fuglekærvej,Borresøvej,Kystvejen,Volden,105.0,105.0,105.04255319148936,105.2,104.5
+Hedeager,344.0,9295.0,Peder Skrams Gade,Vibevej,Østboulevarden,Egegade,Fredensgade,250.0,191.0,190.0,187.0,183.5
+Heibergsgade,126.5,8750.0,Doris Kæraas Gade,Møllegade,Niels Juels Gade,Lyøgade,Skovgaardsgade,126.57692307692308,126.8,126.83333333333333,126.0,127.0
+Helenelyst,97.0,10850.0,Frodesvej,Abildhaven,Kildegården,Kettinggårdsvej,Viborgvej,96.66666666666667,97.4,97.8,98.0,95.83333333333333
+Helga Pedersens Gade,181.8,15090.0,Søgade,Ny Munkegade,Fredensgade,Bergensgade,Lollandsgade,181.5,182.66666666666666,183.5,180.0,180.0
+Helge Rodes Vej,115.5,8450.0,Frederiksgade,Kaj Munks Vej,Regenburgsgade,Tronkærgårdsvej,Studsgade,115.33333333333333,115.8,115.0,115.0,116.0
+Herredsvej,107.0,5390.0,Sletterhagevej,Onsholtvej,Kongsgårdsvej,Klosterport,Lucernevej,107.0,107.52380952380952,106.0,108.0,108.0
+Hjarnøgade,91.0,7097.0,Ingersvej,Holmkærvej,Solbjergvej,Asmusgårdsvej,Fredens Torv,91.5,90.5,92.0,90.0,90.0
+Hjortensgade,130.0,10190.0,Eckersbergsgade,Bissensgade,Guldsmedgade,Mejlgade,Harald Selmers Vej,130.0,130.0,130.1578947368421,129.68421052631578,129.66666666666666
+Hoffmannsvej,109.0,6683.333333333333,Kastanjehaven,Dampmøllevej,Aldersrovej,Lucernevej,Bugthusene,108.75,108.0,110.0,108.0,110.0
+Holme Møllevej,114.3,10366.5,Klokkerbakken,Finsensgade,Harald Jensens Plads,Skejby Vænge,Vestre Kongevej,114.27272727272727,114.25,114.0,114.0,114.0
+Holmevej,98.5,8095.0,Hammershusvej,Stenaldervej,Møllegangen,Kettinggårdsvej,Kildegården,98.66666666666667,98.33333333333333,99.0,98.0,97.8
+Holmkærvej,90.5,7908.0,Hjarnøgade,Fredens Torv,Asmusgårdsvej,Ingersvej,Emmasvej,91.0,90.0,90.0,91.5,89.33333333333333
+Honningvænget,119.88888888888889,9308.277777777777,Jelshøjvej,Carl Blochs Gade,Knudrisgade,Tåsingegade,Assensgade,120.0,120.0,120.0,120.0,120.0
+Horsensgade,127.0,6625.0,Fredensvej,Skovgaardsgade,Niels Juels Gade,Møllegade,Mariane Thomsens Gade,127.0,127.0,126.83333333333333,126.8,127.33333333333333
+Hovedgaden,92.33333333333333,8585.0,Tilst Bypark,Solbjergvej,Solbjerg Hedevej,Gammel Stillingvej,Sønderskovvej,92.5,92.0,93.0,93.0,93.0
+Hvidkløvervej,139.14285714285714,6936.714285714285,Skovvangsvej,Solbakken,Maren Smeds Gyde,Dalgas Avenue,Børglumvej,139.0,139.5,140.0,138.25,138.0
+Høegh-Guldbergs Gade,110.0,12839.0,Aldersrovej,Teglværksgade,Bugthusene,Enghavevej,Oddervej,110.0,110.0,110.0,110.66666666666667,110.875
+Høgevej,73.0,5500.0,Hørretvej,Kastrup Skovvej,Værkmestergade,Kappelvænget,Dortesvej,74.0,72.0,72.0,70.4,70.33333333333333
+Høiriisgårdsvej,104.44444444444444,9180.444444444445,Volden,Grønvej,Sønderholmvej,Fuglekærvej,Havnegade,104.5,104.0,104.0,105.0,105.0
+Højgårdsvej,95.66666666666667,9583.333333333334,Grenåvej,Viborgvej,Grøfthøjparken,Eghøjvej,Rønnevangen,95.6,95.83333333333333,95.41666666666667,95.0,95.0
+Højvangsvej,100.0,14000.0,Jordbrovej,Smedebroen,Tandrupvej,Lisbjergbakken,Møllegangen,100.0,100.0,100.0,99.5,99.0
+Hørhavevej,111.0,7800.0,Kildeagervej,Kræsten Iversens Vej,Skejbyvej,Oddervej,Gudrunsvej,111.0,111.0,111.11111111111111,110.875,111.21052631578948
+Hørretvej,74.0,6600.0,Høgevej,Kastrup Skovvej,Espegårdsvej,Værkmestergade,Kappelvænget,73.0,72.0,76.0,72.0,70.4
+Ingerslevvej,60.0,9900.0,Olaf Rudes Vej,Dalbovej,Jettesvej,Sortevej,Janesvej,61.0,62.0,62.0,67.0,68.66666666666667
+Ingersvej,91.5,6965.0,Hjarnøgade,Solbjergvej,Hovedgaden,Holmkærvej,Tilst Bypark,91.0,92.0,92.33333333333333,90.5,92.5
+Islandsgade,118.66666666666667,9980.0,Brendstrupvej,Sønderport,Emiliehøj,Skolebakken,Emiliedalen,118.57142857142857,118.5,118.4,119.0,119.0
+Ivar Huitfeldts Gade,127.5,7827.166666666667,Otte Ruds Gade,Banegårdspladsen,Mariane Thomsens Gade,Brassøvej,Vesterbrogade,127.6,127.66666666666667,127.33333333333333,127.75,127.76923076923077
+Janesvej,68.66666666666667,7573.666666666667,Dortesvej,Sortevej,Kappelvænget,Kastrup Skovvej,Værkmestergade,70.33333333333333,67.0,70.4,72.0,72.0
+Janus La Cours Gade,144.5,12747.5,Sandgravvej,Damagervej,Jens Baggesens Vej,Valdemarsgade,Kirkegårdsvej,144.66666666666666,144.31578947368422,144.74074074074073,144.8,144.8181818181818
+Jelshøjvej,120.0,4800.0,Knudrisgade,Carl Blochs Gade,Tåsingegade,Assensgade,Søvej,120.0,120.0,120.0,120.0,120.0
+Jens Baggesens Vej,144.74074074074073,8742.666666666666,Valdemarsgade,Sandgravvej,Kirkegårdsvej,Janus La Cours Gade,Damagervej,144.8,144.66666666666666,144.8181818181818,144.5,144.31578947368422
+Jettesvej,62.0,6278.0,Dalbovej,Olaf Rudes Vej,Ingerslevvej,Sortevej,Janesvej,62.0,61.0,60.0,67.0,68.66666666666667
+Jordbrovej,100.0,8106.0,Højvangsvej,Smedebroen,Tandrupvej,Lisbjergbakken,Møllegangen,100.0,100.0,100.0,99.5,99.0
+Jægergårdsgade,125.85714285714286,9715.42857142857,Baldersgade,Lyøgade,Nørreport,Lundbyesgade,Haderslevgade,125.84210526315789,126.0,126.0,126.0,125.5
+Kaj Munks Vej,115.8,9558.0,Studsgade,Strandvejen,Brabrand Skovvej,Nørregade,Kalmargade,116.0,116.0,116.0,116.0,116.0
+Kalmargade,116.0,6845.0,Brabrand Skovvej,Studsgade,Strandvejen,Funch Thomsens Gade,Nørregade,116.0,116.0,116.0,116.0,116.0
+Kantorparken,119.33333333333333,6300.0,Kirkedammen,Grønnegade,Stenvej,Emiliedalen,Skolebakken,119.5,119.6,119.0,119.0,119.0
+Kantorvænget,146.5,6737.5,Sonnesgade,Kongevellen,Søren Frichs Vej,Trygsvej,Borggade,146.5735294117647,146.28947368421052,146.23287671232876,146.0,146.0
+Kappelvænget,70.4,5495.0,Dortesvej,Værkmestergade,Kastrup Skovvej,Janesvej,Høgevej,70.33333333333333,72.0,72.0,68.66666666666667,73.0
+Kaserneboulevarden,138.0,7227.0,Børglumvej,Dalgas Avenue,Markvangen,Malmøgade,Hans Schourups Gade,138.0,138.25,137.4,137.33333333333334,137.33333333333334
+Kastanjehaven,108.75,6695.0,Hoffmannsvej,Klosterport,Dampmøllevej,Lucernevej,Onsholtvej,109.0,108.0,108.0,108.0,107.52380952380952
+Kastrup Skovvej,72.0,8000.0,Værkmestergade,Høgevej,Kappelvænget,Dortesvej,Hørretvej,72.0,73.0,70.4,70.33333333333333,74.0
+Katrinebjergvej,140.3684210526316,10617.684210526315,Skovvejen,Vestervang,Maren Smeds Gyde,Montanagade,Solbakken,140.5,140.66666666666666,140.0,141.0,139.5
+Kettinggårdsvej,98.0,5200.0,Kildegården,Stenaldervej,Holmevej,Abildhaven,Hammershusvej,97.8,98.33333333333333,98.5,97.4,98.66666666666667
+Kildeagervej,111.0,7272.0,Hørhavevej,Kræsten Iversens Vej,Skejbyvej,Oddervej,Gudrunsvej,111.0,111.0,111.11111111111111,110.875,111.21052631578948
+Kildegården,97.8,12070.2,Kettinggårdsvej,Abildhaven,Stenaldervej,Holmevej,Helenelyst,98.0,97.4,98.33333333333333,98.5,97.0
+Kirkedammen,119.5,9800.0,Grønnegade,Kantorparken,Honningvænget,Tåsingegade,Carl Blochs Gade,119.6,119.33333333333333,119.88888888888889,120.0,120.0
+Kirkegårdsvej,144.8181818181818,9436.363636363636,Valdemarsgade,Jens Baggesens Vej,Sandgravvej,Janus La Cours Gade,Damagervej,144.8,144.74074074074073,144.66666666666666,144.5,144.31578947368422
+Kirsebærhaven,103.0,4536.5,Solbærhaven,Lerdalen,Nordre Strandvej,Ringen,Sønderholmvej,103.0,102.33333333333333,103.66666666666667,103.83333333333333,104.0
+Klokkerbakken,114.27272727272727,9745.454545454546,Finsensgade,Holme Møllevej,Skejby Vænge,Harald Jensens Plads,Vestre Kongevej,114.25,114.3,114.0,114.0,114.0
+Klokkeskovvej,152.0,5500.0,Åhusene,Esther Aggebos Gade,Dagmar Petersens Gade,Gebauersgade,Amaliegade,152.0,151.0,153.08333333333334,150.85714285714286,150.625
+Klostergade,128.0,8339.4,Carit Etlars Vej,Stockholmsgade,Vesterbrogade,Brassøvej,Banegårdspladsen,128.0,128.14285714285714,127.76923076923077,127.75,127.66666666666667
+Klosterport,108.0,7150.0,Lucernevej,Dampmøllevej,Onsholtvej,Kastanjehaven,Sletterhagevej,108.0,108.0,107.52380952380952,108.75,107.0
+Kløvermarksvej,154.0,8500.0,Østergade,Bøgegade,Engelundsvej,Dagmar Petersens Gade,Åboulevarden,154.0625,154.33333333333334,153.5,153.08333333333334,155.13636363636363
+Knudrisgade,120.0,8617.0,Jelshøjvej,Carl Blochs Gade,Søvej,Tåsingegade,Assensgade,120.0,120.0,120.0,120.0,120.0
+Kongevellen,146.28947368421052,7897.368421052632,Søren Frichs Vej,Kantorvænget,Sonnesgade,Borggade,Trygsvej,146.23287671232876,146.5,146.5735294117647,146.0,146.0
+Kongsgårdsvej,106.0,8225.0,Engdalsvej,Grøndalsvej,Kystvejen,Borresøvej,Fuglekærvej,106.0,105.75,105.2,105.04255319148936,105.0
+Kræsten Iversens Vej,111.0,14695.0,Hørhavevej,Kildeagervej,Skejbyvej,Oddervej,Gudrunsvej,111.0,111.0,111.11111111111111,110.875,111.21052631578948
+Kværnloftet,112.22222222222223,10172.296296296296,Gustav Holms Vej,Stavnsvej,Elverdalsvej,Skolegade,Nagelsvej,112.2,112.33333333333333,112.0,112.0,112.0
+Kystvejen,105.2,14487.0,Borresøvej,Haslevej,Havnegade,Fuglekærvej,Grøndalsvej,105.04255319148936,105.0,105.0,105.0,105.75
+Ladefogedvej,136.6,4595.0,Ellebrinken,Falstersgade,Bronzealdervænget,Tulipanlunden,Hans Schourups Gade,136.6,136.5,137.0,137.05,137.33333333333334
+Langelandsgade,132.75,10477.25,Dannebrogsgade,Mindegade,Rosenkrantzgade,Tretommervej,Torsøvej,132.75,132.66666666666666,132.55555555555554,132.5,133.11111111111111
+Langelinieparken,165.0,19500.0,Trøjborgvej,Teglgårdsvej,Edouard Suensons Gade,Vestergårdsvej,Paradisgade,165.9433962264151,166.0,166.33333333333334,160.0,171.42857142857142
+Lerdalen,102.33333333333333,9205.666666666666,Kirsebærhaven,Solbærhaven,Sandbakken,Sejrøgade,Nordre Strandvej,103.0,103.0,101.0,101.0,103.66666666666667
+Lisbjergbakken,99.5,3650.0,Møllegangen,Højvangsvej,Jordbrovej,Smedebroen,Tandrupvej,99.0,100.0,100.0,100.0,100.0
+Lokesvej,133.75,9731.083333333334,Skejbytoften,Willemoesgade,Skovmærkevej,Bernhardt Jensens Boulevard,Torsøvej,133.5,134.0,133.5,133.33333333333334,133.11111111111111
+Lollandsgade,180.0,9900.0,Bergensgade,Søgade,Helga Pedersens Gade,Ny Munkegade,Fredensgade,180.0,181.5,181.8,182.66666666666666,183.5
+Lucernevej,108.0,6300.0,Klosterport,Dampmøllevej,Onsholtvej,Kastanjehaven,Sletterhagevej,108.0,108.0,107.52380952380952,108.75,107.0
+Lundbyesgade,126.0,10400.0,Nørreport,Lyøgade,Jægergårdsgade,Baldersgade,Heibergsgade,126.0,126.0,125.85714285714286,125.84210526315789,126.5
+Lundingsgade,135.5,9450.0,Bytoften,Odensegade,Åbyvej,Fiskergade,Tommy Seebachs Gade,135.54545454545453,135.66666666666666,134.85714285714286,134.8235294117647,134.6153846153846
+Lystrupvej,117.5,6100.0,Hans Broges Gade,Ryhavevej,Søndre Ringgade,Skanderborgvej,Nordborggade,117.83333333333333,116.88888888888889,116.83333333333333,118.18181818181819,116.8125
+Lyøgade,126.0,8876.0,Nørreport,Lundbyesgade,Jægergårdsgade,Baldersgade,Heibergsgade,126.0,126.0,125.85714285714286,125.84210526315789,126.5
+Malmøgade,137.33333333333334,8933.333333333334,Hans Schourups Gade,Markvangen,Tulipanlunden,Bronzealdervænget,Kaserneboulevarden,137.33333333333334,137.4,137.05,137.0,138.0
+Maren Smeds Gyde,140.0,10995.0,Katrinebjergvej,Solbakken,Skovvejen,Vestervang,Hvidkløvervej,140.3684210526316,139.5,140.5,140.66666666666666,139.14285714285714
+Mariane Thomsens Gade,127.33333333333333,14853.333333333334,Ivar Huitfeldts Gade,Otte Ruds Gade,Fredensvej,Skovgaardsgade,Horsensgade,127.5,127.6,127.0,127.0,127.0
+Marius Simonsens Vej,122.0,8200.0,Oslogade,Strandparken,Skejbyparken,Nordlandsvej,Tove Ditlevsens Gade,122.0,121.75,121.75,121.66666666666667,121.61904761904762
+Markvangen,137.4,6790.0,Hans Schourups Gade,Malmøgade,Tulipanlunden,Bronzealdervænget,Børglumvej,137.33333333333334,137.33333333333334,137.05,137.0,138.0
+Marselis Boulevard,112.83333333333333,9875.416666666666,Viby Torv,Carl Jensens Vej,Erik Bøghs Vej,Tousvej,Marstrandsgade,112.66666666666667,113.0,113.0,113.0,112.5
+Marstrandsgade,112.5,9722.5,Stavnsvej,Viby Torv,Kværnloftet,Gustav Holms Vej,Marselis Boulevard,112.33333333333333,112.66666666666667,112.22222222222223,112.2,112.83333333333333
+Mejlgade,129.68421052631578,10038.947368421053,Harald Selmers Vej,Brendstrupgårdsvej,Bissensgade,Eckersbergsgade,Hjortensgade,129.66666666666666,129.5,130.0,130.0,130.0
+Mindegade,132.66666666666666,10250.0,Langelandsgade,Dannebrogsgade,Rosenkrantzgade,Tretommervej,Torsøvej,132.75,132.75,132.55555555555554,132.5,133.11111111111111
+Molsgade,94.0,4250.0,Engskovvænget,Pilevangen,Dalvej,Rønnevangen,Eghøjvej,94.0,94.0,94.0,95.0,95.0
+Moltkesvej,87.0,4900.0,Hasselvangen,Beder Landevej,Stenhøjgårdsvej,Spørring Kirkevej,Bangsboparken,87.0,87.0,87.0,88.0,86.0
+Montanagade,141.0,9450.0,Vestervang,Arnegårdsvej,Skovvejen,Katrinebjergvej,Maren Smeds Gyde,140.66666666666666,141.5,140.5,140.3684210526316,140.0
+Museumsgade,124.0,12587.666666666666,Bronzealdervej,Gammel Munkegade,Nyborggade,Forteledet,Eya Jensens Gade,124.0,124.0,124.33333333333333,123.6,123.45454545454545
+Møllegade,126.8,9540.0,Niels Juels Gade,Skovgaardsgade,Horsensgade,Fredensvej,Doris Kæraas Gade,126.83333333333333,127.0,127.0,127.0,126.57692307692308
+Møllegangen,99.0,11000.0,Hammershusvej,Lisbjergbakken,Holmevej,Stenaldervej,Kettinggårdsvej,98.66666666666667,99.5,98.5,98.33333333333333,98.0
+Møllehatten,125.11627906976744,8802.151162790698,Brobjerg Parkvej,Ålborggade,Haderslevgade,Baldersgade,Jægergårdsgade,125.0,125.4,125.5,125.84210526315789,125.85714285714286
+Møllevejen,156.0,7995.0,Christian X's Vej,Åboulevarden,Bøgegade,Østergade,Kløvermarksvej,156.66666666666666,155.13636363636363,154.33333333333334,154.0625,154.0
+Nagelsvej,112.0,9000.0,Skolegade,Elverdalsvej,Ole Rømers Gade,Gustav Holms Vej,Kværnloftet,112.0,112.0,112.0,112.2,112.22222222222223
+Niels Juels Gade,126.83333333333333,9264.166666666666,Møllegade,Skovgaardsgade,Horsensgade,Fredensvej,Doris Kæraas Gade,126.8,127.0,127.0,127.0,126.57692307692308
+Nordborggade,116.8125,8971.5625,Søndre Ringgade,Ryhavevej,Truevej,Lystrupvej,Kalmargade,116.83333333333333,116.88888888888889,116.66666666666667,117.5,116.0
+Nordlandsvej,121.66666666666667,6710.833333333333,Tove Ditlevsens Gade,Vikærsvej,Strandparken,Skejbyparken,Marius Simonsens Vej,121.61904761904762,121.60606060606061,121.75,121.75,122.0
+Nordre Ringgade,120.5,10395.0,Emiliedalsvej,Engtoften,Pollenvænget,Daugbjergvej,Rudolph Wulffs Gade,120.5,120.43478260869566,120.68518518518519,120.6923076923077,120.25
+Nordre Strandvej,103.66666666666667,9766.666666666666,Ringen,Grønvej,Sønderholmvej,Kirsebærhaven,Solbærhaven,103.83333333333333,104.0,104.0,103.0,103.0
+Ny Banegårdsgade,129.33333333333334,9736.666666666666,Tordenskjoldsgade,Brendstrupgårdsvej,Harald Selmers Vej,Sjællandsgade,Mejlgade,129.25,129.5,129.66666666666666,129.0,129.68421052631578
+Ny Munkegade,182.66666666666666,6763.666666666667,Fredensgade,Helga Pedersens Gade,Søgade,Lollandsgade,Bergensgade,183.5,181.8,181.5,180.0,180.0
+Nyborggade,124.33333333333333,14400.0,Gammel Munkegade,Museumsgade,Bronzealdervej,Brobjerg Parkvej,Forteledet,124.0,124.0,124.0,125.0,123.6
+Nørregade,116.0,9500.0,Brabrand Skovvej,Kalmargade,Funch Thomsens Gade,Studsgade,Strandvejen,116.0,116.0,116.0,116.0,116.0
+Nørreport,126.0,11000.0,Lyøgade,Lundbyesgade,Jægergårdsgade,Baldersgade,Haderslevgade,126.0,126.0,125.85714285714286,125.84210526315789,125.5
+Oddervej,110.875,7378.125,Hørhavevej,Kræsten Iversens Vej,Kildeagervej,Enghavevej,Skejbyvej,111.0,111.0,111.0,110.66666666666667,111.11111111111111
+Odensegade,135.66666666666666,12130.0,Bytoften,Lundingsgade,Åbyvej,Falstersgade,Fiskergade,135.54545454545453,135.5,134.85714285714286,136.5,134.8235294117647
+Olaf Rudes Vej,61.0,5500.0,Jettesvej,Ingerslevvej,Dalbovej,Sortevej,Janesvej,62.0,60.0,62.0,67.0,68.66666666666667
+Ole Rømers Gade,112.0,13395.0,Skolegade,Nagelsvej,Elverdalsvej,Gustav Holms Vej,Kværnloftet,112.0,112.0,112.0,112.2,112.22222222222223
+Onsholtvej,107.52380952380952,7330.0,Lucernevej,Dampmøllevej,Klosterport,Sletterhagevej,Herredsvej,108.0,108.0,108.0,107.0,107.0
+Oslogade,122.0,8200.0,Marius Simonsens Vej,Strandparken,Skejbyparken,Nordlandsvej,Tove Ditlevsens Gade,122.0,121.75,121.75,121.66666666666667,121.61904761904762
+Otte Ruds Gade,127.6,10560.5,Banegårdspladsen,Ivar Huitfeldts Gade,Brassøvej,Vesterbrogade,Mariane Thomsens Gade,127.66666666666667,127.5,127.75,127.76923076923077,127.33333333333333
+Otto Sverdrups Vej,88.0,11000.0,Spørring Kirkevej,Virupvej,Stenhøjgårdsvej,Espedalen,Moltkesvej,88.0,88.25,87.0,89.0,87.0
+Paradisgade,171.42857142857142,7701.285714285715,Edouard Suensons Gade,Teglgårdsvej,Trøjborgvej,Langelinieparken,Lollandsgade,166.33333333333334,166.0,165.9433962264151,165.0,180.0
+Peder Skrams Gade,250.0,4500.0,Vibevej,Østboulevarden,Egegade,Fredensgade,Ny Munkegade,191.0,190.0,187.0,183.5,182.66666666666666
+Peter Sabroes Gade,148.54545454545453,11875.0,Thorvaldsensgade,Grete Løchtes Gade,Dirch Passers Gade,Sonnesgade,Kantorvænget,148.1875,149.0,147.62962962962962,146.5735294117647,146.5
+Pilevangen,94.0,8149.0,Engskovvænget,Molsgade,Dalvej,Rønnevangen,Eghøjvej,94.0,94.0,94.0,95.0,95.0
+Pollenvænget,120.68518518518519,8151.277777777777,Daugbjergvej,Emiliedalsvej,Nordre Ringgade,Engtoften,Havkærvej,120.6923076923077,120.5,120.5,120.43478260869566,121.0
+Randersvej,122.8695652173913,9200.0,Fåborggade,Tøndergade,Ewaldsgade,Søndergade,Ellen Jensens Gade,122.83333333333333,122.8,123.0,122.625,122.56
+Regenburgsgade,115.0,7850.0,Tronkærgårdsvej,Frederiksgade,Broloftet,Helge Rodes Vej,Holme Møllevej,115.0,115.33333333333333,114.62222222222222,115.5,114.3
+Ringen,103.83333333333333,10991.666666666666,Nordre Strandvej,Grønvej,Sønderholmvej,Høiriisgårdsvej,Volden,103.66666666666667,104.0,104.0,104.44444444444444,104.5
+Rosenkrantzgade,132.55555555555554,10339.777777777777,Tretommervej,Mindegade,Langelandsgade,Dannebrogsgade,Finderupvej,132.5,132.66666666666666,132.75,132.75,132.13333333333333
+Rudolph Wulffs Gade,120.25,10798.125,Engtoften,Knudrisgade,Jelshøjvej,Emiliedalsvej,Carl Blochs Gade,120.43478260869566,120.0,120.0,120.5,120.0
+Ryesgade,111.5,13837.5,Skovfaldet,Silkeborgvej,Tranekærvej,Christiansgade,Gudrunsvej,111.5,111.6,111.6,111.25,111.21052631578948
+Ryhavevej,116.88888888888889,10588.888888888889,Søndre Ringgade,Nordborggade,Truevej,Lystrupvej,Kalmargade,116.83333333333333,116.8125,116.66666666666667,117.5,116.0
+Ryvej,132.0,7950.0,Telefonsmøgen,Finderupvej,Tulipanhaven,Vesterbro Torv,Sifsgade,132.0,132.13333333333333,131.77272727272728,131.75,131.7
+Rønnevangen,95.0,8900.0,Terp Skovvej,Eghøjvej,Skådehøjen,Grøfthøjparken,Grenåvej,95.0,95.0,95.0,95.41666666666667,95.6
+Saltholmsgade,143.0,11495.0,Thunøgade,Vestergade,Damagervej,Janus La Cours Gade,Arnegårdsvej,143.33333333333334,143.80769230769232,144.31578947368422,144.5,141.5
+Sandbakken,101.0,12105.5,Sejrøgade,Smedebroen,Jordbrovej,Højvangsvej,Tandrupvej,101.0,100.0,100.0,100.0,100.0
+Sandgravvej,144.66666666666666,9875.333333333334,Jens Baggesens Vej,Valdemarsgade,Kirkegårdsvej,Janus La Cours Gade,Damagervej,144.74074074074073,144.8,144.8181818181818,144.5,144.31578947368422
+Sejrøgade,101.0,10000.0,Sandbakken,Smedebroen,Jordbrovej,Højvangsvej,Tandrupvej,101.0,100.0,100.0,100.0,100.0
+Sifsgade,131.7,11012.55,Fynsgade,Vesterbro Torv,Tulipanhaven,Ryvej,Telefonsmøgen,131.66666666666666,131.75,131.77272727272728,132.0,132.0
+Silkeborgvej,111.6,9654.333333333334,Tranekærvej,Skovfaldet,Ryesgade,Christiansgade,Gudrunsvej,111.6,111.5,111.5,111.25,111.21052631578948
+Sjællandsgade,129.0,9708.0,Vesterport,Vintervej,Tordenskjoldsgade,Ny Banegårdsgade,Brendstrupgårdsvej,128.94117647058823,128.86206896551724,129.25,129.33333333333334,129.5
+Skanderborgvej,118.18181818181819,8969.484848484848,Emiliehøj,Sønderport,Hans Broges Gade,Brendstrupvej,Islandsgade,118.4,118.5,117.83333333333333,118.57142857142857,118.66666666666667
+Skejby Vænge,114.0,7000.0,Harald Jensens Plads,Vestre Kongevej,Vestre Ringgade,Finsensgade,Carl Bertelsens Gade,114.0,114.0,113.88888888888889,114.25,113.75
+Skejbygårdsvej,131.2,7086.0,Banegårdsgade,Fynsgade,Sifsgade,Vesterbro Torv,Tulipanhaven,131.0,131.66666666666666,131.7,131.75,131.77272727272728
+Skejbyparken,121.75,7228.875,Strandparken,Nordlandsvej,Tove Ditlevsens Gade,Vikærsvej,Marius Simonsens Vej,121.75,121.66666666666667,121.61904761904762,121.60606060606061,122.0
+Skejbytoften,133.5,7970.0,Skovmærkevej,Bernhardt Jensens Boulevard,Lokesvej,Torsøvej,Willemoesgade,133.5,133.33333333333334,133.75,133.11111111111111,134.0
+Skejbyvej,111.11111111111111,8377.444444444445,Gudrunsvej,Kildeagervej,Hørhavevej,Kræsten Iversens Vej,Christiansgade,111.21052631578948,111.0,111.0,111.0,111.25
+Skolebakken,119.0,23500.0,Emiliedalen,Stenvej,Islandsgade,Kantorparken,Brendstrupvej,119.0,119.0,118.66666666666667,119.33333333333333,118.57142857142857
+Skolegade,112.0,12724.5,Nagelsvej,Ole Rømers Gade,Elverdalsvej,Gustav Holms Vej,Kværnloftet,112.0,112.0,112.0,112.2,112.22222222222223
+Skovfaldet,111.5,8975.0,Ryesgade,Silkeborgvej,Tranekærvej,Christiansgade,Gudrunsvej,111.5,111.6,111.6,111.25,111.21052631578948
+Skovgaardsgade,127.0,11700.0,Horsensgade,Fredensvej,Niels Juels Gade,Møllegade,Mariane Thomsens Gade,127.0,127.0,126.83333333333333,126.8,127.33333333333333
+Skovmærkevej,133.5,18000.0,Skejbytoften,Bernhardt Jensens Boulevard,Lokesvej,Torsøvej,Willemoesgade,133.5,133.33333333333334,133.75,133.11111111111111,134.0
+Skovvangsvej,139.0,7115.0,Hvidkløvervej,Solbakken,Dalgas Avenue,Børglumvej,Kaserneboulevarden,139.14285714285714,139.5,138.25,138.0,138.0
+Skovvejen,140.5,9021.25,Katrinebjergvej,Vestervang,Montanagade,Maren Smeds Gyde,Arnegårdsvej,140.3684210526316,140.66666666666666,141.0,140.0,141.5
+Skådehøjen,95.0,9700.0,Terp Skovvej,Eghøjvej,Rønnevangen,Grøfthøjparken,Grenåvej,95.0,95.0,95.0,95.41666666666667,95.6
+Slet Parkvej,113.5,5822.5,Østre Skovvej,Bronzealdertoften,Carl Bertelsens Gade,Vestre Ringgade,Skejby Vænge,113.5,113.5,113.75,113.88888888888889,114.0
+Sletterhagevej,107.0,8137.5,Herredsvej,Onsholtvej,Lucernevej,Kongsgårdsvej,Klosterport,107.0,107.52380952380952,108.0,106.0,108.0
+Smedebroen,100.0,3500.0,Højvangsvej,Jordbrovej,Tandrupvej,Lisbjergbakken,Møllegangen,100.0,100.0,100.0,99.5,99.0
+Solbakken,139.5,13566.75,Hvidkløvervej,Skovvangsvej,Maren Smeds Gyde,Katrinebjergvej,Skovvejen,139.14285714285714,139.0,140.0,140.3684210526316,140.5
+Solbjerg Hedevej,93.0,9498.0,Gammel Stillingvej,Sønderskovvej,Telefontorvet,Tilst Bypark,Hovedgaden,93.0,93.0,93.0,92.5,92.33333333333333
+Solbjergvej,92.0,7500.0,Hovedgaden,Ingersvej,Tilst Bypark,Telefontorvet,Hjarnøgade,92.33333333333333,91.5,92.5,93.0,91.0
+Solbærhaven,103.0,9775.0,Kirsebærhaven,Nordre Strandvej,Lerdalen,Ringen,Grønvej,103.0,103.66666666666667,102.33333333333333,103.83333333333333,104.0
+Sonnesgade,146.5735294117647,12680.29411764706,Kantorvænget,Kongevellen,Søren Frichs Vej,Trygsvej,Borggade,146.5,146.28947368421052,146.23287671232876,146.0,146.0
+Sortevej,67.0,6200.0,Janesvej,Dortesvej,Kappelvænget,Jettesvej,Kastrup Skovvej,68.66666666666667,70.33333333333333,70.4,62.0,72.0
+Spørring Kirkevej,88.0,6200.0,Otto Sverdrups Vej,Virupvej,Stenhøjgårdsvej,Espedalen,Moltkesvej,88.0,88.25,87.0,89.0,87.0
+Stationsstien,79.0,8050.0,Trige Parkvej,Gammel Viborgvej,Hasselengen,Byvej,Åbovej,79.0,79.0,79.0,78.0,81.0
+Stavnsvej,112.33333333333333,7793.0,Kværnloftet,Gustav Holms Vej,Marstrandsgade,Nagelsvej,Skolegade,112.22222222222223,112.2,112.5,112.0,112.0
+Stenaldervej,98.33333333333333,5172.0,Holmevej,Kettinggårdsvej,Hammershusvej,Kildegården,Møllegangen,98.5,98.0,98.66666666666667,97.8,99.0
+Stenhøjgårdsvej,87.0,8215.0,Hasselvangen,Beder Landevej,Moltkesvej,Otto Sverdrups Vej,Spørring Kirkevej,87.0,87.0,87.0,88.0,88.0
+Stenvej,119.0,12500.0,Emiliedalen,Skolebakken,Islandsgade,Kantorparken,Brendstrupvej,119.0,119.0,118.66666666666667,119.33333333333333,118.57142857142857
+Stockholmsgade,128.14285714285714,8900.0,Klostergade,Carit Etlars Vej,Vesterbrogade,Brassøvej,Banegårdspladsen,128.0,128.0,127.76923076923077,127.75,127.66666666666667
+Strandparken,121.75,9857.0,Skejbyparken,Nordlandsvej,Tove Ditlevsens Gade,Vikærsvej,Oslogade,121.75,121.66666666666667,121.61904761904762,121.60606060606061,122.0
+Strandvejen,116.0,14500.0,Nørregade,Brabrand Skovvej,Kalmargade,Studsgade,Funch Thomsens Gade,116.0,116.0,116.0,116.0,116.0
+Studsgade,116.0,9360.0,Nørregade,Brabrand Skovvej,Kalmargade,Strandvejen,Funch Thomsens Gade,116.0,116.0,116.0,116.0,116.0
+Søgade,181.5,8375.0,Helga Pedersens Gade,Ny Munkegade,Lollandsgade,Bergensgade,Fredensgade,181.8,182.66666666666666,180.0,180.0,183.5
+Søndergade,122.625,16856.25,Ellen Jensens Gade,Tøndergade,Fåborggade,Randersvej,Ewaldsgade,122.56,122.8,122.83333333333333,122.8695652173913,123.0
+Sønderholmvej,104.0,11200.0,Grønvej,Ringen,Nordre Strandvej,Høiriisgårdsvej,Volden,104.0,103.83333333333333,103.66666666666667,104.44444444444444,104.5
+Sønderport,118.5,10583.75,Brendstrupvej,Emiliehøj,Islandsgade,Skanderborgvej,Emiliedalen,118.57142857142857,118.4,118.66666666666667,118.18181818181819,119.0
+Sønderskovvej,93.0,7500.0,Gammel Stillingvej,Solbjerg Hedevej,Telefontorvet,Tilst Bypark,Hovedgaden,93.0,93.0,93.0,92.5,92.33333333333333
+Søndre Ringgade,116.83333333333333,9637.777777777777,Nordborggade,Ryhavevej,Truevej,Lystrupvej,Funch Thomsens Gade,116.8125,116.88888888888889,116.66666666666667,117.5,116.0
+Søren Frichs Vej,146.23287671232876,9552.82191780822,Kongevellen,Borggade,Trygsvej,Kantorvænget,Sonnesgade,146.28947368421052,146.0,146.0,146.5,146.5735294117647
+Søvej,120.0,6750.0,Knudrisgade,Carl Blochs Gade,Assensgade,Tåsingegade,Jelshøjvej,120.0,120.0,120.0,120.0,120.0
+Tandrupvej,100.0,8000.0,Højvangsvej,Jordbrovej,Smedebroen,Lisbjergbakken,Møllegangen,100.0,100.0,100.0,99.5,99.0
+Teglgårdsvej,166.0,5000.0,Trøjborgvej,Edouard Suensons Gade,Langelinieparken,Paradisgade,Vestergårdsvej,165.9433962264151,166.33333333333334,165.0,171.42857142857142,160.0
+Teglværksgade,110.0,7500.0,Aldersrovej,Høegh-Guldbergs Gade,Bugthusene,Enghavevej,Oddervej,110.0,110.0,110.0,110.66666666666667,110.875
+Telefonsmøgen,132.0,11961.25,Ryvej,Finderupvej,Tulipanhaven,Vesterbro Torv,Sifsgade,132.0,132.13333333333333,131.77272727272728,131.75,131.7
+Telefontorvet,93.0,9995.0,Sønderskovvej,Gammel Stillingvej,Solbjerg Hedevej,Tilst Bypark,Hovedgaden,93.0,93.0,93.0,92.5,92.33333333333333
+Terp Skovvej,95.0,6800.0,Skådehøjen,Eghøjvej,Rønnevangen,Grøfthøjparken,Grenåvej,95.0,95.0,95.0,95.41666666666667,95.6
+Thit Jensens Gade,123.43243243243244,14202.702702702703,Eya Jensens Gade,Forteledet,Ewaldsgade,Randersvej,Bronzealdervej,123.45454545454545,123.6,123.0,122.8695652173913,124.0
+Thorvaldsensgade,148.1875,10244.4375,Peter Sabroes Gade,Dirch Passers Gade,Grete Løchtes Gade,Sonnesgade,Kantorvænget,148.54545454545453,147.62962962962962,149.0,146.5735294117647,146.5
+Thunøgade,143.33333333333334,9033.333333333334,Saltholmsgade,Vestergade,Damagervej,Janus La Cours Gade,Sandgravvej,143.0,143.80769230769232,144.31578947368422,144.5,144.66666666666666
+Tilst Bypark,92.5,7874.0,Hovedgaden,Gammel Stillingvej,Solbjerg Hedevej,Sønderskovvej,Telefontorvet,92.33333333333333,93.0,93.0,93.0,93.0
+Tommy Seebachs Gade,134.6153846153846,13251.538461538461,Fiskergade,Åbyvej,Willemoesgade,Lokesvej,Lundingsgade,134.8235294117647,134.85714285714286,134.0,133.75,135.5
+Tordenskjoldsgade,129.25,10349.125,Ny Banegårdsgade,Sjællandsgade,Brendstrupgårdsvej,Vesterport,Vintervej,129.33333333333334,129.0,129.5,128.94117647058823,128.86206896551724
+Torsøvej,133.11111111111111,11572.222222222223,Bernhardt Jensens Boulevard,Dannebrogsgade,Langelandsgade,Skovmærkevej,Skejbytoften,133.33333333333334,132.75,132.75,133.5,133.5
+Tousvej,113.0,2500.0,Carl Jensens Vej,Erik Bøghs Vej,Marselis Boulevard,Viby Torv,Marstrandsgade,113.0,113.0,112.83333333333333,112.66666666666667,112.5
+Tove Ditlevsens Gade,121.61904761904762,9392.57142857143,Vikærsvej,Nordlandsvej,Skejbyparken,Strandparken,Oslogade,121.60606060606061,121.66666666666667,121.75,121.75,122.0
+Tranekærvej,111.6,10643.8,Silkeborgvej,Ryesgade,Skovfaldet,Christiansgade,Gudrunsvej,111.6,111.5,111.5,111.25,111.21052631578948
+Tretommervej,132.5,7635.666666666667,Rosenkrantzgade,Mindegade,Langelandsgade,Dannebrogsgade,Finderupvej,132.55555555555554,132.66666666666666,132.75,132.75,132.13333333333333
+Trige Parkvej,79.0,8690.666666666666,Hasselengen,Gammel Viborgvej,Stationsstien,Byvej,Åbovej,79.0,79.0,79.0,78.0,81.0
+Tronkærgårdsvej,115.0,5900.0,Regenburgsgade,Frederiksgade,Broloftet,Helge Rodes Vej,Holme Møllevej,115.0,115.33333333333333,114.62222222222222,115.5,114.3
+Truevej,116.66666666666667,9481.666666666666,Nordborggade,Søndre Ringgade,Ryhavevej,Brabrand Skovvej,Kalmargade,116.8125,116.83333333333333,116.88888888888889,116.0,116.0
+Trygsvej,146.0,6300.0,Borggade,Søren Frichs Vej,Kongevellen,Kantorvænget,Sonnesgade,146.0,146.23287671232876,146.28947368421052,146.5,146.5735294117647
+Trøjborgvej,165.9433962264151,8265.66037735849,Teglgårdsvej,Edouard Suensons Gade,Langelinieparken,Paradisgade,Vestergårdsvej,166.0,166.33333333333334,165.0,171.42857142857142,160.0
+Tulipanhaven,131.77272727272728,7661.636363636364,Vesterbro Torv,Sifsgade,Fynsgade,Ryvej,Telefonsmøgen,131.75,131.7,131.66666666666666,132.0,132.0
+Tulipanlunden,137.05,7710.4,Bronzealdervænget,Malmøgade,Hans Schourups Gade,Markvangen,Ellebrinken,137.0,137.33333333333334,137.33333333333334,137.4,136.6
+Tåsingegade,120.0,7800.0,Knudrisgade,Carl Blochs Gade,Jelshøjvej,Assensgade,Søvej,120.0,120.0,120.0,120.0,120.0
+Tøndergade,122.8,8166.2,Fåborggade,Randersvej,Søndergade,Ewaldsgade,Ellen Jensens Gade,122.83333333333333,122.8695652173913,122.625,123.0,122.56
+Valdemarsgade,144.8,9369.5,Kirkegårdsvej,Jens Baggesens Vej,Sandgravvej,Janus La Cours Gade,Damagervej,144.8181818181818,144.74074074074073,144.66666666666666,144.5,144.31578947368422
+Vesterbro Torv,131.75,13196.0,Tulipanhaven,Sifsgade,Fynsgade,Ryvej,Telefonsmøgen,131.77272727272728,131.7,131.66666666666666,132.0,132.0
+Vesterbrogade,127.76923076923077,9175.384615384615,Brassøvej,Banegårdspladsen,Otte Ruds Gade,Klostergade,Carit Etlars Vej,127.75,127.66666666666667,127.6,128.0,128.0
+Vestergade,143.80769230769232,9687.692307692309,Thunøgade,Damagervej,Janus La Cours Gade,Saltholmsgade,Sandgravvej,143.33333333333334,144.31578947368422,144.5,143.0,144.66666666666666
+Vestergårdsvej,160.0,5295.0,Åparken,Christian X's Vej,Møllevejen,Åboulevarden,Langelinieparken,158.2,156.66666666666666,156.0,155.13636363636363,165.0
+Vesterport,128.94117647058823,9008.823529411764,Sjællandsgade,Vintervej,Tordenskjoldsgade,Ny Banegårdsgade,Brendstrupgårdsvej,129.0,128.86206896551724,129.25,129.33333333333334,129.5
+Vestervang,140.66666666666666,12933.333333333334,Skovvejen,Katrinebjergvej,Montanagade,Maren Smeds Gyde,Arnegårdsvej,140.5,140.3684210526316,141.0,140.0,141.5
+Vestre Kongevej,114.0,5700.0,Harald Jensens Plads,Skejby Vænge,Vestre Ringgade,Finsensgade,Carl Bertelsens Gade,114.0,114.0,113.88888888888889,114.25,113.75
+Vestre Ringgade,113.88888888888889,8464.555555555555,Harald Jensens Plads,Vestre Kongevej,Skejby Vænge,Carl Bertelsens Gade,Finsensgade,114.0,114.0,114.0,113.75,114.25
+Vibevej,191.0,38000.0,Østboulevarden,Egegade,Fredensgade,Ny Munkegade,Helga Pedersens Gade,190.0,187.0,183.5,182.66666666666666,181.8
+Viborgvej,95.83333333333333,8661.666666666666,Højgårdsvej,Grenåvej,Grøfthøjparken,Terp Skovvej,Eghøjvej,95.66666666666667,95.6,95.41666666666667,95.0,95.0
+Viby Torv,112.66666666666667,10296.111111111111,Marselis Boulevard,Marstrandsgade,Carl Jensens Vej,Tousvej,Erik Bøghs Vej,112.83333333333333,112.5,113.0,113.0,113.0
+Vikærsvej,121.60606060606061,9578.60606060606,Tove Ditlevsens Gade,Nordlandsvej,Skejbyparken,Strandparken,Oslogade,121.61904761904762,121.66666666666667,121.75,121.75,122.0
+Vintervej,128.86206896551724,7122.379310344828,Vesterport,Sjællandsgade,Tordenskjoldsgade,Ny Banegårdsgade,Brendstrupgårdsvej,128.94117647058823,129.0,129.25,129.33333333333334,129.5
+Virupvej,88.25,8355.75,Spørring Kirkevej,Otto Sverdrups Vej,Espedalen,Emmasvej,Stenhøjgårdsvej,88.0,88.0,89.0,89.33333333333333,87.0
+Volden,104.5,11429.0,Høiriisgårdsvej,Grønvej,Fuglekærvej,Sønderholmvej,Havnegade,104.44444444444444,104.0,105.0,104.0,105.0
+Værkmestergade,72.0,10000.0,Kastrup Skovvej,Høgevej,Kappelvænget,Dortesvej,Hørretvej,72.0,73.0,70.4,70.33333333333333,74.0
+Willemoesgade,134.0,8531.666666666666,Lokesvej,Skovmærkevej,Skejbytoften,Tommy Seebachs Gade,Bernhardt Jensens Boulevard,133.75,133.5,133.5,134.6153846153846,133.33333333333334
+Åboulevarden,155.13636363636363,9183.09090909091,Bøgegade,Møllevejen,Østergade,Kløvermarksvej,Christian X's Vej,154.33333333333334,156.0,154.0625,154.0,156.66666666666666
+Åbovej,81.0,6500.0,Østergårdsvej,Edwin Rahrs Vej,Ankersgade,Gammel Viborgvej,Stationsstien,81.5,82.5,83.0,79.0,79.0
+Åbyvej,134.85714285714286,11364.285714285714,Fiskergade,Tommy Seebachs Gade,Lundingsgade,Bytoften,Odensegade,134.8235294117647,134.6153846153846,135.5,135.54545454545453,135.66666666666666
+Åhusene,152.0,9308.333333333334,Klokkeskovvej,Esther Aggebos Gade,Dagmar Petersens Gade,Gebauersgade,Amaliegade,152.0,151.0,153.08333333333334,150.85714285714286,150.625
+Ålborggade,125.4,11838.0,Haderslevgade,Møllehatten,Brobjerg Parkvej,Baldersgade,Jægergårdsgade,125.5,125.11627906976744,125.0,125.84210526315789,125.85714285714286
+Åparken,158.2,6680.0,Christian X's Vej,Vestergårdsvej,Møllevejen,Åboulevarden,Bøgegade,156.66666666666666,160.0,156.0,155.13636363636363,154.33333333333334
+Østboulevarden,190.0,9900.0,Vibevej,Egegade,Fredensgade,Ny Munkegade,Helga Pedersens Gade,191.0,187.0,183.5,182.66666666666666,181.8
+Østergade,154.0625,12279.4375,Kløvermarksvej,Bøgegade,Engelundsvej,Dagmar Petersens Gade,Åboulevarden,154.0,154.33333333333334,153.5,153.08333333333334,155.13636363636363
+Østergårdsvej,81.5,8870.75,Åbovej,Edwin Rahrs Vej,Ankersgade,Hasselengen,Stationsstien,81.0,82.5,83.0,79.0,79.0
+Østre Skovvej,113.5,13237.5,Bronzealdertoften,Slet Parkvej,Carl Bertelsens Gade,Vestre Ringgade,Skejby Vænge,113.5,113.5,113.75,113.88888888888889,114.0
