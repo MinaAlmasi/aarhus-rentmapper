@@ -291,6 +291,17 @@ def clean_all_data(data_path, zip_codes, save_path=None):
     # remove duplicates, consider everything but website and year
     all_df = all_df.drop_duplicates(subset=["year", "rental_type", "rent_without_expenses", "square_meters", "zip_code", "street", "area", "rooms"])
 
+    # add id column
+    all_df["id"] = all_df.index
+
+    # create aggregates for rent per square meter and rent per room
+    all_df["rent_per_square_meter"] = all_df["rent_without_expenses"].astype(int) / all_df["square_meters"].astype(int)
+    all_df["rent_per_room"] = all_df["rent_without_expenses"].astype(int) / all_df["rooms"].astype(int)
+
+    # remove decimals
+    all_df["rent_per_square_meter"] = all_df["rent_per_square_meter"].astype(int)
+    all_df["rent_per_room"] = all_df["rent_per_room"].astype(int)
+
     # save data
     if save_path is not None:
         all_df.to_csv(save_path / "cleaned_data.csv", index=False)
