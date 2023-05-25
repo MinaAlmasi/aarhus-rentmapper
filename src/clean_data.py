@@ -13,6 +13,8 @@ import pathlib
 # data wrangling
 import pandas as pd
 
+import numpy as np
+
 ## functions ##
 def clean_boligportal(data_path:pathlib.Path, zip_codes:pd.DataFrame):
     '''
@@ -301,6 +303,12 @@ def clean_all_data(data_path, zip_codes, save_path=None):
     # remove decimals
     all_df["rent_per_square_meter"] = all_df["rent_per_square_meter"].astype(int)
     all_df["rent_per_room"] = all_df["rent_per_room"].astype(int)
+
+    # make all rooms above 4 into +4 
+    # Replace values 5 and above with '+4'
+
+    # change rooms into integer
+    all_df['rooms'] = np.where(all_df['rooms'].astype(int) >= 5, '+4', all_df['rooms'])
 
     # save data
     if save_path is not None:
