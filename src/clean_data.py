@@ -305,10 +305,7 @@ def clean_all_data(data_path, zip_codes, save_path=None):
     all_df["rent_per_room"] = all_df["rent_per_room"].astype(int)
 
     # make all rooms above 4 into +4 
-    # Replace values 5 and above with '+4'
-
-    # change rooms into integer
-    all_df['rooms'] = np.where(all_df['rooms'].astype(int) >= 5, '+4', all_df['rooms'])
+    all_df['rooms'] = np.where(all_df['rooms'].astype(int) >= 5, '4+', all_df['rooms'])
 
     # save data
     if save_path is not None:
