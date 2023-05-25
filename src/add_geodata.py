@@ -208,6 +208,9 @@ def merge_districts(apartments):
     apartments["district"] = districts
     apartments["geometry"] = geometry
 
+    # drop irrelevant columns
+    apartments.drop(["stat_district", "stat_geometry", "society_district", "society_geometry"], axis=1, inplace=True)
+
     return apartments
 
 
@@ -241,17 +244,17 @@ def main():
     
     print(apartments)
 
-    
+    '''
     # keey only 2023 rows
-    apartments = apartments[apartments['year'] == 2023]
-    apartments = apartments[apartments['rental_type'] == "room"]
+    apartments = apartments[apartments['year'] != 2023]
+    apartments = apartments[apartments['rental_type'] == "apartment"]
 
     result = apartments.groupby('district')['rent_per_square_meter'].mean().sort_values(ascending=False).head(50)
     result = pd.DataFrame(result)
     result['count'] = apartments.groupby('district')['rent_per_square_meter'].count().loc[result.index]
 
     print(result)
-    
+    '''
 
     # save the data as final data
     apartments.to_csv(path.parents[1] / "data" / "final_aarhus_data.csv", index=False)
