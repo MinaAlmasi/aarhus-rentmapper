@@ -38,6 +38,10 @@ def get_district_aggregates(complete_data:pd.DataFrame, save_path:pathlib.Path):
     # drop columns 
     district_data = district_data.drop(columns=["room_rent_sqm_now", "room_rent_sqm_then", "apartment_rent_now", "apartment_rent_then"])
 
+    # round all values to 2 decimals
+    district_data = district_data.round(0)
+    
+
     ## COUNTS
     apartment_rooms_count = complete_data[complete_data["year"] == 2023].groupby(["district", "rooms"])["id"].count()
 
@@ -170,7 +174,7 @@ def main():
     # create street aggregates
     street_data = get_street_aggregates(complete_data, data_path, n_similar_streets=5)
 
-    print(street_data)
+    print(district_data)
     
     
 
