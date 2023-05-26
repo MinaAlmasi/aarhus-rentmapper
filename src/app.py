@@ -4,6 +4,7 @@ import folium
 from streamlit_folium import folium_static
 import pandas as pd
 import pathlib
+from folium.features import GeoJsonPopup, GeoJsonTooltip
 
 def add_Erhvervshavnen():
     path = pathlib.Path(__file__)
@@ -50,6 +51,9 @@ def add_missing_districts():
 
     return missing_districts
 
+#def style_statistics
+
+
 def main():
     # define paths
     path = pathlib.Path(__file__)
@@ -71,6 +75,9 @@ def main():
 
     # add missing districts to dataframe
     missing_districts = add_missing_districts()
+
+    # make layout wide 
+    st.set_page_config(layout="wide")
 
     # title of dashboard
     st.title('Aarhus Apartment Rent')
@@ -99,10 +106,6 @@ def main():
         selected_district = st.selectbox('Select a district', data['district'])
         selected_data = data[data['district'] == selected_district]
 
-        st.subheader('Selected District Statistics')
-        st.write(f"{selected_data['apartment_rent_sqm_now'].values[0]} DKK per sqm")
-        st.write(f"{selected_data.crs}")
-        st.write(f"{selected_data['zoom_level'].values[0]}")
         st.write(f"{len(data)} districts in total")
     
     # convert to epsg 4326
@@ -118,6 +121,14 @@ def main():
     folium_map = folium.Map(location=selected_location,
                             zoom_start=int(selected_zoom_level))
 
+    # define tooltip, but unclickable
+    tooltip = GeoJsonTooltip(
+        fields=['district'], 
+        aliases=['District: '],
+        labels=True,
+        permanent=False
+    )
+
     folium.Choropleth(
         geo_data=data,
         name='choropleth',
@@ -129,8 +140,12 @@ def main():
         line_opacity=0.2,
         legend_name='Apartment Rent per sqm Now',
         highlight=True
-    ).add_to(folium_map)                        
+    ).add_to(folium_map)
 
+    folium.GeoJson(data, 
+        tooltip=tooltip,
+        style_function=lambda x: {"color": "transparent", "weight": 0, "opacity": 0, "fillOpacity": 0},
+    ).add_to(folium_map)     
 
     # draw missing districts on map, make them grey, make hover effect
     folium.GeoJson(missing_districts,
@@ -140,11 +155,48 @@ def main():
     # add selected district to map
     folium.GeoJson(selected_data, 
     style_function=lambda x: {"color": "red", "weight": 4, "opacity": 1, "fillOpacity": 0},
-    ).add_to(folium_map)    
+    ).add_to(folium_map)
 
-    folium.LayerControl().add_to(folium_map)
     folium_static(folium_map)
+ 
+    # create columns to display statistics
+    st.subheader(f"Rental Statistics for {selected_district}")
+
+    # create subsubheader for apartment rent
+    st.write("Average Apartment Rent (per m2)")
+
+    apart_col1, apart_col2, apart_col3 = st.columns(3)
+
+    with apart_col1:
+        st.metric(label="in 2023", value=f"{selected_data['apartment_rent_sqm_now'].values[0]} DKK", delta=f"{selected_data['apartment_rent_change'].values[0]} %", delta_color="inverse")
+            
+    with apart_col2:
+        st.metric(label="in 2014-2016", value=f"{selected_data['apartment_rent_sqm_then'].values[0]} DKK")
+        
+    # add spacing
+    st.write("")
+
+    # create the same for room rent
+    st.write("Average Room Rent")
+
+    room_col1, room_col2, room_col3 = st.columns(3)
+
+    with room_col1:
+        st.metric(label="in 2023", value=f"{selected_data['room_rent_now'].values[0]} DKK", delta=f"{selected_data['room_rent_change'].values[0]} %", delta_color="inverse")
     
+    with room_col2:
+        st.metric(label="in 2014-2016", value=f"{selected_data['room_rent_then'].values[0]} DKK")
+    
+
+    # add spacing
+    st.write("")
+
+    # plot a distribution of apartment rooms
+    st.write("Distribution of Apartment Rooms")
+
+
+    # layer control for street view
+    folium.LayerControl().add_to(folium_map)
 
 if __name__ == '__main__':
     main()
