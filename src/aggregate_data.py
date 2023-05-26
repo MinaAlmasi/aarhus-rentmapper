@@ -38,9 +38,14 @@ def get_district_aggregates(complete_data:pd.DataFrame, save_path:pathlib.Path):
     # drop columns 
     district_data = district_data.drop(columns=["room_rent_sqm_now", "room_rent_sqm_then", "apartment_rent_now", "apartment_rent_then"])
 
-    # round all values to 2 decimals
+    # round
     district_data = district_data.round(1)
-    
+
+    # calculate apartment_rent_change and room_rent_change in percent. It is calculated as (then - now) / now * 100
+    district_data["apartment_rent_change"] = round((district_data["apartment_rent_sqm_now"] - district_data["apartment_rent_sqm_then"]) / district_data["apartment_rent_sqm_then"] * 100, 1)
+    district_data["room_rent_change"] = round((district_data["room_rent_now"] - district_data["room_rent_then"]) / district_data["room_rent_then"] * 100, 1)
+
+    print(district_data)
 
     ## COUNTS
     apartment_rooms_count = complete_data[complete_data["year"] == 2023].groupby(["district", "rooms"])["id"].count()
