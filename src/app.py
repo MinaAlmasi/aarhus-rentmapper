@@ -80,119 +80,114 @@ def main():
     st.set_page_config(layout="wide")
 
     # title of dashboard
-    st.title('Aarhus Apartment Rent')
+    st.write("<style>.block-container {padding-top: 0 !important;}</style>", unsafe_allow_html=True) # remove padding
+    st.markdown("<h1 style='text-align: center;'>Aarhus Apartment Rent</h1>", unsafe_allow_html=True)
+    st.divider()
 
-    # Display the map with polygons
-    folium_map = folium.Map(location=[56.1629, 10.2039],
-                           zoom_start=10)
-    
-    folium.Choropleth(
-        geo_data=data,
-        name='choropleth',
-        data=data,
-        columns=['district', 'apartment_rent_sqm_now'],
-        key_on='feature.properties.district',
-        fill_color='YlGnBu',
-        fill_opacity=0.7,
-        line_opacity=0.2,
-        legend_name='Apartment Rent per sqm Now',
-        highlight=True
-    ).add_to(folium_map)
 
-    folium.LayerControl().add_to(folium_map)
+    # create columns for map and statistics
+    col1, col2, = st.columns(2)
 
-    # Display the statistics for selected district
+    # create sidebar for selecting district
     with st.sidebar:
         selected_district = st.selectbox('Select a district', data['district'])
         selected_data = data[data['district'] == selected_district]
 
         st.write(f"{len(data)} districts in total")
+
+        # convert to epsg 4326
+        selected_data = selected_data.to_crs("epsg:4326")
+
+        # extract zoom level
+        selected_zoom_level = selected_data['zoom_level'].astype(int)
+
+        # extract location coordinates
+        selected_location = [selected_data['geometry'].centroid.y, selected_data['geometry'].centroid.x]
+
+    with col2:
+        # add spacing
+        st.write("")
     
-    # convert to epsg 4326
-    selected_data = selected_data.to_crs("epsg:4326")
+        # update center of map to selected district
+        folium_map = folium.Map(location=selected_location,
+                                zoom_start=int(selected_zoom_level),
+                                min_zoom=10)
 
-    # extract zoom level
-    selected_zoom_level = selected_data['zoom_level'].astype(int)
+        # define tooltip, but unclickable
+        tooltip = GeoJsonTooltip(
+            fields=['district'], 
+            aliases=['District: '],
+            labels=True,
+            permanent=False
+        )
 
-    # extract location coordinates
-    selected_location = [selected_data['geometry'].centroid.y, selected_data['geometry'].centroid.x]
+        folium.Choropleth(
+            geo_data=data,
+            name='choropleth',
+            data=data,
+            columns=['district', 'apartment_rent_sqm_now'],
+            key_on='feature.properties.district',
+            fill_color='Blues',
+            fill_opacity=0.8,
+            line_opacity=0.2,
+            legend_name='Apartment Rent per sqm Now',
+            highlight=True
+        ).add_to(folium_map)
 
-    # update center of map to selected district
-    folium_map = folium.Map(location=selected_location,
-                            zoom_start=int(selected_zoom_level))
+        folium.GeoJson(data, 
+            tooltip=tooltip,
+            style_function=lambda x: {"color": "transparent", "weight": 0, "opacity": 0, "fillOpacity": 0},
+        ).add_to(folium_map)     
 
-    # define tooltip, but unclickable
-    tooltip = GeoJsonTooltip(
-        fields=['district'], 
-        aliases=['District: '],
-        labels=True,
-        permanent=False
-    )
+        # draw missing districts on map, make them grey, make hover effect, write custom text in tooltip
+        tooltip_missing = GeoJsonTooltip(
+            fields=['district'], 
+            aliases=['District: '],
+            labels=True,
+            permanent=False, 
+        )
 
-    folium.Choropleth(
-        geo_data=data,
-        name='choropleth',
-        data=data,
-        columns=['district', 'apartment_rent_sqm_now'],
-        key_on='feature.properties.district',
-        fill_color='YlGnBu',
-        fill_opacity=0.7,
-        line_opacity=0.2,
-        legend_name='Apartment Rent per sqm Now',
-        highlight=True
-    ).add_to(folium_map)
+        folium.GeoJson(missing_districts,
+            tooltip=tooltip_missing,
+        style_function=lambda x: {"color": "grey", "weight": 1, "opacity": 0.7, "fillOpacity": 0.7},
+        ).add_to(folium_map)
 
-    folium.GeoJson(data, 
-        tooltip=tooltip,
-        style_function=lambda x: {"color": "transparent", "weight": 0, "opacity": 0, "fillOpacity": 0},
-    ).add_to(folium_map)     
+        # add selected district to map
+        folium.GeoJson(selected_data, 
+        style_function=lambda x: {"color": "#FF595A", "weight": 4, "opacity": 1, "fillOpacity": 0},
+        ).add_to(folium_map)
 
-    # draw missing districts on map, make them grey, make hover effect
-    folium.GeoJson(missing_districts,
-    style_function=lambda x: {"color": "grey", "weight": 1, "opacity": 0.7, "fillOpacity": 0.7},
-    ).add_to(folium_map)
+        folium_static(folium_map)
+    
+    with col1:
+        # create columns to display statistics
+        st.markdown(f"<h3>Rental Statistics for <span style='color: #FF595A;'>{selected_district}</span></h3>", unsafe_allow_html=True)
 
-    # add selected district to map
-    folium.GeoJson(selected_data, 
-    style_function=lambda x: {"color": "red", "weight": 4, "opacity": 1, "fillOpacity": 0},
-    ).add_to(folium_map)
+        # create subsubheader for apartment rent
+        st.write("Average Apartment Rent (per m2)")
 
-    folium_static(folium_map)
- 
-    # create columns to display statistics
-    st.subheader(f"Rental Statistics for {selected_district}")
+        apart_col1, apart_col2, apart_col3 = st.columns(3)
 
-    # create subsubheader for apartment rent
-    st.write("Average Apartment Rent (per m2)")
-
-    apart_col1, apart_col2, apart_col3 = st.columns(3)
-
-    with apart_col1:
-        st.metric(label="in 2023", value=f"{selected_data['apartment_rent_sqm_now'].values[0]} DKK", delta=f"{selected_data['apartment_rent_change'].values[0]} %", delta_color="inverse")
+        with apart_col1:
+            st.metric(label="in 2023", value=f"{selected_data['apartment_rent_sqm_now'].values[0]} DKK", delta=f"{selected_data['apartment_rent_change'].values[0]} %", delta_color="inverse")
+                
+        with apart_col2:
+            st.metric(label="in 2014-2016", value=f"{selected_data['apartment_rent_sqm_then'].values[0]} DKK")
             
-    with apart_col2:
-        st.metric(label="in 2014-2016", value=f"{selected_data['apartment_rent_sqm_then'].values[0]} DKK")
+        # add spacing
+        st.write("")
+
+        # create the same for room rent
+        st.write("__Average Room Rent__")
+
+        room_col1, room_col2, room_col3 = st.columns(3)
+
+        with room_col1:
+            st.metric(label="in 2023", value=f"{selected_data['room_rent_now'].values[0]} DKK", delta=f"{selected_data['room_rent_change'].values[0]} %", delta_color="inverse")
         
-    # add spacing
-    st.write("")
-
-    # create the same for room rent
-    st.write("Average Room Rent")
-
-    room_col1, room_col2, room_col3 = st.columns(3)
-
-    with room_col1:
-        st.metric(label="in 2023", value=f"{selected_data['room_rent_now'].values[0]} DKK", delta=f"{selected_data['room_rent_change'].values[0]} %", delta_color="inverse")
+        with room_col2:
+            st.metric(label="in 2014-2016", value=f"{selected_data['room_rent_then'].values[0]} DKK")
     
-    with room_col2:
-        st.metric(label="in 2014-2016", value=f"{selected_data['room_rent_then'].values[0]} DKK")
-    
-
-    # add spacing
-    st.write("")
-
-    # plot a distribution of apartment rooms
-    st.write("Distribution of Apartment Rooms")
 
 
     # layer control for street view
