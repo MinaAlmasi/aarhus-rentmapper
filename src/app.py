@@ -46,6 +46,36 @@ def add_missing_districts():
 
     return missing_districts
 
+
+def plot_neighbor_stats(neighbor_data, y_col, y_title):
+        # define color
+        colors = ["lightslategray",] * len(neighbor_data)
+        
+        # change color of first element to make it stand out
+        colors[0] = ["#FF595A"]
+
+        # create plot of neighbor districts with plotly
+        fig = px.bar(neighbor_data, x="district", y=y_col, color="district", color_discrete_sequence=colors)
+
+        # update layout to have descending order
+        fig.update_layout(
+            xaxis=dict(
+                categoryorder="total descending"
+            ),
+            showlegend=False,
+            margin=dict(l=0, r=0, t=0, b=0),
+            height=300
+        )
+
+        # rm xaxis title
+        fig.update_xaxes(title=None)
+
+        # add yaxis title
+        fig.update_yaxes(title=y_title)
+
+        return fig
+
+
 def district_view(path): 
     # read in data
     data = pd.read_csv(path.parents[1] / "data" / "district_aggregates.csv")
@@ -144,29 +174,15 @@ def district_view(path):
         st.markdown(f"<h3>Rental Statistics for <span style='color: #FF595A;'>{selected_district}</span></h3>", unsafe_allow_html=True)
 
         # create subsubheader for apartment rent
-        st.write("__Average Apartment Rent (per m2)__")
+        st.write("__Average Rents 2023__")
 
         apart_col1, apart_col2 = st.columns(2)
 
         with apart_col1:
-            st.metric(label="in 2023", value=f"{selected_data['apartment_rent_sqm_now'].values[0]} DKK", delta=f"{selected_data['apartment_rent_change'].values[0]} %", delta_color="inverse")
+            st.metric(label="Apartment (per m2)", value=f"{selected_data['apartment_rent_sqm_now'].values[0]} DKK", delta=f"{selected_data['apartment_rent_change'].values[0]} % since 2014-16", delta_color="inverse")
                 
         with apart_col2:
-            st.metric(label="in 2014-2016", value=f"{selected_data['apartment_rent_sqm_then'].values[0]} DKK")
-            
-        # add spacing
-        st.write("")
-
-        # create the same for room rent  
-        st.write("__Average Room Rent__")
-
-        room_col1, room_col2 = st.columns(2)
-
-        with room_col1:
-            st.metric(label="in 2023", value=f"{selected_data['room_rent_now'].values[0]} DKK", delta=f"{selected_data['room_rent_change'].values[0]} %", delta_color="inverse")
-        
-        with room_col2:
-            st.metric(label="in 2014-2016", value=f"{selected_data['room_rent_then'].values[0]} DKK")
+            st.metric(label="Room", value=f"{selected_data['room_rent_now'].values[0]} DKK", delta=f"{selected_data['room_rent_change'].values[0]} % since 2014-16", delta_color="inverse")
         
         # add spacing
         st.write("")
@@ -187,34 +203,17 @@ def district_view(path):
         # concat with selected district
         neighbor_data = pd.concat([selected_data, neighbor_data])
 
-        # define color
-        colors = ["lightslategray",] * len(neighbor_data)
-        
-        # change color of first element to make it stand out
-        colors[0] = ["#FF595A"]
-
-        # create plot of neighbor districts with plotly
-        fig = px.bar(neighbor_data, x="district", y="apartment_rent_sqm_now", color="district", color_discrete_sequence=colors, )
-
-        # update layout to have descending order
-        fig.update_layout(
-            xaxis=dict(
-                categoryorder="total descending"
-            ),
-            showlegend=False,
-            margin=dict(l=0, r=0, t=0, b=0),
-            height=300,
-            width=500
-        )
-
-        # rm xaxis title
-        fig.update_xaxes(title=None)
-
-        # add yaxis title
-        fig.update_yaxes(title="Apartment Rent (per m2)")
+        # define tabs
+        tab1, tab2 = st.tabs(["Apartment Rent", "Room Rent"])
 
         # add plot to streamlit
-        st.plotly_chart(fig, use_container_width=True)
+        with tab1: 
+            apartment_fig = plot_neighbor_stats(neighbor_data, "apartment_rent_sqm_now", "Apartment Rent (per m2)")
+            st.plotly_chart(apartment_fig, use_container_width=True)
+
+        with tab2:
+            room_fig = plot_neighbor_stats(neighbor_data, "room_rent_now", "Room Rent")
+            st.plotly_chart(room_fig, use_container_width=True)
     
     # layer control for street view
     folium.LayerControl().add_to(folium_map)
