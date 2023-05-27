@@ -9,6 +9,47 @@ import geopandas as gpd
 import pandas as pd
 import pathlib
 
+def get_neighbor_districts(complete_data:pd.DataFrame):
+    '''
+    Function to get neighbor districts by finding all districts that touch or overlap with each other using GeoPandas.
+
+    Args
+        complete_data: complete pandas dataframe with geometry as string
+
+    Returns
+        complete_data: complete pandas dataframe with neighbor districts
+    '''
+
+    # convert geometry to wkt
+    complete_data["geometry"] = gpd.GeoSeries.from_wkt(complete_data["geometry"])
+
+    # transform into geodataframe
+    complete_data = gpd.GeoDataFrame(complete_data, geometry="geometry")
+
+    district_neighbors = []
+
+    # loop through all districts
+    for i in range(len(complete_data)):
+        # get district name
+        district = complete_data.iloc[i]["district"]
+
+        # get neighbors. Both "touches" and "overlaps" is used to get all neighbors due to the resolution of our polygons (some polygons are not perfectly aligned). # solution by https://gis.stackexchange.com/questions/281652/finding-all-neighbors-using-geopandas 
+        neighbors_touching = complete_data[complete_data.geometry.touches(complete_data.iloc[i].geometry)].district.tolist()
+        neighbors_overlaps = complete_data[complete_data.geometry.overlaps(complete_data.iloc[i].geometry)].district.tolist()
+
+        # find union
+        neighbors = neighbors_touching + neighbors_overlaps
+
+        # add neighbors to list
+        district_neighbors.append(neighbors)
+    
+    # add neighbors to dataframe
+    complete_data["neighbors"] = district_neighbors
+
+    print(complete_data)
+
+    return complete_data
+
 
 def get_district_aggregates(complete_data:pd.DataFrame, save_path:pathlib.Path):
     '''
@@ -45,8 +86,6 @@ def get_district_aggregates(complete_data:pd.DataFrame, save_path:pathlib.Path):
     district_data["apartment_rent_change"] = round((district_data["apartment_rent_sqm_now"] - district_data["apartment_rent_sqm_then"]) / district_data["apartment_rent_sqm_then"] * 100, 1)
     district_data["room_rent_change"] = round((district_data["room_rent_now"] - district_data["room_rent_then"]) / district_data["room_rent_then"] * 100, 1)
 
-    print(district_data)
-
     ## COUNTS
     apartment_rooms_count = complete_data[complete_data["year"] == 2023].groupby(["district", "rooms"])["id"].count()
 
@@ -64,6 +103,9 @@ def get_district_aggregates(complete_data:pd.DataFrame, save_path:pathlib.Path):
 
     # add back geometry from complete_data
     district_data = district_data.merge(complete_data[["district", "geometry"]].drop_duplicates(), on="district")
+
+    # get neighbor districts
+    district_data = get_neighbor_districts(district_data)
 
     # write to csv
     district_data.to_csv(save_path / "district_aggregates.csv", index=False)
@@ -85,11 +127,13 @@ def similar_rent_prices(street_data, n_similar_streets:int):
 
     most_similar_streets = []
     most_similar_rents = []
+    most_similar_districts = []
 
     for i in range(len(street_data)):
         # define target street and rent
         target_street = street_data.iloc[i]["street"]
         target_rent = street_data.iloc[i]["rent_per_square_meter"]
+        target_district = street_data.iloc[i]["district"]
         
         # get all streets except target street
         other_streets = street_data[street_data["street"] != target_street].copy() # copy to avoid SettingWithCopyWarning
@@ -103,10 +147,12 @@ def similar_rent_prices(street_data, n_similar_streets:int):
         # add street names and rents to lists
         most_similar_streets.append(similar_streets["street"].tolist())
         most_similar_rents.append(similar_streets["rent_per_square_meter"].tolist())
+        most_similar_districts.append(similar_streets["district"].tolist())
     
     # add lists to dataframe
     street_data["most_similar_streets"] = most_similar_streets
     street_data["most_similar_rents"] = most_similar_rents
+    street_data["most_similar_districts"] = most_similar_districts
 
     # create new columns for unpacking most_similar_streets
     new_columns_streets = ['most_similar_{}'.format(i+1) for i in range(5)]
@@ -116,11 +162,15 @@ def similar_rent_prices(street_data, n_similar_streets:int):
     new_columns_rents = ['most_similar_rent_{}'.format(i+1) for i in range(5)]
     unpacked_df_rents = pd.DataFrame(street_data['most_similar_rents'].to_list(), columns=new_columns_rents)
 
+    # create new columns for unpacking most_similar_districts
+    new_columns_districts = ['most_similar_district_{}'.format(i+1) for i in range(5)]
+    unpacked_df_districts = pd.DataFrame(street_data['most_similar_districts'].to_list(), columns=new_columns_districts)
+
     # concatenate the new DataFrames with the original DataFrame
-    street_data = pd.concat([street_data, unpacked_df_streets, unpacked_df_rents], axis=1)
+    street_data = pd.concat([street_data, unpacked_df_streets, unpacked_df_rents, unpacked_df_districts], axis=1)
 
     # drop columns
-    street_data = street_data.drop(columns=["most_similar_streets", "most_similar_rents"])
+    street_data = street_data.drop(columns=["most_similar_streets", "most_similar_rents", "most_similar_districts"])
 
     return street_data
 
@@ -143,7 +193,10 @@ def get_street_aggregates(complete_data, savepath, n_similar_streets:int=5):
     complete_data = complete_data[complete_data["rental_type"] == "apartment"]
 
     # group by street
-    street_data = complete_data.groupby(["street"]).agg({"rent_per_square_meter": "mean", "rent_without_expenses": "mean"}).reset_index()
+    street_data = complete_data.groupby(["street", "district"]).agg({"rent_per_square_meter": "mean", "rent_without_expenses": "mean"}).reset_index()
+
+    # round rent_per_square_meter to 1 decimal
+    street_data["rent_per_square_meter"] = round(street_data["rent_per_square_meter"], 1)
 
     # for each street, find the five other streets with most similar rent_per_square_meter
     street_data = similar_rent_prices(street_data, n_similar_streets)
@@ -179,7 +232,7 @@ def main():
     # create street aggregates
     street_data = get_street_aggregates(complete_data, data_path, n_similar_streets=5)
 
-    print(district_data)
+    #print(district_data)
     
     
 
