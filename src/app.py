@@ -1,8 +1,12 @@
 '''
 Streamlit app
+
+by Anton Drasbæk Schiønning (@drasbaek) and Mina Almasi (@MinaAlmasi)
+Spatial Analytics, Cultural Data Science (F2023)
 '''
 # utils 
 import pathlib
+from ast import literal_eval
 
 # web app
 import streamlit as st
@@ -14,6 +18,7 @@ from folium.features import GeoJsonPopup, GeoJsonTooltip
 
 # visualisations
 import plotly.graph_objects as go
+import plotly.express as px
 
 # data wrangling 
 import pandas as pd
@@ -132,7 +137,7 @@ def district_view(path):
         style_function=lambda x: {"color": "#FF595A", "weight": 4, "opacity": 1, "fillOpacity": 0},
         ).add_to(folium_map)
 
-        folium_static(folium_map, height=475)
+        folium_static(folium_map, height=475, width=500)
     
     with col1:
         # create columns to display statistics
@@ -141,7 +146,7 @@ def district_view(path):
         # create subsubheader for apartment rent
         st.write("__Average Apartment Rent (per m2)__")
 
-        apart_col1, apart_col2, apart_col3 = st.columns(3)
+        apart_col1, apart_col2 = st.columns(2)
 
         with apart_col1:
             st.metric(label="in 2023", value=f"{selected_data['apartment_rent_sqm_now'].values[0]} DKK", delta=f"{selected_data['apartment_rent_change'].values[0]} %", delta_color="inverse")
@@ -155,13 +160,61 @@ def district_view(path):
         # create the same for room rent  
         st.write("__Average Room Rent__")
 
-        room_col1, room_col2, room_col3 = st.columns(3)
+        room_col1, room_col2 = st.columns(2)
 
         with room_col1:
             st.metric(label="in 2023", value=f"{selected_data['room_rent_now'].values[0]} DKK", delta=f"{selected_data['room_rent_change'].values[0]} %", delta_color="inverse")
         
         with room_col2:
             st.metric(label="in 2014-2016", value=f"{selected_data['room_rent_then'].values[0]} DKK")
+        
+        # add spacing
+        st.write("")
+        
+        # start plot with neighbor districts
+        st.write("__Compared to neighbor districts__")
+
+        # create list of neighbor districts
+        neighbors = selected_data["neighbors"].tolist()[0]
+        neighbors = literal_eval(neighbors)
+
+        # extract neighbor data from dataframe
+        neighbor_data = data[data["district"].isin(neighbors)]
+
+        # convert neighbor data to epsg 4326
+        neighbor_data = neighbor_data.to_crs("epsg:4326")
+
+        # concat with selected district
+        neighbor_data = pd.concat([selected_data, neighbor_data])
+
+        # define color
+        colors = ["lightslategray",] * len(neighbor_data)
+        
+        # change color of first element to make it stand out
+        colors[0] = ["#FF595A"]
+
+        # create plot of neighbor districts with plotly
+        fig = px.bar(neighbor_data, x="district", y="apartment_rent_sqm_now", color="district", color_discrete_sequence=colors, )
+
+        # update layout to have descending order
+        fig.update_layout(
+            xaxis=dict(
+                categoryorder="total descending"
+            ),
+            showlegend=False,
+            margin=dict(l=0, r=0, t=0, b=0),
+            height=300,
+            width=500
+        )
+
+        # rm xaxis title
+        fig.update_xaxes(title=None)
+
+        # add yaxis title
+        fig.update_yaxes(title="Apartment Rent (per m2)")
+
+        # add plot to streamlit
+        st.plotly_chart(fig, use_container_width=True)
     
     # layer control for street view
     folium.LayerControl().add_to(folium_map)
