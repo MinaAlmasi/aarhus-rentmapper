@@ -1,3 +1,17 @@
+'''
+Script containing functions for creating district view page of Aarhus in streamlit app (app.py)
+
+Helper functions:
+- "add_missing_districts" for adding missing districts to dataframe.
+- "plot_neighbor_stats" for plotting statistics of neighbor districts
+
+Main function:
+- "district_view" for creating district view page of Aarhus in streamlit app
+
+by Anton Drasbæk Schiønning (@drasbaek) and Mina Almasi (@MinaAlmasi)
+Spatial Analytics, Cultural Data Science (F2023)
+'''
+
 # utils 
 import pathlib
 from ast import literal_eval

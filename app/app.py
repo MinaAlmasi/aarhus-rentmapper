@@ -22,7 +22,6 @@ from PIL import Image
 from district_view import district_view
 from street_view import street_view
 
-
 def add_logo(path: pathlib.Path):
     '''
     Function for adding logo to streamlit app.
@@ -42,6 +41,7 @@ def add_logo(path: pathlib.Path):
     # create columns to center image 
     left, center, right = st.columns([0.5, 1, 0.5])
     
+    # plot img in center
     with center: 
         st.image(logo, width=470)
 

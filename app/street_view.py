@@ -1,3 +1,16 @@
+'''
+Script containing functions for creating street view page of Aarhus in streamlit app (app.py)
+
+Helper functions:
+- "create_street_table" for creating table of most similar streets in streamlit app
+
+Main function:
+- "street_view" for creating street view page of Aarhus in streamlit app
+
+by Anton Drasbæk Schiønning (@drasbaek) and Mina Almasi (@MinaAlmasi)
+Spatial Analytics, Cultural Data Science (F2023)
+'''
+
 # utils 
 import pathlib
 
@@ -17,6 +30,16 @@ import pandas as pd
 import geopandas as gpd
 
 def create_street_table(selected_data): 
+    '''
+    Function to create table of most similar streets in streamlit app
+
+    Args:
+        selected_data: dataframe with most similar streets
+
+    Returns:
+        fig: table of most similar streets
+    '''
+
     # add DKK to rent in selected data in most_similar cols 
     for i in range(1, 6):
         selected_data[f"most_similar_rent_{i}"] = selected_data[f"most_similar_rent_{i}"].astype(str) + " DKK"
@@ -60,7 +83,6 @@ def create_street_table(selected_data):
                               width=500)
     
     return fig 
-
 
 def street_view(path:pathlib.Path):
     '''
