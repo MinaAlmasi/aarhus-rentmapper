@@ -408,8 +408,8 @@ def main():
                 """
             <style>
             [data-testid="stSidebar"][aria-expanded="true"]{
-                min-width: 180px;
-                max-width: 180px;
+                min-width: 200px;
+                max-width: 200px;
             }
             """,
         unsafe_allow_html=True,
