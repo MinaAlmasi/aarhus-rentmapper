@@ -404,6 +404,17 @@ def main():
     with st.sidebar:
         st.write('<style>div.block-container{padding-top:0rem;padding-bottom:0}</style>', unsafe_allow_html=True)
 
+        st.markdown(
+                """
+            <style>
+            [data-testid="stSidebar"][aria-expanded="true"]{
+                min-width: 200px;
+                max-width: 500px;
+            }
+            """,
+        unsafe_allow_html=True,
+        )   
+        
         #st.write("Welcome to Aarhus RentMapper!")
         #st.write("")
         
