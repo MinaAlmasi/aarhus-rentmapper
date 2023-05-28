@@ -94,7 +94,7 @@ def main():
 
     # add favicon, define page width and set page title
     favicon = Image.open(path.parents[1] / "app" / "favicon.ico")
-    st.set_page_config(page_title="RentMapper", page_icon=favicon, layout="wide")
+    st.set_page_config(page_title="rentmapper", page_icon=favicon, layout="wide")
 
     # add logo
     add_logo(path)
