@@ -1,6 +1,8 @@
 import geopandas as gpd
 import pathlib
 import pandas as pd
+#from shapely import
+
 
 def load_data():
     # define paths
@@ -19,12 +21,20 @@ def add_street_geometry(apartments, geo_streets):
     # remove final character for all street names in geo_streets if it is a space
     geo_streets['vejnavne'] = geo_streets['vejnavne'].str.rstrip()
 
+    # for the same street name, merge the linestring geometries into one
+    geo_streets = geo_streets.dissolve(by='vejnavne')
+
+    print(geo_streets.head())
+
+
+    '''
     # ensure oprettet_dato is a datetime object
     geo_streets['oprettet_dato'] = pd.to_datetime(geo_streets['oprettet_dato'])
 
     # only keep the most recent observation of each street name
     geo_streets = geo_streets.sort_values(by='oprettet_dato', ascending=False)
     geo_streets = geo_streets.drop_duplicates(subset=['vejnavne'])
+    '''
 
     # merge the data
     merged_df = apartments.merge(geo_streets[['vejnavne', 'geometry']], left_on='street', right_on='vejnavne', how='left')
