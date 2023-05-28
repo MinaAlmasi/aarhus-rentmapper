@@ -24,7 +24,8 @@ def add_street_geometry(apartments, geo_streets):
     # for the same street name, merge the linestring geometries into one
     geo_streets = geo_streets.dissolve(by='vejnavne')
 
-    print(geo_streets.head())
+    # change vejnavne from index to column
+    geo_streets = geo_streets.reset_index()
 
 
     '''
@@ -255,7 +256,7 @@ def main():
     # get overlaps
     apartments = merge_districts(apartments)
     
-    print(apartments)
+    #print(apartments)
 
     # save as csv
     apartments.to_csv(path.parents[1] / "data" / "complete_data.csv", index=False)
