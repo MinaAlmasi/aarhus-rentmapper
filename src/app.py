@@ -96,7 +96,7 @@ def district_view(path):
     missing_districts = add_missing_districts()
 
     # create columns for map and statistics
-    col1, col2, = st.columns(2)
+    col1, col2, = st.columns(2, gap = "large")
 
     # create sidebar for selecting district
     with st.sidebar:
@@ -167,14 +167,15 @@ def district_view(path):
         style_function=lambda x: {"color": "#FF595A", "weight": 4, "opacity": 1, "fillOpacity": 0},
         ).add_to(folium_map)
 
-        folium_static(folium_map, height=475, width=500)
+        folium_static(folium_map, height=630, width=482)
     
     with col1:
         # create columns to display statistics
         st.markdown(f"<h3>Rental Statistics for <span style='color: #FF595A;'>{selected_district}</span></h3>", unsafe_allow_html=True)
 
         # create subsubheader for apartment rent
-        st.write("__Average Rents 2023__")
+        st.markdown("<p style='margin-top: 5px; margin-bottom: 4px; font-weight: bold;'>Average Rents 2023</p>", unsafe_allow_html=True)
+
 
         apart_col1, apart_col2 = st.columns(2)
 
@@ -188,7 +189,9 @@ def district_view(path):
         st.write("")
         
         # start plot with neighbor districts
-        st.write("__Compared to neighbor districts__")
+        #st.write("__Compared to Neighbor Districts__")
+        st.markdown("<p style='margin-top: 5px; margin-bottom: 0; font-weight: bold;'>Compared to Neighbor Districts</p>", unsafe_allow_html=True)
+
 
         # create list of neighbor districts
         neighbors = selected_data["neighbors"].tolist()[0]
@@ -203,6 +206,9 @@ def district_view(path):
         # concat with selected district
         neighbor_data = pd.concat([selected_data, neighbor_data])
 
+        # make all NA values 0.001 for plotting to avoid bug in plotly that maps all NA values to ALL plots
+        neighbor_data = neighbor_data.fillna(0.001)
+
         # define tabs
         tab1, tab2 = st.tabs(["Apartment Rent", "Room Rent"])
 
@@ -212,8 +218,15 @@ def district_view(path):
             st.plotly_chart(apartment_fig, use_container_width=True)
 
         with tab2:
-            room_fig = plot_neighbor_stats(neighbor_data, "room_rent_now", "Room Rent")
-            st.plotly_chart(room_fig, use_container_width=True)
+            # if all values are NA (0.001 due to NA bug), then no room data is available
+            if (neighbor_data['room_rent_now'] == 0.001).all():
+                # make neighbors into string
+                neighbors = ", ".join(neighbors)
+                # write message
+                st.markdown(f"No room rent data available for <span style='color: #FF595A;'>{selected_district}</span> and neighbor districts \n {neighbors}.", unsafe_allow_html=True)
+            else:
+                room_fig = plot_neighbor_stats(neighbor_data, "room_rent_now", "Room Rent")
+                st.plotly_chart(room_fig, use_container_width=True)
     
     # layer control for street view
     folium.LayerControl().add_to(folium_map)
@@ -232,7 +245,7 @@ def street_view(path):
     street_data = street_data.set_crs("epsg:25832")
 
     # create columns for map and statistics
-    col1, col2, = st.columns(2)
+    left_col, right_col, = st.columns(2, gap = "large")
 
     with st.sidebar:
         selected_street = st.selectbox('Select a street', street_data['street'])
@@ -246,7 +259,7 @@ def street_view(path):
         # extract location coordinates
         selected_location = [selected_data['geometry'].centroid.y, selected_data['geometry'].centroid.x]
 
-    with col2:
+    with right_col:
         # add spacing
         st.write("")
     
@@ -274,9 +287,9 @@ def street_view(path):
         style_function=lambda x: {"color": "#FF595A", "weight": 5, "opacity": 1, "fillOpacity": 0},
         ).add_to(folium_map)
 
-        folium_static(folium_map, height=475, width=500)
+        folium_static(folium_map, height=630, width=482) 
     
-    with col1:
+    with left_col:
         # create columns to display statistics
         st.markdown(f"<h3>Rental Statistics for <span style='color: #FF595A;'>{selected_street}</span></h3>", unsafe_allow_html=True)
 
@@ -324,7 +337,7 @@ def street_view(path):
                         [selected_data["most_similar_rent_1"], selected_data["most_similar_rent_2"],
                         selected_data["most_similar_rent_3"], selected_data["most_similar_rent_4"],
                         selected_data["most_similar_rent_5"]]]
-       
+        
             # create table
             fig = go.Figure(data=[go.Table(header=dict(values=header, 
                                                        fill_color="#FF595A", 
@@ -348,15 +361,6 @@ def street_view(path):
 
             # display table in streamlit
             st.write(fig)
-        
-        
-
-
-
-
-        
-
-
 
 def main():
     # define paths
@@ -368,7 +372,12 @@ def main():
     # title of dashboard
     st.write("<style>.block-container {padding-top: 0 !important;}</style>", unsafe_allow_html=True) # remove padding
     st.markdown("<h1 style='text-align: center;'>Aarhus Rental Properties</h1>", unsafe_allow_html=True)
-    st.divider()
+    #st.divider()
+    st.markdown(
+        """<hr style="height:1px;border:none;background-color:#778899;margin:0;" />""",
+        unsafe_allow_html=True
+    )
+
 
     # add district view 
     with st.sidebar:
