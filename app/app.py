@@ -8,23 +8,9 @@ Spatial Analytics, Cultural Data Science (F2023)
 
 # utils 
 import pathlib
-from ast import literal_eval
 
 # web app
 import streamlit as st
-
-# geospatial mapping
-import folium
-from streamlit_folium import folium_static
-from folium.features import GeoJsonPopup, GeoJsonTooltip
-
-# visualisations
-import plotly.graph_objects as go
-import plotly.express as px
-
-# data wrangling 
-import pandas as pd
-import geopandas as gpd
 
 # add logo 
 from PIL import Image
