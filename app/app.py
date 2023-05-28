@@ -30,407 +30,16 @@ import geopandas as gpd
 from PIL import Image
 
 # import district and street view functions
+from district_view import add_missing_districts, plot_neighbor_stats, district_view
+from street_view import create_street_table, street_view
 
-
-def add_missing_districts(path: pathlib.Path):
+def add_logo(path: pathlib.Path):
     '''
-    Function for adding missing districts to dataframe.
-    Districts are missing because they have no apartment data.
-
-    Args:
-        path: path to script
-
-    Returns:
-        missing_districts: geodataframe with missing districts
-    '''
-    # read in geojson file
-    geojson = gpd.read_file(path.parents[1] / "utils" / "districts.geojson")
-
-    # set crs to 25832
-    geojson = geojson.set_crs("epsg:25832")
-
-    # extract "Erhvervshavnen" and "Sydhavnen og Marselisborg lystbådehavn" in one dataframe
-    missing_districts = geojson[(geojson["prog_distrikt_navn"] == "Erhvervshavnen") | (geojson["prog_distrikt_navn"] == "Sydhavnen og Marselisborg lystbådehavn")]
-
-    # rename prog_distrikt_navn to district
-    missing_districts = missing_districts.rename(columns={"prog_distrikt_navn": "district"})
-
-    # remove all columns but district and geometry
-    missing_districts = missing_districts[["district", "geometry"]]
-
-    # convert to geodataframe
-    missing_districts = gpd.GeoDataFrame(missing_districts, geometry="geometry")
-
-    return missing_districts
-
-
-def plot_neighbor_stats(neighbor_data, y_col, y_title):
-        '''
-        Function for plotting statistics of neighbor districts
-
-        Args
-            neighbor_data: dataframe with statistics of neighbor districts
-            y_col: column to plot on y-axis
-            y_title: title of y-axis
-        
-        Returns 
-            fig: plotly figure
-        '''
-        # define color
-        colors = ["lightslategray",] * len(neighbor_data)
-        
-        # change color of first element to make it stand out
-        colors[0] = ["#FF595A"]
-
-        # create plot of neighbor districts with plotly
-        fig = px.bar(neighbor_data, x="district", y=y_col, color="district", color_discrete_sequence=colors)
-
-        # update layout to have descending order
-        fig.update_layout(
-            xaxis=dict(
-                categoryorder="total descending"
-            ),
-            showlegend=False,
-            margin=dict(l=0, r=0, t=0, b=0),
-            height=300
-        )
-
-        # rm xaxis title
-        fig.update_xaxes(title=None)
-
-        # add yaxis title
-        fig.update_yaxes(title=y_title)
-
-        return fig
-
-
-def district_view(path): 
-    '''
-    Function to create district view page of Aarhus in streamlit app
-
-    Args:
-        path: path to script
-    '''
-    # read in data
-    data = pd.read_csv(path.parents[1] / "data" / "district_aggregates.csv")
-
-    # change wkt to geometry
-    data["geometry"] = gpd.GeoSeries.from_wkt(data["geometry"])
-
-    # convert to geodataframe
-    data = gpd.GeoDataFrame(data, geometry="geometry")
-
-    # add zoom level to dataframe manually. Each value corresponds to a district in the same order as in the dataframe
-    data["zoom_level"] = [11,13,11,13,13,14,13,13,11,12,12,12,12,14,14,12,12,11,14,14,14,13,11,12,14,12,12,11,12,14,12,12,11,13,13,12,13,12,14,13,14,14]
-
-    # set epsg to 25832
-    data = data.set_crs("epsg:25832")
-
-    # add missing districts to dataframe
-    missing_districts = add_missing_districts(path)
-
-    # create columns for map and statistics
-    left_col, right_col, = st.columns(2, gap = "large")
-
-    # create sidebar for selecting district
-    with st.sidebar:
-        selected_district = st.selectbox('Select a district', data['district'])
-        st.markdown(
-            """<style>
-        div[class*="stSelectbox"] > label > div[data-testid="stMarkdownContainer"] > p {
-            font-size: 25px;
-            </style>
-            """, unsafe_allow_html=True)
-
-        selected_data = data[data['district'] == selected_district]
-
-        st.write(f"{len(data)} districts in total")
-
-        # convert to epsg 4326
-        selected_data = selected_data.to_crs("epsg:4326")
-
-        # extract zoom level
-        selected_zoom_level = selected_data['zoom_level'].astype(int)
-
-        # extract location coordinates
-        selected_location = [selected_data['geometry'].centroid.y, selected_data['geometry'].centroid.x]
-
-    with right_col:
-        # add spacing
-        st.write("")
-    
-        # update center of map to selected district
-        folium_map = folium.Map(location=selected_location,
-                                zoom_start=int(selected_zoom_level),
-                                min_zoom=10)
-
-        # define tooltip, but unclickable
-        tooltip = GeoJsonTooltip(
-            fields=['district'], 
-            aliases=['District: '],
-            labels=True,
-            permanent=False
-        )
-
-        folium.Choropleth(
-            geo_data=data,
-            name='choropleth',
-            data=data,
-            columns=['district', 'apartment_rent_sqm_now'],
-            key_on='feature.properties.district',
-            fill_color='Blues',
-            fill_opacity=0.8,
-            line_opacity=0.2,
-            legend_name='Apartment Rent per sqm Now',
-            highlight=True
-        ).add_to(folium_map)
-
-        folium.GeoJson(data, 
-            tooltip=tooltip,
-            style_function=lambda x: {"color": "transparent", "weight": 0, "opacity": 0, "fillOpacity": 0},
-        ).add_to(folium_map)     
-
-        # draw missing districts on map, make them grey, make hover effect, write custom text in tooltip
-        tooltip_missing = GeoJsonTooltip(
-            fields=['district'], 
-            aliases=['District: '],
-            labels=True,
-            permanent=False, 
-        )
-
-        folium.GeoJson(missing_districts,
-            tooltip=tooltip_missing,
-        style_function=lambda x: {"color": "grey", "weight": 1, "opacity": 0.7, "fillOpacity": 0.7},
-        ).add_to(folium_map)
-
-        # add selected district to map
-        folium.GeoJson(selected_data, 
-        style_function=lambda x: {"color": "#FF595A", "weight": 4, "opacity": 1, "fillOpacity": 0},
-        ).add_to(folium_map)
-
-        folium_static(folium_map, height=630, width=482)
-    
-    with left_col:
-        # create columns to display statistics
-        st.markdown(f"<h3>Rental Statistics for <span style='color: #FF595A;'>{selected_district}</span></h3>", unsafe_allow_html=True)
-
-        # create subsubheader for apartment rent
-        st.markdown("<p style='margin-top: 5px; margin-bottom: 4px; font-weight: bold;'>Average Rents 2023</p>", unsafe_allow_html=True)
-
-        # initialize columns for displaying rents
-        apart_col, room_col = st.columns(2)
-
-        with apart_col:
-            st.metric(label="Apartment (per m2)", value=f"{selected_data['apartment_rent_sqm_now'].values[0]} DKK", delta=f"{selected_data['apartment_rent_change'].values[0]} % since 2014-16", delta_color="inverse")
-                
-        with room_col:
-            st.metric(label="Room", value=f"{selected_data['room_rent_now'].values[0]} DKK", delta=f"{selected_data['room_rent_change'].values[0]} % since 2014-16", delta_color="inverse")
-        
-        # add spacing
-        st.write("")
-        
-        # start plot with neighbor districts
-        st.markdown("<p style='margin-top: 5px; margin-bottom: 0; font-weight: bold;'>Compared to Neighbor Districts</p>", unsafe_allow_html=True)
-
-        # create list of neighbor districts
-        neighbors = selected_data["neighbors"].tolist()[0]
-        neighbors = literal_eval(neighbors)
-
-        # extract neighbor data from dataframe
-        neighbor_data = data[data["district"].isin(neighbors)]
-
-        # convert neighbor data to epsg 4326
-        neighbor_data = neighbor_data.to_crs("epsg:4326")
-
-        # concat with selected district
-        neighbor_data = pd.concat([selected_data, neighbor_data])
-
-        # make all NA values 0.001 for plotting to avoid bug in plotly that maps all NA values to ALL plots
-        neighbor_data = neighbor_data.fillna(0.001)
-
-        # define tabs
-        tab1, tab2 = st.tabs(["Apartment Rent", "Room Rent"])
-
-        # add plot to streamlit
-        with tab1: 
-            apartment_fig = plot_neighbor_stats(neighbor_data, "apartment_rent_sqm_now", "Apartment Rent (per m2)")
-            st.plotly_chart(apartment_fig, use_container_width=True)
-
-        with tab2:
-            # if all values are NA (0.001 due to NA bug), then no room data is available
-            if (neighbor_data['room_rent_now'] == 0.001).all():
-                # make neighbors into string
-                neighbors = ", ".join(neighbors)
-                # write message
-                st.markdown(f"No room rent data available for <span style='color: #FF595A;'>{selected_district}</span> and neighbor districts \n {neighbors}.", unsafe_allow_html=True)
-            else:
-                room_fig = plot_neighbor_stats(neighbor_data, "room_rent_now", "Room Rent")
-                st.plotly_chart(room_fig, use_container_width=True)
-    
-    # layer control for street view
-    folium.LayerControl().add_to(folium_map)
-
-def create_street_table(selected_data): 
-    # add DKK to rent in selected data in most_similar cols 
-    for i in range(1, 6):
-        selected_data[f"most_similar_rent_{i}"] = selected_data[f"most_similar_rent_{i}"].astype(str) + " DKK"
-
-    # define headers and row values for table
-    header = ["<b>Street</b>", "<b>District</b>", "<b>Rent (per m2)</b>"]
-
-    values = [  # streetname 
-                        [selected_data["most_similar_1"], selected_data["most_similar_2"], 
-                        selected_data["most_similar_3"], selected_data["most_similar_4"],
-                        selected_data["most_similar_5"]],
-                        # district
-                        [selected_data["most_similar_district_1"], selected_data["most_similar_district_2"],
-                        selected_data["most_similar_district_3"], selected_data["most_similar_district_4"],
-                        selected_data["most_similar_district_5"]],
-                        # rent
-                        [selected_data["most_similar_rent_1"], selected_data["most_similar_rent_2"],
-                        selected_data["most_similar_rent_3"], selected_data["most_similar_rent_4"],
-                        selected_data["most_similar_rent_5"]]]
-        
-    # create table
-    fig = go.Figure(data=[go.Table(
-                                    header=dict(values=header, 
-                                                fill_color="#FF595A", 
-                                                line_color="#FF595A", 
-                                                align=["left", "left", "center"],
-                                                height=30, 
-                                                font = dict(size=16, family="Serif")), 
-                                    cells=dict(values=values, 
-                                                fill_color="#001233", 
-                                                line_color="#001233", 
-                                                font = dict(size=14, family="Serif"), 
-                                                align=["left", "left", "center"], 
-                                                height=30)
-                                        )
-                        ])
-            
-    # fix weird padding
-    fig.update_layout(margin=dict(l=0, r=10, t=0, b=0),
-                              height=200,
-                              width=500)
-    
-    return fig 
-
-
-def street_view(path:pathlib.Path):
-    '''
-    Function to create street view page of Aarhus in streamlit app
+    Function for adding logo to streamlit app.
 
     Args: 
-        path: path to script
+        path: Path to script
     '''
-
-    # read in data
-    street_data = pd.read_csv(path.parents[1] / "data" / "street_aggregates.csv")
-
-    # change wkt to geometry
-    street_data["geometry"] = gpd.GeoSeries.from_wkt(street_data["geometry_street"])
-
-    # convert to geodataframe
-    street_data = gpd.GeoDataFrame(street_data, geometry="geometry")
-
-    # set epsg to 25832
-    street_data = street_data.set_crs("epsg:25832")
-
-    # create columns for map and statistics
-    left_col, right_col, = st.columns(2, gap = "large")
-
-    with st.sidebar:
-        # initialize selectbox with all streets
-        selected_street = st.selectbox('Select a street', street_data['street'])
-
-        # set bigger font
-        st.markdown(
-            """<style>
-        div[class*="stSelectbox"] > label > div[data-testid="stMarkdownContainer"] > p {
-            font-size: 25px;
-            </style>
-            """, unsafe_allow_html=True)
-        selected_data = street_data[street_data['street'] == selected_street]
-        
-        # indicate number of streets found
-        st.write(f"{len(street_data)} streets found")
-
-        # convert seleced data to epsg 4326
-        selected_data = selected_data.to_crs("epsg:4326")
-
-        # extract location coordinates
-        selected_location = [selected_data['geometry'].centroid.y, selected_data['geometry'].centroid.x]
-
-    with right_col:
-        # add spacing
-        st.write("")
-    
-        # update center of map to selected district
-        folium_map = folium.Map(location=selected_location,
-                                zoom_start=15,
-                                min_zoom=10)
-        
-        # define tooltip, but unclickable
-        tooltip = GeoJsonTooltip(
-            fields=['street'], 
-            aliases=['Street: '],
-            labels=True,
-            permanent=False
-        )
-        
-        # create map with location being selected_location, but all strets highlighted
-        folium.GeoJson(street_data,
-            tooltip=tooltip,
-            style_function=lambda x: {"color": "#001233", "weight": 3, "opacity": 1, "fillOpacity": 0},
-        ).add_to(folium_map)
-
-        # add selected district to map
-        folium.GeoJson(selected_data, 
-        style_function=lambda x: {"color": "#FF595A", "weight": 5, "opacity": 1, "fillOpacity": 0},
-        ).add_to(folium_map)
-
-        folium_static(folium_map, height=630, width=482) 
-    
-    with left_col:
-        # create columns to display statistics
-        st.markdown(f"<h3>Rental Statistics for <span style='color: #FF595A;'>{selected_street}</span></h3>", unsafe_allow_html=True)
-
-        # create small text for "located in" 
-        st.markdown(f"<body><b>Located in <span style='color: #FF595A;'>{selected_data['district'].values[0]}</b></span></body>", unsafe_allow_html=True)
-
-        # add spacing
-        st.write("")
-        st.write("")
-
-        # create columns for rent statistics
-        st.write("__Average Apartment Rent (per m2)__")
-        
-        # c columns
-        rent_col, count_col = st.columns([2, 2])
-
-        with rent_col:
-            st.metric(label="in 2023", value=f"{selected_data['rent_per_square_meter'].values[0]} DKK")
-        
-        with count_col:
-            st.metric(label="based on", value=f"{selected_data['count'].values[0]} apartments")
-        
-        # add spacing
-        st.write("")
-        st.write("")
-
-        with st.container():
-            st.write("__Similar Priced Streets__")
-
-            # create table 
-            fig = create_street_table(selected_data)
-
-            # display table in streamlit
-            st.write(fig)
-
-def main():
-    # define paths
-    path = pathlib.Path(__file__)
-
     # make layout wide 
     st.set_page_config(layout="wide")
 
@@ -441,15 +50,25 @@ def main():
     logo = Image.open(path.parents[1] / "app" / "app-logo.png")
 
     # create columns to center image 
-    left, cent, right = st.columns([0.5, 1, 0.5])
+    left, center, right = st.columns([0.5, 1, 0.5])
     
-    with cent: 
+    with center: 
         st.image(logo, width=470)
 
     # add grey border with specific padding
     st.markdown("""<hr style="height:1px;border:none;background-color:#778899;margin:0;" />""",unsafe_allow_html=True)
 
-    # add sidebar 
+
+def add_sidebar(path: pathlib.Path):
+    '''
+    Function for adding sidebar to streamlit app.
+
+    Args:   
+        path: Path to script
+
+    Returns:
+        view: View selected in "view selector"
+    '''
     with st.sidebar:
         
         # remove padding from top and bottom
@@ -478,15 +97,26 @@ def main():
         }
             </style>
             """, unsafe_allow_html=True)
+
+        return view
+
+
+def main():
+    # define paths
+    path = pathlib.Path(__file__)
+
+    # add logo
+    add_logo(path)
     
+    # add sidebar
+    view = add_sidebar(path)
+
     # run view based on selection in "view selector"
     if view == "District":
         district_view(path)
     
     if view == 'Street':
         street_view(path)
-
-    
 
 if __name__ == '__main__':
     main()
