@@ -24,6 +24,9 @@ import plotly.express as px
 import pandas as pd
 import geopandas as gpd
 
+# logo 
+from PIL import Image
+
 def add_missing_districts():
     path = pathlib.Path(__file__)
 
@@ -101,6 +104,13 @@ def district_view(path):
     # create sidebar for selecting district
     with st.sidebar:
         selected_district = st.selectbox('Select a district', data['district'])
+        st.markdown(
+            """<style>
+        div[class*="stSelectbox"] > label > div[data-testid="stMarkdownContainer"] > p {
+            font-size: 25px;
+            </style>
+            """, unsafe_allow_html=True)
+
         selected_data = data[data['district'] == selected_district]
 
         st.write(f"{len(data)} districts in total")
@@ -249,6 +259,12 @@ def street_view(path):
 
     with st.sidebar:
         selected_street = st.selectbox('Select a street', street_data['street'])
+        st.markdown(
+            """<style>
+        div[class*="stSelectbox"] > label > div[data-testid="stMarkdownContainer"] > p {
+            font-size: 25px;
+            </style>
+            """, unsafe_allow_html=True)
         selected_data = street_data[street_data['street'] == selected_street]
 
         st.write(f"{len(street_data)} streets found")
@@ -369,19 +385,37 @@ def main():
     # make layout wide 
     st.set_page_config(layout="wide")
 
-    # title of dashboard
-    st.write("<style>.block-container {padding-top: 0 !important;}</style>", unsafe_allow_html=True) # remove padding
-    st.markdown("<h1 style='text-align: center;'>Aarhus Rental Properties</h1>", unsafe_allow_html=True)
-    #st.divider()
-    st.markdown(
-        """<hr style="height:1px;border:none;background-color:#778899;margin:0;" />""",
-        unsafe_allow_html=True
-    )
+    # add padding to top and bottom
+    st.write('<style>div.block-container{padding-top:1.8rem;padding-bottom:0.2}</style>', unsafe_allow_html=True)
 
+    # load logo
+    logo = Image.open(path.parents[1] / "app" / "app-logo.png")
 
-    # add district view 
+    # create columns to center image 
+    left, cent, right = st.columns([0.5, 1, 0.5])
+    
+    with cent: 
+        st.image(logo, width=470)
+
+    # add grey border with specific padding
+    st.markdown("""<hr style="height:1px;border:none;background-color:#778899;margin:0;" />""",unsafe_allow_html=True)
+
+    # add sidebar 
     with st.sidebar:
-        view = st.radio("Select view", ("District", "Street"))
+        st.write('<style>div.block-container{padding-top:0rem;padding-bottom:0}</style>', unsafe_allow_html=True)
+
+        #st.write("Welcome to Aarhus RentMapper!")
+        #st.write("")
+        
+        view = st.radio("Select view", options=("District", "Street"))
+        
+        st.markdown(
+            """<style>
+        div[class*="stRadio"] > label > div[data-testid="stMarkdownContainer"] > p {
+            font-size: 25px;
+        }
+            </style>
+            """, unsafe_allow_html=True)
 
     if view == "District":
         district_view(path)
