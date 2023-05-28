@@ -29,9 +29,6 @@ def add_logo(path: pathlib.Path):
     Args: 
         path: Path to script
     '''
-    # make layout wide 
-    st.set_page_config(layout="wide")
-
     # add padding to top and bottom
     st.write('<style>div.block-container{padding-top:1.8rem;padding-bottom:0.2}</style>', unsafe_allow_html=True)
 
@@ -94,6 +91,10 @@ def add_sidebar(path: pathlib.Path):
 def main():
     # define paths
     path = pathlib.Path(__file__)
+
+    # add favicon, define page width and set page title
+    favicon = Image.open(path.parents[1] / "app" / "favicon.ico")
+    st.set_page_config(page_title="RentMapper", page_icon=favicon, layout="wide")
 
     # add logo
     add_logo(path)
