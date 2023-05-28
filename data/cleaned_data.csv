@@ -64,7 +64,7 @@ boligzonen.dk,2023,apartment,10600,95,8000,Thit Jensens Gade,Aarhus C,3,66,111,3
 boligzonen.dk,2023,apartment,9300,80,8000,Studsgade,Aarhus C,2,67,116,4650
 boligzonen.dk,2023,apartment,10920,104,8000,Fuglekærvej,Aarhus C,4+,69,105,2184
 boligzonen.dk,2023,apartment,7095,63,8200,Kalmargade,Aarhus N,2,70,112,3547
-boligzonen.dk,2023,apartment,9995,109,8210,Paludan Müllers Vej,Aarhus V,4,71,91,2498
+boligzonen.dk,2023,apartment,9995,109,8210,Paludan-Müllers Vej,Aarhus V,4,71,91,2498
 boligzonen.dk,2023,apartment,9904,72,8000,Dirch Passers Gade,Aarhus C,3,72,137,3301
 boligzonen.dk,2023,apartment,5845,35,8200,Tulipanlunden,Aarhus N,2,73,167,2922
 boligzonen.dk,2023,apartment,7000,62,8200,Ivar Huitfeldts Gade,Aarhus N,2,74,112,3500
@@ -346,7 +346,7 @@ boligzonen.dk,2023,apartment,7000,47,8260,Engtoften,Viby J,2,385,148,3500
 boligzonen.dk,2023,apartment,8500,54,8230,Søren Frichs Vej,Åbyhøj,2,386,157,4250
 boligzonen.dk,2023,apartment,7500,59,8000,Christiansgade,Aarhus C,1,387,127,7500
 boligzonen.dk,2023,apartment,6975,52,8240,Arresøvej,Risskov,2,388,134,3487
-boligzonen.dk,2023,apartment,8795,81,8210,Paludan Müllers Vej,Aarhus V,3,389,108,2931
+boligzonen.dk,2023,apartment,8795,81,8210,Paludan-Müllers Vej,Aarhus V,3,389,108,2931
 boligzonen.dk,2023,apartment,7920,57,8200,Jens Baggesens Vej,Aarhus N,2,390,138,3960
 boligzonen.dk,2023,apartment,9995,85,8240,Eya Jensens Gade,Risskov,4,391,117,2498
 boligzonen.dk,2023,apartment,7195,48,8200,Tulipanlunden,Aarhus N,3,393,149,2398
@@ -397,7 +397,7 @@ boligzonen.dk,2023,apartment,8500,61,8000,Finderupvej,Aarhus C,2,439,139,4250
 boligzonen.dk,2023,apartment,9775,85,8260,Holme Møllevej,Viby J,3,441,115,3258
 boligzonen.dk,2023,apartment,6500,54,8200,Ringen,Aarhus N,1,442,120,6500
 boligzonen.dk,2023,apartment,10695,79,8000,Dirch Passers Gade,Aarhus C,2,443,135,5347
-boligzonen.dk,2023,apartment,8895,81,8210,Paludan Müllers Vej,Aarhus V,2,444,109,4447
+boligzonen.dk,2023,apartment,8895,81,8210,Paludan-Müllers Vej,Aarhus V,2,444,109,4447
 boligzonen.dk,2023,apartment,7995,58,8200,Skejbytoften,Aarhus N,2,447,137,3997
 boligzonen.dk,2023,apartment,4995,30,8200,Olof Palmes Alle,Aarhus N,1,448,166,4995
 boligzonen.dk,2023,apartment,13300,121,8240,Vindrosen,Risskov,3,450,109,4433
@@ -1026,7 +1026,7 @@ boligportal.dk,2023,apartment,11995,68,8000,Vestergade,Aarhus C,3,40,176,3998
 boligportal.dk,2023,apartment,7595,51,8200,Jens Baggesens Vej,Aarhus N,2,41,148,3797
 boligportal.dk,2023,apartment,11400,106,8000,Vestergade,Aarhus C,3,42,107,3800
 boligportal.dk,2023,apartment,7995,77,8260,Skanderborgvej,Viby J,3,43,103,2665
-boligportal.dk,2023,room,1752,11,8000,M. P. Bruuns Gade,Aarhus C,1,44,159,1752
+boligportal.dk,2023,room,1752,11,8000,M.P. Bruuns Gade,Aarhus C,1,44,159,1752
 boligportal.dk,2023,apartment,13500,97,8000,Thorvaldsensgade,Aarhus C,4,46,139,3375
 boligportal.dk,2023,apartment,9250,73,8220,Truevej,Brabrand,3,47,126,3083
 boligportal.dk,2023,apartment,9950,66,8000,Åboulevarden,Aarhus C,3,48,150,3316
@@ -1160,7 +1160,7 @@ boligportal.dk,2023,apartment,5895,44,8240,Arresøvej,Risskov,2,185,133,2947
 boligportal.dk,2023,apartment,5586,42,8200,Katrinebjergvej,Aarhus N,1,186,133,5586
 boligportal.dk,2023,apartment,9395,88,8240,Borresøvej,Risskov,3,187,106,3131
 boligportal.dk,2023,apartment,7795,58,8200,Willemoesgade,Aarhus N,2,188,134,3897
-boligportal.dk,2023,apartment,8795,81,8210,Paludan Müllers Vej,Aarhus V,3,189,108,2931
+boligportal.dk,2023,apartment,8795,81,8210,Paludan-Müllers Vej,Aarhus V,3,189,108,2931
 boligportal.dk,2023,apartment,7995,74,8240,Borresøvej,Risskov,2,191,108,3997
 boligportal.dk,2023,room,4500,20,8000,Hedemannsgade,Aarhus C,1,192,225,4500
 boligportal.dk,2023,room,4071,9,8000,Ceresbyen,Aarhus C,1,193,452,4071
@@ -1879,7 +1879,7 @@ boligportal.dk,2023,apartment,3500,14,8000,Frederiks Alle,Aarhus C,1,1016,250,35
 boligportal.dk,2023,apartment,8149,86,8355,Pilevangen,Solbjerg,3,1017,94,2716
 boligportal.dk,2023,apartment,13149,101,8000,Vesterbro Torv,Aarhus C,3,1018,130,4383
 boligportal.dk,2023,apartment,9495,92,8200,Vistihøjen,Aarhus N,3,1019,103,3165
-boligportal.dk,2023,apartment,8895,81,8210,Paludan Müllers Vej,Aarhus V,2,1020,109,4447
+boligportal.dk,2023,apartment,8895,81,8210,Paludan-Müllers Vej,Aarhus V,2,1020,109,4447
 boligportal.dk,2023,apartment,14550,128,8200,Gustav Holms Vej,Aarhus N,4,1021,113,3637
 boligportal.dk,2023,room,2500,11,8240,Højrisvej,Risskov,1,1022,227,2500
 boligportal.dk,2023,apartment,6995,60,8260,Kaj Munks Vej,Viby J,2,1023,116,3497
@@ -2399,7 +2399,7 @@ boligportal.dk,2023,room,2400,20,8200,Funch Thomsens Gade,Aarhus N,1,1805,120,24
 boligportal.dk,2023,apartment,11900,110,8000,Assensgade,Aarhus C,3,1806,108,3966
 boligportal.dk,2023,apartment,18000,112,8000,Helga Pedersens Gade,Aarhus C,3,1807,160,6000
 boligportal.dk,2023,apartment,7990,59,8000,Søren Frichs Vej,Aarhus C,2,1809,135,3995
-boligportal.dk,2023,apartment,9495,109,8210,Paludan Müllers Vej,Aarhus V,4,1810,87,2373
+boligportal.dk,2023,apartment,9495,109,8210,Paludan-Müllers Vej,Aarhus V,4,1810,87,2373
 boligportal.dk,2023,apartment,9950,76,8000,Fiskergade,Aarhus C,4,1812,130,2487
 boligportal.dk,2023,room,2500,12,8270,Holme Parkvej,Højbjerg,1,1813,208,2500
 boligportal.dk,2023,apartment,11812,90,8000,Museumsgade,Aarhus C,4,1814,131,2953
@@ -3437,7 +3437,7 @@ minlejebolig.dk,2023,apartment,9996,85,8240,Eya Jensens Gade,Risskov,4,207,117,2
 minlejebolig.dk,2023,apartment,6150,41,8240,Vestre Strandalle,Risskov,1,209,150,6150
 minlejebolig.dk,2023,apartment,7100,52,8240,Kongevellen,Risskov,2,210,136,3550
 minlejebolig.dk,2023,apartment,5495,480,8210,Kappelvænget,Aarhus V,2,211,11,2747
-minlejebolig.dk,2023,apartment,9995,109,8210,Paludan Müllers Vej,Aarhus V,4,212,91,2498
+minlejebolig.dk,2023,apartment,9995,109,8210,Paludan-Müllers Vej,Aarhus V,4,212,91,2498
 minlejebolig.dk,2023,apartment,9800,85,8260,Engtoften,Viby J,3,213,115,3266
 minlejebolig.dk,2023,apartment,6500,50,8240,Nordlandsvej,Risskov,2,214,130,3250
 minlejebolig.dk,2023,apartment,6975,51,8240,Arresøvej,Risskov,2,216,136,3487
@@ -3651,7 +3651,7 @@ minlejebolig.dk,2023,apartment,9395,88,8240,Borresøvej,Risskov,3,458,106,3131
 minlejebolig.dk,2023,apartment,6500,57,8200,Ringen,Aarhus N,1,460,114,6500
 minlejebolig.dk,2023,apartment,11700,74,8000,Dagmar Petersens Gade,Aarhus C,2,461,158,5850
 minlejebolig.dk,2023,apartment,11500,74,8000,Strandparken,Aarhus C,1,462,155,11500
-minlejebolig.dk,2023,apartment,8895,81,8210,Paludan Müllers Vej,Aarhus V,2,463,109,4447
+minlejebolig.dk,2023,apartment,8895,81,8210,Paludan-Müllers Vej,Aarhus V,2,463,109,4447
 minlejebolig.dk,2023,apartment,6750,52,8260,Engtoften,Viby J,2,465,129,3375
 minlejebolig.dk,2023,apartment,14620,118,8000,John Mogensens Gade,Aarhus C,4,466,123,3655
 minlejebolig.dk,2023,apartment,9500,59,8000,Sonnesgade,Aarhus C,2,467,161,4750
@@ -3820,7 +3820,7 @@ minlejebolig.dk,2023,apartment,12695,85,8000,Sonnesgade,Aarhus C,4,664,149,3173
 minlejebolig.dk,2023,apartment,10088,73,8000,Dirch Passers Gade,Aarhus C,3,665,138,3362
 minlejebolig.dk,2023,apartment,9100,60,8200,Trøjborgvej,Aarhus N,3,666,151,3033
 minlejebolig.dk,2023,apartment,9500,61,8000,Dagmar Petersens Gade,Aarhus C,1,668,155,9500
-minlejebolig.dk,2023,apartment,8795,81,8210,Paludan Müllers Vej,Aarhus V,3,669,108,2931
+minlejebolig.dk,2023,apartment,8795,81,8210,Paludan-Müllers Vej,Aarhus V,3,669,108,2931
 minlejebolig.dk,2023,apartment,7895,58,8230,Søren Frichs Vej,Åbyhøj,2,670,136,3947
 minlejebolig.dk,2023,apartment,10495,92,8240,Møllehatten,Risskov,4,671,114,2623
 minlejebolig.dk,2023,apartment,11040,81,8000,Tommy Seebachs Gade,Aarhus C,3,672,136,3680
@@ -4092,7 +4092,7 @@ boligportal.dk,2014,apartment,8900,110,8000,Horsensgade,Aarhus C,3,30,80,2966
 boligportal.dk,2014,apartment,8820,75,8000,Frederiks Alle,Aarhus C,3,31,117,2940
 boligportal.dk,2014,apartment,8742,84,8000,Johannes Baunes Plads,Aarhus C,2,32,104,4371
 boligportal.dk,2014,apartment,8670,69,8200,Trøjborgvej,Aarhus N,2,33,125,4335
-boligportal.dk,2014,apartment,8615,88,8000,M. P. Bruuns Gade,Aarhus C,3,34,97,2871
+boligportal.dk,2014,apartment,8615,88,8000,M.P. Bruuns Gade,Aarhus C,3,34,97,2871
 boligportal.dk,2014,apartment,8600,89,8240,Engholms Alle,Risskov,3,35,96,2866
 boligportal.dk,2014,apartment,8600,89,8220,Hoffmannsvej,Brabrand,3,36,96,2866
 boligportal.dk,2014,apartment,8525,78,8260,Søndervangs Alle,Viby J,3,37,109,2841
@@ -4217,7 +4217,7 @@ boligportal.dk,2015,apartment,3950,33,8260,Grøfthøjparken,Viby J,1,155,119,395
 boligportal.dk,2015,room,3900,9,8000,Finderupvej,Aarhus C,1,156,433,3900
 boligportal.dk,2015,room,3900,13,8000,Finderupvej,Aarhus C,1,157,300,3900
 boligportal.dk,2015,room,3800,17,8230,Silkeborgvej,Åbyhøj,1,158,223,3800
-boligportal.dk,2015,room,3518,26,8000,M. P. Bruuns Gade,Aarhus C,1,159,135,3518
+boligportal.dk,2015,room,3518,26,8000,M.P. Bruuns Gade,Aarhus C,1,159,135,3518
 boligportal.dk,2015,apartment,3500,25,8000,Sjællandsgade,Aarhus C,1,160,140,3500
 boligportal.dk,2015,room,3500,10,8210,Helge Rodes Vej,Aarhus V,1,161,350,3500
 boligportal.dk,2015,room,3500,23,8000,Sønderport,Aarhus C,1,162,152,3500
@@ -4302,7 +4302,7 @@ boligportal.dk,2015,apartment,8339,110,8270,Oddervej,Højbjerg,4,240,75,2084
 boligportal.dk,2015,apartment,5400,70,8270,Oddervej,Højbjerg,2,241,77,2700
 boligportal.dk,2015,apartment,4200,32,8200,Brendstrupvej,Aarhus N,1,242,131,4200
 boligportal.dk,2015,apartment,11703,99,8000,Daugbjergvej,Aarhus C,3,243,118,3901
-boligportal.dk,2015,apartment,8800,73,8000,M. P. Bruuns Gade,Aarhus C,2,244,120,4400
+boligportal.dk,2015,apartment,8800,73,8000,M.P. Bruuns Gade,Aarhus C,2,244,120,4400
 boligportal.dk,2015,apartment,9500,118,8000,Høegh-Guldbergs Gade,Aarhus C,4,245,80,2375
 boligportal.dk,2015,apartment,7600,80,8260,Skanderborgvej,Viby J,2,246,95,3800
 boligportal.dk,2015,apartment,8600,69,8000,Grønnegade,Aarhus C,2,247,124,4300
@@ -4325,7 +4325,7 @@ boligportal.dk,2015,apartment,11790,79,8000,Ryesgade,Aarhus C,4,264,149,2947
 boligportal.dk,2015,apartment,6855,46,8000,Ryesgade,Aarhus C,2,265,149,3427
 boligportal.dk,2015,room,3800,40,8240,Alsvej,Risskov,1,266,95,3800
 boligportal.dk,2015,room,3700,12,8000,Chr. Kiers Plads,Aarhus C,1,267,308,3700
-boligportal.dk,2015,room,2500,8,8000,M. P. Bruuns Gade,Aarhus C,1,271,312,2500
+boligportal.dk,2015,room,2500,8,8000,M.P. Bruuns Gade,Aarhus C,1,271,312,2500
 boligportal.dk,2015,room,3600,16,8000,Vesterbrogade,Aarhus C,1,272,225,3600
 boligportal.dk,2015,room,4430,15,8000,Vestergade,Aarhus C,1,273,295,4430
 boligportal.dk,2015,room,4300,12,8200,Kalmargade,Aarhus N,1,274,358,4300
@@ -4533,7 +4533,7 @@ boligportal.dk,2016,room,3300,21,8000,Hans Hartvig Seedorffs Stræde,Aarhus C,1,
 boligportal.dk,2016,apartment,9330,89,8000,Fiskergyde,Aarhus C,3,479,104,3110
 boligportal.dk,2016,room,3000,12,8200,Paludan-Müllers Vej,Aarhus N,1,480,250,3000
 boligportal.dk,2016,room,3900,20,8200,Jens Baggesens Vej,Aarhus N,1,481,195,3900
-boligportal.dk,2016,apartment,11500,92,8000,M. P. Bruuns Gade,Aarhus C,3,482,125,3833
+boligportal.dk,2016,apartment,11500,92,8000,M.P. Bruuns Gade,Aarhus C,3,482,125,3833
 boligportal.dk,2016,apartment,8841,66,8200,Brendstrupgårdsvej,Aarhus N,2,483,133,4420
 boligportal.dk,2016,apartment,6850,53,8000,Åparken,Aarhus C,2,484,129,3425
 boligportal.dk,2016,room,4500,25,8000,Nordborggade,Aarhus C,1,485,180,4500
@@ -4663,7 +4663,7 @@ boligportal.dk,2016,apartment,8727,83,8000,Fåborggade,Aarhus C,3,617,105,2909
 boligportal.dk,2016,apartment,12000,80,8000,Rosenkrantzgade,Aarhus C,2,618,150,6000
 boligportal.dk,2016,apartment,10000,72,8000,Rosenkrantzgade,Aarhus C,2,619,138,5000
 boligstedet.dk,2014,apartment,12800,100,8000,Mariane Thomsens Gade,Aarhus C,2,620,128,6400
-boligstedet.dk,2014,apartment,11640,134,8000,M. P. Bruuns Gade,Aarhus C,4,621,86,2910
+boligstedet.dk,2014,apartment,11640,134,8000,M.P. Bruuns Gade,Aarhus C,4,621,86,2910
 boligstedet.dk,2014,room,4100,20,8000,Dalgas Avenue,Aarhus C,1,622,205,4100
 boligstedet.dk,2014,apartment,9500,77,8000,Mariane Thomsens Gade,Aarhus C,2,623,123,4750
 boligstedet.dk,2014,room,4253,31,8000,H. N. Clausens Gade,Aarhus C,1,624,137,4253
@@ -4758,7 +4758,7 @@ boligportal.dk,2014,apartment,5200,40,8000,Hedemannsgade,Aarhus C,1,716,130,5200
 boligportal.dk,2014,apartment,14000,136,8000,Bülowsgade,Aarhus C,4,717,102,3500
 boligportal.dk,2014,room,4000,14,8000,Ny Munkegade,Aarhus C,1,718,285,4000
 boligportal.dk,2014,apartment,8100,89,8000,Vestergade,Aarhus C,3,719,91,2700
-boligportal.dk,2014,room,3333,11,8000,M. P. Bruuns Gade,Aarhus C,1,720,303,3333
+boligportal.dk,2014,room,3333,11,8000,M.P. Bruuns Gade,Aarhus C,1,720,303,3333
 boligportal.dk,2014,room,2200,15,8260,Ormslevvej,Viby J,1,721,146,2200
 boligportal.dk,2014,apartment,5700,58,8260,Grøfthøjparken,Viby J,2,722,98,2850
 boligportal.dk,2014,room,3500,16,8200,Dronning Margrethes Vej,Aarhus N,1,723,218,3500
