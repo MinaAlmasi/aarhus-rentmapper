@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
 # create virtual environment called env
 python3 -m venv env
 
