@@ -114,6 +114,12 @@ def add_stat_district(apartments, districts):
     # merge the data
     merged_df = apartments.merge(districts, left_on='street_temp', right_on='Vejnavn_temp', how='left')
 
+    # for all the same street_temp, change values in "street" to most common street name
+    most_common_streets = apartments.groupby('street_temp')['street'].agg(lambda x: x.value_counts().index[0])
+
+    # Update 'street' column based on 'street_temp' groups
+    merged_df['street'] = merged_df['street_temp'].map(most_common_streets)
+
     # drop the redundant column
     merged_df.drop(["Vejnavn_temp", "street_temp"], axis=1, inplace=True)
 
