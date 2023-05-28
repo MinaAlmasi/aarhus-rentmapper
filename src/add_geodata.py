@@ -125,9 +125,6 @@ def add_stat_district(apartments, districts):
 
     # manually update morten børups gade to "Morten Børups Gade"
     merged_df.loc[merged_df['street'] == 'morten børups gade', 'street'] = 'Morten Børups Gade'
-    
-    # remove all rows that are duplicated in the "street" column (only two roads with name issues)
-    merged_df = merged_df.drop_duplicates(subset=['street'])
 
     # convert the merged DataFrame back to a GeoDataFrame
     merged_gdf = gpd.GeoDataFrame(merged_df, geometry='geometry')

@@ -209,7 +209,10 @@ def get_street_aggregates(complete_data, savepath, n_similar_streets:int=5):
     street_data = street_data.rename(columns={"id": "count"})
 
     # add geometry from complete_data
-    street_data = street_data.merge(complete_data[["street", "geometry_street"]].drop_duplicates(), on="street")
+    street_data = street_data.merge(complete_data[["street", "geometry_street"]], on="street")
+
+    # drop duplicates
+    street_data = street_data.drop_duplicates(subset=["street"])
 
     street_data.to_csv(savepath / "street_aggregates.csv", index=False)
 
