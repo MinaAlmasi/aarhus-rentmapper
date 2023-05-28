@@ -1,6 +1,9 @@
 '''
 Streamlit app for visualising district and street data in Aarhus.
-Link to app: https://aarhus-rentmap.streamlit.app/
+Link to app: https://aarhus-rentmap.streamlit.app/.
+
+To run app locally, type:
+    streamlit run app/app.py
 
 by Anton Drasbæk Schiønning (@drasbaek) and Mina Almasi (@MinaAlmasi)
 Spatial Analytics, Cultural Data Science (F2023)
