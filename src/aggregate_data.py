@@ -46,8 +46,6 @@ def get_neighbor_districts(complete_data:pd.DataFrame):
     # add neighbors to dataframe
     complete_data["neighbors"] = district_neighbors
 
-    print(complete_data)
-
     return complete_data
 
 
@@ -231,11 +229,7 @@ def main():
 
     # create street aggregates
     street_data = get_street_aggregates(complete_data, data_path, n_similar_streets=5)
-
-    #print(district_data)
     
-    
-
 
 
 if __name__ == "__main__":

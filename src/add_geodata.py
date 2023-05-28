@@ -275,9 +275,6 @@ def main():
     # update district names
     apartments = update_stat_district_names(apartments, geo_districts)
 
-    # save apartments as csv
-    apartments.to_csv(path.parents[1] / "data" / "apartments.csv", index=False)
-
     # drop all rows with missing values
     apartments = apartments.dropna()
 
@@ -289,9 +286,6 @@ def main():
 
     # get overlaps
     apartments = merge_districts(apartments)
-    
-    # print statement 
-    print(apartments)
 
     # save as csv
     apartments.to_csv(path.parents[1] / "data" / "complete_data.csv", index=False)
