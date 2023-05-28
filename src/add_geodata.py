@@ -1,7 +1,14 @@
-import geopandas as gpd
+'''
+Script to add spatial data to the cleaned_data file to create 
+'''
+
+# utils 
 import pathlib
+from unidecode import unidecode  # for removing special characters from strings
+
+# data wrangling
+import geopandas as gpd
 import pandas as pd
-#from shapely import
 
 
 def load_data():
@@ -27,21 +34,17 @@ def add_street_geometry(apartments, geo_streets):
     # change vejnavne from index to column
     geo_streets = geo_streets.reset_index()
 
+    # Remove special characters from the 'street' column in the 'apartments' dataframe
+    apartments['street_temp'] = apartments['street'].apply(lambda x: unidecode(x))
 
-    '''
-    # ensure oprettet_dato is a datetime object
-    geo_streets['oprettet_dato'] = pd.to_datetime(geo_streets['oprettet_dato'])
+    # Remove diacritics from the 'vejnavne' column in the 'geo_streets' dataframe
+    geo_streets['vejnavne_temp'] = geo_streets['vejnavne'].apply(lambda x: unidecode(x))
 
-    # only keep the most recent observation of each street name
-    geo_streets = geo_streets.sort_values(by='oprettet_dato', ascending=False)
-    geo_streets = geo_streets.drop_duplicates(subset=['vejnavne'])
-    '''
+    # Perform the merge using the temporary columns
+    merged_df = apartments.merge(geo_streets[['vejnavne_temp', 'geometry']], left_on='street_temp', right_on='vejnavne_temp', how='left')
 
-    # merge the data
-    merged_df = apartments.merge(geo_streets[['vejnavne', 'geometry']], left_on='street', right_on='vejnavne', how='left')
-
-    # drop the redundant column
-    merged_df.drop('vejnavne', axis=1, inplace=True)
+    # Remove the temporary columns from the merge result
+    merged_df.drop(['street_temp', 'vejnavne_temp'], axis=1, inplace=True)
 
     # convert the merged DataFrame back to a GeoDataFrame
     merged_gdf = gpd.GeoDataFrame(merged_df, geometry='geometry')
@@ -256,7 +259,8 @@ def main():
     # get overlaps
     apartments = merge_districts(apartments)
     
-    #print(apartments)
+    # print statement 
+    print(apartments)
 
     # save as csv
     apartments.to_csv(path.parents[1] / "data" / "complete_data.csv", index=False)
