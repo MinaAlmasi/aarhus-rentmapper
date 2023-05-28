@@ -16,8 +16,9 @@ import streamlit as st
 from PIL import Image
 
 # import district and street view functions
-from district_view import add_missing_districts, plot_neighbor_stats, district_view
-from street_view import create_street_table, street_view
+from district_view import district_view
+from street_view import street_view
+
 
 def add_logo(path: pathlib.Path):
     '''
@@ -94,7 +95,7 @@ def main():
     # add logo
     add_logo(path)
     
-    # add sidebar
+    # add sidebar and obtain view selection
     view = add_sidebar(path)
 
     # run view based on selection in "view selector"
@@ -103,6 +104,7 @@ def main():
     
     if view == 'Street':
         street_view(path)
+
 
 if __name__ == '__main__':
     main()
