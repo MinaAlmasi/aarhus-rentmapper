@@ -251,6 +251,22 @@ def clean_minlejebolig(data_path:pathlib.Path, zip_codes):
 
     return df
 
+def fix_spelling_streetnames(df:pd.DataFrame):
+    '''
+    Function to manually fix streetnames in dataframe to correspond to the streetnames in "streetnames.geojson"
+    '''
+
+    # define corrections for all streetnames with discrepancies 
+    corrections = {
+    'M. P. Bruuns Gade': 'M.P. Bruuns Gade',
+    'M.P Bruuns Gade': 'M.P. Bruuns Gade',
+    "Paludan Müllers Vej": "Paludan-Müllers Vej"
+    }  
+
+    df["street"] = df["street"].replace(corrections)
+
+    return df     
+
 def clean_all_data(data_path, zip_codes, save_path=None):
     '''
     Function to clean all data using pandas.
@@ -306,6 +322,9 @@ def clean_all_data(data_path, zip_codes, save_path=None):
 
     # make all rooms above 4 into +4 
     all_df['rooms'] = np.where(all_df['rooms'].astype(int) >= 5, '4+', all_df['rooms'])
+
+    # fix spelling of streetnames
+    all_df = fix_spelling_streetnames(all_df)
 
     # save data
     if save_path is not None:
