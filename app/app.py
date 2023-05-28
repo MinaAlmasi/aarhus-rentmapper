@@ -371,7 +371,7 @@ def street_view(path):
                         ])
             
             # fix weird padding
-            fig.update_layout(margin=dict(l=100, r=0, t=0, b=0),
+            fig.update_layout(margin=dict(l=0, r=10, t=0, b=0),
                               height=200,
                               width=500)
 
