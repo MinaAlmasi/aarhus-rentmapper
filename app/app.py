@@ -1,9 +1,11 @@
 '''
-Streamlit app
+Streamlit app for visualising district and street data in Aarhus.
+Link to app: https://aarhus-rentmap.streamlit.app/
 
 by Anton Drasbæk Schiønning (@drasbaek) and Mina Almasi (@MinaAlmasi)
 Spatial Analytics, Cultural Data Science (F2023)
 '''
+
 # utils 
 import pathlib
 from ast import literal_eval
@@ -24,12 +26,24 @@ import plotly.express as px
 import pandas as pd
 import geopandas as gpd
 
-# logo 
+# add logo 
 from PIL import Image
 
-def add_missing_districts():
-    path = pathlib.Path(__file__)
+# import district and street view functions
 
+
+def add_missing_districts(path: pathlib.Path):
+    '''
+    Function for adding missing districts to dataframe.
+    Districts are missing because they have no apartment data.
+
+    Args:
+        path: path to script
+
+    Returns:
+        missing_districts: geodataframe with missing districts
+    '''
+    # read in geojson file
     geojson = gpd.read_file(path.parents[1] / "utils" / "districts.geojson")
 
     # set crs to 25832
@@ -51,6 +65,17 @@ def add_missing_districts():
 
 
 def plot_neighbor_stats(neighbor_data, y_col, y_title):
+        '''
+        Function for plotting statistics of neighbor districts
+
+        Args
+            neighbor_data: dataframe with statistics of neighbor districts
+            y_col: column to plot on y-axis
+            y_title: title of y-axis
+        
+        Returns 
+            fig: plotly figure
+        '''
         # define color
         colors = ["lightslategray",] * len(neighbor_data)
         
@@ -80,6 +105,12 @@ def plot_neighbor_stats(neighbor_data, y_col, y_title):
 
 
 def district_view(path): 
+    '''
+    Function to create district view page of Aarhus in streamlit app
+
+    Args:
+        path: path to script
+    '''
     # read in data
     data = pd.read_csv(path.parents[1] / "data" / "district_aggregates.csv")
 
@@ -89,17 +120,17 @@ def district_view(path):
     # convert to geodataframe
     data = gpd.GeoDataFrame(data, geometry="geometry")
 
-    # add zoom level to dataframe 
+    # add zoom level to dataframe manually. Each value corresponds to a district in the same order as in the dataframe
     data["zoom_level"] = [11,13,11,13,13,14,13,13,11,12,12,12,12,14,14,12,12,11,14,14,14,13,11,12,14,12,12,11,12,14,12,12,11,13,13,12,13,12,14,13,14,14]
 
     # set epsg to 25832
     data = data.set_crs("epsg:25832")
 
     # add missing districts to dataframe
-    missing_districts = add_missing_districts()
+    missing_districts = add_missing_districts(path)
 
     # create columns for map and statistics
-    col1, col2, = st.columns(2, gap = "large")
+    left_col, right_col, = st.columns(2, gap = "large")
 
     # create sidebar for selecting district
     with st.sidebar:
@@ -124,7 +155,7 @@ def district_view(path):
         # extract location coordinates
         selected_location = [selected_data['geometry'].centroid.y, selected_data['geometry'].centroid.x]
 
-    with col2:
+    with right_col:
         # add spacing
         st.write("")
     
@@ -179,29 +210,27 @@ def district_view(path):
 
         folium_static(folium_map, height=630, width=482)
     
-    with col1:
+    with left_col:
         # create columns to display statistics
         st.markdown(f"<h3>Rental Statistics for <span style='color: #FF595A;'>{selected_district}</span></h3>", unsafe_allow_html=True)
 
         # create subsubheader for apartment rent
         st.markdown("<p style='margin-top: 5px; margin-bottom: 4px; font-weight: bold;'>Average Rents 2023</p>", unsafe_allow_html=True)
 
+        # initialize columns for displaying rents
+        apart_col, room_col = st.columns(2)
 
-        apart_col1, apart_col2 = st.columns(2)
-
-        with apart_col1:
+        with apart_col:
             st.metric(label="Apartment (per m2)", value=f"{selected_data['apartment_rent_sqm_now'].values[0]} DKK", delta=f"{selected_data['apartment_rent_change'].values[0]} % since 2014-16", delta_color="inverse")
                 
-        with apart_col2:
+        with room_col:
             st.metric(label="Room", value=f"{selected_data['room_rent_now'].values[0]} DKK", delta=f"{selected_data['room_rent_change'].values[0]} % since 2014-16", delta_color="inverse")
         
         # add spacing
         st.write("")
         
         # start plot with neighbor districts
-        #st.write("__Compared to Neighbor Districts__")
         st.markdown("<p style='margin-top: 5px; margin-bottom: 0; font-weight: bold;'>Compared to Neighbor Districts</p>", unsafe_allow_html=True)
-
 
         # create list of neighbor districts
         neighbors = selected_data["neighbors"].tolist()[0]
@@ -241,7 +270,60 @@ def district_view(path):
     # layer control for street view
     folium.LayerControl().add_to(folium_map)
 
-def street_view(path):
+def create_street_table(selected_data): 
+    # add DKK to rent in selected data in most_similar cols 
+    for i in range(1, 6):
+        selected_data[f"most_similar_rent_{i}"] = selected_data[f"most_similar_rent_{i}"].astype(str) + " DKK"
+
+    # define headers and row values for table
+    header = ["<b>Street</b>", "<b>District</b>", "<b>Rent (per m2)</b>"]
+
+    values = [  # streetname 
+                        [selected_data["most_similar_1"], selected_data["most_similar_2"], 
+                        selected_data["most_similar_3"], selected_data["most_similar_4"],
+                        selected_data["most_similar_5"]],
+                        # district
+                        [selected_data["most_similar_district_1"], selected_data["most_similar_district_2"],
+                        selected_data["most_similar_district_3"], selected_data["most_similar_district_4"],
+                        selected_data["most_similar_district_5"]],
+                        # rent
+                        [selected_data["most_similar_rent_1"], selected_data["most_similar_rent_2"],
+                        selected_data["most_similar_rent_3"], selected_data["most_similar_rent_4"],
+                        selected_data["most_similar_rent_5"]]]
+        
+    # create table
+    fig = go.Figure(data=[go.Table(
+                                    header=dict(values=header, 
+                                                fill_color="#FF595A", 
+                                                line_color="#FF595A", 
+                                                align=["left", "left", "center"],
+                                                height=30, 
+                                                font = dict(size=16, family="Serif")), 
+                                    cells=dict(values=values, 
+                                                fill_color="#001233", 
+                                                line_color="#001233", 
+                                                font = dict(size=14, family="Serif"), 
+                                                align=["left", "left", "center"], 
+                                                height=30)
+                                        )
+                        ])
+            
+    # fix weird padding
+    fig.update_layout(margin=dict(l=0, r=10, t=0, b=0),
+                              height=200,
+                              width=500)
+    
+    return fig 
+
+
+def street_view(path:pathlib.Path):
+    '''
+    Function to create street view page of Aarhus in streamlit app
+
+    Args: 
+        path: path to script
+    '''
+
     # read in data
     street_data = pd.read_csv(path.parents[1] / "data" / "street_aggregates.csv")
 
@@ -258,7 +340,10 @@ def street_view(path):
     left_col, right_col, = st.columns(2, gap = "large")
 
     with st.sidebar:
+        # initialize selectbox with all streets
         selected_street = st.selectbox('Select a street', street_data['street'])
+
+        # set bigger font
         st.markdown(
             """<style>
         div[class*="stSelectbox"] > label > div[data-testid="stMarkdownContainer"] > p {
@@ -266,10 +351,11 @@ def street_view(path):
             </style>
             """, unsafe_allow_html=True)
         selected_data = street_data[street_data['street'] == selected_street]
-
+        
+        # indicate number of streets found
         st.write(f"{len(street_data)} streets found")
 
-        # convert to epsg 4326
+        # convert seleced data to epsg 4326
         selected_data = selected_data.to_crs("epsg:4326")
 
         # extract location coordinates
@@ -318,13 +404,14 @@ def street_view(path):
 
         # create columns for rent statistics
         st.write("__Average Apartment Rent (per m2)__")
+        
+        # c columns
+        rent_col, count_col = st.columns([2, 2])
 
-        col1, col2 = st.columns([2, 2])
-
-        with col1:
+        with rent_col:
             st.metric(label="in 2023", value=f"{selected_data['rent_per_square_meter'].values[0]} DKK")
         
-        with col2:
+        with count_col:
             st.metric(label="based on", value=f"{selected_data['count'].values[0]} apartments")
         
         # add spacing
@@ -334,46 +421,8 @@ def street_view(path):
         with st.container():
             st.write("__Similar Priced Streets__")
 
-            # add DKK to rent in selected data in most_similar cols 
-            for i in range(1, 6):
-                selected_data[f"most_similar_rent_{i}"] = selected_data[f"most_similar_rent_{i}"].astype(str) + " DKK"
-
-            # define headers and row values for table
-            header = ["<b>Street</b>", "<b>District</b>", "<b>Rent (per m2)</b>"]
-
-            values = [  # streetname 
-                        [selected_data["most_similar_1"], selected_data["most_similar_2"], 
-                        selected_data["most_similar_3"], selected_data["most_similar_4"],
-                        selected_data["most_similar_5"]],
-                        # district
-                        [selected_data["most_similar_district_1"], selected_data["most_similar_district_2"],
-                        selected_data["most_similar_district_3"], selected_data["most_similar_district_4"],
-                        selected_data["most_similar_district_5"]],
-                        # rent
-                        [selected_data["most_similar_rent_1"], selected_data["most_similar_rent_2"],
-                        selected_data["most_similar_rent_3"], selected_data["most_similar_rent_4"],
-                        selected_data["most_similar_rent_5"]]]
-        
-            # create table
-            fig = go.Figure(data=[go.Table(header=dict(values=header, 
-                                                       fill_color="#FF595A", 
-                                                       line_color="#FF595A", 
-                                                       align=["left", "left", "center"],
-                                                       height=30, 
-                                                       font = dict(size=16, family="Serif")), 
-                                           cells=dict(values=values, 
-                                                      fill_color="#001233", 
-                                                      line_color="#001233", 
-                                                      font = dict(size=14, family="Serif"), 
-                                                      align=["left", "left", "center"], 
-                                                      height=30)
-                                           )
-                        ])
-            
-            # fix weird padding
-            fig.update_layout(margin=dict(l=0, r=10, t=0, b=0),
-                              height=200,
-                              width=500)
+            # create table 
+            fig = create_street_table(selected_data)
 
             # display table in streamlit
             st.write(fig)
@@ -402,24 +451,26 @@ def main():
 
     # add sidebar 
     with st.sidebar:
+        
+        # remove padding from top and bottom
         st.write('<style>div.block-container{padding-top:0rem;padding-bottom:0}</style>', unsafe_allow_html=True)
 
+        # set width of sidebar 
         st.markdown(
                 """
             <style>
             [data-testid="stSidebar"][aria-expanded="true"]{
-                min-width: 250px;
+                min-width: 250px; 
                 max-width: 250px;
             }
             """,
         unsafe_allow_html=True,
         )   
         
-        #st.write("Welcome to Aarhus RentMapper!")
-        #st.write("")
-        
+        # add view selector
         view = st.radio("Select view", options=("District", "Street"))
         
+        # set font size of "Select view" heading
         st.markdown(
             """<style>
         div[class*="stRadio"] > label > div[data-testid="stMarkdownContainer"] > p {
@@ -427,7 +478,8 @@ def main():
         }
             </style>
             """, unsafe_allow_html=True)
-
+    
+    # run view based on selection in "view selector"
     if view == "District":
         district_view(path)
     
