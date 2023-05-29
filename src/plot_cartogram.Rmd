@@ -1,0 +1,45 @@
+---
+title: "Cartogram test"
+author: "Anton Drasbæk"
+date: "2023-05-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Read packages
+```{r}
+library(tidyverse)
+library(broom)
+library(sf)
+library(cartogram)
+```
+
+Read geodata
+```{r}
+data <- st_read(file.path("..", "data", "district_aggregates.csv"))
+
+geodata <- st_as_sf(data, wkt="geometry")
+```
+
+Make rent numeric
+```{r}
+geodata$apartment_rent_sqm_now <- as.numeric(geodata$apartment_rent_sqm_now)
+```
+
+Create cartogram
+```{r}
+# Create the cartogram
+carto <- cartogram_cont(geodata, "apartment_rent_sqm_now")
+
+# Plot the cartogram with improved aesthetics
+plot <- ggplot() +
+  geom_sf(data = carto$geometry, fill = "#3F8FC5", color = "white", size = 0.5) +
+  theme_void()
+
+# Save the plot as a high-resolution image
+ggsave(file.path("..", "plots", "cartogram_plot.jpg"), plot, dpi = 300)
+```
+
