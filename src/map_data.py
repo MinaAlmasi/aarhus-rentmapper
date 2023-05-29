@@ -13,8 +13,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns 
 import mpl_toolkits.axes_grid1.inset_locator as mpl_il
+import geoplot as gplt
+import geoplot.crs as gcrs
 
-def add_minimap(ax, district_data:pd.DataFrame, column_to_plot:str, district_name:str, cmap:str, max_value, min_value): 
+def add_minimap(ax, district_data:gpd.GeoDataFrame, column_to_plot:str, district_name:str, cmap:str, max_value, min_value): 
     '''
     Add a minimap to the plot
 
@@ -58,7 +60,7 @@ def add_minimap(ax, district_data:pd.DataFrame, column_to_plot:str, district_nam
         ax_inset.tick_params(labelleft=False, labelbottom=False, left=False, bottom=False)
 
 
-def plot_districts(district_data:pd.DataFrame, rental_type:str, savepath:pathlib.Path):
+def plot_districts_overview(district_data:gpd.GeoDataFrame, rental_type:str, savepath:pathlib.Path):
     '''
 
     Args:
@@ -122,7 +124,6 @@ def plot_districts(district_data:pd.DataFrame, rental_type:str, savepath:pathlib
     # save the plots
     plt.savefig(savepath, dpi=300, bbox_inches="tight", pad_inches=0.5)
 
-
 def plot_streets(path):
     # read in data
     street_data = pd.read_csv(path.parents[1] / "data" / "street_aggregates.csv")
@@ -166,10 +167,12 @@ def main():
     district_data = district_data.set_crs(epsg=25832)
     
     # plot apartment rent per square meter
-    plot_districts(district_data, "apartment", plot_dir / "apartment_rent_comparison.png")
+    plot_districts_overview(district_data, "apartment", plot_dir / "apartment_rent_comparison.png")
 
     # plot room rent
-    plot_districts(district_data, "room", plot_dir / "room_rent_comparison.png")
+    plot_districts_overview(district_data, "room", plot_dir / "room_rent_comparison.png")
+
+    plot_district_cartography(district_data)
 
 if __name__ == "__main__":
     main()
