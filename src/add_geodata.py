@@ -1,7 +1,14 @@
-import geopandas as gpd
+'''
+Script to add spatial data to the cleaned_data file to create 
+'''
+
+# utils 
 import pathlib
+from unidecode import unidecode  # for removing special characters from strings
+
+# data wrangling
+import geopandas as gpd
 import pandas as pd
-#from shapely import
 
 
 def load_data():
@@ -16,6 +23,32 @@ def load_data():
 
     return path, apartments, districts, geo_streets, geo_districts, geo_society
 
+def clean_temp_cols(column):
+    '''
+    Function for creating temporary columns for merging that are identical in formatting.
+    This is achieved by removing all special characters, spaces and periods, and lowercasing all letters.
+
+    Args
+        column: pandas Series to be cleaned
+    
+    Returns
+        column: cleaned pandas Series
+    '''
+    
+    # remove special characters
+    column = column.apply(lambda x: unidecode(x))
+
+    # remove spaces
+    column = column.str.replace(' ', '', regex=False)
+
+    # remove periods
+    column = column.str.replace('.', '', regex=False)
+
+    # lowercase
+    column = column.str.lower()
+
+    return column
+
 
 def add_street_geometry(apartments, geo_streets):
     # remove final character for all street names in geo_streets if it is a space
@@ -24,23 +57,18 @@ def add_street_geometry(apartments, geo_streets):
     # for the same street name, merge the linestring geometries into one
     geo_streets = geo_streets.dissolve(by='vejnavne')
 
-    print(geo_streets.head())
+    # change vejnavne from index to column
+    geo_streets = geo_streets.reset_index()
 
+    # create temp columns for merging
+    apartments['street_temp'] = clean_temp_cols(apartments['street'])
+    geo_streets['vejnavne_temp'] = clean_temp_cols(geo_streets['vejnavne'])
 
-    '''
-    # ensure oprettet_dato is a datetime object
-    geo_streets['oprettet_dato'] = pd.to_datetime(geo_streets['oprettet_dato'])
-
-    # only keep the most recent observation of each street name
-    geo_streets = geo_streets.sort_values(by='oprettet_dato', ascending=False)
-    geo_streets = geo_streets.drop_duplicates(subset=['vejnavne'])
-    '''
-
-    # merge the data
-    merged_df = apartments.merge(geo_streets[['vejnavne', 'geometry']], left_on='street', right_on='vejnavne', how='left')
-
-    # drop the redundant column
-    merged_df.drop('vejnavne', axis=1, inplace=True)
+    # Perform the merge using the temporary columns
+    merged_df = apartments.merge(geo_streets[['vejnavne_temp', 'geometry']], left_on='street_temp', right_on='vejnavne_temp', how='left')
+    
+    # Remove the temporary columns from the merge result
+    merged_df.drop(['street_temp', 'vejnavne_temp'], axis=1, inplace=True)
 
     # convert the merged DataFrame back to a GeoDataFrame
     merged_gdf = gpd.GeoDataFrame(merged_df, geometry='geometry')
@@ -49,7 +77,7 @@ def add_street_geometry(apartments, geo_streets):
 
 
 def update_stat_disticts(districts):
-    # This function adds streets with districts that are missing from the original file manually
+    # This function adds streets with districts that are missing from the original "street_to_discrit" file manually
 
     # define the missing streets and their districts
     missing_streets = ["Kongevellen", "Brassøvej", "Møllehatten", "Pollenvænget", "Borresøvej", "Broloftet", "Honningvænget",
@@ -79,11 +107,24 @@ def add_stat_district(apartments, districts):
     districts = districts.sort_values(by='counts', ascending=False)
     districts = districts.drop_duplicates(subset=['Vejnavn'])
 
+    # create temp columns for merging
+    apartments['street_temp'] = clean_temp_cols(apartments['street'])
+    districts['Vejnavn_temp'] = clean_temp_cols(districts['Vejnavn'])
+
     # merge the data
-    merged_df = apartments.merge(districts, left_on='street', right_on='Vejnavn', how='left')
+    merged_df = apartments.merge(districts, left_on='street_temp', right_on='Vejnavn_temp', how='left')
+
+    # for all the same street_temp, change values in "street" to most common street name
+    most_common_streets = apartments.groupby('street_temp')['street'].agg(lambda x: x.value_counts().index[0])
+
+    # Update 'street' column based on 'street_temp' groups
+    merged_df['street'] = merged_df['street_temp'].map(most_common_streets)
 
     # drop the redundant column
-    merged_df.drop('Vejnavn', axis=1, inplace=True)
+    merged_df.drop(["Vejnavn_temp", "street_temp"], axis=1, inplace=True)
+
+    # manually update morten børups gade to "Morten Børups Gade"
+    merged_df.loc[merged_df['street'] == 'morten børups gade', 'street'] = 'Morten Børups Gade'
 
     # convert the merged DataFrame back to a GeoDataFrame
     merged_gdf = gpd.GeoDataFrame(merged_df, geometry='geometry')
@@ -254,8 +295,6 @@ def main():
 
     # get overlaps
     apartments = merge_districts(apartments)
-    
-    print(apartments)
 
     # save as csv
     apartments.to_csv(path.parents[1] / "data" / "complete_data.csv", index=False)

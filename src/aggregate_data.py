@@ -46,8 +46,6 @@ def get_neighbor_districts(complete_data:pd.DataFrame):
     # add neighbors to dataframe
     complete_data["neighbors"] = district_neighbors
 
-    print(complete_data)
-
     return complete_data
 
 
@@ -211,7 +209,10 @@ def get_street_aggregates(complete_data, savepath, n_similar_streets:int=5):
     street_data = street_data.rename(columns={"id": "count"})
 
     # add geometry from complete_data
-    street_data = street_data.merge(complete_data[["street", "geometry_street"]].drop_duplicates(), on="street")
+    street_data = street_data.merge(complete_data[["street", "geometry_street"]], on="street")
+
+    # drop duplicates
+    street_data = street_data.drop_duplicates(subset=["street"])
 
     street_data.to_csv(savepath / "street_aggregates.csv", index=False)
 
@@ -231,11 +232,7 @@ def main():
 
     # create street aggregates
     street_data = get_street_aggregates(complete_data, data_path, n_similar_streets=5)
-
-    #print(district_data)
     
-    
-
 
 
 if __name__ == "__main__":
