@@ -12,7 +12,7 @@ def add_missing_districts(path: pathlib.Path):
     Returns:
         missing_districts: geodataframe with missing districts
     '''
-    
+
     # read in geojson file
     geojson = gpd.read_file(path.parents[1] / "utils" / "districts.geojson")
 
