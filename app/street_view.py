@@ -29,6 +29,16 @@ import plotly.graph_objects as go
 import pandas as pd
 import geopandas as gpd
 
+# moran's I (local) in APP
+from esda.moran import Moran_Local
+import numpy as np
+import libpysal as lps
+
+# custom module for filtering midtbyen for local moran
+import sys
+sys.path.append(str(pathlib.Path(__file__).parents[1] / "src"))
+from utils import filter_midtbyen 
+
 def create_street_table(selected_data): 
     '''
     Function to create table of most similar streets in streamlit app
@@ -84,6 +94,43 @@ def create_street_table(selected_data):
     
     return fig 
 
+def calculate_local_moran_midtbyen(street_data):
+    '''
+    Function to calculate local moran's I for midtbyen
+
+    Args:
+        street_data: dataframe with street data
+    
+    Returns: 
+        sig_true: dataframe with significant streets
+    '''
+    # set seed for reproducibility
+    np.random.seed(1999)
+
+    # filter midtbyen
+    street_data_midtbyen = filter_midtbyen(street_data)
+
+    # filter out "strandvejen" and "stadion alle" as they run outside of bounds of the district map
+    street_data_midtbyen = street_data_midtbyen[~street_data_midtbyen["street"].isin(["Strandvejen", "Stadion Alle"])]
+
+    # get spatial weights
+    w_midtbyen = lps.weights.KNN.from_dataframe(street_data_midtbyen, k = 3)
+
+    # calculate morans local I for midtbyen
+    li_midtbyen = Moran_Local(street_data_midtbyen["rent_per_square_meter"], w_midtbyen)
+
+    # add local morans I to dataframes
+    street_data_midtbyen["signficant"] = li_midtbyen.p_sim < 0.05
+
+    # store quadrant information in dataframe
+    street_data_midtbyen["quadrant"] = li_midtbyen.q
+
+    # get significant data
+    sig_true = street_data_midtbyen[street_data_midtbyen["signficant"] == True]
+
+    return sig_true
+
+
 def street_view(path:pathlib.Path):
     '''
     Function to create street view page of Aarhus in streamlit app
@@ -106,6 +153,9 @@ def street_view(path:pathlib.Path):
 
     # create columns for map and statistics
     left_col, right_col, = st.columns(2, gap = "large")
+
+    # calculate local moran's I
+    sig_true = calculate_local_moran_midtbyen(street_data)
 
     with st.sidebar:
         # initialize selectbox with all streets
@@ -194,3 +244,20 @@ def street_view(path:pathlib.Path):
 
             # display table in streamlit
             st.write(fig)
+
+        # check if selected_street is significant
+        if selected_street in sig_true["street"].values:
+            # write a markdown with no padding informing user that street is a rare case
+            st.markdown("<p style='margin: 0;'><b>Please Note:</b></p>", unsafe_allow_html=True)
+            
+            if sig_true[sig_true["street"] == selected_street]["quadrant"].values[0] == 1:
+                st.markdown(f"The average rent in <span style='color:#FF595A'>{selected_street}</span> is significantly higher than expected, despite already being in an expensive district (__bad deal!__)", unsafe_allow_html=True)
+            
+            elif sig_true[sig_true["street"] == selected_street]["quadrant"].values[0] == 2:
+                st.markdown(f"The average rent in <span style='color:#FF595A'>{selected_street}</span> is low, despite being an expensive district (__very good deal!__)", unsafe_allow_html=True)
+            
+            elif sig_true[sig_true["street"] == selected_street]["quadrant"].values[0] == 3:
+                st.markdown(f"The average rent in <span style='color:#FF595A'>{selected_street}</span> is significantly lower than expected, despite already being in an inexpensive district (__good deal!__)", unsafe_allow_html=True)
+            
+            elif sig_true[sig_true["street"] == selected_street]["quadrant"].values[0] == 4:
+                st.markdown(f"The average rent in <span style='color:#FF595A'>{selected_street}</span> is high, despite being an inexpensive district (__very bad deal!__)", unsafe_allow_html=True)
