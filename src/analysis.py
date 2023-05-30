@@ -26,9 +26,13 @@ from matplotlib.colors import ListedColormap
 import random
 import numpy as np
 
+# import custom functions
+from utils import filter_midtbyen
+
+## HELPER FUNCTIONS ##
 def load_data(datapath:pathlib.Path, geometry_col:str, crs=25832): 
     '''
-    Load data from path and convert to geodataframe with custom CRS. 
+    Function to load data from path and convert to geodataframe with custom CRS. 
 
     Args:
         datapath: The path to the data
@@ -53,6 +57,70 @@ def load_data(datapath:pathlib.Path, geometry_col:str, crs=25832):
 
     return data
 
+## DISTRICTS ## 
+def plot_district_overview(district_data, savepath):
+    '''
+    Function to plot the districts in Aarhus
+
+    Args:
+        district_data: dataframe containing the district data
+        savepath: The path to save the plot to
+
+    Outputs: 
+        .png: A plot of the districts in Aarhus
+    '''
+    # add missing districts
+    missing_districts = add_missing_districts(pathlib.Path(__file__))
+
+    # seperate midtbyen from the rest of the districts
+    midtbyen_districts = filter_midtbyen(district_data, midtbyen=True)
+    other_districts = filter_midtbyen(district_data, midtbyen=False)
+
+    # create figure and axes
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20,10))
+
+    # set font to times new roman
+    plt.rcParams["font.family"] = "Times New Roman"
+
+    # reduce whitespace between plots
+    plt.subplots_adjust(wspace=0, hspace=0, top=1, bottom=0.0, left=0.0, right=1)
+
+    # rename Skolegade/Bispetorv/Europaplads to Skolegade/../.. for better plotting
+    midtbyen_districts["district"] = midtbyen_districts["district"].replace({"Skolegade/Bispetorv/Europaplads": "Skolegade/../.."})
+
+    # rename Klostertorv/Vesterbro Torv to Klostertorv/.. for better plotting
+    midtbyen_districts["district"] = midtbyen_districts["district"].replace({"Klostertorv/Vesterbro Torv": "Klostertorv/.."})
+
+    # plot the districts
+    district_data.plot(ax=ax1, edgecolor="black", color = "#F1F1F1", linewidth=0.5)
+    missing_districts.plot(ax=ax1, edgecolor="white", color = "lightgrey", linewidth=0.5)
+    midtbyen_districts.plot(ax=ax1, edgecolor="white", color = "lightgrey", linewidth=0.5)
+
+    # annotate all districts that are not in midtbyen
+    for x, y, label in zip(other_districts.geometry.centroid.x, other_districts.geometry.centroid.y, other_districts["district"]):
+        ax1.annotate(label, xy=(x, y), fontsize=11, ha = "center", va = "center", fontweight="bold")
+
+    # plot the districts in midtbyen
+    midtbyen_districts.plot(ax=ax2, edgecolor="white", color = "lightgrey", linewidth=0.5)
+
+    # annotate all districts that are in midtbyen
+    for x, y, label in zip(midtbyen_districts.geometry.centroid.x, midtbyen_districts.geometry.centroid.y, midtbyen_districts["district"]):
+        ax2.annotate(label, xy=(x, y), fontsize=9, ha = "center", va = "center", fontweight="bold")
+
+    # remove all spines and ticks
+    for ax in [ax1, ax2]:
+        ax.tick_params(labelleft=False, labelbottom=False, left=False, bottom=False)
+        ax.set_aspect("equal")
+
+    # titles for both plots
+    ax1.text(0.02, 0.93, "[A]", fontsize=35, fontweight="bold", transform=ax1.transAxes)
+    ax2.text(0.02, 0.93, "[B]", fontsize=35, fontweight="bold", transform=ax2.transAxes)
+
+    # save figure
+    plt.savefig(savepath, bbox_inches="tight", dpi=300, pad_inches=0.5)
+
+
+## HEAT MAP ##
 def add_minimap(ax, district_data:gpd.GeoDataFrame, column_to_plot:str, district_name:str, cmap:str, max_value, min_value): 
     '''
     Add a minimap to the plot
@@ -96,10 +164,9 @@ def add_minimap(ax, district_data:gpd.GeoDataFrame, column_to_plot:str, district
         # remove ticks and labels from the inset plot
         ax_inset.tick_params(labelleft=False, labelbottom=False, left=False, bottom=False)
 
-
-def plot_districts_overview(district_data:gpd.GeoDataFrame, rental_type:str, savepath:pathlib.Path):
+def plot_districts_heatmap(district_data:gpd.GeoDataFrame, rental_type:str, savepath:pathlib.Path):
     '''
-
+    Plot the districts as a heatmap
     Args:
         district_data: dataframe containing the district data
         rental_type: The type of rental to plot
@@ -161,31 +228,7 @@ def plot_districts_overview(district_data:gpd.GeoDataFrame, rental_type:str, sav
     # save the plots
     plt.savefig(savepath, dpi=300, bbox_inches="tight", pad_inches=0.5)
 
-
-def filter_midtbyen(data):
-    '''
-    Function to filter the district data to only include midtbyen
-
-    Args:
-        data: dataframe containing the district data
-    
-    Returns:
-        data: dataframe containing the district data for midtbyen
-    '''
-    # define midtbyen districts
-    midtbyen = ["Trøjborg", "Universitetet/Kommunehospitalet", "Nordre Kirkegård", "Vestervang/Klostervang/Ø-gaderne", "Ø-gaderne Øst",
-                "Østbanetorvet/Nørre Stenbro", "Nørregade", "Latinerkvarteret", "Klostertorv/Vesterbro Torv", "Åboulevarden", "Skolegade/Bispetorv/Europaplads",
-                "Mølleparken", "TelefonTorvet", "Fredens Torv", "Ceresbyen/Godsbanen", "Rådhuskvarteret", "De Bynære Havnearealer/Aarhus Ø",
-                "Sydhavnen og Marselisborg lystbådehavn", "Frederiksbjerg Vest", "Frederiksbjerg Øst", "Erhvervshavnen", "Botanisk Have/Amtssygehuset"]
-
-    data = data[data["district"].isin(midtbyen)]
-
-    # reset index
-    data = data.reset_index(drop=True)
-
-    return data
-
-
+## PLOT STREETS ## 
 def plot_streets(street_data, district_data, savepath):
     # keep only midtbyen districts
     street_data = filter_midtbyen(street_data)
@@ -225,7 +268,7 @@ def plot_streets(street_data, district_data, savepath):
 
     fig.savefig(savepath, dpi=300, bbox_inches="tight")
 
-
+## MORANS I ##
 def calculate_global_moran(street_data):
     # set seed for reproducibility
     np.random.seed(1999)
@@ -242,7 +285,6 @@ def calculate_global_moran(street_data):
     mi_midtbyen = Moran(street_data_midtbyen["rent_per_square_meter"], w_midtbyen)
 
     return mi_aarhus, mi_midtbyen
-
 
 def plot_local_moran(street_data, savepath): # based on tutorial by Dani Arribas-Bel (http://darribas.org/gds15/content/labs/lab_06.html)
     # set seed for reproducibility
@@ -342,11 +384,13 @@ def main():
     # read in street data
     street_data = load_data(datapath = datapath / "street_aggregates.csv", geometry_col="geometry_street", crs=25832)
 
+    # plot district overview
+    plot_district_overview(district_data, plot_dir / "district_overview.png")
     # plot apartment rent per square meter
-    plot_districts_overview(district_data, "apartment", plot_dir / "apartment_rent_comparison.png")
+    plot_districts_heatmap(district_data, "apartment", plot_dir / "apartment_rent_comparison.png")
 
     # plot room rent
-    plot_districts_overview(district_data, "room", plot_dir / "room_rent_comparison.png")
+    plot_districts_heatmap(district_data, "room", plot_dir / "room_rent_comparison.png")
 
     # plot streets
     plot_streets(street_data, district_data, plot_dir / "street_apartment_rent_sqm_now.png")
@@ -360,9 +404,6 @@ def main():
 
     # plot morans I
     plot_local_moran(street_data, plot_dir / "streets_morans_i.png")
-
-
-
 
 if __name__ == "__main__":
     main()
