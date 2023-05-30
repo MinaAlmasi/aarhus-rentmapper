@@ -18,6 +18,33 @@ import mpl_toolkits.axes_grid1.inset_locator as mpl_il
 # colors
 from matplotlib.colors import ListedColormap
 
+def load_data(datapath:pathlib.Path, geometry_col:str, crs=25832): 
+    '''
+    Load data from path and convert to geodataframe with custom CRS. 
+
+    Args:
+        datapath: The path to the data
+        geometry_col: The name of the geometry column
+        crs: The crs to use (defaults to 25832 as this is the crs for Denmark)
+    
+    Returns: 
+        data: The data as a geodataframe
+    '''
+
+    # read in data
+    data = pd.read_csv(datapath)
+
+    # change wkt to geometry
+    data["geometry"] = gpd.GeoSeries.from_wkt(data[geometry_col])
+
+    # convert to geodataframe
+    data = gpd.GeoDataFrame(data, geometry="geometry")
+
+    # set epsg to 25832
+    data = data.set_crs(epsg=crs)
+
+    return data
+
 def add_minimap(ax, district_data:gpd.GeoDataFrame, column_to_plot:str, district_name:str, cmap:str, max_value, min_value): 
     '''
     Add a minimap to the plot
@@ -126,19 +153,7 @@ def plot_districts_overview(district_data:gpd.GeoDataFrame, rental_type:str, sav
     # save the plots
     plt.savefig(savepath, dpi=300, bbox_inches="tight", pad_inches=0.5)
 
-def plot_streets(path, district_data):
-    # read in data
-    street_data = pd.read_csv(path.parents[1] / "data" / "street_aggregates.csv")
-
-    # change wkt to geometry
-    street_data["geometry"] = gpd.GeoSeries.from_wkt(street_data["geometry_street"])
-
-    # convert to geodataframe
-    street_data = gpd.GeoDataFrame(street_data, geometry="geometry")
-
-    # set epsg to 25832
-    street_data = street_data.set_crs(epsg=25832)
-
+def plot_streets(street_data, district_data, savepath):
     # define midtbyen districts
     midtbyen = ["Trøjborg", "Universitetet/Kommunehospitalet", "Nordre Kirkegård", "Vestervang/Klostervang/Ø-gaderne", "Ø-gaderne Øst",
                 "Østbanetorvet/Nørre Stenbro", "Nørregade", "Latinerkvarteret", "Klostertorv/Vesterbro Torv", "Åboulevarden", "Skolegade/Bispetorv/Europaplads",
@@ -149,6 +164,9 @@ def plot_streets(path, district_data):
     street_data = street_data[street_data["district"].isin(midtbyen)]
     district_data = district_data[district_data["district"].isin(midtbyen)]
 
+    # filter out "strandvejen" and "stadion alle" as they run outside of bounds of the district map
+    street_data = street_data[~street_data["street"].isin(["Strandvejen", "Stadion Alle"])]
+
     # define figure with one ax
     fig, ax = plt.subplots(1, figsize=(5, 10))
     
@@ -156,12 +174,13 @@ def plot_streets(path, district_data):
     cmap = ListedColormap(["#389F38", "#595AFF", "#FF595A"])
 
     # specify legend kwds 
-    legend_kwds = {'loc':'lower right', 
-                        'fmt':'{:.1f}',
+    legend_kwds = {'loc':'upper left', 
                         'markerscale':0.8, 
                         'title_fontsize':'medium', 
-                        'fontsize':'small', 
-                        #"labels": ["< 100 DKK", "100 - 200 DKK", "> 200 DKK"]
+                        'fontsize':'medium' ,
+                        "labels": ["72-124 DKK", "124-138 DKK", "138-250 DKK"], 
+                        "title": "Average Apartment Rent (per m2)",
+                        "alignment": "left"
                         }
 
     # add map add distrits as background
@@ -170,11 +189,17 @@ def plot_streets(path, district_data):
     # add streets
     street_data.plot(column="rent_per_square_meter", legend=True, cmap=cmap, legend_kwds=legend_kwds, scheme = "quantiles", k = 3, linewidth=0.8, ax=ax)
 
-    # remove axis
+    # remove axis ticks
     ax.tick_params(labelleft=False, labelbottom=False, left=False, bottom=False)
+    
+    # remove axis spines in all directions
+    for spine in ["top", "right", "left", "bottom"]:
+        ax.spines[spine].set_visible(False)
 
-    plt.savefig(path.parents[1] / "plots" / "street_apartment_rent_sqm_now.png", dpi=300)
+    fig.savefig(savepath, dpi=300, bbox_inches="tight")
 
+def plot_street_morans():
+    pass
 
 
 def main():
@@ -182,26 +207,22 @@ def main():
     path = pathlib.Path(__file__)
     plot_dir = path.parents[1] / "plots"
     plot_dir.mkdir(parents=True, exist_ok=True)
+    datapath = path.parents[1] / "data"
 
-    # read in data
-    district_data = pd.read_csv(path.parents[1] / "data" / "district_aggregates.csv")
+    # read in district data 
+    district_data = load_data(datapath = datapath / "district_aggregates.csv", geometry_col="geometry", crs=25832)
 
-    # change wkt to geometry
-    district_data["geometry"] = gpd.GeoSeries.from_wkt(district_data["geometry"])
+    # read in street data
+    street_data = load_data(datapath = datapath / "street_aggregates.csv", geometry_col="geometry_street", crs=25832)
 
-    # convert to geodataframe
-    district_data = gpd.GeoDataFrame(district_data, geometry="geometry")
-
-    # set epsg to 25832
-    district_data = district_data.set_crs(epsg=25832)
-    
     # plot apartment rent per square meter
     #plot_districts_overview(district_data, "apartment", plot_dir / "apartment_rent_comparison.png")
 
     # plot room rent
-    #plot_districts_overview(district_data, "room", plot_dir / "room_rent_comparison.png")
+    plot_districts_overview(district_data, "room", plot_dir / "room_rent_comparison.png")
 
-    plot_streets(path, district_data)
+    # plot streets
+    plot_streets(street_data, district_data, plot_dir / "street_apartment_rent_sqm_now.png")
 
 
 if __name__ == "__main__":
