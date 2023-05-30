@@ -8,13 +8,15 @@ import numpy as np
 # data wrangling 
 import geopandas as gpd
 import pandas as pd
+from utils import add_missing_districts # custom function to add missing districts to plots 
 
 # plotting 
 import matplotlib.pyplot as plt
 import seaborn as sns 
 import mpl_toolkits.axes_grid1.inset_locator as mpl_il
-import geoplot as gplt
-import geoplot.crs as gcrs
+
+# colors
+from matplotlib.colors import ListedColormap
 
 def add_minimap(ax, district_data:gpd.GeoDataFrame, column_to_plot:str, district_name:str, cmap:str, max_value, min_value): 
     '''
@@ -124,7 +126,7 @@ def plot_districts_overview(district_data:gpd.GeoDataFrame, rental_type:str, sav
     # save the plots
     plt.savefig(savepath, dpi=300, bbox_inches="tight", pad_inches=0.5)
 
-def plot_streets(path):
+def plot_streets(path, district_data):
     # read in data
     street_data = pd.read_csv(path.parents[1] / "data" / "street_aggregates.csv")
 
@@ -137,14 +139,41 @@ def plot_streets(path):
     # set epsg to 25832
     street_data = street_data.set_crs(epsg=25832)
 
-    # plot apartment rent per square meter in 2023
-    fig, ax = plt.subplots(figsize=(30, 30))
+    # define midtbyen districts
+    midtbyen = ["Trøjborg", "Universitetet/Kommunehospitalet", "Nordre Kirkegård", "Vestervang/Klostervang/Ø-gaderne", "Ø-gaderne Øst",
+                "Østbanetorvet/Nørre Stenbro", "Nørregade", "Latinerkvarteret", "Klostertorv/Vesterbro Torv", "Åboulevarden", "Skolegade/Bispetorv/Europaplads",
+                "Mølleparken", "TelefonTorvet", "Fredens Torv", "Ceresbyen/Godsbanen", "Rådhuskvarteret", "De Bynære Havnearealer/Aarhus Ø",
+                "Sydhavnen og Marselisborg lystbådehavn", "Frederiksbjerg Vest", "Frederiksbjerg Øst", "Erhvervshavnen", "Botanisk Have/Amtssygehuset"]
 
-    street_data.plot(column="rent_per_square_meter", ax=ax, legend=True, legend_kwds={"label": "Apartment rent per square meter in 2023", "orientation": "horizontal"}, edgecolor="black", linewidth=0.5)
+    # keep only midtbyen districts
+    street_data = street_data[street_data["district"].isin(midtbyen)]
+    district_data = district_data[district_data["district"].isin(midtbyen)]
 
-    ax.set_title("Apartment rent per square meter in 2023", fontsize=20)
+    # define figure with one ax
+    fig, ax = plt.subplots(1, figsize=(5, 10))
+    
+    # define custom cmap with ListedColormap
+    cmap = ListedColormap(["#389F38", "#595AFF", "#FF595A"])
 
-    plt.savefig(path.parents[1] / "street_apartment_rent_sqm_now.png")
+    # specify legend kwds 
+    legend_kwds = {'loc':'lower right', 
+                        'fmt':'{:.1f}',
+                        'markerscale':0.8, 
+                        'title_fontsize':'medium', 
+                        'fontsize':'small', 
+                        #"labels": ["< 100 DKK", "100 - 200 DKK", "> 200 DKK"]
+                        }
+
+    # add map add distrits as background
+    district_data.plot(ax=ax, color="#F2F3F4", edgecolor="black", linewidth=2.5)
+
+    # add streets
+    street_data.plot(column="rent_per_square_meter", legend=True, cmap=cmap, legend_kwds=legend_kwds, scheme = "quantiles", k = 3, linewidth=0.8, ax=ax)
+
+    # remove axis
+    ax.tick_params(labelleft=False, labelbottom=False, left=False, bottom=False)
+
+    plt.savefig(path.parents[1] / "plots" / "street_apartment_rent_sqm_now.png", dpi=300)
 
 
 
@@ -167,12 +196,13 @@ def main():
     district_data = district_data.set_crs(epsg=25832)
     
     # plot apartment rent per square meter
-    plot_districts_overview(district_data, "apartment", plot_dir / "apartment_rent_comparison.png")
+    #plot_districts_overview(district_data, "apartment", plot_dir / "apartment_rent_comparison.png")
 
     # plot room rent
-    plot_districts_overview(district_data, "room", plot_dir / "room_rent_comparison.png")
+    #plot_districts_overview(district_data, "room", plot_dir / "room_rent_comparison.png")
 
-    plot_district_cartography(district_data)
+    plot_streets(path, district_data)
+
 
 if __name__ == "__main__":
     main()
