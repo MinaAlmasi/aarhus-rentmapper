@@ -18,6 +18,10 @@ import streamlit as st
 # add logo 
 from PIL import Image
 
+# sys append to make street view work with custom modules
+import sys
+sys.path.append(str(pathlib.Path(__file__).parents[1] / "src"))
+
 # import district and street view functions
 from district_view import district_view
 from street_view import street_view
