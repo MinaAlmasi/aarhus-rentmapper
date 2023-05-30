@@ -5,3 +5,6 @@ streamlit==1.22.0
 streamlit_folium==0.11.1
 plotly==5.14.1
 seaborn==0.12.2
+mapclassify==2.5.0
+esda==2.4.3
+libpysal==4.7.0
