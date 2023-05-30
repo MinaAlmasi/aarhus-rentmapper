@@ -15,8 +15,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
 import mpl_toolkits.axes_grid1.inset_locator as mpl_il
 
+# spatial statistics
+import libpysal as lps
+from esda.moran import Moran, Moran_Local
+
 # colors
 from matplotlib.colors import ListedColormap
+
+import random
+import numpy as np
 
 def load_data(datapath:pathlib.Path, geometry_col:str, crs=25832): 
     '''
@@ -153,16 +160,30 @@ def plot_districts_overview(district_data:gpd.GeoDataFrame, rental_type:str, sav
     # save the plots
     plt.savefig(savepath, dpi=300, bbox_inches="tight", pad_inches=0.5)
 
-def plot_streets(street_data, district_data, savepath):
+def filter_midtbyen(data):
+    '''
+
+    Args:
+        data: dataframe containing the district data
+    
+    Returns:
+        data: dataframe containing the district data for midtbyen
+    '''
     # define midtbyen districts
     midtbyen = ["Trøjborg", "Universitetet/Kommunehospitalet", "Nordre Kirkegård", "Vestervang/Klostervang/Ø-gaderne", "Ø-gaderne Øst",
                 "Østbanetorvet/Nørre Stenbro", "Nørregade", "Latinerkvarteret", "Klostertorv/Vesterbro Torv", "Åboulevarden", "Skolegade/Bispetorv/Europaplads",
                 "Mølleparken", "TelefonTorvet", "Fredens Torv", "Ceresbyen/Godsbanen", "Rådhuskvarteret", "De Bynære Havnearealer/Aarhus Ø",
                 "Sydhavnen og Marselisborg lystbådehavn", "Frederiksbjerg Vest", "Frederiksbjerg Øst", "Erhvervshavnen", "Botanisk Have/Amtssygehuset"]
 
+    data = data[data["district"].isin(midtbyen)]
+
+    return data
+
+
+def plot_streets(street_data, district_data, savepath):
     # keep only midtbyen districts
-    street_data = street_data[street_data["district"].isin(midtbyen)]
-    district_data = district_data[district_data["district"].isin(midtbyen)]
+    street_data = filter_midtbyen(street_data)
+    district_data = filter_midtbyen(district_data)
 
     # filter out "strandvejen" and "stadion alle" as they run outside of bounds of the district map
     street_data = street_data[~street_data["street"].isin(["Strandvejen", "Stadion Alle"])]
@@ -198,8 +219,46 @@ def plot_streets(street_data, district_data, savepath):
 
     fig.savefig(savepath, dpi=300, bbox_inches="tight")
 
-def plot_street_morans():
-    pass
+def plot_street_morans(street_data, savepath): # based on tutorial by Dani Arribas-Bel (http://darribas.org/gds15/content/labs/lab_06.html)
+
+    # set seed for reproducibility
+    np.random.seed(1999)
+
+    # filter midtbyen
+    street_data_midtbyen = filter_midtbyen(street_data)
+
+    # get spatial weights from street data
+    w_aarhus = lps.weights.KNN.from_dataframe(street_data, k = 3)
+    w_midtbyen = lps.weights.KNN.from_dataframe(street_data_midtbyen, k = 3)
+    
+    # calculate morans I for all of aarhus and for midtbyen
+    mi_aarhus = Moran(street_data["rent_per_square_meter"], w_aarhus)
+    mi_midtbyen = Moran(street_data_midtbyen["rent_per_square_meter"], w_midtbyen)
+
+    # print morans I and p-value for midtbyen and all of aarhus
+    print("Moran's I for midtbyen: ", mi_midtbyen.I, "p-value: ", mi_midtbyen.p_sim)
+    print("Moran's I for all of Aarhus: ", mi_aarhus.I, "p-value: ", mi_aarhus.p_sim)
+
+    # calculate morans local I for midtbyen
+    li_midtbyen = Moran_Local(street_data_midtbyen["rent_per_square_meter"], w_midtbyen)
+
+    # add local morans I to dataframe
+    street_data_midtbyen["signficant"] = li_midtbyen.p_sim < 0.05
+
+    # store quadrant information in dataframe
+    street_data_midtbyen["quadrant"] = li_midtbyen.q
+
+    # define figure with one ax
+    fig, ax = plt.subplots(1, figsize=(5, 10))
+
+    # plot all that is not significant in grey
+    street_data_midtbyen[street_data_midtbyen["signficant"] == False].plot(color="#F2F3F4", ax=ax)
+    
+    # filter on whether significant or not 
+    street_data_midtbyen[street_data_midtbyen["signficant"] == True].plot(column="quadrant", categorical=True, legend=True, cmap="RdYlGn", ax=ax)
+
+    # save figure
+    fig.savefig(savepath, dpi=300, bbox_inches="tight")
 
 
 def main():
@@ -219,10 +278,13 @@ def main():
     #plot_districts_overview(district_data, "apartment", plot_dir / "apartment_rent_comparison.png")
 
     # plot room rent
-    plot_districts_overview(district_data, "room", plot_dir / "room_rent_comparison.png")
+    #plot_districts_overview(district_data, "room", plot_dir / "room_rent_comparison.png")
 
     # plot streets
     plot_streets(street_data, district_data, plot_dir / "street_apartment_rent_sqm_now.png")
+
+    # plot morans I
+    plot_street_morans(street_data, plot_dir / "morans_I.png")
 
 
 if __name__ == "__main__":
