@@ -331,8 +331,11 @@ def plot_local_moran(street_data, savepath): # based on tutorial by Dani Arribas
     # plot all that is not significant in grey
     sig_false.plot(color="#F2F3F4", ax=ax, linewidth = 1.7)
 
+    # create custom cmap with ListedColormap
+    cmap = ListedColormap(["#F99B93", "#36B00C", "#A3F864", "#C60C0C"])
+
     # filter on whether significant or not 
-    sig_true.plot(column="quadrant", categorical=True, linewidth = 3, legend=True, cmap="RdYlGn", legend_kwds=legend_kwds, ax=ax)
+    sig_true.plot(column="quadrant", categorical=True, linewidth = 3, legend=True, cmap=cmap, legend_kwds=legend_kwds, ax=ax)
 
     # Add black end borders to the havnegade
     havnegade = street_data_midtbyen[street_data_midtbyen["street"] == "Havnegade"].geometry.iloc[0]
