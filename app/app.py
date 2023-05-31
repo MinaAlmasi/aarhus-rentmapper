@@ -37,7 +37,7 @@ def add_logo(path: pathlib.Path):
     st.write('<style>div.block-container{padding-top:1.8rem;padding-bottom:0.2}</style>', unsafe_allow_html=True)
 
     # load logo
-    logo = Image.open(path.parents[1] / "app" / "app-logo.png")
+    logo = Image.open(path.parents[0] / "assets" / "app-logo.png")
 
     # create columns to center image 
     left, center, right = st.columns([0.5, 1, 0.5])
@@ -67,7 +67,7 @@ def add_sidebar(path: pathlib.Path):
 
         # set width of sidebar 
         st.markdown(
-                """
+            """
             <style>
             [data-testid="stSidebar"][aria-expanded="true"]{
                 min-width: 250px; 
@@ -97,7 +97,7 @@ def main():
     path = pathlib.Path(__file__)
 
     # add favicon, define page width and set page title
-    favicon = Image.open(path.parents[1] / "app" / "favicon.ico")
+    favicon = Image.open(path.parents[0] / "assets" / "favicon.ico")
     st.set_page_config(page_title="rentmapper", page_icon=favicon, layout="wide")
 
     # add logo
