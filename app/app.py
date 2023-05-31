@@ -112,6 +112,13 @@ def main():
     
     if view == 'Street':
         street_view(path)
+    
+    with st.sidebar:
+        # add white space
+        st.markdown("<br>" * 11, unsafe_allow_html=True)
+
+        # add github usernames
+        st.markdown('<p style="color:white; font-weight:bold; text-decoration:none; text-align:center;"><a style="color:white; text-decoration:none;" href="https://github.com/MinaAlmasi">@MinaAlmasi</a> & <a style="color:white; text-decoration:none;" href="https://github.com/drasbaek">@drasbaek</a></p>', unsafe_allow_html=True)
 
 
 if __name__ == '__main__':
