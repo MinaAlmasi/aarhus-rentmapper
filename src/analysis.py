@@ -323,7 +323,7 @@ def plot_local_moran(street_data, savepath): # based on tutorial by Dani Arribas
                         'markerscale':0.8, 
                         'title_fontsize':'medium', 
                         'fontsize':'medium' ,
-                        "labels": ["High Rent in High Rent Area", "Low Rent in High Rent Area (outlier)", "Low Rent in Low Rent Area", "High Rent in Low Rent Area (outlier)"], 
+                        "labels": ["High Rent in High Rent Cluster", "Low Rent in High Rent Area (outlier)", "Low Rent in Low Rent Cluster", "High Rent in Low Rent Area (outlier)"], 
                         "title": "Significance Type",
                         "alignment": "left"
                         }
