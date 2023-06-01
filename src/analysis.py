@@ -401,9 +401,9 @@ def main():
     # calculate global morans I
     mi_aarhus, mi_midtbyen = calculate_global_moran(street_data)
 
-    # print morans I and p-value for midtbyen and all of aarhus
-    print("Moran's I for midtbyen: ", mi_midtbyen.I, "p-value: ", mi_midtbyen.p_sim)
-    print("Moran's I for all of Aarhus: ", mi_aarhus.I, "p-value: ", mi_aarhus.p_sim)
+    # print morans I, z-value and p-value for midtbyen and all of aarhus 
+    print(f"Moran's I for all of Aarhus: {mi_aarhus.I:.3f}, z-value: {mi_aarhus.z_sim:.3f}, p-value: {mi_aarhus.p_sim}")
+    print(f"Moran's I for midtbyen: {mi_midtbyen.I:.3f}, z-value: {mi_midtbyen.z_sim:.3f}, p-value: {mi_midtbyen.p_sim}")
 
     # plot morans I
     plot_local_moran(street_data, plot_dir / "streets_morans_i.png")
