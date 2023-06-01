@@ -251,13 +251,13 @@ def street_view(path:pathlib.Path):
             st.markdown("<p style='margin: 0;'><b>Please Note:</b></p>", unsafe_allow_html=True)
             
             if sig_true[sig_true["street"] == selected_street]["quadrant"].values[0] == 1:
-                st.markdown(f"The average rent in <span style='color:#FF595A'>{selected_street}</span> is significantly higher than expected even for an expensive district (__It's a bad deal!__)", unsafe_allow_html=True)
+                st.markdown(f"The average rents in <span style='color:#FF595A'>{selected_street}</span> and neighboring streets are very high (__It's a bad deal!__)", unsafe_allow_html=True)
             
             elif sig_true[sig_true["street"] == selected_street]["quadrant"].values[0] == 2:
                 st.markdown(f"The average rent in <span style='color:#FF595A'>{selected_street}</span> is low despite being an expensive district (__It's a very good deal!__)", unsafe_allow_html=True)
             
             elif sig_true[sig_true["street"] == selected_street]["quadrant"].values[0] == 3:
-                st.markdown(f"The average rent in <span style='color:#FF595A'>{selected_street}</span> is significantly lower than expected even for an inexpensive district (__It's good deal!__)", unsafe_allow_html=True)
+                st.markdown(f"The average rents in <span style='color:#FF595A'>{selected_street}</span> and neighboring streets are very low (__It's good deal!__)", unsafe_allow_html=True)
             
             elif sig_true[sig_true["street"] == selected_street]["quadrant"].values[0] == 4:
                 st.markdown(f"The average rent in <span style='color:#FF595A'>{selected_street}</span> is high despite being an inexpensive district (__It's a very bad deal!__)", unsafe_allow_html=True)
