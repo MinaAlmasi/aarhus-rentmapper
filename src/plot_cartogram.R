@@ -12,7 +12,7 @@ install.packages("pacman", version="0.5.1", repos="http://cran.rstudio.com/")
 pacman::p_load(tidyverse, sf, cartogram, cowplot)
 
 # load district data
-data <- st_read(file.path("..", "data", "district_aggregates.csv"))
+data <- st_read(file.path("..", "results", "district_aggregates.csv"))
 
 # transform to geodata using SF
 geodata <- st_as_sf(data, wkt = "geometry")

@@ -222,16 +222,16 @@ def get_street_aggregates(complete_data, savepath, n_similar_streets:int=5):
 def main():
     # define paths
     path = pathlib.Path(__file__)
-    data_path = path.parents[1] / "data"
+    save_path = path.parents[1] / "results"
 
     # read complete data
     complete_data = pd.read_csv(path.parents[1] / "data" / "complete_data.csv")
 
     # create district aggregates
-    district_data = get_district_aggregates(complete_data, data_path)
+    get_district_aggregates(complete_data, save_path)
 
     # create street aggregates
-    street_data = get_street_aggregates(complete_data, data_path, n_similar_streets=5)
+    get_street_aggregates(complete_data, save_path, n_similar_streets=5)
     
 
 

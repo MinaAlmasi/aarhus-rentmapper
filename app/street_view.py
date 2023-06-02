@@ -140,7 +140,7 @@ def street_view(path:pathlib.Path):
     '''
 
     # read in data
-    street_data = pd.read_csv(path.parents[1] / "data" / "street_aggregates.csv")
+    street_data = pd.read_csv(path.parents[1] / "results" / "street_aggregates.csv")
 
     # change wkt to geometry
     street_data["geometry"] = gpd.GeoSeries.from_wkt(street_data["geometry_street"])
