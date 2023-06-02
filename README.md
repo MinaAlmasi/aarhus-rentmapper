@@ -14,7 +14,9 @@
 
 <hr>
 
-This repository contains the code used to design and deploy the tool ```Aarhus RentMapper``` along with the geospatial analysis used within it. The tool can be accessed from the link below: 
+This repository contains the code used to design and deploy the tool ```Aarhus RentMapper``` along with the geospatial analysis used within it. 
+
+The tool can be accessed from the link below (NB. optimized for computer browser only!):
 
 <p align="center">
   <a href="https://aarhus-rentmap.streamlit.app/">https://aarhus-rentmap.streamlit.app/</a>
