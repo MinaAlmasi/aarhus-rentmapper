@@ -2,12 +2,11 @@
 # R script to create cartogram plot of apartment rent in Aarhus based on districts.
 # The output is saved to plots/cartogram_plot.jpg.
 
-# Requires the package 'pacman' to be installed. This can be achieved as such from your R console:
-    # install.packages('pacman')
-
 # by Anton Drasbæk Schiønning (@drasbaek) and Mina Almasi (@MinaAlmasi)
 # Spatial Analytics, Cultural Data Science (F2023)
 
+# install pacman 
+install.packages("pacman", version="0.5.1", repos="http://cran.rstudio.com/")
 
 # install/load packages
 pacman::p_load(tidyverse, sf, cartogram, cowplot)
