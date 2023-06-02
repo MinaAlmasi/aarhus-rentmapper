@@ -159,7 +159,7 @@ def street_view(path:pathlib.Path):
 
     with st.sidebar:
         # initialize selectbox with all streets
-        selected_street = st.selectbox('Select a street', street_data['street'])
+        selected_street = st.selectbox('Select street', street_data['street'])
 
         # set bigger font
         st.markdown(

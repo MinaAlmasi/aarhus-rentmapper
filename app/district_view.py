@@ -105,7 +105,7 @@ def district_view(path):
 
     # create sidebar for selecting district
     with st.sidebar:
-        selected_district = st.selectbox('Select a district', data['district'])
+        selected_district = st.selectbox('Select district', data['district'])
         st.markdown(
             """<style>
         div[class*="stSelectbox"] > label > div[data-testid="stMarkdownContainer"] > p {
