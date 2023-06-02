@@ -21,7 +21,7 @@ This repository contains the code used to design and deploy the tool ```Aarhus R
 </p>
 
 
-To reproduce the code, please refer to the section [*Technical Pipeline*]()
+To reproduce the code, please refer to the section [*Technical Pipeline*](https://github.com/MinaAlmasi/aarhus-rentmapper/tree/main#technical-pipeline)
 
 ## Project Structure 
 
