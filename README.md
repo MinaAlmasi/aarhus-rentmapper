@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/MinaAlmasi/aarhus-rentmapper/blob/main/docs/logo-whitebackground.png" alt="Logo">
+  <img src="https://github.com/MinaAlmasi/aarhus-rentmapper/blob/main/docs/logo.png" alt="Logo">
 </p>
 
 <p align="center">
