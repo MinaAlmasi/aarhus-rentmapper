@@ -14,7 +14,7 @@ def add_missing_districts(path: pathlib.Path):
     '''
 
     # read in geojson file
-    geojson = gpd.read_file(path.parents[1] / "data" / "geo_data" / "districts.geojson")
+    geojson = gpd.read_file(path.parents[1] / "data" / "geo_data" / "statistics_districts.geojson")
 
     # set crs to 25832
     geojson = geojson.set_crs("epsg:25832")
