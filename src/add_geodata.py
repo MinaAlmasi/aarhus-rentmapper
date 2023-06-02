@@ -15,11 +15,11 @@ def load_data():
     # define paths
     path = pathlib.Path(__file__)
 
-    apartments = pd.read_csv(path.parents[1] / "data" /  "cleaned_data.csv")
-    districts = pd.read_csv(path.parents[1] / "utils" / "street_to_district.csv", sep=';')
-    geo_streets = gpd.read_file(path.parents[1] / "utils" / "streetnames.geojson")
-    geo_districts = gpd.read_file(path.parents[1] / "utils" / "districts.geojson")
-    geo_society = gpd.read_file(path.parents[1] / "utils" / "lokalsamfund.geojson")
+    apartments = pd.read_csv(path.parents[1] / "data" / "scrape_data" / "cleaned_data.csv")
+    districts = pd.read_csv(path.parents[1] / "data" / "geo_data" / "street_to_district.csv", sep=';')
+    geo_streets = gpd.read_file(path.parents[1] / "data" / "geo_data" / "streetnames.geojson")
+    geo_districts = gpd.read_file(path.parents[1] / "data" / "geo_data" / "districts.geojson")
+    geo_society = gpd.read_file(path.parents[1] / "data" / "geo_data" / "lokalsamfund.geojson")
 
     return path, apartments, districts, geo_streets, geo_districts, geo_society
 

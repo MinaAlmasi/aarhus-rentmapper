@@ -83,7 +83,7 @@ def district_view(path):
         path: path to script
     '''
     # read in data
-    data = pd.read_csv(path.parents[1] / "data" / "district_aggregates.csv")
+    data = pd.read_csv(path.parents[1] / "results" / "district_aggregates.csv")
 
     # change wkt to geometry
     data["geometry"] = gpd.GeoSeries.from_wkt(data["geometry"])

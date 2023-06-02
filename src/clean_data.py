@@ -340,15 +340,14 @@ def main():
     path = pathlib.Path(__file__)
 
     # define paths
-    data_path = path.parents[1] / "data" / "raw_data"
-    save_path = path.parents[1] / "data"
-    zip_codes_path = path.parents[1] / "utils"
+    data_path = path.parents[1] / "data" / "scrape_data"
+    zip_codes_path = path.parents[1] / "data" / "geo_data"
 
-    # read in zip codes dataframe from utils folder
+    # read in zip codes dataframe from geodata folder
     zip_codes = pd.read_csv(zip_codes_path / "zipcode_lookup.csv")
 
     # clean data
-    all_df = clean_all_data(data_path, zip_codes, save_path)
+    all_df = clean_all_data(data_path, zip_codes, data_path)
 
     print(all_df)
 

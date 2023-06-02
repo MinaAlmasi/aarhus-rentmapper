@@ -379,7 +379,7 @@ def main():
     path = pathlib.Path(__file__)
     plot_dir = path.parents[1] / "plots"
     plot_dir.mkdir(parents=True, exist_ok=True)
-    datapath = path.parents[1] / "data"
+    datapath = path.parents[1] / "results"
 
     # read in district data 
     district_data = load_data(datapath = datapath / "district_aggregates.csv", geometry_col="geometry", crs=25832)
