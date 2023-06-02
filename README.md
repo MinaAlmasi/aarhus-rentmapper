@@ -35,11 +35,11 @@ The repository is structured as such:
 | ```plots```| Folder with plots used in the paper.
 | ```src```  | Folder with scripts used for cleaning scraped data, combining rental data with geodata, performing data analysis and plotting. See [src/README.md]() for a detailed breakdown.        |
 | ```run.sh```    | Run entire analysis pipeline (except for cartograms)       |
-| ```setup.sh```  | Run the            |
+| ```setup.sh```  | Run to install create Python virtual environment ```env``` and install necessary packages within it |
 
 
 ## Technical Pipeline
-The code was mainly developed in Python (3.9.13) on a Macbook Pro ‘13 (2020, 2GHz Intel i5, 16GB of ram). Whether it will work on Windows cannot be guaranteed. Python's [venv](https://docs.python.org/3/library/venv.html) needs to be installed for the setup to work.
+The code was mainly developed in ```Python``` (3.9.13) on a Macbook Pro ‘13 (2020, 2 GHz Intel i5, 16GB of ram). Whether it will work on Windows cannot be guaranteed. Python's [venv](https://docs.python.org/3/library/venv.html) needs to be installed for the setup to work.
 
 ### Setup 
 To be able to reproduce the code, type the following in the terminal: 
@@ -50,22 +50,15 @@ The script creates a new virtual environment (```env```) and installs the necess
 
 
 ### Running the Analysis Pipeline
-To run the entire analysis pipeline, which laid the foundation for deploying the tool, type in the terminal:
+To run the entire analysis pipeline, which laid the foundation for deploying the tool, type in your ```bash/zsh``` terminal:
 ```
 bash run.sh
 ```
 
 #### Running the R-script
-As no Python packages supported plotting cartograms easily, this plot was created in R (4.2.3). 
-
-Firstly, install the library ```pacman``` in the R console by typing:
+As no Python packages supported plotting cartograms easily, this plot was created in ```R``` (4.2.3). To run this seperate analysis, ensure that you have [R](https://cran.r-project.org/src/base/R-4/) and [RScript](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/Rscript) installed. Type in your terminal:
 ```
-install.packages("pacman")
-```
-
-Then, run the script in the terminal by typing:
-```
-
+RScript src/plot_cartogram.R
 ```
 
 ### Deploying Aarhus RentMapper Locally 
