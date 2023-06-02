@@ -1,7 +1,8 @@
 '''
-Functions to clean scraped data. Includes seperate functions to clean data from boligportal.dk, boligzonen.dk, edc.dk, minlejebolig.dk. 
+Functions to clean scraped data. Includes seperate functions to clean data from boligzonen.dk, edc.dk, boligportal.dk, minlejebolig.dk. 
 
 As the datasets differ in structure, seperate cleaning functions are defined.
+The sites are named with randomized IDs to ensure anonymity.
 
 by Anton Drasbæk Schiønning (@drasbaek) and Mina Almasi (@MinaAlmasi)
 Spatial Analytics, Cultural Data Science (F2023)
@@ -16,9 +17,9 @@ import pandas as pd
 import numpy as np
 
 ## functions ##
-def clean_boligportal(data_path:pathlib.Path, zip_codes:pd.DataFrame):
+def clean_site_A(data_path:pathlib.Path, zip_codes:pd.DataFrame):
     '''
-    Function to clean scraped boligportal data using pandas.
+    Function to clean scraped data from site A using pandas.
 
     Args: 
         data_path: Path to raw data.
@@ -29,10 +30,10 @@ def clean_boligportal(data_path:pathlib.Path, zip_codes:pd.DataFrame):
     '''
 
     # read in data
-    df = pd.read_csv(data_path / "boligportal_aarhus.csv")
+    df = pd.read_csv(data_path / "rental_scrape_A.csv")
 
-    # add website column
-    df["website"] = "boligportal.dk"
+    # add website column (random ID)
+    df["website"] = "Site A"
 
     # add year column
     df["year"] = 2023
@@ -84,9 +85,9 @@ def clean_boligportal(data_path:pathlib.Path, zip_codes:pd.DataFrame):
     
     return df
 
-def clean_boligzonen(data_path:pathlib.Path, zip_codes:pd.DataFrame):
+def clean_site_B(data_path:pathlib.Path, zip_codes:pd.DataFrame):
     '''
-    Function to clean scraped boligzonen data using pandas.
+    Function to clean scraped data from site B using pandas.
 
     Args:
         data_path: Path to raw data.
@@ -97,10 +98,10 @@ def clean_boligzonen(data_path:pathlib.Path, zip_codes:pd.DataFrame):
     '''
 
     # read in data, set type to string
-    df = pd.read_csv(data_path / "boligzonen_aarhus.csv", dtype=str)
+    df = pd.read_csv(data_path / "rental_scrape_B.csv", dtype=str)
 
-    # add website column
-    df["website"] = "boligzonen.dk"
+    # add website column (random ID)
+    df["website"] = "Site B"
 
     # add year column
     df["year"] = 2023
@@ -148,9 +149,9 @@ def clean_boligzonen(data_path:pathlib.Path, zip_codes:pd.DataFrame):
 
     return df
 
-def clean_edc(data_path:pathlib.Path):
+def clean_site_C(data_path:pathlib.Path):
     '''
-    Function to clean scraped edc data using pandas.
+    Function to clean scraped data from site C using pandas.
 
     Args: 
         data_path: Path to raw data.
@@ -160,18 +161,18 @@ def clean_edc(data_path:pathlib.Path):
     '''
 
     # read in data
-    df = pd.read_csv(data_path / "edc_aarhus.csv")
+    df = pd.read_csv(data_path / "rental_scrape_C.csv")
 
     # remove first row which contains weird address
     df = df.iloc[1:]
 
-    # add website column
-    df["website"] = "edc.dk"
+    # add website column (random ID)
+    df["website"] = "Site C"
 
     # add year column
     df["year"] = 2023
 
-    # create rental type (all rows from EDC are apartments)
+    # create rental type (all rows from site C are apartments)
     df["rental_type"] = "apartment"
 
     # extract addresses, rename to street
@@ -198,9 +199,9 @@ def clean_edc(data_path:pathlib.Path):
 
     return df
 
-def clean_minlejebolig(data_path:pathlib.Path, zip_codes):
+def clean_site_D(data_path:pathlib.Path, zip_codes):
     '''
-    Function to clean scraped minlejebolig data using pandas.
+    Function to clean scraped data from site D using pandas.
 
     Args: 
         data_path: Path to raw data.
@@ -210,15 +211,15 @@ def clean_minlejebolig(data_path:pathlib.Path, zip_codes):
         df: Cleaned dataframe.
     '''
     # read in data
-    df = pd.read_csv(data_path / "minlejebolig_aarhus.csv")
+    df = pd.read_csv(data_path / "rental_scrape_D.csv")
 
     # add website column
-    df["website"] = "minlejebolig.dk"
+    df["website"] = "Site D"
 
     # add year column
     df["year"] = 2023
 
-    # create rental type (all rows from minlejebolig are apartments)
+    # create rental type (all rows from site D are apartments)
     df["rental_type"] = "apartment"
 
     # rooms
@@ -282,17 +283,17 @@ def clean_all_data(data_path, zip_codes, save_path=None):
         clean_all_data.csv: Cleaned data. If save_path is not None.
     '''
 
-    # boligzonen
-    bz_df = clean_boligzonen(data_path, zip_codes)
+    # site A
+    A_df = clean_site_A(data_path, zip_codes)
 
-    # boligportal
-    bp_df = clean_boligportal(data_path, zip_codes)
+    # site B
+    B_df = clean_site_B(data_path, zip_codes)
 
-    # edc
-    edc_df = clean_edc(data_path)
+    # site C
+    C_df = clean_site_C(data_path)
 
-    # minlejebolig
-    ml_df = clean_minlejebolig(data_path, zip_codes)
+    # site D
+    D_df = clean_site_D(data_path, zip_codes)
 
     # read manually scraped historical data 
     historical_1 = pd.read_csv(data_path / "historical-data-anton.csv")
@@ -301,7 +302,7 @@ def clean_all_data(data_path, zip_codes, save_path=None):
     historical_2 = pd.read_csv(data_path / "historical-data-mina.csv")
 
     # concat dataframes 
-    all_df = pd.concat([bz_df, bp_df, edc_df, ml_df, historical_1, historical_2])
+    all_df = pd.concat([A_df, B_df, C_df, D_df, historical_1, historical_2])
 
     # remove accents
     all_df["street"] = all_df["street"].str.replace('é', 'e')
