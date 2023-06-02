@@ -349,7 +349,5 @@ def main():
     # clean data
     all_df = clean_all_data(data_path, zip_codes, data_path)
 
-    print(all_df)
-
 if __name__ == "__main__":
     main()
