@@ -255,6 +255,12 @@ def clean_site_D(data_path:pathlib.Path, zip_codes):
 def fix_spelling_streetnames(df:pd.DataFrame):
     '''
     Function to manually fix streetnames in dataframe to correspond to the streetnames in "streetnames.geojson"
+
+    Args:
+        df: Dataframe with streetnames.
+    
+    Returns:
+        df: Dataframe with corrected streetnames.
     '''
 
     # define corrections for all streetnames with discrepancies 
@@ -268,16 +274,14 @@ def fix_spelling_streetnames(df:pd.DataFrame):
 
     return df     
 
-def clean_all_data(data_path, zip_codes, save_path=None):
+def clean_all_data(data_path:pathlib.Path, zip_codes:pd.DataFrame, save_path:pathlib.Path=None):
     '''
     Function to clean all data using pandas.
 
     Args: 
         data_path: Path to raw data.
+        zip_codes: Dataframe with zip codes.
         save_path: Path to save cleaned data. Defaults to None.
-
-    Returns:
-        df: Cleaned dataframe.
     
     Output:
         clean_all_data.csv: Cleaned data. If save_path is not None.
@@ -331,8 +335,6 @@ def clean_all_data(data_path, zip_codes, save_path=None):
     if save_path is not None:
         all_df.to_csv(save_path / "cleaned_data.csv", index=False)
 
-    return all_df
-
 
 ## run script ##
 def main(): 
@@ -347,7 +349,7 @@ def main():
     zip_codes = pd.read_csv(zip_codes_path / "zipcode_lookup.csv")
 
     # clean data
-    all_df = clean_all_data(data_path, zip_codes, data_path)
+    clean_all_data(data_path, zip_codes, data_path)
 
 if __name__ == "__main__":
     main()
