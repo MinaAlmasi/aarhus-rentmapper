@@ -16,6 +16,11 @@
 
 This repository contains the code used to design and deploy the tool ```Aarhus RentMapper``` along with the geospatial analysis used within it. 
 
+
+https://github.com/MinaAlmasi/aarhus-rentmapper/assets/80207895/d0338c26-16e1-427a-beba-acd1cbcf6799
+
+
+
 The tool can be accessed from the link below (NB. optimized for computer browser only!):
 
 <p align="center">
