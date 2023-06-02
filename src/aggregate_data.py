@@ -30,8 +30,6 @@ def get_neighbor_districts(complete_data:pd.DataFrame):
 
     # loop through all districts
     for i in range(len(complete_data)):
-        # get district name
-        district = complete_data.iloc[i]["district"]
 
         # get neighbors. Both "touches" and "overlaps" is used to get all neighbors due to the resolution of our polygons (some polygons are not perfectly aligned). # solution by https://gis.stackexchange.com/questions/281652/finding-all-neighbors-using-geopandas 
         neighbors_touching = complete_data[complete_data.geometry.touches(complete_data.iloc[i].geometry)].district.tolist()
@@ -123,6 +121,7 @@ def similar_rent_prices(street_data, n_similar_streets:int):
         street_data: street_data with most_similar_streets and most_similar_rents columns
     '''
 
+    # initialize lists
     most_similar_streets = []
     most_similar_rents = []
     most_similar_districts = []
@@ -131,7 +130,6 @@ def similar_rent_prices(street_data, n_similar_streets:int):
         # define target street and rent
         target_street = street_data.iloc[i]["street"]
         target_rent = street_data.iloc[i]["rent_per_square_meter"]
-        target_district = street_data.iloc[i]["district"]
         
         # get all streets except target street
         other_streets = street_data[street_data["street"] != target_street].copy() # copy to avoid SettingWithCopyWarning
@@ -175,6 +173,7 @@ def similar_rent_prices(street_data, n_similar_streets:int):
 
 def get_street_aggregates(complete_data, savepath, n_similar_streets:int=5):
     '''
+    Function that calculates aggregates for each street in complete_data and saves them to savepath.
 
     Args
         complete_data: complete pandas dataframe with geometry as string
@@ -214,6 +213,7 @@ def get_street_aggregates(complete_data, savepath, n_similar_streets:int=5):
     # drop duplicates
     street_data = street_data.drop_duplicates(subset=["street"])
 
+    # save to csv
     street_data.to_csv(savepath / "street_aggregates.csv", index=False)
 
     return street_data

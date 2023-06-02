@@ -60,7 +60,7 @@ def load_data(datapath:pathlib.Path, geometry_col:str, crs=25832):
 ## DISTRICTS ## 
 def plot_district_overview(district_data, savepath):
     '''
-    Function to plot the districts in Aarhus
+    Function to plot the districts in Aarhus.
 
     Args:
         district_data: dataframe containing the district data
@@ -69,6 +69,7 @@ def plot_district_overview(district_data, savepath):
     Outputs: 
         .png: A plot of the districts in Aarhus
     '''
+
     # add missing districts
     missing_districts = add_missing_districts(pathlib.Path(__file__))
 
@@ -166,7 +167,7 @@ def add_minimap(ax, district_data:gpd.GeoDataFrame, column_to_plot:str, district
 
 def plot_districts_heatmap(district_data:gpd.GeoDataFrame, rental_type:str, savepath:pathlib.Path):
     '''
-    Plot the districts as a heatmap
+    Plot the districts as a heatmap (choropleth map)
     Args:
         district_data: dataframe containing the district data
         rental_type: The type of rental to plot
@@ -230,6 +231,18 @@ def plot_districts_heatmap(district_data:gpd.GeoDataFrame, rental_type:str, save
 
 ## PLOT STREETS ## 
 def plot_streets(street_data, district_data, savepath):
+    '''
+    Create a plot of the streets in the midtbyen district, colored by rent
+
+    Args:
+        street_data: dataframe containing the street data
+        district_data: dataframe containing the district data
+        savepath: The path to save the plot to
+    
+    Outputs:
+        .png: A plot of the streets in the midtbyen district, colored by rent
+    '''
+
     # keep only midtbyen districts
     street_data = filter_midtbyen(street_data)
     district_data = filter_midtbyen(district_data)
@@ -266,11 +279,24 @@ def plot_streets(street_data, district_data, savepath):
     for spine in ["top", "right", "left", "bottom"]:
         ax.spines[spine].set_visible(False)
 
+    # save the plot
     fig.savefig(savepath, dpi=300, bbox_inches="tight")
 
 ## MORANS I ##
 def calculate_global_moran(street_data):
-    # set seed for reproducibility
+    '''
+    Calculate global morans I for all streets in aarhus and just for just midtbyen streets
+    Uses KNN spatial weights with three neighbors
+
+    Args:
+        street_data: dataframe containing the street data
+    
+    Outputs:
+        mi_aarhus: global morans I for all of aarhus
+        mi_midtbyen: global morans I for midtbyen
+
+    '''
+    # set seed for reproducibility (necessary due to Monte Carlo simulation in Moran)
     np.random.seed(1999)
 
     # filter midtbyen
@@ -286,7 +312,19 @@ def calculate_global_moran(street_data):
 
     return mi_aarhus, mi_midtbyen
 
-def plot_local_moran(street_data, savepath): # based on tutorial by Dani Arribas-Bel (http://darribas.org/gds15/content/labs/lab_06.html)
+def plot_local_moran(street_data, savepath):
+    '''
+    Plots significant local morans I in midtbyen.
+    Based on tutorial by Dani Arribas-Bel (http://darribas.org/gds15/content/labs/lab_06.html)
+
+    Args:
+        street_data: dataframe containing the street data
+        savepath: The path to save the plot to
+    
+    Outputs:
+        .png: A plot of the streets in the midtbyen district, colored by rent
+    '''
+
     # set seed for reproducibility
     np.random.seed(1999)
 
@@ -337,7 +375,7 @@ def plot_local_moran(street_data, savepath): # based on tutorial by Dani Arribas
     # filter on whether significant or not 
     sig_true.plot(column="quadrant", categorical=True, linewidth = 3, legend=True, cmap=cmap, legend_kwds=legend_kwds, ax=ax)
 
-    # Add black end borders to the havnegade
+    # add black end borders to the havnegade
     havnegade = street_data_midtbyen[street_data_midtbyen["street"] == "Havnegade"].geometry.iloc[0]
     ax.plot(*havnegade.coords[0], marker="$-$", color="black", markersize=4)
 
