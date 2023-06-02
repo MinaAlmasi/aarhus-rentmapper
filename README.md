@@ -34,12 +34,12 @@ The repository is structured as such:
 | ```results``` | Folder with aggregated results. |
 | ```plots```| Folder with plots used in the paper.
 | ```src```  | Folder with scripts used for cleaning scraped data, combining rental data with geodata, performing data analysis and plotting. See [src/README.md]() for a detailed breakdown.        |
-| ```run.sh```    | Run entire analysis pipeline (except for cartograms)      |
-| ```X```    |            |
+| ```run.sh```    | Run entire analysis pipeline (except for cartograms)       |
+| ```setup.sh```  | Run the            |
 
 
 ## Technical Pipeline
-The code was mainly developed in Python (3.9.13) on a Macbook Pro ‘13 (2020, 2GHz Intel i5, 16GB of ram). Whether it will work on Windows cannot be guaranteed. Moreover, Python's [venv](https://docs.python.org/3/library/venv.html) needs to be installed for the Python pipeline to work.
+The code was mainly developed in Python (3.9.13) on a Macbook Pro ‘13 (2020, 2GHz Intel i5, 16GB of ram). Whether it will work on Windows cannot be guaranteed. Python's [venv](https://docs.python.org/3/library/venv.html) needs to be installed for the setup to work.
 
 ### Setup 
 To be able to reproduce the code, type the following in the terminal: 
@@ -50,7 +50,7 @@ The script creates a new virtual environment (```env```) and installs the necess
 
 
 ### Running the Analysis Pipeline
-To run the entire analysis pipeline, which laid the foundation for deploying the tool
+To run the entire analysis pipeline, which laid the foundation for deploying the tool, type in the terminal:
 ```
 bash run.sh
 ```
@@ -73,12 +73,18 @@ For testing and development purposes, the ```Aarhus RentMapper``` tool can be de
 ```
 streamlit run app/app.py
 ```
-Note that you need to activate the virtual environment first (by running ```source env/bin/activate``` in the terminal)
+Note that you need:
+1. To activate the virtual environment first (```source env/bin/activate``` in the terminal)
+2. To ensure that you are located in the main folder (```cd aarhus-rentmapper```)
 
 ## Authors 
 This code repository was a joint effort by Anton Drasbæk Sciønning ([@drasbaek](https://github.com/drasbaek)) and Mina Almasi ([@MinaAlmasi](https://github.com/MinaAlmasi)). 
 
 ### Contact us
 For any questions regarding the reproducibility or project in general, you can contact us:
-* drasbaek@post.au.dk (Anton)
-* mina.almasi@post.au.dk (Mina)
+<ul style="list-style-type: none;">
+  <li><a href="mailto:drasbaek@post.au.dk">drasbaek@post.au.dk</a>
+(Anton)</li>
+    <li><a href="mailto: mina.almasi@post.au.dk"> mina.almasi@post.au.dk</a>
+(Mina)</li>
+</ul>

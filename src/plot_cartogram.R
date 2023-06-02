@@ -12,7 +12,7 @@ install.packages("pacman", version="0.5.1", repos="http://cran.rstudio.com/")
 pacman::p_load(tidyverse, sf, cartogram, cowplot)
 
 # load district data
-data <- st_read(file.path("..", "results", "district_aggregates.csv"))
+data <- st_read(file.path("results", "district_aggregates.csv"))
 
 # transform to geodata using SF
 geodata <- st_as_sf(data, wkt = "geometry")
@@ -64,7 +64,7 @@ plot_map <- ggplot() +
 combined_plot <- cowplot::plot_grid(plot_cartogram, plot_map, ncol = 2, labels = c("", ""), hjust = -0.3)
 
 # save plot
-ggsave(file.path("..", "plots", "cartogram_plot.jpg"), combined_plot, dpi = 300, width = 10, height = 6)
+ggsave(file.path("plots", "cartogram_plot.jpg"), combined_plot, dpi = 300, width = 10, height = 6)
 
 
 
