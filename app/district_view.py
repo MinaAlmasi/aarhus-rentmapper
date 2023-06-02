@@ -37,43 +37,43 @@ sys.path.append(str(pathlib.Path(__file__).parents[1] / "src"))
 from utils import add_missing_districts 
 
 def plot_neighbor_stats(neighbor_data, y_col, y_title):
-        '''
-        Function for plotting statistics of neighbor districts
+    '''
+    Function for plotting statistics of neighbor districts
 
-        Args
-            neighbor_data: dataframe with statistics of neighbor districts
-            y_col: column to plot on y-axis
-            y_title: title of y-axis
+    Args
+        neighbor_data: dataframe with statistics of neighbor districts
+        y_col: column to plot on y-axis
+        y_title: title of y-axis
         
-        Returns 
-            fig: plotly figure
-        '''
-        # define color
-        colors = ["lightslategray",] * len(neighbor_data)
+    Returns 
+        fig: plotly figure
+    '''
+    # define color
+    colors = ["lightslategray",] * len(neighbor_data)
         
-        # change color of first element to make it stand out
-        colors[0] = ["#FF595A"]
+    # change color of first element to make it stand out
+    colors[0] = ["#FF595A"]
 
-        # create plot of neighbor districts with plotly
-        fig = px.bar(neighbor_data, x="district", y=y_col, color="district", color_discrete_sequence=colors)
+    # create plot of neighbor districts with plotly
+    fig = px.bar(neighbor_data, x="district", y=y_col, color="district", color_discrete_sequence=colors)
 
-        # update layout to have descending order
-        fig.update_layout(
-            xaxis=dict(
-                categoryorder="total descending"
+    # update layout to have descending order
+    fig.update_layout(
+        xaxis=dict(
+            categoryorder="total descending"
             ),
-            showlegend=False,
-            margin=dict(l=0, r=0, t=0, b=0),
-            height=300
-        )
+        showlegend=False,
+        margin=dict(l=0, r=0, t=0, b=0),
+        height=300
+    )
 
-        # rm xaxis title
-        fig.update_xaxes(title=None)
+    # rm xaxis title
+    fig.update_xaxes(title=None)
 
-        # add yaxis title
-        fig.update_yaxes(title=y_title)
+    # add yaxis title
+    fig.update_yaxes(title=y_title)
 
-        return fig
+    return fig
 
 def district_view(path): 
     '''
@@ -82,6 +82,7 @@ def district_view(path):
     Args:
         path: path to script
     '''
+
     # read in data
     data = pd.read_csv(path.parents[1] / "results" / "district_aggregates.csv")
 
@@ -105,7 +106,11 @@ def district_view(path):
 
     # create sidebar for selecting district
     with st.sidebar:
-        selected_district = st.selectbox('Select a district', data['district'])
+
+        # create select box
+        selected_district = st.selectbox('Select district', data['district'])
+
+        # set correct spacing
         st.markdown(
             """<style>
         div[class*="stSelectbox"] > label > div[data-testid="stMarkdownContainer"] > p {
@@ -113,9 +118,11 @@ def district_view(path):
             </style>
             """, unsafe_allow_html=True)
 
+        # identify selected district
         selected_data = data[data['district'] == selected_district]
 
-        st.write(f"{len(data)} districts in total")
+        # write district count
+        st.write(f"{len(data)} districts in total") 
 
         # convert to epsg 4326
         selected_data = selected_data.to_crs("epsg:4326")
@@ -126,6 +133,7 @@ def district_view(path):
         # extract location coordinates
         selected_location = [selected_data['geometry'].centroid.y, selected_data['geometry'].centroid.x]
 
+    # create embedded map in right column
     with right_col:
         # add spacing
         st.write("")
@@ -135,14 +143,7 @@ def district_view(path):
                                 zoom_start=int(selected_zoom_level),
                                 min_zoom=10)
 
-        # define tooltip, but unclickable
-        tooltip = GeoJsonTooltip(
-            fields=['district'], 
-            aliases=['District: '],
-            labels=True,
-            permanent=False
-        )
-
+        # create map
         folium.Choropleth(
             geo_data=data,
             name='choropleth',
@@ -156,6 +157,14 @@ def district_view(path):
             highlight=True
         ).add_to(folium_map)
 
+        # define tooltip, but unclickable
+        tooltip = GeoJsonTooltip(
+            fields=['district'], 
+            aliases=['District: '],
+            labels=True,
+            permanent=False
+        )
+        
         folium.GeoJson(data, 
             tooltip=tooltip,
             style_function=lambda x: {"color": "transparent", "weight": 0, "opacity": 0, "fillOpacity": 0},
@@ -178,9 +187,11 @@ def district_view(path):
         folium.GeoJson(selected_data, 
         style_function=lambda x: {"color": "#FF595A", "weight": 4, "opacity": 1, "fillOpacity": 0},
         ).add_to(folium_map)
-
+         
+        # define width and height of map
         folium_static(folium_map, height=630, width=482)
     
+    # create statistics in left column
     with left_col:
         # create columns to display statistics
         st.markdown(f"<h3>Rental Statistics for <span style='color: #FF595A;'>{selected_district}</span></h3>", unsafe_allow_html=True)
@@ -190,10 +201,12 @@ def district_view(path):
 
         # initialize columns for displaying rents
         apart_col, room_col = st.columns(2)
-
+        
+        # add apartment rent
         with apart_col:
             st.metric(label="Apartment (per m2)", value=f"{selected_data['apartment_rent_sqm_now'].values[0]} DKK", delta=f"{selected_data['apartment_rent_change'].values[0]} % since 2014-16", delta_color="inverse")
-                
+        
+        # add room rent
         with room_col:
             st.metric(label="Room", value=f"{selected_data['room_rent_now'].values[0]} DKK", delta=f"{selected_data['room_rent_change'].values[0]} % since 2014-16", delta_color="inverse")
         
@@ -226,7 +239,7 @@ def district_view(path):
         with tab1: 
             apartment_fig = plot_neighbor_stats(neighbor_data, "apartment_rent_sqm_now", "Apartment Rent (per m2)")
             st.plotly_chart(apartment_fig, use_container_width=True)
-
+        
         with tab2:
             # if all values are NA (0.001 due to NA bug), then no room data is available
             if (neighbor_data['room_rent_now'] == 0.001).all():

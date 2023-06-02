@@ -1,5 +1,10 @@
 '''
-Script to add spatial data to the cleaned_data file to create 
+Functions to add geodata to the scraped and cleaned rental data.
+
+Multiple merges are made to add the geodata.
+
+by Anton Drasbæk Schiønning (@drasbaek) and Mina Almasi (@MinaAlmasi)
+Spatial Analytics, Cultural Data Science (F2023)
 '''
 
 # utils 
@@ -12,14 +17,27 @@ import pandas as pd
 
 
 def load_data():
+    '''
+    Function that loads all needed data for merging geodata.
+
+    Returns:
+        path: path to the current file
+        apartments: pandas DataFrame with the scraped and cleaned rental data
+        districts: pandas DataFrame with the districts and their corresponding streets
+        geo_streets: GeoDataFrame with the street names and their corresponding geometry
+        geo_districts: GeoDataFrame with the statistic districts and their corresponding geometry
+        geo_society: GeoDataFrame with the local community districts and their corresponding geometry
+
+    '''
+
     # define paths
     path = pathlib.Path(__file__)
 
     apartments = pd.read_csv(path.parents[1] / "data" / "scrape_data" / "cleaned_data.csv")
     districts = pd.read_csv(path.parents[1] / "data" / "geo_data" / "street_to_district.csv", sep=';')
     geo_streets = gpd.read_file(path.parents[1] / "data" / "geo_data" / "streetnames.geojson")
-    geo_districts = gpd.read_file(path.parents[1] / "data" / "geo_data" / "districts.geojson")
-    geo_society = gpd.read_file(path.parents[1] / "data" / "geo_data" / "lokalsamfund.geojson")
+    geo_districts = gpd.read_file(path.parents[1] / "data" / "geo_data" / "statistics_districts.geojson")
+    geo_society = gpd.read_file(path.parents[1] / "data" / "geo_data" / "local_community.geojson")
 
     return path, apartments, districts, geo_streets, geo_districts, geo_society
 
@@ -51,6 +69,14 @@ def clean_temp_cols(column):
 
 
 def add_street_geometry(apartments, geo_streets):
+    '''
+    Function for adding the geometry of the street names to the apartments DataFrame.
+
+    Args
+        apartments: pandas DataFrame with the scraped and cleaned rental data
+        geo_streets: GeoDataFrame with the street names and their corresponding geometry
+    '''
+
     # remove final character for all street names in geo_streets if it is a space
     geo_streets['vejnavne'] = geo_streets['vejnavne'].str.rstrip()
 
@@ -77,7 +103,16 @@ def add_street_geometry(apartments, geo_streets):
 
 
 def update_stat_disticts(districts):
-    # This function adds streets with districts that are missing from the original "street_to_discrit" file manually
+    '''
+    Function that adds the most common missing streets and their corresponding districts to the districts DataFrame.
+
+    Args
+        districts: pandas DataFrame with the districts and their corresponding streets
+    
+    Returns
+        districts: pandas DataFrame with the updated district names
+
+    '''
 
     # define the missing streets and their districts
     missing_streets = ["Kongevellen", "Brassøvej", "Møllehatten", "Pollenvænget", "Borresøvej", "Broloftet", "Honningvænget",
@@ -100,6 +135,17 @@ def update_stat_disticts(districts):
 
 
 def add_stat_district(apartments, districts):
+    '''
+    Function that adds statistics districts to the apartments DataFrame.
+
+    Args
+        apartments: pandas DataFrame with the scraped and cleaned rental data
+        districts: pandas DataFrame with the districts and their corresponding streets
+
+    Returns
+        merged_df: pandas DataFrame with the apartments and their corresponding statistics districts
+    '''
+
     # for each "Vejnavn", find the most common "StatistikdistriktNavn"
     districts = districts.groupby(['Vejnavn', 'StatistikdistriktNavn']).size().reset_index(name='counts')
 
@@ -133,7 +179,16 @@ def add_stat_district(apartments, districts):
 
 
 def update_stat_district_names(apartments, geo_districts):
-    ## We use the geodistrict file to go away from keys for district names.
+    '''
+    Function that updates the statistic district names from being codes to being the actual district names.
+
+    Args
+        apartments: pandas DataFrame with the scraped and cleaned rental data
+        geo_districts: geopandas GeoDataFrame with the statistic districts and their corresponding geometry
+    
+    Returns
+        merged_df: pandas DataFrame with the apartments and their corresponding statistics districts
+    '''
 
     # update district names in apartment to only the key
     apartments['StatistikdistriktNavn'] = apartments['StatistikdistriktNavn'].str.split(':').str[1]
@@ -172,7 +227,7 @@ def update_stat_district_names(apartments, geo_districts):
 
 def add_society_districts(apartments, geo_society):
     """
-    Add society districts ("Lokal Samfund") to apartments data based on the statistics districts ("Statistikdistrikt")
+    Add society districts ("Lokal Samfund") to apartments data based on the statistics districts ("Statistikdistrikt").
 
     Args: 
         apartments: GeoDataFrame with apartments
@@ -226,14 +281,14 @@ def add_society_districts(apartments, geo_society):
 
 def merge_districts(apartments):
     """
-    Merge "Statistikdistriker" (statistics districts) into larger districts based on the "Lokal Samfund" (society districts). 
+    Merge "Statistikdistriker" (statistics districts) into larger districts based on the "Lokal Samfund" (local community districts). 
     Done for all statistics districts except "Midtbyen" (city center).
 
     Args:
-        apartments: GeoDataFrame with apartments with both statistics districts and society districts
+        apartments: GeoDataFrame with apartments with both statistics districts and local community districts
 
     Returns:
-        apartments: GeoDataFrame with apartments with both statistics districts and society districts merged into larger districts
+        apartments: GeoDataFrame with apartments with both statistics districts and society districts merged into larger districts for relevant areas.
     """
 
     # define midtbyen districts

@@ -57,7 +57,8 @@ def create_street_table(selected_data):
     # define headers and row values for table
     header = ["<b>Street</b>", "<b>District</b>", "<b>Rent (per m2)</b>"]
 
-    values = [  # streetname 
+    # define row values
+    values = [          # streetname 
                         [selected_data["most_similar_1"], selected_data["most_similar_2"], 
                         selected_data["most_similar_3"], selected_data["most_similar_4"],
                         selected_data["most_similar_5"]],
@@ -159,7 +160,7 @@ def street_view(path:pathlib.Path):
 
     with st.sidebar:
         # initialize selectbox with all streets
-        selected_street = st.selectbox('Select a street', street_data['street'])
+        selected_street = st.selectbox('Select street', street_data['street'])
 
         # set bigger font
         st.markdown(
@@ -179,6 +180,7 @@ def street_view(path:pathlib.Path):
         # extract location coordinates
         selected_location = [selected_data['geometry'].centroid.y, selected_data['geometry'].centroid.x]
 
+    # add map to right column
     with right_col:
         # add spacing
         st.write("")
@@ -207,8 +209,10 @@ def street_view(path:pathlib.Path):
         style_function=lambda x: {"color": "#FF595A", "weight": 5, "opacity": 1, "fillOpacity": 0},
         ).add_to(folium_map)
 
+        # set map height and width
         folium_static(folium_map, height=630, width=482) 
     
+    # add statistics to left column
     with left_col:
         # create columns to display statistics
         st.markdown(f"<h3>Rental Statistics for <span style='color: #FF595A;'>{selected_street}</span></h3>", unsafe_allow_html=True)
@@ -223,12 +227,14 @@ def street_view(path:pathlib.Path):
         # create columns for rent statistics
         st.write("__Average Apartment Rent (per m2)__")
         
-        # c columns
+        # initialize columns
         rent_col, count_col = st.columns([2, 2])
 
+        # add rent statistics
         with rent_col:
             st.metric(label="in 2023", value=f"{selected_data['rent_per_square_meter'].values[0]} DKK")
         
+        # add count
         with count_col:
             st.metric(label="based on", value=f"{selected_data['count'].values[0]} apartments")
         
@@ -236,6 +242,7 @@ def street_view(path:pathlib.Path):
         st.write("")
         st.write("")
 
+        # initialize container for table
         with st.container():
             st.write("__Similar Priced Streets__")
 
