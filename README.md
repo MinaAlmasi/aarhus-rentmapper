@@ -35,11 +35,11 @@ https://github.com/MinaAlmasi/aarhus-rentmapper/assets/80207895/d0338c26-16e1-42
 The repository is structured as such:
 | <div style="width:120px"></div>| Description |
 |---------|:-----------|
-| ```app```  | Folder with all relevant scripts to build and deploy the ```Aarhus RentMapper``` tool.           |
-| ```data``` | Folder with scraped rental data, the geodata and the merged datafile ```complete_data.csv``` with rental data containing geospatial information.     |
+| ```app```  | Folder with all relevant scripts to build and deploy the ```Aarhus RentMapper``` tool. See [app/README.md](https://github.com/MinaAlmasi/aarhus-rentmapper/blob/main/app/README.md)          |
+| ```data``` | Folder with scraped rental data, the geodata and the merged datafile ```complete_data.csv``` with rental data containing geospatial information. (See [data/README.md](https://github.com/MinaAlmasi/aarhus-rentmapper/blob/main/data/README.md)).      |
 | ```results``` | Folder with aggregated results. |
 | ```plots```| Folder with plots used in the paper.
-| ```src```  | Folder with scripts used for cleaning scraped data, combining rental data with geodata, performing data analysis and plotting. See [src/README.md]() for a detailed breakdown.        |
+| ```src```  | Folder with scripts used for cleaning scraped data, combining rental data with geodata, performing data analysis and plotting (See [src/README.md](https://github.com/MinaAlmasi/aarhus-rentmapper/blob/main/src/README.md)).       |
 | ```run.sh```    | Run entire analysis pipeline (except for cartograms)       |
 | ```setup.sh```  | Run to install create Python virtual environment ```env``` and install necessary packages within it |
 
