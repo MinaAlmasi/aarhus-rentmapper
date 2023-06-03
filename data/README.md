@@ -1,9 +1,4 @@
-The data folder contains the file ```complete_data.csv```  and the folders ```geo_data``` and ```scrape_data```. 
-
-The file ```complete_data.csv``` has the scraped, clean rental data combined with the geodata (street and district geometries).
-
-
-A detailed breakdown of the files within folders ```geo_data``` and ```scrape_data``` is given below.
+The data folder contains the file ```complete_data.csv```  and the folders ```geo_data``` and ```scrape_data```. The file ```complete_data.csv``` has the scraped, clean rental data combined with the geodata (street and district geometries).
 
 
 The ```geo_data``` folder contains geospatial files from [Open Data DK](https://www.opendata.dk/hvad-er-open-data-dk). All files are licensed under the Creative Commons Atribution 4.0. 
