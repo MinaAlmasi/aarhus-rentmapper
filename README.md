@@ -49,6 +49,11 @@ The repository is structured as such:
 The code was mainly developed in ```Python``` (3.9.13) on a Macbook Pro ‘13 (2020, 2 GHz Intel i5, 16GB of ram). Whether it will work on Windows cannot be guaranteed. Python's [venv](https://docs.python.org/3/library/venv.html) needs to be installed for the setup to work.
 
 ### Setup 
+Firstly, this repository must be cloned to your device as such:
+```
+git clone https://github.com/MinaAlmasi/aarhus-rentmapper.git
+```
+
 To be able to reproduce the code, type the following in the terminal: 
 ```
 bash setup.sh
