@@ -20,4 +20,4 @@ The ```scrape_data``` folder contains all scraped rental data:
 |---------|:-----------|
 | ```rental_scape_X.csv``` | Scraped data from rental websites A to D (2023)|
 | ```historical-data-X.csv``` | Manually scraped data by either Anton or Mina (historical, 2014-2016)| 
-| ```cleaned_data.csv.csv``` | All scraped data (2023 and historical)| 
+| ```cleaned_data.csv``` | All scraped data (2023 and historical)| 
