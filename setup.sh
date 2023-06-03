@@ -8,3 +8,6 @@ source ./env/bin/activate
 
 # install requirements
 python3.9 -m pip install -r requirements.txt
+
+# deactivate environment
+deactivate

@@ -19,5 +19,8 @@ python3 src/aggregate_data.py
 echo -e "[INFO:] Creating Visualizations for Analysis..." # user msg
 python3 src/analysis.py
 
+# deactivate environment
+deactivate
+
 # happy msg!
-echo -e "[INFO:] Pipeline complete! You can deploy Aarhus RentMapper now from terminal (type: streamlit run app/app.py)" # user msg
+echo -e "[INFO:] Pipeline complete! You can deploy Aarhus RentMapper now from terminal (type: streamlit run app/app.py) after activating the environment again" # user msg
