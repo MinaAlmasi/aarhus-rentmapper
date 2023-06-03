@@ -62,13 +62,13 @@ The script creates a new virtual environment (```env```) and installs the necess
 
 
 ### Running the Analysis Pipeline
-To run the entire analysis pipeline, which laid the foundation for deploying the tool, type in your ```bash/zsh``` terminal:
+To run the entire analysis pipeline, which laid the foundation for deploying the tool, type in your ```bash/zsh``` terminal while being located in the main repository folder (```cd aarhus-rentmapper```):
 ```
 bash run.sh
 ```
 
 #### Running the R-script
-As no Python packages supported plotting cartograms easily, this plot was created in ```R``` (4.2.3). To run this seperate analysis, ensure that you have [R](https://cran.r-project.org/src/base/R-4/) and [RScript](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/Rscript) installed. Type in your terminal:
+As no Python packages supported plotting cartograms easily, this plot was created in ```R``` (4.2.3). To run this seperate analysis, ensure that you have [R](https://cran.r-project.org/src/base/R-4/) and [RScript](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/Rscript) installed. Type in your terminal while being located in the main repository folder (```cd aarhus-rentmapper```):
 ```
 RScript src/plot_cartogram.R
 ```
